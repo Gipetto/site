@@ -1,0 +1,27 @@
+---
+layout: default
+section: archives
+---
+
+<section class="drivel archives">
+{%- if site.posts.size > 0 -%}
+    {% assign year = Nil %}
+    {% assign close_ul = Nil %}
+    {%- for post in site.posts -%}
+
+        {% assign post_year = post.date | date: "%Y" %}
+        {%- unless year == post_year -%}
+            {{ close_ul }}
+            {% assign year = post_year %}
+            {% assign close_ul = "</ul>" %}
+            <h4>{{ post_year }}</h4>
+            <ul>
+        {%- endunless -%}
+    
+        <li>
+            <span class="dates-n-stuff">{{ post.date | date: "%b %d"}}:</span> 
+            <a href="{{ site.url }}{{ post.url }}">{{ post.title | escape }}</a>
+        </li>
+    {%- endfor -%}
+{%- endif -%}
+</section>

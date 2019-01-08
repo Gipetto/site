@@ -1,0 +1,27 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ page.lang | default: site.lang | default: 'en' }}"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="{{ page.lang | default: site.lang | default: 'en' }}"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="{{ page.lang | default: site.lang | default: 'en' }}"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ page.lang | default: site.lang | default: 'en' }}"> <!--<![endif]-->
+{%- include head.html -%}
+<body id="top-frog-com">
+    <div id="bag-o-holding">
+        <div id="inner-liner" class="grid grid-col">
+            {%- include header.html -%}
+            <div id="it" class="grid-cell">
+                <div class="grid grid-row">
+                    <div id="stuff" class="grid-cell {{ page.section | default: layout.section }}">
+                        <h2 class="tome">{{ page.section | default: layout.section }}</h2>
+                        {{ content }}
+                    </div>
+                    <div id="less-important-stuff" class="grid-cell">
+                        {%- include sidebar.html -%}
+                    </div>
+                </div>
+            </div>
+            {%- include footer.html -%}
+        </div>
+    </div>
+    {%- include scripts.html -%}
+</body>
+</html>

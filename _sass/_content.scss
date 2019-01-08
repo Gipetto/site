@@ -1,0 +1,176 @@
+#stuff {
+	$header-font-family: Georgia, 'Times New Roman', Times, serif;
+
+	box-shadow: inset -1px 0 10px 0 rgb(216, 216, 216);
+
+	.tome {
+		background: linear-gradient(to bottom, #303030, #454545);
+		border-bottom: 1px solid #7F8A76;
+		color: #797A78;
+		height: 28px;
+		font-size: 1.7em;
+		font-style: bold;
+		font-family: $header-font-family;
+		line-height: 37px;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+	}
+
+	h3, h4, h5 {
+		font-weight: bold;
+		font-family: $header-font-family;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	p {
+		line-height: 1.4;
+		margin: 10px 0;
+	}
+
+	.frame {
+		position: relative;
+		
+		img {
+			background: white;
+			padding: 2px;
+			border: 1px solid lightgray;	
+		}
+	}
+
+	.drivel {
+		font-size: 0.8em;
+		line-height: 1.6;
+		margin: 0 10px;
+		padding: 20px 10px 10px 10px;
+
+		h3 {
+			font-size: 1.6em;
+			line-height: 1.2;
+			margin-top: 30px;
+
+			&:first-child {
+				margin-top: 5px;
+			}
+
+			&:first-child::before {
+				content: "§";
+				color: #ccc;
+				float: left;
+				margin-left: -15px;
+			}
+		}
+
+		h4 {
+			line-height: 1.2;
+			margin-top: 20px;
+			font-size: 1.3em;
+		}
+
+		a {
+			text-decoration: underline;
+		}
+
+		.dates-n-stuff {
+			font-size: 0.9em;
+			color: #888;
+			margin-top: 3px;
+		}
+
+		ul, ol {
+			padding-left: 1.5em;
+		}
+
+		&.archives {
+			ul {
+				list-style: none outside;
+
+				li {
+					padding: 3px 0;
+				}
+			}
+		}
+
+		dl {
+			dt {
+				font-size: 1.2em;
+				font-family: $header-font-family;
+				font-weight: bold;
+				line-height: 1.5em;
+				margin-top: 15px;
+			}
+	
+			dd {
+				margin: 5px 0 5px 15px;
+			}	
+		}
+	}
+
+	.divider {
+		margin: 10px 20px;
+		height: 2px;
+		padding: 0;
+		border: none;
+		background: repeating-linear-gradient(
+			45deg, 
+			transparent, 
+			transparent 2px, 
+			#fff 2px, 
+			#fff 4px
+		), linear-gradient(
+			to right, 
+			#fff, 
+			#999, 
+			#fff
+		);
+	}
+
+	.alert {
+		padding: 0.75em 1.25em;
+		margin-bottom: 1.25em;
+		margin-top: 1.25em;
+		border: 1px solid transparent;
+		border-radius: 0.25em;
+
+		&.warning {
+			background-color: #f2dede;
+			border-color: #ebcccc;
+			color: #a94442;
+		}
+	}
+
+	.pagination {
+		padding: 5px 20px;
+		display: flex;
+		justify-content: space-between;
+		font-size: 0.8em;
+
+		a, span {
+			padding: 5px 13px;
+		}
+
+		a {
+			&:hover {
+				border-radius: 3px;
+				color: rgb(34, 34, 34);
+				background-color: rgb(223, 223, 223);
+			}
+		}
+
+		span {
+			color: #ccc;
+		}
+	}
+
+	@import 'lightbox';
+}

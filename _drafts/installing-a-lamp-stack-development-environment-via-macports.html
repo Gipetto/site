@@ -1,0 +1,149 @@
+---
+layout: post
+title: Installing a LAMP stack development environment via MacPorts
+date: 
+type: post
+parent_id: '0'
+published: false
+password: ''
+status: draft
+categories:
+- Computers
+- Web Design &amp; Development
+tags:
+- apache
+- install
+- lamp
+- macports
+- mysql
+- php
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: shawn@topfroggraphics.com
+  display_name: Shawn
+  first_name: Shawn
+  last_name: Parker
+---
+<p>Okay, so I bit the bullet a while back and decided to build my LAMP stack via <a href="http://macports.org">MacPorts</a>. Despite the downsides it gave me the control I needed to make my development environment match my production environment. That's no less true now than it was then.</p>
+<p>What has changed, though, is that MacPorts has gotten just a little bit better with each revision on making sure that what it installs is close to being ready to go. While it doesn't just install and go it sure is close. Got your cup of coffee? Good, then read on if you're interested in getting started with MacPorts for managing your <a href="http://en.wikipedia.org/wiki/LAMP_(solution_stack)">LAMP stack</a>. But be prepared, this isn't just gonna be a list of commands to run, you're actually gonna have to read it as I provide a little bit of the "why" behind the install in hopes that you come away from this with a bit of an understanding of MacPorts as well as a functional LAMP stack.</p>
+<p><!--more--></p>
+<p>Before we get started lets make sure that the built in Apple web server is in fact turned off so that it doesn't conflict with our new, fandagled setup. Open up the System Preferences, go to the Sharing panel, and disable Web Sharing. Alternately you can use <code>sudo apachectl stop</code> to shut down the Apple default web service.</p>
+<p>Also note that any line prefixed with a <code>$</code> is a line that needs to be executed on the terminal.</p>
+<h2>Install MacPorts</h2>
+<p>First step, download the appropriate installer <a href="http://www.macports.org/install.php">from the MacPorts website</a>. MacPorts creates a directory structure for itself in <code>/opt</code>. Most of its executables are installed in <code>/opt/local/bin</code> and most of its configuration files in <code>/opt/local/etc</code>. If you're familiar with *NIX in general and you browse around it a bit you may find some familiar structure, but for the most part is a nicely self contained system. MacPorts will install startup items and package receipts where necessary. </p>
+<p>To make sure you're up to date before doing any installs, type:</p>
+<p><code class="sh">$ sudo port selfupdate</code></p>
+<p>This will update the MacPorts system and its package list from the MacPorts site. The time needed to do this, as well as any of the remaining steps, will depend on the speed of your system. </p>
+<h2>Apache</h2>
+<p>First off, lets install <a href="http://httpd.apache.org/docs/2.2/">Apache</a>. You may be tempted to just install MySQL and PHP and use the built in Apache on your system, or just install PHP and download MySQL from MySQL.com, but its really not worth the hassle. Doing the entire process with one managed system is a lot less upkeep and configuration. So, let's get Apache:</p>
+<p><code class="sh">$ sudo port install apache2</code></p>
+<p>This will install Apache in <code>/opt/local/apache2</code>. By default Apache's executables are not added to <code>/opt/local/bin</code> your best bet is to add at least the apachectl command so that you can get to it easily.</p>
+<p><code>$ cd /opt/local/bin<br />
+$ sudo ln -s /opt/local/apache2/bin/apachectl apache2ctl</code></p>
+<p>I prefer to symlink it in as <code>apache2ctl</code> so that I can still easily control the built in apache if necessary. It doesn't need to happen very often, but when it does life is that much easier.</p>
+<p>If you were watching carefully during the install you noticed some post install instructions fly by on screen. The gist of it is that you can set Apache to start at system boot. If you'd like this, and you probably do, its by far the most convenient issue this command in the terminal:</p>
+<p><code class="sh">$ sudo port load apache2</code></p>
+<p>Apache can also be set to launch at system boot via Apple's Launchd system:</p>
+<p><code class="sh">$ sudo launchctl load -w /Library/LaunchDaemons/org.macports.apache2.plist</code></p>
+<p>This tells Apple's <a href="http://developer.apple.com/macosx/launchd.html">Launchd</a> service to start Apache when booting the computer. You can still start, stop and restart manually if you need to.</p>
+<p>Apache's webroot is located at <code>/opt/local/apache2/htdocs</code>. If you're like me, you prefer to do your development out of your <code>~/Sites</code> folder. This install of MacPorts can be configured for that. Edit your <code>httpd.conf</code> file with your preferred editor and near the bottom you'll find a that needs uncommenting. Find <code>#Include conf/extra/httpd-userdir.conf</code> and remove the <code>#</code> to uncomment the file. This will allow you to access your home folder as you normally would at <code>http://localhost/~username</code>.</p>
+<p>So you should now be ready to start Apache. Issue the command:</p>
+<p><code class="sh">$ sudo apache2ctl start</code></p>
+<p>You should not be able to hit <code>http://localhost</code> and be greeted by a large "<b>It Works!</b>". Next step: MySQL.</p>
+<h2>MySQL</h2>
+<p>Who doesn't love databases? Ok, ok... so, nobody likes to manage them ;) Lets get the ball rolling and install <a href="http://mysql.com/products/enterprise/server.html">MySQL</a>. We'll go for the server install since, well, we need it.</p>
+<p><code class="sh">$ sudo port install mysql5-server</code></p>
+<p>MySQL installs its executables in <code>/opt/local/bin</code>, but inconveniently names them all with the <code>mysql5</code> naming structure. I like shorter (and more like other systems) so I like bypass this by adding the main MySQL <code>bin</code> to my path. Open up your .bashrc file (~/.bashrc - its a hidden file, so you'll need to open it with something that can see hidden files). Here you'll see some other lines that were added by MacPorts. The one we're after right now is the PATH directive. So find the line that starts with <code>export PATH=</code> and add <code>/opt/local/lib/mysql5/bin:</code> to the beginning. This will allow you to call <code>mysql</code>, <code>mysqladmin</code> and <code>mysqldump</code> as you would on any other normal system. (Yes, I know this is contrary to how I set up Apache's alias).</p>
+<p>Again, if you were paying attention, you noticed some post-install instructions fly by at the end of the install. Save those for later, we'll need them after we install PHP. You probably saw all this next stuff go by as well, but I'll cover it just to be sure.</p>
+<p>Set MySQL to load at system boot with the command:</p>
+<p><code class="sh">$ sudo port load mysql5-server</code></p>
+<p>MySQL can also be set to launch at system boot via Apple's Launchd system:</p>
+<p><code class="sh">$ sudo launchctl load -w /Library/LaunchDaemons/org.macports.mysql5.plist</code></p>
+<p>Next we'll need to do some basic setup for MySQL. Lets start by initializing the databases. This gets you the basic MySQL setup with a test database.</p>
+<p><code class="sh">$ sudo -u mysql mysql_install_db5</code></p>
+<p>Next we'll need to set up the root username/password.</p>
+<p><code class="sh">$ mysqladmin -u root password 'new-password'<br />
+$ mysqladmin -u root -h computer-name.local password 'new-password'</code></p>
+<p>The 2nd line isn't really necessary for a local development environment since your access will be limited to just you and your local files.</p>
+<p>MySQL installs its databases in to <code>/opt/local/var/db/mysql5</code> - so make sure this folder is included in your backup plans. You should also have a <code>my.cnf</code> in <code>/opt/local/etc/mysql5</code>. If you don't, copy the file from the MacPorts Build folder: </p>
+<p><code class="sh">$ sudo cp \<br />
+/opt/local/var/macports/software/mysql5/version.number.installed/opt/local/share/mysql5/mysql/my-small.cnf \<br />
+/opt/local/etc/mysql5/my.cnf</code> </p>
+<p>You can start the server with: <code>sudo /opt/local/share/mysql5/mysql/mysql.server start</code>. You should now have a functioning MySQL server.</p>
+<h2>PHP</h2>
+<p><a href="http://php.net/">PHP</a> is the most modular part of the install. Depending on what you need you can install different parts of PHP to make it as lean or as robust as you need. If you've installed PHP via MacPorts before then keep reading as the build structure of PHP has changed. To just get the PHP core all you have to do is:</p>
+<p><code class="sh">$ sudo port install php5 +pear</code></p>
+<p>This will give you just a basic PHP 5 install with <a href="http://pear.php.net/">PEAR</a> support and won't give you any of the goodies like database access and image manipulation. I suggest going for a bit more:</p>
+<p><code class="sh">$sudo port install php5-curl php5-gd php5-http php5-iconv php5-intl php5-mbstring php5-mcrypt php5-openssl php5-sockets php5-tidy php-zip +ssl</code></p>
+<p>I also like to install <code>php5-sqlite</code> for working with SQLite databases, but for web development that's a fringe case.</p>
+<p>The <code>+ssl</code> is a flag included so that when <a href="http://curl.haxx.se/">curl</a> is built that it is built with <a href="http://en.wikipedia.org/wiki/Transport_Layer_Security">SSL</a> support for making HTTPS connections. If you don't, you might have to reinstall curl later on if you encounter failures with HTTPS urls.</p>
+<p>If you want to see all that are available, use <code>port search php5</code> to get a list of available installs. If you want to know a little more about any of them use <code>port info portname</code> to show an expanded blurb on the port. They don't all need to be installed at the same time, so if you need to add or remove something later on, just install or uninstall it and restart Apache for the change to take effect.</p>
+<p>You probably saw the post install instructions fly by again. There's a few commands that need to be run to load up PHP as an Apache Module:</p>
+<p><code class="sh">$ cd /opt/local/apache2/modules<br />
+$ /opt/local/apache2/bin/apxs -a -e -n "php5" libphp5.so</code></p>
+<p>Next we need to make sure that we have a php.ini file. The php.ini file is where PHP is configured. Since we're setting up a development environment we'll start from the development ini:<br />
+<code class="sh">$ sudo cp /opt/local/etc/php5/php.ini-development /opt/local/etc/php5/php.ini</code></p>
+<p>Most of the differences between the the php.ini-development and php.ini-production files are related to error display and management. The production version offers no performance gains and will hide your errors during development. Unless you have specific reasons to want to start from and build up a production like server then start from the development file.</p>
+<p>Next we'll set up a few items in the php.ini file to help with development. Open the php.ini file with your favorite text editor.</p>
+<p>PHP likes to have a time-zone defined to do its date functionality. So find the line that includes <code>date.timezone</code> and set your appropriate time zone here. If you need help getting the correct timezone string for you area you can look it up <a href="http://www.timezoneconverter.com/cgi-bin/findzone.tzc">here</a>. After looking up your country and find your correct time zone the text you want is the linked text in the left hand column. For example: mine here in Denver, USA is "America/Denver".</p>
+<p>Next we need to get MySQL correctly configured. MySQL recently changed over to using a native driver system they call <a href="http://dev.mysql.com/downloads/connector/php-mysqlnd/">mysqlnd</a>. This is nice and all, but it doesn't seem to like to set itself up correctly in the php.ini file. You'll need to point two settings in the php.ini file to the <code>mysql.sock</code> file so that PHP can talk directly to MySQL using a unix socket and not have to connect over TCP/IP which is slower.</p>
+<p>Pull the socket location from your my.cnf file and enter it in your php.ini file for <code>mysql.default_socket</code>, <code>mysqli.default_socket</code> and <code>pdo_mysql.default_socket</code>. So, for example, you'd have:</p>
+<p><code class="sh">pdo_mysql.default_socket= '/opt/local/var/run/mysql5/mysqld.sock'<br />
+...<br />
+mysql.default_socket = '/opt/local/var/run/mysql5/mysqld.sock'<br />
+...<br />
+mysqli.default_socket = '/opt/local/var/run/mysql5/mysqld.sock'</code></p>
+<p>That will explicitly tell PHP where the MySQL socket file is.</p>
+<h2>UserDirs</h2>
+<p><a href="http://httpd.apache.org/docs/current/mod/mod_userdir.html">mod_userdir</a> allow you to get direct access to your user Sites folder by using <code>http://localhost/~username/</code>. In your <code>/opt/local/apache2/conf/httpd.conf</code> file find the line near the bottom that looks like this:</p>
+<p><code class="sh"># User home directories<br />
+Include conf/extra/httpd-userdir.conf</code></p>
+<p>And un-comment the 2nd line (remove the <code>#</code>).</p>
+<p>The <code>/opt/local/apache2/conf/extra/httpd-userdir.conf</code> needs a slight tweak to make it developer friendly. The default <code>AllowOverride</code> directive, while good for standard UserDir configs, is a bit restrictive for our needs. Since we know what we're doing and we need a bit more of a liberal setup change the <code>AllowOverride</code> to just be:</p>
+<p><code class="sh">AllowOverride All</code></p>
+<p>If you need to symlink files that you user doesn't own (pretty rare on a development machine, but certainly a possibility) then you'll also want to change the <code>Options</code> line to change <code>SymLinksIfOwnerMatch</code> to <code>FollowSymLinks</code>.</p>
+<p>This will give us what we need to run a myriad of site configs without Apache getting in the way.</p>
+<h2>Test</h2>
+<p>Now lets test the install. Create a file in your home directory named <code>info.php</code>. Inside it add:</p>
+<p><code class="php">&lt;?php phpinfo(); ?&gt;</code></p>
+<p>Now restart apache with the command:</p>
+<p><code class="sh">$ sudo apache2ctl restart</code></p>
+<h2>VirtualHosts</h2>
+<p><a href="http://httpd.apache.org/docs/current/vhosts/">VirtualHosts</a> allow you to set up dedicated domains for projects on your computer. So instead of using <code>http://localhost/~username/sitename/</code> you could set up a VirtualHost to treat the project like its own site, ie: <code>http://sitename.local</code>. Some sites work fine no matter how they're set up, but others require or are just easier to manage with a domain. I personally make a VirtualHost for each project that I work on so that it more closely matches how the site will be deployed.</p>
+<p>VirtualHosts are defined in a file located at <code>/opt/local/apache2/conf/extra/httpd-vhost.conf</code>. This file needs to be enabled in your main httpd.conf file first, so open the file <code>/opt/local/apache2/conf/httpd.conf</code> and find the line near the bottom that looks like this:</p>
+<p><code class="sh"># Virtual hosts<br />
+#Include conf/extra/httpd-vhosts.conf</code></p>
+<p>And un-comment the 2nd line (remove the <code>#</code>).</p>
+<p>Now we can edit the <code>httpd-vhosts.conf</code> file to add our projects.</p>
+<h2>phpMyAdmin</h2>
+<p>Next we'll set up an easy way to administer the databases. The easiest way is to install <a href="http://www.phpmyadmin.net/home_page/index.php">phpMyAdmin</a>.</p>
+<p><code class="sh">$ sudo port install phpmyadmin</code></p>
+<p>This will install PHPMyAdmin to <code>/opt/local/www/phpmyadmin/</code>. Once installed lets set up an alias for it. Lets open the file <code>/opt/local/apache2/conf/httpd.conf</code> with a text editor. At the bottom of the file add:</p>
+<p><code class="sh"># PHPMyAdmin<br />
+&lt;IfModule alias_module&gt;<br />
+	Alias /phpmyadmin /opt/local/www/phpmyadmin<br />
+	&lt;Directory /opt/local/www/phpmyadmin&gt;<br />
+	    Options -Indexes<br />
+	    AllowOverride All<br />
+	    Order deny,allow<br />
+	    Allow from 127.0.0.1<br />
+	&lt;/Directory&gt;<br />
+&lt;/IfModule&gt;</code></p>
+<p>Then restart apache:</p>
+<p><code class="sh">$ sudo apache2ctl restart</code></p>
+<p>What this does is set up an alias to <code>/phpmyadmin</code> on your machine to load phpMyAdmin and to only allow it to be loaded when called from the IP address of your local machine so that no remote editing is possible. If you need remote editing to be allowed then change <code>Allow from 127.0.0.1</code> to <code>Allow from all</code>.</p>
+<p>Next we need to configure phpMyAdmin. In your browser go to <code>http://localhost/phpmyadmin/setup</code>. Here we'll make a configuration that we'll copy and paste in to a file in your phpMyAdmin source directory.</p>
+<p><code class="sh">// @TBD</code></p>
+<h2>Extras</h2>
+<p>.bashrc tricks, permissions, etc...</p>
+<p><code class="sh">alias mysqlstart='sudo /opt/local/share/mysql5/mysql/mysql.server start'<br />
+alias mysqlstop='sudo /opt/local/share/mysql5/mysql/mysql.server stop'<br />
+alias lampstart='mysqlstart; wait; sudo apache2ctl start;'<br />
+alias lampstop='mysqlstop; wait; sudo apache2ctl stop;'<br />
+alias apache_error='sudo tail /opt/local/apache2/logs/error_log'<br />
+alias apache_access='sudo tail /opt/local/apache2/logs/access_log'</code></p>
+<h2>Staying up to date</h2>
+<p><code class="sh">$ sudo port selfupdate<br />
+$ sudo port -c -u upgrade outdated</code></p>

@@ -1,0 +1,34 @@
+---
+layout: default
+section: home
+---
+
+{%- for post in paginator.posts -%}
+<section class="drivel">
+    <h3><a href="{{ site.url }}{{ post.url }}" rel="canonical">{{ post.title | escape }}</a></h3>
+    <p class="dates-n-stuff">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ post.date | date: date_format }}
+    </p>
+    {{ post.excerpt }}
+</section>
+<hr class="divider" />
+{%- endfor -%}
+
+<div class="pagination">
+    {% if paginator.previous_page %}
+        <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="previous" rel="prev">
+        &laquo; Newer
+        </a>
+    {% else %}
+        <span class="previous">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    {% endif %}
+    <span class="page_number ">
+        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+    {% if paginator.next_page %}
+        <a href="{{ site.url }}{{ paginator.next_page_path }}" class="next">Older &raquo;</a>
+    {% else %}
+        <span class="next" rel="next">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    {% endif %}
+</div>

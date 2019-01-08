@@ -1,0 +1,6 @@
+_site
+.tweet-cache
+.sass-cache
+.jekyll-metadata
+.vscode
+.DS_Store

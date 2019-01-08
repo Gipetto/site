@@ -1,0 +1,44 @@
+---
+layout: post
+title: Filter custom WP_Query by Popularity Contest popularity
+date: 
+type: post
+parent_id: '0'
+published: false
+password: ''
+status: draft
+categories:
+- WordPress
+tags:
+- add_filter
+- fields
+- filter
+- popularity
+- popularity contest
+- posts_request
+- query
+- wordpress
+- wp_query
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: shawn@topfroggraphics.com
+  display_name: Shawn
+  first_name: Shawn
+  last_name: Parker
+---
+<p><code class="php">&lt;?php<br />
+public function popularity_filter($fields, $query_obj) {<br />
+	// run once<br />
+	remove_filter('posts_request', array($this, 'posts_request_filter'), 10, 2);</p>
+<p>	global $wpdb;<br />
+	if (!empty($wpdb->ak_popularity)) {<br />
+		$fields['fields'] .= ', pop.total';<br />
+		$fields['join'] .= ' LEFT JOIN '.$wpdb->ak_popularity.' AS pop ON (wp_posts.ID = pop.post_id)';<br />
+		$fields['orderby'] = 'pop.total DESC, '.$fields['orderby'];<br />
+	}</p>
+<p>	return $fields;<br />
+}<br />
+add_filter('posts_clauses', array($this, 'popularity_filter'), 10, 2);<br />
+?&gt;</code></p>

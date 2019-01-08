@@ -1,0 +1,34 @@
+---
+layout: post
+title: Recursively Remove Extended Attributes
+date: 
+type: post
+parent_id: '0'
+published: false
+password: ''
+status: draft
+categories:
+- Life
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: shawn@topfroggraphics.com
+  display_name: Shawn
+  first_name: Shawn
+  last_name: Parker
+---
+<p>Every once in a while I run in to a problem with downloaded files having extended attributes of <code>com.apple.quarantine</code> that prohibit the files from being opened.  <code>com.apple.quarantine</code> is a flag that OS X uses to label applications that have been downloaded from the internet so that it can throw a dialog asking you to confirm opening the application, but this also has the side effect of disallowing the file from being accessed by a web browser or included in to a PHP application. </p>
+<p>For 1 or 2 files the files can be opened to trigger the dialog, but for larger libraries this becomes really troublesome.</p>
+<p>This is a bash snipped that will recursively remove all extended attributes from a directory. Add it to your <code>.profile</code> or .bashrc and run it from the directory where you're having issues.</p>
+<p><code class="sh">rmextattr() {<br />
+	find . | while read filename<br />
+	do<br />
+	     while read attr<br />
+	     do<br />
+	           echo "removing ${attr} from ${filename}"<br />
+	           xattr -d "${attr}" "${filename}"<br />
+	     done < <(xattr "${filename}")<br />
+	done<br />
+}</code></p>

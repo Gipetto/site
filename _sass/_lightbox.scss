@@ -1,0 +1,54 @@
+.lightbox {
+    display: none;
+    z-index: 999;
+
+    &:target {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &:before {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.7);
+        content: "";
+        cursor: default;
+    }
+
+    figure {
+        background: white;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+        z-index: 9999;
+        max-width: 95%;
+        padding: 5px;
+        position: relative;
+
+        img {
+            height: auto;
+            max-width: 100%;
+            width: auto\9
+        }
+
+        figcaption {
+            padding: 5px 0 2px 0;
+            position: relative;
+            display: block;
+            text-align: center;
+
+            a {
+                font-size: 0.9em;
+                color: #888;
+            }
+        }
+    }
+}

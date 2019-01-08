@@ -1,0 +1,26 @@
+.grid {
+	display: flex;
+
+	&.grid-col {
+		flex-direction: column;
+		.grid-cell {
+			flex: 1;
+		}
+	}
+
+	&.grid-row {
+		flex-direction: row;
+		.grid-cell {
+			flex: none !important;
+		}
+	}
+}
+
+#it {
+	#stuff {
+		width: 69.5%;
+	}
+	#less-important-stuff {
+		width: 30.5%;
+	}	
+}
