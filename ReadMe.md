@@ -23,16 +23,3 @@ You may have to install `nmatrix` and `narray` gems first, then install `gsl`.
 
 	{% flickr_photo '17141038408' %} 
 
-## Todo
-
-- Clean up author data
-- ~~Cowsay~~
-- ~~Threads~~
-- wordcamp post downloads
-- downloads for "Classes for file uploading in PHP"
-- xhtmlr image (and others from that dir)
-- add body class for page type, then use same class on nav items to auto-highlight active nav item
-- post-process with grunt to minify html?
-- kill all <!--more--> tags
-- recent posts widget
-- related posts lists
