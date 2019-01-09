@@ -34,4 +34,5 @@ You may have to install `nmatrix` and `narray` gems first, then install `gsl`.
 - add body class for page type, then use same class on nav items to auto-highlight active nav item
 - post-process with grunt to minify html?
 - kill all <!--more--> tags
-- don't do paginated listing for home and older... just show the latest post on home, then use next/previous post links to filter down.
+- recent posts widget
+- related posts lists

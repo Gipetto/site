@@ -28,13 +28,16 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
-gem "hpricot"
-gem "jekyll-twitter-plugin" # only to satisfy the minima base theme
-gem "open_uri_redirections"
-gem 'jekyll-paginate'
-gem 'flickraw-cached'
-gem 'classifier-reborn'
+# Performance boost for LSI
 gem 'narray'
 gem 'nmatrix'
 gem 'gsl'
+
+# Gems-n-stuff
+gem "hpricot"
+gem "jekyll-twitter-plugin" # only to satisfy the minima base theme
+gem "open_uri_redirections"
+# gem 'jekyll-paginate'
+gem 'flickraw-cached'
+gem 'classifier-reborn'
 # gem 'jekyll-include-cache'

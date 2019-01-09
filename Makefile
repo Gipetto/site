@@ -1,10 +1,10 @@
 .PHONY: build, watch, serve
 
 build:
-	jekyll build --profile
+	jekyll build --lsi --profile
 
 watch:
-	jekyll build --watch
+	jekyll build --lsi --watch
 
 serve:
-	jekyll serve --livereload --incremental --profile
+	jekyll serve --lsi --livereload --incremental --profile

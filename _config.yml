@@ -12,8 +12,8 @@ timezone: America/Los_Angeles
 # Build settings
 markdown: kramdown
 theme: minima
-paginate: 5
-paginate_path: /:num/
+# paginate: 5
+# paginate_path: /:num/
 excerpt_separator: <!--more-->
 feed:
   path: feed
@@ -21,7 +21,7 @@ plugins:
 #  - jekyll-seo-tag
 #  - jekyll-sitemap
   - jekyll-feed
-  - jekyll-paginate
+#  - jekyll-paginate
   - jekyll-twitter-plugin
 kramdown:
   input: GFM
