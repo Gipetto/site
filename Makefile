@@ -7,4 +7,4 @@ watch:
 	jekyll build --lsi --watch
 
 serve:
-	jekyll serve --lsi --livereload --incremental --profile
+	jekyll serve --trace --lsi --livereload --incremental --profile
