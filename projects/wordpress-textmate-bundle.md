@@ -179,10 +179,6 @@ If you don't use GetBundles then skip on over to the <a href="http://github.com/
 - <b>Git:</b> If you're familiar with Git then grab the Public Clone url and pull the plugin down to your `~/Library/Application Support/TextMate/Bundles` directory (its OK to create this structure if it doesn't exist). Reload your bundles or restart TextMate to load the bundle.
 - <b>Direct download:</b> If you don't do Git then click on the download link and pull down your preferred compressed format. Decompress it to `~/Library/Application Support/TextMate/Bundles` (its OK to create this structure if it doesn't already exist). Reload your bundles or restart TextMate to load the bundle.
 
-#### Update History {#update-history}
-
-About the closest I'll get to an official changelog on this is the GitHub commit log: <a href="changelog">View Commit History</a>.
-
 #### Please Donate {#donate}
 
 Donations buy donuts. Donuts help keep us motivated. When we&rsquo;re motivated we make plugins. Please help keep us motivated to make more useful contributions to the coding community.

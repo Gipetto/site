@@ -35,10 +35,6 @@ CowSay can be installed directly or via <a href="https://getcomposer.org">Compos
 
 Issues are handled via <a href="https://github.com/Gipetto/CowSay/issues">PHP-Cowsay Github Issues</a>.
 
-#### Update History {#update-history}
-
-About the closest I'll get to an official changelog on this is the GitHub commit log: <a href="changelog">View Commit History</a>.
-
 #### Please Donate {#donate}
 
 Donations buy donuts. Donuts help keep us motivated. When we&rsquo;re motivated we make plugins. Please help keep us motivated to make more useful contributions to the coding community.

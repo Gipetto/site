@@ -58,8 +58,6 @@ Options are:
 #### Get it here {#download}
 Check out the <a href="http://top-frog.com/stuff/togglr/" target="_blank" rel="external">Togglr Plugin in action</a>.<br /> The source can be grabbed from <a href="http://github.com/Gipetto/jquery.togglr.js" target="_blank" rel="external">the jQuery Togglr GitHub Project Page</a>.
 
-<a href="changelog">View the project changelog here</a>.
-
 #### Please Donate
 Donations buy donuts. Donuts help keep us motivated. When we&rsquo;re motivated we make plugins. Please help keep us motivated to make more useful contributions to the coding community.
 
