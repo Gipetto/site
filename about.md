@@ -4,9 +4,9 @@ title: About
 section: about
 ---
 
-Well, this is my little corner of insanity in an html wrapper. Feel free to browse around, but be warned, there is no warranty or statement of competency, so you really shouldn’t be reading this at all. It'll rot your brain.
+<img class="stupid-wookiee" src="{{ site.url }}/assets/chicken.jpg" alt="Wookiee with Chicken Hat" /> Well, this is my little corner of insanity in an html wrapper. Feel free to browse around, but be warned, there is no warranty or statement of competency, so you really shouldn’t be reading this at all. It'll rot your brain.
 
-**In a nutshell I am:**
+#### In a nutshell I am:
 
 - a husband
 - a dog person
@@ -16,7 +16,7 @@ Well, this is my little corner of insanity in an html wrapper. Feel free to brow
 - a Mac geek
 - a motorcyclist
 
-**And to get a bit more formal about it:**
+#### And to get a bit more formal about it:
 
 Shawn “Wookiee” Parker earned his bachelor’s degree in visual arts with an emphasis in photography from the University of Northern Colorado. After graduating, he moved to southern Colorado and began his career as a photojournalist, where he won a first-place award from the Associated Press for general news photography. Later, he relocated to Denver and started working in pre-press and graphic design while also teaching himself web development. 
 

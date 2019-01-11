@@ -5,7 +5,7 @@ section: projects
 ---
 The Post Password Token plugin lets you issue secret urls that allow readers to access protected content without having to enter a password. It extends the default WordPress post password protection functionality by creating secret urls to the post that have an encoded token. This is similar to the guest pass functionality that can be found on Flickr.
 
-&#x2193; <a href="#download">Skip to download link</a>
+<a class="darr" href="#download">Skip to download link</a>
 
 ####  Who is it for?
 

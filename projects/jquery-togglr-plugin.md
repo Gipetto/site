@@ -6,7 +6,7 @@ section: projects
 
 The jQuery Togglr Plugin is designed to eliminate some of the redundant code that we end up using a lot at work. A lot of admin areas in WordPress benefit from the ability to show and hide content. With the Togglr Plugin this can be achieved quickly and consistently and it degrades nicely if some other plugin kills your javascript.
 
-&#x2193; <a href="#download">Skip to download link</a>
+<a class="darr" href="#download">Skip to download link</a>
 
 #### Usage
 

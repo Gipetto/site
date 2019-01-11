@@ -12,7 +12,7 @@ section: projects
 
 This is a Clipping bundle for BBEdit 9+ to help make working with WordPress (hopefully) a lot easier. These clippings will be maintained for the current version of WordPress. No conscious effort will be maintained to provide backward compatibility.
 
-&#x2193; <a href="#download">Skip to download link</a>
+<a class="darr" href="#download">Skip to download link</a>
 
 Function completion is enabled under the PHP scope.
 

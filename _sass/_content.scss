@@ -31,6 +31,32 @@
 		&:hover {
 			text-decoration: underline;
 		}
+
+		@mixin linkHanger() {
+			margin-right: 3px;
+			display: inline-block;
+			text-decoration: none !important;
+		}
+
+		&.chevron {
+			&:before {
+				content: '\000BB';
+				@include linkHanger();
+			}
+		}
+
+		&.hellip {
+			&:after {
+				content: '\02026';
+			}
+		}
+
+		&.darr {
+			&:before {
+				content: '\02193';
+				@include linkHanger();
+			}
+		}
 	}
 
 	p {
@@ -46,6 +72,15 @@
 			padding: 2px;
 			border: 1px solid lightgray;	
 		}
+	}
+
+	.stupid-wookiee {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		border: 1px solid #f4feee;
+		float: right;
+		margin: 0 10px 0 35px;
 	}
 
 	.drivel {
@@ -201,4 +236,23 @@
 	}
 
 	@import 'lightbox';
+
+	.not-found {
+		padding: 1em 3em;
+		text-align: center;
+
+		h2 {
+			font-size: 8em;
+			margin: 1rem 0 0 0;
+			color: #dbdbdb;
+			text-shadow: 
+				1px 1px #f38e4f, 
+				2px 2px #f38e4f, 
+				3px 3px #f38e4f,
+				4px 4px #f38e4f,
+				5px 5px #f38e4f,
+				6px 6px #f38e4f,
+				7px 7px #f38e4f;
+		}
+	}
 }

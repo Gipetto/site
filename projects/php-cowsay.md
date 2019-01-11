@@ -5,7 +5,7 @@ section: projects
 ---
 PHP-CowSay is just that, a PHP port of the Cowsay *nix command line utility. This library is not designed for command line use. You should install the original Cowsay for that.
 
-&#x2193; <a href="#download">Skip to download link</a>
+<a class="darr" href="#download">Skip to download link</a>
 
 ``` php
 $bessie = new Cow('Hello, Farm!');

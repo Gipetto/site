@@ -10,7 +10,7 @@ Usage is very straight forward and is designed to provide a backwards compatible
 
 Is it a new idea? No. Is it unique? No, in fact, there are other plugins that boast more configuration options and more languages to highlight. Is it lightweight and fast? Absolutely. The Text_Highlighter package, though a bit limited, is very efficient and that keeps server loads way down. This is the main reason why I prefer to depend on an outside package.
 
-<p>&#x2193; <a href="#download">Skip to download link</a></p>
+<a class="darr" href="#download">Skip to download link</a>
 
 #### Example
 

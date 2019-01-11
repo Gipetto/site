@@ -14,7 +14,7 @@ section: projects
 
 The WordPress TextMate Bundle is a <a href="http://macromates.com">TextMate</a> bundle built with the sole purpose of reducing the amount of time spent digging around the <a href="http://wordpress.org">WordPress</a> core to look up the little things that we work with every day.
 
-<p>&#x2193; <a href="#download">Skip to download link</a></p>
+<a class="darr" href="#download">Skip to download link</a>
 
 The plugin features auto-completion of WordPress functions, snippets for common sections of code, and templates for WordPress components. We even snuck in function completion for the <a href="http://carrington-blog.com">Carrington</a> template framework functions. We're always making improvements as we find more that we want covered by the plugin (merged from WordPress MU with the WordPress 3.0 code base consolidation).
 
