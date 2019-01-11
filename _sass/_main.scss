@@ -4,7 +4,30 @@
 body {
 	background-color: #ced6c9;
 	font-family: "Lucida Grande",Arial,Helvetica,sans-serif;
-	
+
+	@mixin activeNav($activeClass) {
+		&.#{$activeClass} {			
+			& .#{$activeClass} {
+				a {
+					&:before, &:after {
+						color: rgba(255, 255, 255, 0.5)
+					}
+					&:before {
+						content: '[';
+					}
+					&:after {
+						content: ']';
+					}
+				}
+			}
+		}
+	}
+
+	@include activeNav('archives');
+	@include activeNav('photography');
+	@include activeNav('projects');
+	@include activeNav('about');
+
 	#bag-o-holding {
 		background-color: #f4feee;
 		border: 1px solid #9ca397;
