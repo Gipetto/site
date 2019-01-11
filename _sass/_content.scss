@@ -92,11 +92,39 @@
 		}
 
 		&.archives {
+			h3 {
+				&:before {
+					content: "§";
+					color: #ccc;
+					float: left;
+					margin-left: -15px;
+				}
+			}
+
 			ul {
 				list-style: none outside;
+				margin-left: 0;
+				padding-left: 1em;
 
 				li {
+					display: flex;
 					padding: 3px 0;
+					font-size: 1em;
+					
+					div {
+						padding: 0 2px;
+						&:first-child {
+							width: 50px;
+							text-align: right;
+						}
+					}
+
+					a {
+						text-decoration: none;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
 				}
 			}
 		}

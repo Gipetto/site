@@ -6,19 +6,21 @@ body {
 	font-family: "Lucida Grande",Arial,Helvetica,sans-serif;
 
 	@mixin activeNav($activeClass) {
-		&.#{$activeClass} {			
-			& .#{$activeClass} {
-				a {
-					&:before, &:after {
-						color: rgba(255, 255, 255, 0.5)
+		&.#{$activeClass} {
+			nav {
+				& .#{$activeClass} {
+					a {
+						&:before, &:after {
+							color: rgba(255, 255, 255, 0.5)
+						}
+						&:before {
+							content: '[';
+						}
+						&:after {
+							content: ']';
+						}
 					}
-					&:before {
-						content: '[';
-					}
-					&:after {
-						content: ']';
-					}
-				}
+				}	
 			}
 		}
 	}
