@@ -11,7 +11,7 @@ categories:
 ---
 Just learned these and thought I'd log it for posterity (and so I don't forget). I'm always looking to do things, fun things, in the terminal and thought these were cool.
 
-<!--more-->
+
 
 The first is a way to easily add that long, long path to your next command in Terminal. Say you're looking to see what's in a directory and you do:
 

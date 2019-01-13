@@ -15,7 +15,7 @@ Site still remains xhtml compliant, much to my surprise. I guess I can still lea
 
 So I guess this means that I should start to use it for what I originally intended: as a way for me to just get my thoughts out and have a place to babble.
 
-<!--more-->
+
 
 So, that should commence soon, but right now I'm still creating entries in phpMyAdmin – I need to create an entry page so this is easier and automated, and so I can do it from outside the home. I also need to change the URL scheme for the stories – right now they can't accomodate multiple entries on one date, but that is easy to change and I should have that completely in place soon. Maybe even tonight.
 

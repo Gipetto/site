@@ -17,7 +17,7 @@ I've got a nagging feeling that my position on tipping at restaurants when you p
 
 Typically when going to pick up carry out all you're doing is being handed a plastic bag with your food and a bill. I pay for most things by debit card and there is always that little nagging tip line on the receipt and in some places there is a tip jar next to where they ring you up.
 
-<!--more-->
+
 
 I feel odd when handing back the receipt with no tip on it but by the time I get out the door I feel better – probably because I'm not face to face with someone who typically augments a base pay with the day's tips. I figure that I'm getting the base level of service – the advertised food and a container to put it in. That's worth the price on the menu or I wouldn't have ordered. But I haven't been served, nobody has brought me a refill or asked if I need katsup. So I logically thing that there shouldn't be a tip.
 

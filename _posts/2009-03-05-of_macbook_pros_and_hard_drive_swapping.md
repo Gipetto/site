@@ -20,7 +20,7 @@ Well, lo and behold, Apple done made a stupid. On the one hand they come up with
 
 That's right – the stupid proprietary nubs that are used to mount a hard drive in the new MacBooks and MacBook Pros cannot be obtained by us mere mortals.
 
-<!--more-->
+
 
 I spent 15 minutes trying to get an Apple store sales person to even understand WHY I would want to be able to quickly swap hard drives. Then I waited another 15 minutes while he went in the back and supposedly looked through the parts bin and checked the parts catalog. The part is not available. He even pointed out that when they do a hard drive swap in store the new hard drive that comes in from Apple doesn't have the nubs on it and they have to re-use the nubs that are already in the laptop.
 

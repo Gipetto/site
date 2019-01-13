@@ -28,7 +28,7 @@ tags:
 
 I never really listened to these guys until recently and am glad I had a chance to see them live before they pack it in (though, judging by this performance they've got a lot of time left in them). I was a bit worried that this would be a &#8220;reunion tour&#8221; quality performance but the energy level was better than any show that I've seen in the last few years.
 
-<!--more-->
+
 
 {% flickr_photo '5287818109' %}
 

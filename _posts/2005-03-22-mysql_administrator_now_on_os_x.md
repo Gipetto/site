@@ -11,7 +11,7 @@ categories:
 ---
 Happy day happy day. Not only is it my Birthday but [MySQL Administrator](http://www.mysql.com/products/administrator/) has finally been released for OS X.
 
-<!--more-->
+
 
 This is THE complete server management tool for mySQL servers. User management. Performance tools, monitoring. Its all there. I'm not sure how much it will do for you if you don't have total control of your mySQL server but for those of us that have to maintain servers this is a wonderful addition to the arsenal.
 

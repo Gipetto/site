@@ -19,7 +19,7 @@ I'm down and feeling lazy. I'm having a hard time applying myself and concentrat
 
 It could be that I've not been able to really finish a project at work that I've needed to do for some time. It's all been rush stuff that other people decide are more important. I need a kick in the ass.
 
-<!--more-->
+
 
 I've got great stuff to do, using RSS feeds as a way for resellers to show the most up to date info on products, a blog so our c-level folks can talk to resellers, redesigned product pages that make our information much easier to browse, a redesign of the crappy Support Wizard system (yes, that's the real name – stay away from it if you've been looking into it), a redesign of our eStore from the standard templates, etc… 
 

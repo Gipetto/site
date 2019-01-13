@@ -25,7 +25,7 @@ Artist Melody Sealman and a group of cohorts arranged thousands of plaster frogs
 
 Unfortunately a good deal of the frogs along other areas of the 16th Street Mall were swept up by maintenance crews.
 
-<!--more-->
+
 
 Obviously by the two photos I chose to display, the feature she put together around the &#8220;king&#8221; centerpiece was my favorite. All the little frogs were gathered around, as if waiting for his command to pounce.
 

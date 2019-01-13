@@ -25,15 +25,15 @@ While its not the best scenario right now it does use existing equipment and get
 
 I may have a plan to replace it though.
 
-<!--more-->
 
-## To buy or not to buy
+
+#### To buy or not to buy
 
 I've been wanting a network addressable camera for quite some time. That would really give me freedom to put the camera just about anywhere since it doesn't require the camera to be nearby like this Logitech QuickCam does.
 
 I'm just debating wether I want to spend money on that because the el-cheapo ones start around $80 and I can't just buy the cheapest one. That wouldn't be right.
 
-## Possible interim improvement
+#### Possible interim improvement
 
 I had an idea this morning that I'm gonna have to play with. Our little Nikon Coolpix 4300 is sitting mostly unused and I'm gonna have to see if Evocam can use that. If it can the autofocus and better exposure capability will be a huge improvement over the QuickCam. I'll have to play with it a bit tonight and see.
 

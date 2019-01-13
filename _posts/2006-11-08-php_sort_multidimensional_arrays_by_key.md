@@ -23,7 +23,7 @@ tags:
 
 So, I had to do some array sorting this week and finally bit the bullet and wrote a class to handle it. If you've got the need to sort a multidimensional array by a sub-array key then this might be of interest to you.
 
-<!--more-->
+
 
 I often have something like this:
 
@@ -36,7 +36,7 @@ $a['abrova'] = array('name' => 'aNn', 'age' => '2');
 
 and need to sort by, say, the name. So I wrote this script to take care of that. Since I have both PHP4 and PHP5 environments I wrote for both.
 
-## PHP5
+#### PHP5
 
 ``` php
 /**
@@ -78,7 +78,7 @@ class AP_Array_SortByKey {
 }
 ```
 
-## PHP4
+#### PHP4
 
 ``` php
 class AP_Array_SortByKey {
@@ -97,7 +97,7 @@ class AP_Array_SortByKey {
 
 As you can tell, I was lazy and didn't bother to comment the PHP4 version.
 
-## Usage
+#### Usage
 
 It differs slightly between PHP4 and PHP5 because PHP4 doesn't understand static class members and methods.
 
@@ -123,7 +123,7 @@ $a[2] = array('name' => 'bill','age' => '3');
 $a[3] = array('name' => 'Sam','age' => '4');
 ```
 
-## Drawbacks
+#### Drawbacks
 
 There's only one that I can think of and that is that this class will strip the first level keys as it reorders. I'm not sure how to keep them without making it much more complex and, really, that loss doesn't worry me.
 

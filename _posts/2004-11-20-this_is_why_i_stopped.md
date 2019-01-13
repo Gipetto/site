@@ -17,7 +17,7 @@ So why did I do it again if all I do is complain about how much work has to be d
 
 Who knows. I think deep down I still like making that extra money because now it becomes play money instead of grocery money.
 
-<!--more-->
+
 
 This particular job doesn't serve to teach me anything new but there is one that does. One that I've been putting off. It is one that could possibly make money for just outputting clean code and having good organization. But I have been dragging my feet on it. I think I'm scared a little on how much commitment it will take.
 

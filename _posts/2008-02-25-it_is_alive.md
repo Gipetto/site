@@ -39,9 +39,9 @@ tags:
 ---
 After a probably much non-missed stint of downtime this piece of shit blog is finally back up and running. The upgrade process took a bit more than expected. Read on for the whole boring story.
 
-<!--more-->
 
-## Dink, donk… OW!
+
+#### Dink, donk… OW!
 
 While upgrading the hard drive died. Figures. So I took the opportunity to do a few things that I've been wanting to do. I rearranged the hard drives a bit and also decided to upgrade. I ordered a SATA 300 PCI card and purchased a 500 GB SATA 300 drive. If I can get to CompUSA again before it closes, and after it does it next round of markdowns I'll purchase another one for a total of 1GB of storage. That'll be nice since I'm not nearly as diligent about backups as I should be. 
 
@@ -51,7 +51,7 @@ I do have an extra bay under the DVD drive, but its currently stuffed with a fan
 
 That leaves me with the possibility of 1 GB of internal space and not enough room in the Firewire bay to back it up. It doesn't make much sense to mirror my main drive since its not a sync backup that I'm interested in – I want the versioned backups that I can get via Time Machine. So I'm in a bit of a pickle.
 
-## Less Noise
+#### Less Noise
 
 On the upside I was able to replace all the fans in the MDD and get it to make 1/5 the noise that it made before, and get it to run 4 degrees cooler on average. 
 

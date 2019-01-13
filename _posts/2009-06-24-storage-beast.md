@@ -30,7 +30,7 @@ Unibody MacBook Pro + MCE OptiBay + Seagate Momentus 500GB drive = 768 GB of use
 
 I bit the bullet and purchased the MCE OptiBay and a big fat hard drive for my MacBook Pro. I needed more space to allow my penchant for virtual machines to grow as well as keep my ever expanding music library with me instead of having it live only at home.
 
-<!--more-->
+
 
 Though its been worth it, it could be better. Installation was a bit odd as the hard drive carrier from MCE didn't fully fit as a replacement to the internal DVD bay. I had to put a spacer in there with the assembly to limit its side to side movement because they only provided mount points for 1 of the 3 mounting screws. Look at [step #12 of ifixit.com's teardown](http://www.ifixit.com/Teardown/MacBook-Pro-15-Inch-Unibody/590/2#s2980). The two screws circled in orange are not accounted for in the OptiBay assembly, leaving the bay to possibly move side to side. This was pretty disappointing but not a deal breaker since I was able to securely rig it in there with a little spacer. If I were smart I would have waited to do the install so that I could document little grievances like this, but, alas, I didn't. There's plenty of pics of the actual assembly out there, so that's OK.
 

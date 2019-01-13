@@ -13,7 +13,7 @@ I'm gonna get in trouble for this.
 
 This is a commentary on Tom's recent article entitled [Not so new Tiger](http://www.milkbasilica.com/?m=23). Since Tom doesn't have comments up on his new site yet I'll add some notes here about this article. While some good points were raised there are a few other things to be considered. And, no, I'm not picking on you Tom, I just found a few things to comment on.
 
-<!--more-->
+
 
 **Spotlight**
 

@@ -25,7 +25,7 @@ It happened about 3 weeks ago now but I should probably post the pics anyway. I 
 
 I won't babble too much, I'll just tell ya about the pics. The first one here is my dad's car. The 2nd and 3rd aren't anybody I know but they ended up as cool pics.
 
-<!--more-->
+
 
 The shots are bit soft. I couldn't track these guys manually and my old camera just couldn't push the autofocus on my lens fast enough to get hard focus. Couple that with putting a doubler on an 80-200 to get a little extra reach and the pics end up being a bit soft. S'okay though – not bad for not having shot seriously in quite some time.
 

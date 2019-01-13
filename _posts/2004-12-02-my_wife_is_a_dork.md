@@ -11,7 +11,7 @@ categories:
 ---
 Got a phone call from my wife this afternoon. She was pretty frantic and upset. She had gone to lunch, come back to the office, worked for a while and was getting ready to head out to a dentist appointment. It was then that she realized that she could not find her purse or her keys.
 
-<!--more-->
+
 
 Now, I have to admit that at this point my reaction was mixed. I was concerned because it is a huge undertaking to take care of everything that you lose when you lose a wallet or a purse, not to mention keys. But there was a part of me that was upset because I had finally found time to bury myself in coding a website. I quickly got over it, it was a fleeting thought, but I still thought it…
 

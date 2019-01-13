@@ -16,7 +16,7 @@ tags:
 ---
 So, this whole post might end up being 100% personal preference, but lets explore the new mouse from Apple, the Mighty Mouse. I have to wonder just what is going on over at Apple and if maybe I'm the only one who sees fault in the basic design of Apple's current lineup of mice.
 
-<!--more-->
+
 
 I really haven't enjoyed an Apple mouse since beige was done away as a case color. Ever since I thought that Apple has been messing with something that should be more ergonomic than they've chosen to make it.
 

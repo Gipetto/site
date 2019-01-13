@@ -13,7 +13,7 @@ Well, good news came down the pipe today at work – I get to shed the Jr. Web D
 
 I guess I could just sum that up as $geek++;
 
-<!--more-->
+
 
 The surprising part is that I'll be making a bit more than I asked for in this move. What I had asked for when discussing moving up in the company would be at the very beginning of what this position deserved to be paid and what my boss did was push for me to get a bit over that. So not only do I shed a putrid Jr. moniker I gain a handsome new salary.
 

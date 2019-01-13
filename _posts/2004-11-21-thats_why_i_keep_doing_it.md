@@ -15,7 +15,7 @@ I am the proud new owner of an Epson 1520 inkjet printer.
 
 I know what you're thinking – the Epson 1520 doesn't work with OSX. Well, partially right. The printer doesn't automatically work with OSX, but this one has the Ethernet print server in it so I was able to turn on DHCP and get into the printer via LPR and print using GIMP drivers.
 
-<!--more-->
+
 
 Not officially supported, but it works. I haven't tried color yet, nor have I tried any postscript rendering, but it will spit out plain text.
 

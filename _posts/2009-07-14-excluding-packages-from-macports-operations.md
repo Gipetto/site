@@ -18,7 +18,7 @@ This creates a problem, though, as MacPorts constantly lists my PHP 5.2 as outda
 
 While I don't want to upgrade to PHP 5.3 right away, I still want to have a quick and easy upgrade of everything else that I have installed. There's not any clear documentation about excluding ports from a port command, but there is a tasty morsel in the `port` man page.
 
-<!--more-->
+
 
 > Logical operators &#8220;and&#8221;, &#8220;or&#8221;, &#8220;not&#8221;, &#8220;!&#8221;, &#8220;(&#8221; and &#8220;)&#8221; may be used to combine individual portnames, port glob patterns and/or pseudo-portnames to construct complex port expressions that expand to the set of matching ports. For example:
 > 

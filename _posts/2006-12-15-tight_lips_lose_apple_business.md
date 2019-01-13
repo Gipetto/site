@@ -25,7 +25,7 @@ The MacBook that was purchased for testing went over like a dream. The Support S
 
 But Apple had to go and be stupid.
 
-<!--more-->
+
 
 The main issue is driver support for Vista. For the purchase of the laptops to go through they needed to know what the driver support timeline for Vista was. Apple wouldn't say. Since these were going into the tech department and would have very wide roles, including on site service, the driver support and reassurance of ongoing active development of Bootcamp and its associated drivers were crucial to the purchase. But Apple wouldn't comment on a development timeline.
 
@@ -33,6 +33,6 @@ They're giving up the chance to break into a Microsoft Certified Gold Partner be
 
 Dumb move, Apple. Dumb move.
 
-## Postscript
+#### Postscript
 
 The only good thing coming from this is that I now inherit the test machine. So I'm gonna get to use a decked out MacBook Pro at work. Really decked out – I don't think they left an upgrade option unfilled when they ordered it. Finally I won't have to duck and weave back and forth between my PC Desktop and personal Mac Laptop to get work done efficiently.

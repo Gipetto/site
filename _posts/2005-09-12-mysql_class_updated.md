@@ -22,7 +22,7 @@ The change is minor but has significant meaning to the script. I added two funct
 
 The significance of adding these is mainly in the `escapeData()` function. Instead of encouraging the user the use `addslashes` before using submitted data or, worse yet, encouraging the user to rely on `magic_quotes`, the `escapeData()` function uses the `mysql_real_escape_string` function to escape the data per the mySQL server's instruction. In this case the escaping is more in tune to what the SQL server needs and is also consistent with the character encoding that the database uses. Character encoding is picky when storing binary data in the database, so this helps maintain a proper matchup of data encodings.
 
-<!--more-->
+
 
 And example of usage would be:
 

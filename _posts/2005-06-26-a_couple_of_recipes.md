@@ -19,11 +19,11 @@ tags:
 ---
 This is mainly to remind myself to give these recipes to a couple of people. That's not to say that you shouldn't try these as they're fantastic recipes. I make no claims to be the creator of these recipes – they were handed to me, source unknown.
 
-<!--more-->
 
 
 
-## Kansas City Barbecue Sauce
+
+#### Kansas City Barbecue Sauce
 
 This recipe is fantastic on ribs and goes strangely well with plain old potato chips.
 
@@ -43,7 +43,7 @@ Sift together all the spices, stir in vinegar, then add hot sauce and ketchup an
 
 
 
-## Roberto's Pizza
+#### Roberto's Pizza
 
 This is by far the best home made pizza I've made. The crust is especially nice.
 
@@ -102,6 +102,6 @@ Remove from oven, add sauce and toppings. Return to oven and cook to order.
 
 Put the unused balls of dough in individual plastic bags for refrigerator storage. Note: the balls of dough will continue to rise while in the refrigerator so don't use an airtight bag. The dough will keep in the refrigerator for about a week. Freezing is not recommended.
 
-## Bon Appetit
+#### Bon Appetit
 
 These are two fantastic recipes. I have a few more that are indispensable as well. I can post those as well if desired.

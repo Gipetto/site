@@ -11,7 +11,7 @@ categories:
 ---
 Being a self taught php programmer I tend to learn something every time I run accross an article outlining different techniques. Lately I've been learning about references. At first I thought "so what?" at the thought of using a reference to a variable instead of the variable itself. But once I thought about it some more it made more and more sense.
 
-<!--more-->
+
 
 Passing by reference, in case you don't know, means that you can make a statement like:
 

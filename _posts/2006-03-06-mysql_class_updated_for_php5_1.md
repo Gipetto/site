@@ -25,7 +25,7 @@ I've updated the SQL class to use some native PHP 5, namely constructors and des
 
 I'll hopefully be making this 100% PHP 5 native soon enough as I'll actually have a native PHP 5 environment to apply it to.
 
-<!--more-->
+
 
 Namely the class makes use of `register_shutdown_function` and `call_user_func_array` to simulate constructor behavior on PHP 4. So by doing this:
 

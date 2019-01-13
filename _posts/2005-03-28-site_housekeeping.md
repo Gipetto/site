@@ -11,7 +11,7 @@ categories:
 ---
 Got a few improvements done on the site. Most notable being setting a cookie for comment data so you'll be remembered the next time you come back and comment. As I write this I realize that I should enable the choice to be remembered or not, but for now it'll remember everybody.
 
-<!--more-->
+
 
 I'm not too worried about it remembering everything since the data in the cookie is encrypted using mcrypt. Each time you comment you'll be assigned a new key and the data will be re-encrypted. There is a way I can make it even more secure but I'll leave that for a future update as well.
 

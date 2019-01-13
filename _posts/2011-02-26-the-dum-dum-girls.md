@@ -22,7 +22,7 @@ tags:
 
 Yeah, another night of shooting in the deep dark recesses that is small concert venues. This one was well worth it, though. The Dum Dum Girl's album &#8220;I will be&#8221; has been keeping me more than entertained since I was introduced to it late last year and seeing them in an intimate place like the Hi-Dive was great.
 
-<!--more-->
+
 
 I did have a little more help for the dark environment this time though. I recently added a 28 f/1.8 to my bag of tricks and it worked out wonderfully. The length is just right and the speed was very welcome in this challenging venue.
 

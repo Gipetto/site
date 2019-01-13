@@ -20,7 +20,7 @@ tags:
 
 I noticed these some time ago but just haven't gotten around to taking some time to admire them. Today turned out well with a slightly overcast background to give me a nice thick sky and a warm setting sun to light the shoes. Unfortunately, and I say that damn word too much in relation to my photography, I wasn't fully prepared. I should have had a tripod or monopod. These are just slightly soft due to camera shake.
 
-<!--more-->
+
 
 {% flickr_photo '4474623159' %}
 

@@ -25,7 +25,7 @@ The Oncologist said that while this isn't abnormal, it is rare. That it could be
 
 Why a few weeks and not right away? I'm not sure. Why not try to biopsy? I don't know. I left the doctor's office in a bit of a funk. My wife couldn't accompany me so I didn't have her level head there to ask more poignant questions before I stumbled out. 
 
-## So, What's Next?
+#### So, What's Next?
 
 Now we wait for the PET scan results. This isn't the end of the line. There are 2nd line chemo treatments and possibly surgery available if the tumors are still active. If they're not active I'm not sure what we do. We wait and monitor? I forgot to ask that question.
 

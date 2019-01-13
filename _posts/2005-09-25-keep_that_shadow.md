@@ -19,17 +19,17 @@ If you've ever had to do composite work in Photoshop you've no doubt ran into ha
 
 ***Updated 2005/09/25** to include how to keep those black background reflections.
 
-<!--more-->
 
-## Caveat Emptor
+
+#### Caveat Emptor
 
 This isn't a magic way to pull a drop shadow off of a complex background – this is a way to to pull shadows from white background images. The technique can be altered to be used with images that have simple colored backgrounds, but for the most part is limited to white or other plain background images. I'll show one example of using it on an image that has a simple textured background at the end of the article.
 
-## Our starting image
+#### Our starting image
 
 [<img class="th" src="https://top-frog.com/images/articles/start-thumb.jpg" alt="image" />](https://top-frog.com/images/articles/start.jpg){:.thickbox.frame}This is an image that I recently used this technique on at work. Its a simple product shot of a WatchGuard Firebox X Peak that has a drop shadow and reflection. While neither are real tough to recreate, why recreate that reflection if you don't have to? A reflection on an image like this is a bit tedious and time consuming. 
 
-## Let's get rolling
+#### Let's get rolling
 
 [<img class="th" src="https://top-frog.com/images/articles/step2-thumb.jpg" alt="image" />](https://top-frog.com/images/articles/step2.jpg){:.thickbox.frame}The next step is to duplicate your layers. After making a copy, we'll first set our sights on the top layer. On this layer we'll cut out the image. Depending upon your intended use, you should mask appropriately. For web images you can fudge it a bit and just use the eraser but for print images you really should take the time and properly mask out the image..
 
@@ -39,7 +39,7 @@ Put a new background under the image and you're off to the races.
 
 The technique is actually pretty easy but not intuitively obvious.
 
-## Variation on a theme
+#### Variation on a theme
 
 I've used variations of this technique with success. This example is of one I put together for a go-karting event.
 
@@ -51,11 +51,11 @@ I've used variations of this technique with success. This example is of one I pu
 
 [<img class="th" src="https://top-frog.com/images/articles/Title2-thumb.jpg" alt="image" />](https://top-frog.com/images/articles/Title2.jpg){:.thickbox.frame}Here is the image with the driver image, with shadow, placed one layer below, set to multiply and lightened slightly. Since I was able to keep the original shadow I didn't have to try and make something that looked realistic and that matched the lighting in the photo – the original shadow did that perfectly.
 
-## Wrapping up
+#### Wrapping up
 
 This technique can be used in a lot of different places and can make for some interesting effects if used (or abused) correctly. The only limit is your original image and how good or how tainted that shadow or reflection is.
 
-## *Update: on black backgrounds
+#### *Update: on black backgrounds
 
 So, [Gozer](http://www.outleted.com) asked "_What about black backgrounds?_"
 
@@ -67,13 +67,13 @@ The difference that we're going to use is that after we isolate the foreground p
 
 After that, change the new layer to Overlay mode. If the mask for this layer was a vector mask, rasterize it now. Use the gradient tool, blending from black to transparent on the mask to blend the transitions as needed. 
 
-## Make that highlight right
+#### Make that highlight right
 
 [<img class="th" src="https://top-frog.com/images/articles/nano-thumb.jpg" alt="image" />](https://top-frog.com/images/articles/nano.jpg){:.thickbox.frame}The next part gets a bit subjective. Since we apply the refelction as an overlay layer we don't quite get the bright areas that we need to be convincing. For this I duplicated my original layer and lightened it to enhance the reflections. I then used Select: Color Range to get the areas of the reflection that I felt were important to the realism and filled them with white on a new layer. 
 
 This new layer was moved to be inbetween the main image (the full strength image we knocked out first) and the reflection layer. I ended up using the layer in normal blending mode at 30% opacity to help pull out the hightlights in the reflection. The results are very acceptable. Depending upon the needs of the image this step should be examined closely and worked on not to match this tutorial but to match the image at hand. It will vary wildly.
 
-## Another conclusion
+#### Another conclusion
 
 [<img class="th" src="https://top-frog.com/images/articles/nano-water-thumb.jpg" alt="image" />](https://top-frog.com/images/articles/nano-water.jpg){:.thickbox.frame}So, while neither one of these techniques will work 100% of the time they form a basis of how to deal with preserving shadows and reflections in images. Sure beats buying a copy of Extensis Mask Pro or Procreate (Corel) Knockout (which I have and find more cumbersome that it is worth).
 

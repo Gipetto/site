@@ -17,7 +17,7 @@ tags:
 ---
 I just learned this morning that [Subversion](http://subversion.tigris.org) since [version 1.4](http://subversion.tigris.org/svn_1.4_releasenotes.html#keychain) will cache passwords on OS X using the OS X Keychain. Lack up support for multiple passwords with Subversion has been a frustration for me for quite a while, but lo and behold its been under my nose the whole time.
 
-<!--more-->
+
 
 **Note:** This is all based on command line usage. I'm not gonna speak for any of the SVN utilities out there.
 

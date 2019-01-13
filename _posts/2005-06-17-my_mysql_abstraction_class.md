@@ -18,11 +18,11 @@ tags:
 ---
 We all do it, and its a foundation of providing dynamic web content. The database call is almost everywhere now as dynamic pages are becoming the norm and not the exception. More and more I'm making database calls and my old class just wasn't cutting it anymore.
 
-<!--more-->
+
 
 If you'd like to just dive in and see the script, [Dive in and take a look](/files/scripts/dbConnect.class.phps).
 
-## History
+#### History
 
 My first MySQL Abstraction class was actually written by a friend and slightly modded by me to add some error reporting functions. I took that version because at the time it was more than I knew not just about OOP but about MySQL functions in general.
 
@@ -30,7 +30,7 @@ I've used it for a great many things but have gradually outgrown it and found it
 
 So, having outgrown that, I decided to make my own.
 
-## Wish List
+#### Wish List
 
 I want a lot out of a MySQL Abstraction class – I want:
 
@@ -43,7 +43,7 @@ I want a lot out of a MySQL Abstraction class – I want:
 
 That's a good start, eh?
 
-## My Version
+#### My Version
 
 Well, I present my class. It's easy to use and works mostly by itself with little user interaction. After configuring the settings within the file I can do a query in all of 4 lines.
 
@@ -78,7 +78,7 @@ I also like to have robust error reporting without revealing anything but an oop
 
 I have also included settings for changing the mode of connection between a normal and persistent connection and to change the user from read only to read/write so that its not running with write privileges the whole time.
 
-## And now my favorite part
+#### And now my favorite part
 
 All major settings can be overidden at runtime.
 
@@ -105,7 +105,7 @@ One extra item and I'm connecting to a different database. I love it.
 
 And if I need to use the script in a multi-user environment and I don't want any settings overidden I can easily set a flag in the script to disallow overrides. Then changing permissions on the file or storing the file in a directory that is only accessible by the webserver I can lock users out of changing that setting.
 
-## Open for consumption
+#### Open for consumption
 
 So, after using it for a while, adding a few features, and polishing the rough edges (well, most of 'em, no guarantees that there aren't flaws) I'm releasing it as a no warranty, no guarantee, no license script that you can use, abuse, alter or improve upon if you're needing something of this nature.
 

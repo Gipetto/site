@@ -29,7 +29,7 @@ tags:
 
 The wife and I decided to take the mutts for a walk on the beach this past weekend. We expected cold and dreary weather but were pleasantly greeted by partly cloudy skies and quite warm temperatures when the sun was out. All in all a good day to play with the new [Fuji X-E1](http://www.fujifilm.com/products/digital_cameras/x/fujifilm_x_e1/). In case you're about to bolt, weary of more shots of my dogs, please venture forth, they're not the feature of this post 😉 Fair warning, though, I had every intention of going out and shooting for black and white images, so there's very little color in these photos.
 
-<!--more-->
+
 
 {% flickr_photo '8356620710' %}
 

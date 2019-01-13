@@ -22,7 +22,7 @@ tags:
 
 I recently decided that it was time to upgrade old faithful (A Canon EOS 20D) to some new hotness (a Canon EOS 7D). The differences are amazing. Even the feel of the CF Card door opening and closing feels sturdier and smoother. This is gonna seem like a lot of ragging on the 20D, but its not. Its just simply that the 7D offers so much more than the 20D that it really makes the 20D feel old in its technology. 
 
-<!--more-->
+
 
 #### Viewfinder {#viewfinder}
 

@@ -20,7 +20,7 @@ After about a month in development (not counting the time that we set it down an
 
 ![image](https://top-frog.com/images/articles/fcxhtml.png)
 
-<!--more-->
+
 
 I have to say that this project wouldn't have come to fruition without the initial push by [John](http://www.pennypacker.net) but after a lot of tweaking and critiquing [Fuzzy Coconut](http://www.fuzzycoconut.com), made up of [John](http://www.pennypacker.net), [Joel](http://www.joelschou.com), [Harold](http://www.halbie.com), and me has finally produced a product. 
 

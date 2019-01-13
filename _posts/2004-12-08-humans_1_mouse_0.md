@@ -15,7 +15,7 @@ The unfortunate part, and I knew it was coming, was that he was still alive. Pla
 
 Basically he was scared out of his mind.
 
-<!--more-->
+
 
 The next decision was what to do with him.
 

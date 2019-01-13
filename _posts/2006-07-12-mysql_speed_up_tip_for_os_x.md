@@ -19,7 +19,7 @@ tags:
 ---
 So, while it was nice to have MySQL on my server and on my laptop I had always felt that it was a bit pokey as far as response times go. Turns out I wasn't wrong. And its easy to fix.
 
-<!--more-->
+
 
 The OS X version of MySQL that you can download straight from MySQL AB does not install a `my.cnf` file. Yep, its running with no optimization.
 

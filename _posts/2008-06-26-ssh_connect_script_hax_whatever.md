@@ -24,13 +24,13 @@ I work with many different servers at work. Most tedious part is that I need to 
 
 So I finally got around to writing a little script to hold onto logins and passwords in a handy little connection script.
 
-## Caveat Emptor…
+#### Caveat Emptor…
 
 Is it a bit insecure to put these into a single file in my home folder? Maybe. Is it even less secure that said file is executable? Sure. Is it damn convenient? Yes.
 
 **So, now on to it:**
 
-<!--more-->
+
 
 If you just want to get to the meat then [click here to see the source](/script_src/_ssh.sh).
 
@@ -57,7 +57,7 @@ Password:
 
 All that's left right there is to `command-v` to paste the password and login to the server.
 
-## OMG HAX!
+#### OMG HAX!
 
 So, yeah, its a bit hackish and there are certainly more secure ways of holding on to this information, but I'm thinking its no less secure than other kinds of password files and central resources. That and it saves precious keystrokes over the course of a day.
 

@@ -16,7 +16,7 @@ tags:
 ---
 So, I ended up on a project that required a lot of mail notifications to be sent so I went ahead and whipped up a class for sending emails via PHP. They didn't have to be pretty to start off with so this is merely a plain text email class at the moment. HTML and Attachments are slated for future additions but I don't have time to pop 'em in just yet. So, if you need one, [check it out](/files/scripts/emailer.class.phps)
 
-<!--more-->
+
 
 The class is easy to use. It requires some settings to be passed to it at runtime so there's no hard coding and each use can be unique. Give it a recipient, a sender, a subject, and a message and you're off to the races.
 

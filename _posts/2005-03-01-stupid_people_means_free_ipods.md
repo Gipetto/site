@@ -11,7 +11,7 @@ categories:
 ---
 Yep, I said it. Contrary to popular belief stupid people can contribute to society – to me in particular on occaision. Our little family is the owner of a semi-used 20gig 4th Generation iPod. It was free.
 
-Free, how about that? Well, the reason it was free is what is extraordinary.<!--more-->
+Free, how about that? Well, the reason it was free is what is extraordinary.
 
 To preface this – I've barely cracked open the manual to my iPod. I found it intuitive and easy to use. A co-worker here in the office said the same thing – she was given an iPod as a gift and she only needed a manual to figure out one or two things about using it with the computer. Other than that it was simple and easy to use.
 

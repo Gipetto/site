@@ -15,9 +15,9 @@ Ya know, 3 years ago I never thought that command line could do much more than s
 
 Well, now I've found something. I actually wrote and first used the script about 4 months ago but it wasn't until recently that it became a normal part of my toolset.
 
-<!--more-->
 
-## Where it all began
+
+#### Where it all began
 
 It turns out that using PHP from the command line can save me a ton of time and hassle when processing images for our eStore at work. We need the images processed in 2 ways. We need to have 40 px square thumbnails and the larger image can be no wider than 400 px if horizontal or no taller than 250 px if vertical.
 
@@ -31,10 +31,10 @@ All in all, with writing, testing and processing time I invested about one and a
 
 I took 3 days of work and shrunk it down to an hour. Once the scripts were written the actual processing time on a 233mhz Gentoo box was all of a minute and forty seconds.
 
-## The long term benefit
+#### The long term benefit
 
 And recently I've been getting more and more images to process – typically between 10 and 30 images at a time. I put the images in one folder on the server, call the script, and – zoink – its done in a flash. Much easier and faster than waiting for Photoshop to open, process, save, close, repeat. Granted the scripting ability of Photoshop is nice to have but is surely is slow.
 
-## Can he keep going?
+#### Can he keep going?
 
 This has actually opened new doors for me. I'm finding more and more ways to take care of tasks by command line. Mostly right now its backup scripts and image manipulation, but when I have time I'll finish up a PDF generation script that emails the built PDF to the user… fun stuff.

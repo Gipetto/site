@@ -20,7 +20,7 @@ Knowing the base directory that you're working from when building a site is a pr
 
 I recently learned a much better way. I hadn't really sought this out since I really hadn't thought about a better way to do it since my old way worked. This new way takes away the need to manually define your document root.
 
-<!--more-->
+
 
 A very handy thing to do is have a constants file that holds all your commonly used information and most of the time this file is in or near your document root. A single line of PHP helps us find where this file is and use it to set the document root for the site.
 

@@ -21,9 +21,9 @@ I got a little discouraged before seeing the movie by reading some reviews that 
 
 I guess I can actually talk about that story for a little bit.
 
-<!--more-->
 
-## Much more than a made for TV movie
+
+#### Much more than a made for TV movie
 
 I didn't see as many epsidoes of the television series as I would have liked. I saw about 3 or 4 and loved them. I was pretty bummed when the series got pulled because it was a great story with likable characters. Beyond that it was a believable world. The fact that it was in the future was not stressed and not made a central part of the story. The story had much more appeal in its portrayal of a gritty, non-perfect, world. The world was so deep I didn't think it was given enough time on TV to really take hold. 
 
@@ -35,6 +35,6 @@ I'll just say: Two very enthusiastic thumbs up.
 
 So enthusiastic that I just added the Firefly DVD set to my Netflix cue so that I can see what I missed.
 
-## Now I have to rant a little about theater management.
+#### Now I have to rant a little about theater management.
 
 Why are small chidren allowed in theaters? What does a 5 year old care about Serenity? Really. And how is it that a man carrying a plastic grocery bag full of popcorn, that he opened and closed throughout the entire movie, was allowed to bring said bag in? Ok, that's it. Just plain and simple – theater owners don't care about if we have a good time or not just so long as we pay… I think they're suffering from similar delusions as major movie makers who don't think twice about that stupid script that should have been sent to the trash can and not given a 100 million dollar budget.

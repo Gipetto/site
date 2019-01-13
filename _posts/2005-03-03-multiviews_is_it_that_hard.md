@@ -15,7 +15,7 @@ I have the framework done, it is very much a mirror of what I'm doing here, but 
 
 Still not perfect, but closer to better than this one is.
 
-<!--more-->
+
 
 But when I uploaded the site to my 1and1 server the site fails. Why? MultiViews are not enabled on the server. So I contact tech support and ask them to look into it and what do I get back? An email saying that Mod\_negotiation is working just fine. Well, no, MultiViews is enabled by mod\_negotiation but MultiVeiws has to be specifically stated in the directory options for a site. The server is running apache 1.3.x so the problem lies, most likely, within the httpd.conf (or apache.conf, depending on the install) and will most likely be in the virtual host listing for my account. But no – when I try to enable MultiViews with the .htaccess file nothing happens – zip – nada. So I can only assume that I am right in that the conf file needs updating. Granted, it will require a restart of apache but that takes seconds, even for a large multihosted server.
 

@@ -11,7 +11,7 @@ categories:
 ---
 Haven't had an update in a while. Work has been grueling. Home has been busy. My brain is fried.
 
-<!--more-->
+
 
 Work has been balls to the wall with upcoming National Sales Conference, a company rebranding, and the website having a Feb. 1 release date. I've found myself among aspects of NSC that I neither have time for nor want to be involved in. But that &#8220;other duties as assigned&#8221; portion of the job description really finds inappropriate times to rear its ugly head. The company is undergoing a rebranding – hopefully there is a focus on advertising and message behind it – and I'm the department zip bitch. With everyone else being on thin-client I'm the only one who can unzip files since I have a real computer (if you can call a windows box real). 
 

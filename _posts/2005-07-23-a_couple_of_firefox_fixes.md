@@ -18,9 +18,9 @@ tags:
 ---
 This is more a note to myself than it is a tip. I've lost this info several times so I'm just leaving myself a note here since this gets backed up regularly. Both of these tips can be performed by entering Firefox and entering &#8216;about:config' in the address bar and searching for part of the strings to bring up the lines that need editing.
 
-<!--more-->
 
-## The side scrolling isse
+
+#### The side scrolling isse
 
 Two fingered scrolling on the new Powerbooks causes Firefox to go forward and backwards when a horizontal scroll is performed on the trackpad. This can happen inadvertantly so it is easier just to turn the feature off.
 
@@ -31,7 +31,7 @@ mousewheel.horizscroll.withnokey.numlines to 1
 
 This allows vertical and side scrolling to act as it should.
 
-## HTTP Pipelining
+#### HTTP Pipelining
 
 When using Firefox on a broadband connection pipelining can help speed up the browser.
 

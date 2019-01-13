@@ -19,9 +19,9 @@ tags:
 ---
 So, I finally moved my music library back to the server this morning. But after launching iTunes I noticed that it can't find a ton of the songs. Upon further inspection it can't find any of the rated songs. All unrated songs are playing just fine – anything with a star rating is needing to be linked again.
 
-<!--more-->
 
-## WTF?
+
+#### WTF?
 
 I already knew that song ratings were not stored with the song but in a different file associated with iTunes. But now those rated songs have some kind of absolute path associated with them as well that prohibit the library from easily being moved?
 

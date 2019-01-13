@@ -21,7 +21,7 @@ IE comes in at 3rd in the list, surprisingly. I can't think off the top of my he
 
 In any event, for those who care (and to bore those of you who don't) here is the browser matchup for the Gippy Pages:
 
-<!--more-->
+
 
   1. Safari (42.8%) 
   2. Firefox (31.8%) 

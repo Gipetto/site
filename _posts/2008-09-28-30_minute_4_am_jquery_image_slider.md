@@ -23,9 +23,9 @@ As fate would have it the first night of my trip to Provo, Utah turned in to an 
 
 I have to admit it feels a bit hackish, but in my defense it was done at 4am. Please also keep in mind I'm writing this after being up all night.
 
-<!--more-->
 
-## For Example
+
+#### For Example
 
 First, the example: [Click here to view the example page](/stuff/slider/).
 
@@ -35,6 +35,6 @@ Unlike some other carousel plugins/libraries/scripts, Javascript (jQuery) is use
 
 So, is there anything extra special about this? I don't think so. Is it still neat? Yeah, I think so. Its nice, clean functionality in a small package. I think the neatest little thing going on is that in all browsers jQuery recognizes that "'left':+=-760" is negative movement.
 
-## Shameless plug
+#### Shameless plug
 
 If you're so inclined, [head on over to the site and see it in action](http://crowdfavorite.com/portfolio/addictomatic/). I guess that pretty much says where I work (I've tried my best to keep my employers away from this blog, but now that I'm actually working in the social networking space I guess its ok). Or, if you're so bold, steal this script!

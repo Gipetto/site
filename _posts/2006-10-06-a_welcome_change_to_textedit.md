@@ -22,7 +22,7 @@ As a you might know I'm a huge proponent of a simple utility called TextEdit on 
 
 **Updated below**
 
-<!--more-->
+
 
 It wasn't a huge deal before since it was easily fixed, but TextEdit used to do nested lists like this:
 

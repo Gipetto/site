@@ -11,7 +11,7 @@ categories:
 ---
 With Fuzzy Coconut coming into focus (yes, every pun included) we decided to have a live meeting to flush out some ideas and get the ball rolling on the project. But with all of us residing in 3 different time zones our options looked a bit limited. Well, that was before thinking about it.
 
-<!--more-->
+
 
 The four of us each have laptops with built in microphones and we all have broadband. Put that together with [Skype](http://www.skype.com) and [SubEthaEdit](http://codingmonkeys.de/subethaedit/) and a trusty plaintalk microphone we were all able to talk with each other and type into the same document all using free software and services. Not bad really. We probably have a few configuration issues to figure out with Skype but overall its voice quality was very good despite our one disconnect and our need to wear headphones to help cancel echo.
 

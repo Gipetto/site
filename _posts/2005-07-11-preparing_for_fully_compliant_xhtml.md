@@ -21,11 +21,11 @@ Well, I'm playing around with delivering actual xml content for xml aware browse
 
 I'm going to start playing with this site soon and trying to achieve that balance. It'll be a challenge since my forte is not front end display. In any event, it'll give me something to break this site with. In the mean time, here is what I've learned up to this point. This is in no way a complete tutorial or official writeup – I haven't even tried some of this yet. This is a note to myself in preparation for making the move. Hopefully this spurs some good commenting to make this a nice little primer on transitioning to a pure xhtml delivery.
 
-<!--more-->
+
 
 I'm sure I have some errors in here so please correct me where I'm wrong.
 
-## Character encoding
+#### Character encoding
 
 `ISO-8859` characters can be a crap shoot as  and such will be rendered just as such – straight text. Only 5 elements are guaranteed to render correctly.
 
@@ -35,11 +35,11 @@ I'm sure I have some errors in here so please correct me where I'm wrong.
 
 utf-8 should be used which gives you the freedom of using any character you'd like but will also recognize any numbered character reference.
 
-## Doctypes
+#### Doctypes
 
 The doctype delcaration is only used for the validators! This actually turns out to be true to an extent with straight HTML since it can effect browser rendering but doesn't necissarily tell the browser which language you are using to code with. Confused? Good.
 
-## Content Type
+#### Content Type
 
 The content-type declaration isn't needed if the server properly sends the data as `application/xhtml+xml`. This can be accomplished by sending the proper http header. The easiest way I've found to do it for now is through php. Otherwise it is dealing with some pretty complicated browser sniffing with mod_rewrite. A simple declaration as the very first element on your page will take care of it. 
 
@@ -61,7 +61,7 @@ function sniffIE() {
     }
 }
 ```
-## Correct opening declarations
+#### Correct opening declarations
 
 The html opener should include an xml delcaration and all stylesheet declarations should be made xml style right before said html opener. Style declarations in the head are mostly (if not totally) ignored unless you're doing an @import.
 
@@ -88,7 +88,7 @@ echo("<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n");
 echo("<?xml-stylesheet href=\"stylesheet.css\" type=\"text/css\"?>\n");
 ```
 
-## Comments
+#### Comments
 
 html/sgml comments are honored for EVERYTHING. Must use the CDATA hack to get Javascript to work correctly.
 
@@ -110,15 +110,15 @@ or, simpler
 </script>
 ```
 
-## JavaScript
+#### JavaScript
 
 `document.write` does not work in xml – must use `document.createElementNS()` to properly write out with JavaScript. Since I don't play much with JavaScript it will be a little while before I get far enough to test this for sure.
 
-## Tables
+#### Tables
 
 Another caveat that I found that I've never even used before. A table's tbody will not be inferred if it is missing in the markup. If you don't include it, it simply does not exist. This can wreak havok with CSS and JavaScript if not taken into consideration. (Now I have to go and play around with tbody because it looks like an interesting tag when tables are called for).
 
-## And that's just the head of the document…
+#### And that's just the head of the document…
 
 Documents must be well formed xml – xhtml compliance doesn't matter. A well formed xml structure must be adheared to or else the document rendering will be aborted and an error displayed. XHTML is allowed to be delivered as text/html under the W3C specs but when done so it is interpreted as straight html – no xhtml considerations are taken except for some of the minor differences in markup that xhtml requires. This can hide some mistakes in what should be an xml compliant markup that will actually fail when delivered correctly.
 

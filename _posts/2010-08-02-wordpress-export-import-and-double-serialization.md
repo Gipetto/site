@@ -24,7 +24,7 @@ Ran in to a fun one in the WordPress core today. If your plugin stores post meta
 
 I'm gonna sound jaded through this writeup, but I'll get over it. 
 
-<!--more-->
+
 
 Say your plugin saves and retrieves data correctly, like this greatly oversimplified example:
 

@@ -23,7 +23,7 @@ Its probably nothing new but I came up with a way to do client side post- or pre
 
 I had to write [this bash script](/script_src/ssh-action.sh) because we had files at work that needed to be version controlled but still writable by the server process. The need arose because when Subversion updates a file it updates the files permissions with that of the user that did the SVN action. I'm not entirely sure but I think this is because the file isn't actually updated, but replaced by Subversion (if anyone can confirm that, I'd appreciate it).
 
-<!--more-->
+
 
 So, this script is pretty simple. It sits in between you and Subversion via an alias and passes everything it gets through to Subversion and then operates based on the action that was taken in Subversion. 
 

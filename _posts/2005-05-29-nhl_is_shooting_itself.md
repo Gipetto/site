@@ -13,7 +13,7 @@ So [ESPN reports that it is not picking up its $60M option to retain some exclus
 
 I don't like it. No matter how you look at it, from the player's side or the owner's side, there's not enough money going into the NHL, and in taking this long to settle the expiration of the Collective Bargaining Agreement they've up and lost a ton of money.
 
-<!--more-->
+
 
 I can only imagine what advertising premiums they're gonna lose as well. Not to mention fan support. The only reason I had any kind of extended Cable TV coverage was to get hockey, but now I think I may have learned to live without it. I used to love to watch hockey. The love / hate relationship with the Avalanche was a hard thing but overall was a lot of fun and on the whole Hockey is a fast and very dynamic game to watch. I don't miss it anymore. I think that might be a bad thing.
 

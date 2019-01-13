@@ -25,7 +25,7 @@ This has probably got to be the most fun concert that I've covered to date. Viol
 
 The Summit Music Hall is, on average, dark, but when their stage lights are actually on well there's a decent amount of light at ISO 6400. Not the greatest, but decent. I took a chance and left the flash in the bag even though I was able to use it in there. I much prefer the &#8220;natural&#8221; stage lighting at shows. Flash is like a bright white splatter of goo in the center of the frame in situations like these and I didn't want that. I had to shoot a lot, but it paid off with some nice results.
 
-<!--more-->
+
 
 {% flickr_photo '5516349332' %}
 

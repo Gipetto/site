@@ -15,7 +15,7 @@ For me its odd imagery that I often pick out of random noise patterns – like t
 
 More often than not I let the image fade away and just go back to what I was doing. I've got to stop doing that. I get weird and wonderful images wandering through my head all the time but I haven't seriously let them out sinse college.
 
-<!--more-->
+
 
 I'm thinking I should start that back up again as it is quite liberating. It has a sense of regressing back to a childhood state where nothing was finite and all was possible. Something that I think I lost sometime after I graduated college and I think I lost a bit of my creativity along with it.
 

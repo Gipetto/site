@@ -17,7 +17,7 @@ tags:
 ---
 Every once in a while I need to see what's hiding in a serialized array in a database field and finally just wrote a little TextMate command to do the job for me. If I'm already working in that area of code its easier to just dump it someone in the page output to read it, or maybe dump it to the error_log, but often enough I just need to see the data. It turned out to be much different than I thought it'd be. I figured I'd write a line of Ruby to call PHP via the command line but then I found that PHP can be used directly in TextMate commands.
 
-<!--more-->
+
 
 Okay, that helps.
 

@@ -22,7 +22,7 @@ I just hit an interesting snafu with Apple's Safari browser. While correctly ren
 
 With the help of the W3C validator I was able to figure out what character encoding the page was in fact using, windows-1252. That's not really any obscure. So I wonder why Safari was able to correctly decipher the page in HTML view but couldn't apply the same logic the the source view.
 
-## Update and Addition
+#### Update and Addition
 
 I've created a couple of pages to help illustrate my point. A [valid page](/stuff/char-encoding/valid-1252.html) and an [invalid page](/stuff/char-encoding/valid-1252.html). For reference here is a [valid utf-8 page](/stuff/char-encoding/valid.html) for comparison. It seems that Safari has issues showing windows-1252 characters in source view in general.
 

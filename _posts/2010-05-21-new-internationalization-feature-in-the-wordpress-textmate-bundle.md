@@ -25,9 +25,9 @@ The goal of adding this support was to make it as seamless as possible to integr
 
 The command is found under the &ldquo;Plugin API&rdquo; section of the plugins menu or by using the `command-shift-i` keyboard shortcut.
 
-<!--more-->
 
-## Inside Single and Double Quoted Strings
+
+#### Inside Single and Double Quoted Strings
 
 With the sample code:
 
@@ -45,7 +45,7 @@ $string = 'one ' . __('two three', 'domain') . ' four';
 $string2 = "one " . __("two three", 'domain') . " four";
 ```
 
-## Single and Double Quoted Strings
+#### Single and Double Quoted Strings
 
 Again, with the same sample code:
 
@@ -63,7 +63,7 @@ $string = __('one two three four', 'domain');
 $string2 = __("one two three four", 'domain');
 ```
 
-## Inside an HTML scope
+#### Inside an HTML scope
 
 Here our code will return a bit different. With this as our example:
 
@@ -79,6 +79,6 @@ Selecting the string `one two three four` will return:
 
 Here it uses the `_e()` (echoes the result) function instead of the `__()` (returns the result) function.
 
-## And there it is…
+#### And there it is…
 
 So, overall not complicated but super duper handy. I can't believe that I didn't think about this earlier. It was just suggested by [Mr. Gordon Brander](http://gordonbrander.com) earlier today and I was so giddy to get it implemented here I am on a Friday night getting it worked in!

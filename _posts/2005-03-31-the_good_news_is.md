@@ -15,7 +15,7 @@ And the bads news? The bathroom has walls that need to be primered and painted.
 
 I have to say I hate painting, but at least there is nothing in there that I have to worry about so a few things are taped up and then its gonna fly.
 
-<!--more-->
+
 
 The first coat of primer took me 4 hours last night. Tonights coat should take significantly less time but I'll still have to go through and hit the corners with a brush which is what takes most of the time. The rolling goes quickly.
 

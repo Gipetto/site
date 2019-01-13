@@ -11,7 +11,7 @@ categories:
 ---
 Hi, my name is Shawn and I'm addicted to blogs. Not so much the personal blogs, but anything informational, both useful & useless. I just can't get enough. I've got RSS readers both at home and at work and religiously check them periodically during the day in the hopes that I'll pick up some useful tip on either web design or on using the Mac.
 
-<!--more-->
+
 
 The last time I counted the list was at 67. That was last week so there might be one or two more in there now. 
 

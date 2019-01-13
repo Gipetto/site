@@ -25,21 +25,21 @@ If you have a PowerBook/MacBook or a Mighty Mouse then side scrolling is easy to
 
 The pain in the patootie is when you don't have easy side scrolling. Thankfully there's at least easy ways to do it in a few Adobe programs.
 
-<!--more-->
 
-## InDesign
+
+#### InDesign
 
 Hold down the option key while scrolling and you're scrolling sideways. _This one has a bug on Windows though: if you want to go from scrolling one way to another then you have to click inside the document inbetween directions. Weird, yes, but so is Windows (it sucks)._
 
-## Photoshop
+#### Photoshop
 
 Hold down the control key while scrolling and you're heading sideways. Hold down option and you're scrolling diagonally.
 
-## Illustrator
+#### Illustrator
 
 Sorry – no workie.
 
-## Acrobat
+#### Acrobat
 
 Also no workie.
 

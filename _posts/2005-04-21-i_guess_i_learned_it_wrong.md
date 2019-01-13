@@ -15,7 +15,7 @@ When I first started learning PHP it was well after the push to ship PHP with re
 
 I was wrong.
 
-<!--more-->
+
 
 It seems that this wonderful little variable can do more to help with variable scope than I ever thought possible.
 

@@ -34,9 +34,9 @@ So, if you're one of the geeks that likes to live on the cutting edge of cool an
 
 I'm not the first to do this and I probably won't be the last, but here is a script that I polished up that downloads the current nightly build of Chromium and drops it in to your Applications folder. Run it manually or hook it up to your favorite cron like system and have it do the work automatically.
 
-<!--more-->
 
-## The Script
+
+#### The Script
 
 ``` sh
 #!/bin/bash
@@ -85,7 +85,7 @@ exit 0
 
 Save the script to an executable folder (I keep a ~/bin folder in my home folder that I've added to my path), do a `chmod +x filename` on the file to make it executable and have at it. Adding it to [cron](http://en.wikipedia.org/wiki/Cron) or creating a [launchd](http://developer.apple.com/macosx/launchd.html) plist and you'll be up to date automatically (pending that your computer didn't sleep through the designated update time…). 
 
-## The Caveat
+#### The Caveat
 
 If you have an Adobe Creative Suite 4 or earlier installed you have a 32bit version of the &#8220;Adobe Unit Types.osax&#8221; file in your scripting additions folder. This will cause the script to spew chunks at the Applescript portion. The script still operates but it doesn't automatically quit Chromium during the update process. You have two options to fix this:
 

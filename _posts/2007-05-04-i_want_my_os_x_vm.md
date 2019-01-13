@@ -19,7 +19,7 @@ tags:
 ---
 So, apparently the OS X EULA forbids virtualizing OS X in any form. And, no, I'm not late to this party, I just finally felt like writing about it (I really need to start writing regularly again). I'm wondering what the overall use of this is? Is it to protect the OS X experience? To keep it off of Windows? To protect the kernel and keep hackers at bay? I'm really not sure.
 
-<!--more-->
+
 
 Allowing OS X to be installed in a VM (Virtual Machine) would take OS X into a lot of different places, including some places that Apple has a hard time with. Like the Enterprise (Enterprise being an overly fancy, Dilbert-esque, word for large companies). I would imagine that this would serve to sell more copies of OS X and to expose more people to the system. Something that I feel would be beneficial because everybody that I know who spends _a decent amount of time_ with OS X likes it.
 

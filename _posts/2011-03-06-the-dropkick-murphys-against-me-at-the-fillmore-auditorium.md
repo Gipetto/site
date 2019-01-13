@@ -29,7 +29,7 @@ Getting movement and energy out of every band member on stage is a rarity, but a
 
 Getting to photograph these two bands was a treat, indeed. Though I have to admit I was nervous and didn't do as well as I'd have liked. While editing the photos after the show I realized that during the Dropkick Murphys there was a bagpipe player and a hot chick with a violin that I didn't even get shots of. Shame on me! All in all, though, they're decent and I had a good time to boot. 
 
-<!--more-->
+
 
 {% flickr_photo '5500040373' %}
 

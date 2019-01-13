@@ -19,7 +19,7 @@ tags:
 ---
 Convert a file size from one measure to another. For example, take a file that is recorded as 512KB and have it converted to .5MB. Yeah, that's an easy example, but that's 'cause I was writing it off the top of my head. So, if you need this sort of thing, here's a function that I thought came out pretty well.
 
-<!--more-->
+
 
 ``` php
 function convert_file_size($unit, $from, $to) {

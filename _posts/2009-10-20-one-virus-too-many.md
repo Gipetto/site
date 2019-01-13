@@ -25,6 +25,6 @@ I think device compatibility will be the biggest deal. We'll need to hook up a d
 
 So, here we go: pushing the old man in to Linux. Whee!
 
-<!--more-->
+
 
 **Update 1:** I'm pretty impressed. I've got the system almost ready to give him. I've confirmed that printing and scanning work. Not too shabby for just a few hours &#8220;work&#8221; on a system that I like to think I know more about than I do 😉

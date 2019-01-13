@@ -23,7 +23,7 @@ tags:
 ---
 One of my long time complaints about using AFP (Apple Filing Protocol) has been its speed and my inability to get a secure connection. Well, all that changed this morning as I found some hints that fixed both speed and security issues. And it was under my nose the whole time…
 
-<!--more-->
+
 
 The problem is that for some reason OS X Server, at least my install, is not advertising that it can connect AFP via SSH so the trickery has to happen on the client side. Initiating the connection from the client is the same – use Command-K or choose &#8216;Connect To Server' from the Go menu. 
 

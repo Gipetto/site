@@ -22,7 +22,7 @@ On Friday, March 11 I will shave my head as part of the St. Baldrick's foundatio
 
 So, quit reading this and head over to [my donation page on the St. Baldrick's Foundation site](http://www.stbaldricks.org/participants/mypage/participantid/445491) and donate.
 
-<!--more-->
+
 
 ### FAQ
 

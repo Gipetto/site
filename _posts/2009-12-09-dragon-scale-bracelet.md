@@ -20,7 +20,7 @@ tags:
 
 Read on to see the setup for this shot.
 
-<!--more-->
+
 
 I'm doing some photography for [Seod&oacute;ir](http://web.me.com/neddierah/Seodoir/Welcome.html), a friend who makes hand made chain mail jewelry. Its turning out to be a fun exercise. I don't have a heck of a lot of room to work and don't have some of the proper tools for doing studio work, but we make due with what we have, eh? So, consider the attached photo above and then check out the setup shot below. I used:
 

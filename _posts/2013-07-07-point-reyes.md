@@ -32,7 +32,7 @@ We've made a couple of trips out there lately and despite it almost always being
 
 This isn't to say that the area around the lighthouse isn't worth exploring. It is (the shack and deer photos below are from that area). 
 
-<!--more-->
+
 
 The fun starts on the way in with a beached ship in [Martinelli Park in Inverness](https://www.google.com/maps?q=Martinelli+Park,+Inverness,+CA&ll=38.09765,-122.851393&spn=0.001752,0.003468&sll=38.097698400000006,-122.8509088&t=h&hq=Martinelli+Park,+Inverness,+CA&z=19 "Martinelli Park on Google Maps"). Park at The Inverness Store and then go around the back to access the area. Be prepared to get a little bit muddy, but its well worth the stomping around.
 

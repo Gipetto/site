@@ -34,9 +34,9 @@ This version is actually seems worse than IE 6 at page rendering and compatabili
 
 I apologize now to anyone who gets an RSS update each time I edit this. I'm going to update this article as I discover more and find more around teh intarweb.
 
-<!--more-->
 
-## Page Rendering
+
+#### Page Rendering
 
 [The complex spiral page](http://meyerweb.com/eric/css/edge/complexspiral/demo.html) over at Eric Meyer's site gets completely mutilated – but this is nothing new to IE users. Compare that link in your standards compliant web browser to [this screenshot](https://top-frog.com/images/articles/spiral.png). 
 
@@ -57,35 +57,35 @@ Yes, I keep telling myself that this is a beta but the lack of attention towards
 
 Though it has issues, at least it is fast. I'm posting this over an RDP connection to a 300mhz laptop and it is surprisingly responsive.
 
-## Javascript
+#### Javascript
 
 It does seem to improve some Javascript support. A script I was having issues with before that involved fading alpha seems to work now. So there is one upside.
 
 [John](http://blog.pennypacker.net) will be pleased to know that his new window link javascript works in the new version – though all the little images do have link borders on them the functionality of the Javascript is there. ***Correction:** The link icons show up but the links do not open in a new window/tab.
 
-## Phishing Filter
+#### Phishing Filter
 
 An interesting security add on is the Microsoft Phishing Filter which is aimed at trying to determine the authenticity of the site you are visiting. I haven't tried it out yet as I wanted to get into testing the standards compliancy of this new beta.
 
 ***Update:** After reading around a bit I found out that this feature compares the link you click to a list of links at Microsoft. The list is hosted at Microsoft so there is an extra call before the page loads that could slow down the browser response time. This feature also seems like it could be abused by Microsoft to gather browsing habits and to potentially track down cracks and warez sites.
 
-## The Interface
+#### The Interface
 
 The interface has undergone a significant transformation as well. I read a thread over at the MacAddict forums that, based on really bad images from a conference, critiziced IE7 for looking like Safari. Those people were smoking crack. IE7 moves the menus underneath the tab bar, removes the refresh button, and adds a searchbar (which asks you if you want to turn on autocomplete when you first use it). This new interface is definitely a slap in the face of any existing UI convention. Not only general UI convention but even those of Microsoft itself. I wonder if this is going to be a trend in Redmond. If it is I will stand up and protest loudly – granted it'll fall on deaf ears but at least my piece will be said.
 
 ***Update:** The toolbars can be rearranged but they cannot be put above the tabs.
 
-## Alpha Transparency Support
+#### Alpha Transparency Support
 
 We finally get native PNG Alpha Transparency support in this version but, at least on my machine, it comes at the cost of application performance. Scrolling speed declined significanlty when alpha transparency is being rendered.
 
-## Built in RSS Reader
+#### Built in RSS Reader
 
 Well, its there. My first attempt to load a feed resulted in text so small it was unreadable. But it loaded the feed quickly. However once I realized that the default text size was set to `smallest` I was able to reset that and read the page. I have to say that the RSS reader is fast and smooth. The scrolling is actually better in this than in Safari (one of my beefs with Safari's RSS reader is that scrolling is sporadic when using two fingered scrolling on the powerbook) and it seems to handle inline images better than Safari as well.
 
 It does lack some of the nicities that Safari has for controlling preview length, sorting, and feed aggregation. The reader also has no support for Atom feeds which is not really surprising considering Microsoft's new RSS Everywhere initiative in Longhorn.
 
-## XML Content
+#### XML Content
 
 Despite the addition of the built in RSS reader IE will still prompt to download XML content. Browser detection for proper content delivery is a known issue with the beta at this time and, according to Microsoft, it is a problem with the detection code on the sites:
 
@@ -99,25 +99,25 @@ IE7 Identifies itself in the `HTTP_USER_AGENT` with
 Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.1; .NET CLR 1.1.4322)
 ```
 
-## Unicode
+#### Unicode
 
 The unicode support, though it may be because it is running on XP and not Vista, is severely lacking. When checking out [Mezzoblue's unicode character article](http://mezzoblue.com/archives/2005/07/25/glyphs/) IE7 was only able to render 5 out of the 34 characters.
 
-## Pop-up Blocking
+#### Pop-up Blocking
 
 The built in pop-up blocker is rather nice. It is configurable to add exempt sites and to set levels of acceptible pop ups.
 
-## Tabbed Browsing
+#### Tabbed Browsing
 
 The tabs, while ugly, are functional. Implementation is a little odd in that to the right of the tabs is a half-tab that acts as a new tab button. The tabs are disconnected from the content that they display by the menu bar – an odd choice on Microsoft's end since this disassociates the displayed content from its identifier in the tab bar. Not very friendly if you ask me. 
 
 Control-clicking a link will open it in a new tab. By default new tabs are not selected when spawned by control-clicking but there is a preference setting to adjust this as well as a preference to set links that pop a new window to actually spawn a new tab. That's a nice option.
 
-## Built in Searchbar
+#### Built in Searchbar
 
 In a surprising move – the built in search bar lets you select your search engine of choice. I really thought that IE would be MSN only. Good job Microsoft, I really didn't expect this one.
 
-## Conclusion
+#### Conclusion
 
 So, while IE7 introduces native Tabbed Browsing (you can add tabs to IE6 with the MSN Toolbar), RSS Reader and robust Pop-up Blocker it is a letdown in that page rendering hasn't considerably changed. I hope the CSS compatability has been left for later inclusion instead of left by the wayside.
 

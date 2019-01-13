@@ -21,7 +21,7 @@ Hawai'i is absolutely beautiful. And we haven't even really left the Waikiki are
 
 Here are a couple of pics so far:
 
-<!--more-->
+
 
 {% flickr_photo '2086095162' %}
 

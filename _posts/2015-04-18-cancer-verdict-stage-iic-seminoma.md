@@ -32,7 +32,7 @@ My largest lymph node is approximately 5.7cm across (almost 2 1/4 inches). They'
 
 For reference, while I had multiple small tumors in my testicle, the largest actual cancer tumor size was less than .25cm. Its weird to think how differently the tumors in the testicle and metastasization in the body can be so different.
 
-## Preliminary treatment schedule
+#### Preliminary treatment schedule
 
 While I have yet to see the oncologist that will be administering my chemo I'm most likely in for a 4-cycle regimen of a 2-drug cocktail. Each cycle being 3 weeks with the first week being 6 days of drug administration with 2 weeks off. There's likely to be a mid-term examination at which point we'll evaluate whether a step up to a 3-drug cocktail is necessary. I want to try and avoid the 3 drug cocktail to begin with due to the increased risk of long-term respiratory side effects.
 
@@ -40,11 +40,11 @@ Not to jinx it, but an RPLND is currently not on the table. If the lymph nodes r
 
 My plan is to take the full 12 weeks as a leave of absence. Details pending a meeting on Monday with HR. If I'm feeling well enough during the off weeks I may ask work for some small item or bug off the backlog to give me something to feel productive, but that's not a certainty. The wife is going to, for the most part, do the same.
 
-## Mental Status
+#### Mental Status
 
 I guess the reality of this is still setting in. Hence my writing this at 3am while I cannot sleep. I'm glad that I now know what I'm in for, but at the same time I'm now realizing that this is actually happening. Before it was just speculation, now its a reality, and I'm starting to get scared. I know that getting scared doesn't do me any good. It's an involuntary reaction that I'd love to do away with.
 
-## The world keeps turning
+#### The world keeps turning
 
 At the risk of sounding all &#8220;woe is me&#8221;, there are a couple of things that have particularly bad timing here. I just need to vent a little about:
 

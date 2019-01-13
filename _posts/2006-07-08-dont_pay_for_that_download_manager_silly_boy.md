@@ -21,7 +21,7 @@ tags:
 ---
 Not where there's [DownloadThemAll](http://www.downthemall.net/) ([dTa page at Mozilla Extensions site](https://addons.mozilla.org/firefox/201/)) available for [Firefox](http://www.mozilla.org/firefox). Normally stuff like this would just go in the links, but this is cool enough to dote on for a while.
 
-<!--more-->
+
 
 I guess this would be one of those official endorsement thingies – I've been using this extension on both Winders XP and Mac OS X and its been perfect. Other download managers cost upwards of $20 and offer a ton of features, but all most of us need is something that downloads files and does it fast. And, this fits the bill nicely.
 

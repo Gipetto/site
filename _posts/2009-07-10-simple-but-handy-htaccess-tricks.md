@@ -24,7 +24,7 @@ These two have always been questions in my mind but until recently I've never ha
 
 So, we all know how to set up [basic HTTP authentication](http://httpd.apache.org/docs/2.2/howto/auth.html), right? Good. Here we go&hellip;
 
-<!--more-->
+
 
 <p class="error">
   <strong>Please re-read this post. It has been corrected for erroneous information!</strong>
@@ -41,7 +41,7 @@ AuthUserFile /www/passwords/.passwd
 
 Now with just a few tweaks we can make less of a simple all or nothing wall between your users and the content and set some of it free.
 
-## Allowing Access via IP Address
+#### Allowing Access via IP Address
 
 So, you want to require a password to outsiders but you and your co-workers are getting tired of entering the username and password for every small visit needed to the site? If your office has a static IP address, allow it.
 
@@ -56,7 +56,7 @@ Satisfy Any
 
 What we're telling Apache is to allow access from the IP address and to Satisfy any of the access requirements. If Satisfy were set to all, access would require username, password _and_ IP address matches to grant access.
 
-## Unprotecting Content
+#### Unprotecting Content
 
 Sometimes we need to poke holes in the wall to allow unfettered access to one resource or another. This is pretty straight forward. 
 
@@ -87,6 +87,6 @@ Lastly, this can also be done for a series of files based on regex filename matc
 <FilesMatch>
 ```
 
-## And that's not all
+#### And that's not all
 
 This is really just scratching the surface, but for a lot of day to day needs of projects in development that shouldn't be opened up to the whole world these guys can go a long way to helping make life just a little bit easier.

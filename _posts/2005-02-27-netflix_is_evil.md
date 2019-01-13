@@ -16,7 +16,7 @@ tags:
 ---
 Damn, ever since we've gotten Netflix we've been renting movies that we wouldn't normally have watched.
 
-<!--more-->
+
 
 A few days ago it was Requiem for a Dream. The only two redeeming qualities of that movie was some nifty camera work and Jennifer Connely's bush. And you really don't get a very good look at her bush either. The movie was pretty depressing but was another one of those movies where you could see the bad things coming. It was rather predictable.
 

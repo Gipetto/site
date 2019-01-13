@@ -11,7 +11,7 @@ categories:
 ---
 So it seems that I'm gonna have to learn some javascript for work. Our eCommerce package is a proprietary piece of shit that runs on MAS and Providex and is the slow and has a very odd construct in the way is processes information.
 
-<!--more-->
+
 
 Take for example is method of repeating a table row based on a template. The template contains code like this (greatly simplified to show only one item):
 

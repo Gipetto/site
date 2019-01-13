@@ -21,7 +21,7 @@ Just so that you're sufficiently warned: This post offers no practical informati
 
 I think it was 2004. Prototype.js was new and was rocking my world. But it was still just a few convenience features put on top of JavaScript. I needed to stripe table rows dynamically and ended up with 2 functions and ~25 lines of code. My, how things have changed.
 
-<!--more-->
+
 
 So, with a litle help from Prototype.js I had this:
 

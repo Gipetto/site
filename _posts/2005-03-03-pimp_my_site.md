@@ -19,7 +19,7 @@ The concept of a css signature is to label your body with an identifier that is 
 
 This way someone can use a custom stlye sheet to change something they don't like about your site. Granted, few of us would really like for someone to strip a bunch of formatting from out sites because we have a vision on how we'd like to present our data – but how many times have you run accross a site that had one, or maybe two things that bugged you but otherwise you like the site, or for some reason or another you need to change the size of just one type of text on a certain site, or maybe someone writes great articles but their background image makes it unreadable.
 
-<!--more-->
+
 
 That can all change if css signatures get the following that they should have. With that simple id in your body tag someone could create a user style sheet and very easily change something they don't like and keep them on your site.
 

@@ -21,7 +21,7 @@ tags:
 ---
 MySQL always amazes me with the breadth of functionality that it has. Too often we just use it to push and pull information from the database. So when I hit an occasion where I can so in a single SQL statement that would require a time consuming PHP I get excited. 
 
-<!--more-->
+
 
 Here, I had to so some simple string replacement on some database values. I had some PDF files in a WordPress MU database that didn't get updated by one means or another when upgrading from WordPress MU 2.6 to 2.7. WordPress 2.6 stores attachment location data will full file paths, so that when the database is moved to another server the file paths are wrong and need updating. This was fixed in 2.7 by storing just the path relative to the upload root. What that also means, though, is that when WordPress MU encounters that full file path that permalink generation borks. 
 

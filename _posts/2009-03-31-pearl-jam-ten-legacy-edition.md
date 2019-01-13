@@ -20,7 +20,7 @@ tags:
 
 I have to admit I'm a Pearl Jam whore. I'm so in love with their live recordings that I typically prefer them to any studio work, though that's not to say that I dislike their studio work. That said, here goes:
 
-<!--more-->
+
 
 Its too nice. And it doesn't feel cohesive. The old recordings have, to use a completely overused and subjective measuring stick, a warmer and more natural sound. This new mix sounds like a studio mix. While the original mix sounds like it could have been recorded live and that there's some kind of interaction between the band members the new mix sounds like it very well could have been put together from sessions where the band members never even saw each other. Just by listening I know they're in a studio. 
 

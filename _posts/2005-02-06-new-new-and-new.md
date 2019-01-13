@@ -13,7 +13,7 @@ It is a weekend of new stuff. New computers, new yard and a new trainer to help 
 
 First things first – the wife and I splurged this weekend on new laptops. I've been wanting to go mobile for a while and the new 15&#8243; G4 PowerBook upgrades were too much to resist. While we were there we caved in and bought a new 12&#8243; PowerBook for the wife. To justify this we're selling the old gear. So if anyone is interested in a 12&#8243; iBook G4 with 640mb of Ram or a Dual 1Ghz MDD with 1.75 GB of Ram and 110GB of hard drive space please inquire within. 
 
-<!--more-->
+
 
 I have to say this new PowerBook is very cool. The scrolling trackpad is uber-cool as is the backlit keyboard. The backlighting is very well done, it will not only light the keyboard but dim the screen as well. The amount that it dims and glows depends upon the amount of ambient light still available. If the room is pitch black you really don't need that much help to see the keys so it only lights up a bit, but if there is a reasonable mix of light and dark then it lights up more so you can see for sure.
 

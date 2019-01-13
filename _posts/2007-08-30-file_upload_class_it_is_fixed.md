@@ -30,7 +30,7 @@ The file is correct now, so to those who hung in there until I finally got aroun
 
 So, enough said for now, the new script has been added to the old page [located here](/2006/12/22/classes_for_file_uploading_in_php).
 
-## And source file highlighting
+#### And source file highlighting
 
 I've also updated the source file highlighting to use the Pear package Text_Highlighter. I won't go into details about how to use Pear since there are many many good articles about that already, but I had to apply [this patch](http://pear.php.net/bugs/bug.php?id=11478) to the installed package to get the renderer to format the output correctly so CSS styling would display as expected. I installed the stable version and had to apply the patch.
 

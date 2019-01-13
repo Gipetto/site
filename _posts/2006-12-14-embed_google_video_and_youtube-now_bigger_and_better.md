@@ -24,7 +24,7 @@ Well, technically smaller. This new version actually has less lines of code. See
 
 Well. Screw it. IE will do the DOM standard element replacement, but doesn't do setAttribute. Opera would take the DOM replacement and make space for it in the layout but wouldn't show the video element. All this goes away with innerHTML.
 
-<!--more-->
+
 
 This new version has been tested with Safari, Firefox 1.5+, Opera 8.5+, & Internet Explorer 7. The only catch with this version is with Internet Explorer 6 in that it won't display the Google Video objects, but will show the YouTube video objects. I can probably fix that later as its probably more an issue with the display code than the JavaScript. I also have not tested with any Linux browsers yet, but don't anticipate many issues.
 

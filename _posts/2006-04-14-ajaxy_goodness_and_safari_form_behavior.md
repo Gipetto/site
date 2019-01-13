@@ -32,9 +32,9 @@ Read on to find out how I finally caught up to last year.
 
 **Update:** Now that I go browsing through old code to reuse something I've found that my little piece of borrowed code is actually something that is less than what I've been using for some time, but had just forgotten about.
 
-<!--more-->
 
-## I feel so behind
+
+#### I feel so behind
 
 So, its now 2006 and I have what I think is a firm grasp on AJAX (xmlHttpRequest). First made popular by a Google experiment and then taken to the extreme by the popular web crowd, Ajax has become a staple of web application functionality. You can't turn a corner on the internet anymore without hitting something Ajax. Well, you can, but chances are those pages suck. 😉
 
@@ -52,7 +52,7 @@ It is a simple class, it just handles the core of what AJAX is all about and has
 
 This also marked my debut into a much more elaborate commenting scheme that is being driven by the Pear PHP project. Details can be found [here](http://pear.php.net/manual/en/standards.sample.php). It has certainly improved the consistency of my documentation, even if I'm not following the scheme to the letter.
 
-## Safari: Like a red headed stepchild
+#### Safari: Like a red headed stepchild
 
 Ok, not really.
 
@@ -91,6 +91,6 @@ function getObj(id) {
 
 So, yeah, I guess I didn't find anything groundbreaking, unless my failing memory qualifies.
 
-## Ok, I'll shut up with my behind the times crap now
+#### Ok, I'll shut up with my behind the times crap now
 
 So, that's it. My foray into bringing my JavaScripting skills up to date with 2005 (arguably 2004). Hopefully this is comes in handy for someone out there.

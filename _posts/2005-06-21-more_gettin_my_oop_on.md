@@ -18,9 +18,9 @@ I promised myself that I'd write about something else but this has me so stoked 
 
 One of my biggest problems with getting into large PHP application programming with OOP was the sharing of functions. Inheritance just wasn't doing it the way I wanted it to. I knew it was possible but hadn't gotten the hang of it until I found Aggregation. Sweet, sweet aggregation…
 
-<!--more-->
 
-## Serious $geek++; coming up
+
+#### Serious $geek++; coming up
 
 So you're probably wondering what the hell I'm talking about. Unless you're seriously into php you've probably already glassed over so why not head over to [Chipotle.com](http://chipotle.com) and witness a very neat flash website. For the rest of you that have any kind of remote interest in PHP and OOP, hopefully you come back and read the rest of this.
 
@@ -30,7 +30,7 @@ What it is: a way to share object functions across objects. You can safely creat
 
 This is the code reuse that I've been looking for – I finally learned it.
 
-## Class Association
+#### Class Association
 
 There are a couple different ways to aggregate objects. The first is by instatiating a class inside another class. For example:
 
@@ -66,7 +66,7 @@ $wr->writeDate(time());
 
 This example creates an instance of the setDate class inside the Writer class. This means that any variable manipulations made with this instance of myDate will stay within this instance of Writer. The variables will not be shared outside of the Writer class instance. Any other function that wants to use the myDate object will have to create its own instance. This method is good if all you need to do is share routines and not any variables that they create.
 
-## Object Association
+#### Object Association
 
 The next example will share the function by passing it along as a reference. I'll use the same example and modify it a bit:
 
@@ -103,7 +103,7 @@ This example is very slightly different than the first example in that it shares
 
 This is handy if you're dealing with globally used vars in a larger application – variables created and manipulated by the aggregated object can be passed around to whatever other class pulls it in.
 
-## Conclusion
+#### Conclusion
 
 With these two methods of aggregation we have ways of manipulating shared and private variables, depending upon how aggregate the classes and have a nice way of pulling in classes that are simply data processors and who just have supporting functions in them.
 

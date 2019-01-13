@@ -11,7 +11,7 @@ categories:
 ---
 Yet another reason to love two fingered scrolling on the new Aluminum PowerBooks. I just found this last night by accident. If you already knew, well, then, WHY THE HELL DIDN'T YOU TELL ME?!? It turns out that photoshop will allow you to scroll the levels (and other sliders that are accompanied by manual imput boxes) with two fingered scrolling.
 
-<!--more-->
+
 
 ![image](https://top-frog.com/images/articles/scroll-control.jpg)
 

@@ -25,7 +25,7 @@ threads:
 
 [My left testicle was trying to kill me](http://www.testicularcancerawarenessfoundation.org/testicular-cancer-info/). He has since been banished from his sac. I also have swollen lymph nodes around my kidneys. It is still unknown if the cancer has metasticized. We'll be keeping an eye on the lymph nodes to see if they respond to the removal of the testicle and I have a CT scan scheduled to see if there's any indication that the cancer has spread further.
 
-## The Backstory
+#### The Backstory
 
 This all started last May. I had pain in my sac and in my lower back. The diagnosis was that I had a swollen testicle because of a kidney infection. I got the standard round of antibiotics and genuinely felt better after the treatment. But later the pain came back. Further diagnosis was that I didn't have a swollen vegetable but a shrinking one. Alas, no better diagnosis was made at this time. At no point did anyone order any kind of radiology or ultrasound to look around inside.
 
@@ -33,7 +33,7 @@ Fast forward a few months of having tried another doctor to no avail and finally
 
 Next step: surgery. That brings us to today. The folks at work have already taken to calling me The Uniballer. 
 
-## Current state of affairs
+#### Current state of affairs
 
 So for now the future of treatment is unknown. Could be radiation, could be chemo, and might involve more surgery, an [RPLND](http://www.testicularcancerawarenessfoundation.org/rplnd-surgery/), if the lymph nodes are too far gone. We'll know more this coming Monday after the biopsy, CT scan and pathology results come together. I'm back to work after next week but two weeks after that is when ongoing treatment should begin. 
 
@@ -43,7 +43,7 @@ Right now its just typical surgery recovery. Get help when standing up. Try not 
 
 I'm trying to humor my way through this but that only goes so far. I've broken down already both in fear of the surgery and recovery, and in anger that this even happened at all. I hope I'm over it now because its not very productive, but that's probably wishful thinking.
 
-## Support Network
+#### Support Network
 
 [My wife](http://top-frog.com/2013/07/15/happy-monkey/) has been amazing. We're only a week in to diagnosis and she's already done so much. I don't think that there will be enough opportunity to call out her contribution to the recovery effort. She's talked me down, she's let me be. She's helped me up and down. She's kept me on schedule when I'm too tired to remember. And this is the easy part&hellip; The hard part is yet to come. I'll be leaning on her more than I ever have before and I know that she'll lean back and support me. Fortunately she's got good friends to help her as well. 
 
@@ -51,7 +51,7 @@ I am also extremely lucky with my work situation. I have a good health insurance
 
 And I am really grateful for the experiences of friends. I have a &#8220;wonder-twin&#8221; who lost his right testicle last year. He has been very open in sharing details of his ordeal. While he did manage to calm me down about the orchiectomy he has, in fact, scared me shit-less about the possibility of chemo.
 
-## A few random musings about the current state of affairs:
+#### A few random musings about the current state of affairs:
 
   * I only threw up twice after the surgery.
   * Hydrocodone makes me _REALLY_ itchy.
@@ -59,11 +59,11 @@ And I am really grateful for the experiences of friends. I have a &#8220;wonder-
   * The feel of a half-empty nut sac is something that I hope none of you ever need know.
   * Penis shaped cakes look better than they taste.
 
-## Changes to this site.
+#### Changes to this site.
 
 I'm turning off comments on this site. I kinda need this to be an outlet where I can write freely, write badly, and not have to necessarily engage in conversation about my feelings. There's plenty of places on the internet for engagement. I'm sure those will work out just fine.
 
-## Parting shot
+#### Parting shot
 
 Survival rates for ball cancer are some of the best out there. It has a well known path of progression and treatments of the various types of cancer are well studied. I doubt that I'll present anything out of the ordinary or that anyone in the biz hasn't already seen. Even after metastasization to the lungs and even to the brain the treatment rates are really high. So I have that going for me.
 

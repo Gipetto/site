@@ -25,7 +25,7 @@ Lucky me! I get to go to Hawaii at the end of February. On top of that my birthd
 
 This is the part where I need help from my faithful readers – or whatever is left of you after I took my long break. I need recommendations of non-touristy things to do on Oahu.
 
-<!--more-->
+
 
 We'll be staying in Waikiki, aka: tourist hell, but we'll be at super nice hotel, the Moana Surfrider. We'll be there shortly after the Pro-Bowl so hopefully the bustle will have calmed down by the time we're there.
 

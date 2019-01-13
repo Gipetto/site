@@ -23,6 +23,6 @@ For some reason, though, I just can't get to a point where I feel like I'm caugh
 
 Yeah, I know: woe is me… I'll get caught up one of these days. And maybe I'll have something interesting to write about too! I'm resisting writing about all the snow, but that gets harder with every storm.
 
-<!--more-->
+
 
 <img src="https://i0.wp.com/www.fuzzycoconut.com/shawn/uploads/jump.gif" alt="image" data-recalc-dims="1" />

@@ -28,7 +28,7 @@ So, with a little bit of JavaScript I was able to make it work. Its really nothi
 
 **Updated: 2006-10-20.**
 
-<!--more-->
+
 
 So, I won't really bore you with the details. The script works off of a link URL – so merely pasting a link into your text won't suffice, it has to actually be a link to the video. I did it this way for usability reasons. If JavaScript is disabled the link to the video will still work. Basic usability.
 
@@ -36,7 +36,7 @@ It also makes no attempt to make a distinction between videos that you'd like to
 
 The script also has no outside dependencies. I originally constructed it to use Prototype.js but I was only using one feature of Prototype.js (the each array iterator) so I decided to just add 3 lines of code to do the same thing. So now it stands alone which in the long run I think I prefer.
 
-## Less babble, more script!
+#### Less babble, more script!
 
 So, without further ado, [here's a sample page](/stuff/clubhouse/embed/) – you can see the slight flash between the page loading and the content switching out. Aside from a server side solution there's no way to get rid of that. I personally don't care about it since doing this via JavaScript makes the script very portable and easy to integrate just about anywhere.
 
@@ -48,7 +48,7 @@ Implementation is easy as the file takes care of everything. All you need to do 
 <script src="/path/to/embed_yt_gv.js" type="text/javascript"></script>
 ```
 
-## And one more thing…
+#### And one more thing…
 
 I forgot to mention when I originally posted this story that this script is intentionally incompatible with non-DOM aware browsers and with Internet Explorer.
 

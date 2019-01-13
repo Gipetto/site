@@ -34,7 +34,7 @@ I don't mean to badmouth WordPress when I say this, but if you deploy a WordPres
 
 Below is everything I know about optimizing a WordPress installation. It is by no means a list of everything you can do to optimize a server for WordPress, but its a damn good base. Because of the nature of tweaking servers, you'll need access to the server config files (and most likely access to the root user on the server) to make most of these changes.
 
-<!--more-->
+
 
 <div class="quicknav">
   <p>

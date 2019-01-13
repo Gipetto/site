@@ -25,9 +25,9 @@ So, you've used WordPress to build your client's site and to provide downloads f
 
 I'm not a big fan of checking every file download with WordPress as it can take a lot of overhead if you're running a busy site. So here is a pretty straight forward way to limit downloads from a WordPress site with a minimal amount of code. In this example I'll illustrate how to prevent non-logged in users from downloading audio files in `mp3` and `m4a` format.
 
-<!--more-->
 
-## Basic Blocking
+
+#### Basic Blocking
 
 First, lets use some ModRewrite rules to get Apache to show users a 403 forbidden page when trying to access the files. This isn't pretty, it simply gets Apache to dump the user in to a default 403 page and the user is told that their access is forbidden. **The .htaccess changes:**
 
@@ -45,7 +45,7 @@ On the first line of this code you'll see `(mp3|m4a)`. This is the part that loo
 
 That is really all we need but its not very nice to dump the user like that and not inform them of why they were forbidden. They may assume that the site is broken. So lets do this the right way and get the users redirected to a page that will inform them of why they were denied access to the content.
 
-## Redirecting the Access Denied
+#### Redirecting the Access Denied
 
 For this we'll need a page template. You can create anything you'd like, but the basics of it are: 
 
@@ -88,7 +88,7 @@ The relevant change happened on the third line where the dash was replaced by th
 
 Now, whenever someone who is not logged in tries to download a file type that you've specified they'll be redirected to your 403 page. What you tell them there is up to you.
 
-## But&hellip;
+#### But&hellip;
 
 &hellip;now, if you're theme lists out pages anywhere, you've got this 403 page sticking its nose in where it doesn't belong. Not very pretty, now, is it? This is pretty easily remedied. Head on in to the WP Admin and to the page edit screen for the 403 page. Take note of its page ID in the url. It will be the number after the word `post=` in the url. For example, if your URL looks like `http://wp30.local/wp-admin/post.php?post=8&action=edit` the post id is **8**.
 
@@ -110,7 +110,7 @@ On the line that says `array_push($excludes, 8);` replace the `8` with the id of
 
 **Note:** if you've got other places in your theme that are pulling page lists through different means you'll want to modify or filter those results as well. Depending upon the methods used to make the lists you can probably exclude the page as a parameter of the call for pages instead of using a filter. Your mileage will vary, but it is certainly doable.
 
-## Ta da!
+#### Ta da!
 
 And there you have it. Simple and straight forward. No real frills, though. As it sits now the user is redirected to a page that just tells then simply that they need to be a logged in user. That's not very informative all by itself. There are a hundred ways to modify this to make it more convenient on the user.
 

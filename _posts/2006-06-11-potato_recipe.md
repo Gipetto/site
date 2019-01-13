@@ -23,9 +23,9 @@ This recipe can be considered heart attack on a plate. Its simplicity defies its
 
 But its good.
 
-<!--more-->
 
-## Kitty's Potatoes
+
+#### Kitty's Potatoes
 
 _6-8 Large potatoes  
 2 Cans cream of chicken soup  

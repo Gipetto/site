@@ -11,7 +11,7 @@ categories:
 ---
 The next logical step in my education of PHP is to learn PHP5's implementation of OOP. I started that this morning and wrote myself a short, useless script using a couple of the new features in PHP5.
 
-<!--more-->
+
 
 I learned how to use static variables and constructors. Not bad for my first hour. :: cue child's voice :: I made this:
 

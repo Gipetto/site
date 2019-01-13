@@ -21,7 +21,7 @@ I don't know why but I have an infatuation with little utility functions. Its pr
 
 A few years ago I posted on [Sorting Multidimensional Arrays by Key](http://top-frog.com/2006/11/08/php_sort_multidimensional_arrays_by_key/). The solution had php4 and php5 version and they were class based. Kind of awkward to use. They were originally dumped in a framework and accessed statically. After much tweaking and moving it from project to project it is down to a single function that also sorts arrays of objects my member variables.
 
-<!--more-->
+
 
 ``` php
 <?php

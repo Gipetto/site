@@ -11,7 +11,7 @@ categories:
 ---
 Hm, I'm getting pretty disappointed at the lack of good php editors for Windows. If I can't find one I'm gonna be tempted to take down PuppyCam so that I can use that computer at work.
 
-<!--more-->
+
 
 I'm not just talking about features but about look and feel. Nothing on the windows side feels a good to use as <a href="http://smultron.sourceforge.net" onclick="window.open(this.href); return false;">Smultron</a>, <a href="http://www.codingmonkeys.de/subethaedit/" onclick="window.open(this.href); return false;">SubEthaEdit</a> or <a href="http://www.skti.org/skEdit.php" onclick="window.open(this.href); return false;">skEdit</a>.
 

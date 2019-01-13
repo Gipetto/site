@@ -23,7 +23,7 @@ tags:
 
 Some nights certain things just pop out to me. Last Saturday night it was the bassists of Wovenhand and Git Some. My favorite pics of the night were of them. 
 
-<!--more-->
+
 
 At first the thought of a hard rocking band like Git Some pairing with the more mellow sound of Wovenhand was that they made an odd pairing for a tour but they both really worked out well. Both bands had plenty of musical energy and were pretty fun to watch. Best of all they sounded great.
 

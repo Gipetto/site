@@ -23,7 +23,7 @@ Its cool, dammit! Really, it is. No more curley braces for if, while, for, forea
 
 C'mon – I know you're interested.
 
-<!--more-->
+
 
 So we're all used to writing:
 

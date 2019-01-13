@@ -15,7 +15,7 @@ In a ruling last year, the Florida Court of Appeals awarded 24.3 Billion dollars
 
 [Get the full story](http://www.relfe.com/media_can_legally_lie.html)
 
-<!--more-->
+
 
 The premise under which the initial ruling was overturned was that the FCCs regulations which state that news organisations must truthfully relay the news is not law and thus not punishable in court when broken.
 

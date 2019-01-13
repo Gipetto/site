@@ -13,7 +13,7 @@ Just how far should we go towards not caring about IE in our web design? I think
 
 That said, proper coding has its merits no matter what the platform.
 
-<!--more-->
+
 
 Now, I'm gonna pick on someone. [Tom](http://www.milkbasilica.com) has built a nice looking site. However he's not compatible with Windows at all. Really. While Opera and FireFox will view his site just fine neither can post comments. 
 

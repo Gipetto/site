@@ -26,9 +26,7 @@ The last time I decided to mess around with the formatting of this laptop I deci
 
 It wasn't until a minute after I booted from the OS X install CD and wiped the Linux partition that I realized I just deleted the yaboot config file – essentially my computer didn't know where to find any installed OS. Funny how hindsight is 20/20, eh?
 
-<!--more-->
-
-## Oops
+#### Oops
 
 So, not knowing quite what to do next I decided to image the hard drive to an external drive. Booted to the Tiger install CD I loaded up the Disk Utility and made a disk image of the entire hard drive to an external firewire drive. This took about 2 hours.
 
@@ -40,7 +38,7 @@ It booted. It prompted me to log in. And there it was. Everything that was on th
 
 I kinda figured I'd be able to boot the machine but I thought that since I simply made a disk image and didn't do a proper clone of the hard drive that I'd run into a lot of permission errors and possibly a bad user account. So far its like nothing happened to the machine – I just have a bit more hard drive space now without Linux on board.
 
-## phew!
+#### phew!
 
 I color myself super lucky on this one. I really screwed up pretty bad and ran a huge risk of losing everything but it seems that Apple really made the system resilient to being moved around and it saved my ass.
 

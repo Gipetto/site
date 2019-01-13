@@ -28,9 +28,9 @@ It was a debate wether to go with one of the cheaper Sigma or Tokina models, but
 
 Oh, and its so much fun… if you're debating this lens, don't. Just get it.
 
-<!--more-->
 
-## Obligatory Samples
+
+#### Obligatory Samples
 
 Here's a couple pics from the new lens (click 'em to embiggen 'em):
 

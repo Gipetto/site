@@ -16,6 +16,6 @@ tags:
 ---
 Snapped a few of Bear after playing for a while. He was quite pooped and that tongue seemed to have a mind of its own.
 
-<!--more-->
+
 
 {% flickr_photo '2086028240' %}

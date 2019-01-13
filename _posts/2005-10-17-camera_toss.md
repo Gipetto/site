@@ -20,7 +20,7 @@ tags:
 ---
 I heard some whispers around the internet about a fun photography exercise called a Camera Toss. It entails setting the camera at a moderate shutter speed and throwing it up into the air. I saw a few samples and they were fantastic. So much so I had to try it for myself. Attached are six samples of what I ended up with.
 
-<!--more-->
+
 
 While I didn't get the same results as some that I saw I am very pleased and encouraged by the images that I did get. I found that an exposure of 1 second @ F13, ISO 100, to be good. 
 

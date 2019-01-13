@@ -11,7 +11,7 @@ categories:
 ---
 The server got an upgrade tonight. It produced a little down time but its all good now. We're now running on a Dual 1Ghz MDD with 1.75 GB of Ram. I'm already seeing a great speed improvement in the page load times. I think the old iBook was just a bit overwhelmed with the image generation that needed to take place.
 
-<!--more-->
+
 
 Another thing that is better is the mySQL security. The old server was a bit lax in that I had one main user for all the databases. Now the users are segmented into ownerships and can only be edited by those who have been given privileges. This means that different users can log into the same phpMyAdmin and only see the databases they have privilges on. So my users, the rest of the fuzzy coconut team, will be able to see their personal databases and the master fc database but won't be able to play jokes on other's dbs.
 

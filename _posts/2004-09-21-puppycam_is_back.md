@@ -15,6 +15,6 @@ They've been given the run of the house while we're away. They let themselves ou
 
 The cam will shut off at 5:00 MST, about when we get home from work, so, sorry, no watching us… just the pups.
 
-<!--more-->
+
 
 **EDIT: seems that keeping it up and running may be a more interesting feat than I thought. I have to find a way to get the webserver closer to the camera so I don't lock down another computer to running the puppycam.

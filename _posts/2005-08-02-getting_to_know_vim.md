@@ -20,9 +20,9 @@ Since OS X brought Unix into my everyday life I've been fascinated by command li
 
 However, the more I learn about vim the more I like it… vim is one powerful little editor. This is actually my second exploration into vim but I've unfortunately lost my notes on the first one. That's why I'm blogging this – so I have it backed up…
 
-vim started out as a mystery to me as it is one of those programs that if you don't know what you're doing you'll be immediately lost. I found the documentation of little help as it is written rather cryptically and is very hard to get around. I ended up scouring the internet for tips and tricks for just getting started. I'm now to the point where I'm comfortable editing directly in vim without wasting time figuring out what I'm trying to do.<!--more-->
+vim started out as a mystery to me as it is one of those programs that if you don't know what you're doing you'll be immediately lost. I found the documentation of little help as it is written rather cryptically and is very hard to get around. I ended up scouring the internet for tips and tricks for just getting started. I'm now to the point where I'm comfortable editing directly in vim without wasting time figuring out what I'm trying to do.
 
-## vim Basics
+#### vim Basics
 
 So, for in uninitiated, here is a primer:
 
@@ -89,7 +89,7 @@ So that gets you started moving around the document. Remembering the commands is
 
 I would especially recommend researching the visual mode if you are serious about getting to know vim. Visual mode makes copying and pasting very easy. However visual mode is a little beyond what I want to cover in this article.
 
-## Extending the power of vim
+#### Extending the power of vim
 
 Every now and then I learn a little bit that makes vim even more powerful. Syntax coloring, auto and smart tabs, word wrap, and custom dictionaries make vim a nimble php editor for remote editing and also for everyday editing when a change of pace is needed to give the mind some stimulation (I often find that changing text editors once in a while can help me keep going when my brain is tired)
 
@@ -147,7 +147,7 @@ The only part of that I'm not quite sure about is setting the term type. But, ev
 
 Those commands bring vim up to par with most coding applications for a fraction of the cost and memory footprint. The only thing lacking is a project / site mananger but there are plenty of free and low cost options for that.
 
-## PHP Syntax Completion in vim
+#### PHP Syntax Completion in vim
 
 This last part reallys set vim aside for me. Because of my lousy memory I'm constantly referencing the php.net website for the proper name of a function. I ran accross this the other day and unfortunately can't find the link to credit where I got it from… really, I want to because this is a killer tip.
 
@@ -165,7 +165,7 @@ set complete-=k complete+=k
 
 Now you can simply start to type a function and use `ctl-n` to move forward through the list and `ctl-p` to move backward. A very handly little reference
 
-## Wrapping up
+#### Wrapping up
 
 So, this has been just a surface view of using vim. There's much more below the surface still to be revealed. So dive in and check it out. It is definitely a handy application to know your way around. Knowing how to use it has made remote server config and minor file tweaks a breeze. The next project is to get into 2html – a vim routine that will convert your text file into HTML… something that could be very handy for performing basic conversion of text to html.
 

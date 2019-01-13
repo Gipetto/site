@@ -11,7 +11,7 @@ categories:
 ---
 I don't claim to have the widest vocabulary on the planet, but I do have a decent range of words that I can readily use. That said – I had to look up quandary the other day to get the correct spelling. In doing so I noticed something stupid in the definition.
 
-<!--more-->
+
 
 > a situation from which extrication is difficult especially an unpleasant or trying one; 
 

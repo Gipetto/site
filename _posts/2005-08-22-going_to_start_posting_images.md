@@ -20,6 +20,6 @@ tags:
 
 I'm starting off with this image because its fun. It was an afterthought as I was out doing other things for an internship and ended up with a shot that never ceases to crack me up.
 
-## Disclaimer
+#### Disclaimer
 
 Simply, its a horse. Sadly, if you're looking at it on Windows its going to be terribly dark. But I don't feel like adjusting the color for Windows, so, sorry to those of you who can't view these on a Mac. I spend time color balancing and tweaking and it'll be for Mac only. Windows is a lost cause on color so I won't even bother.

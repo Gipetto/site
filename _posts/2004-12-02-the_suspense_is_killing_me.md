@@ -13,7 +13,7 @@ Long story – short, open ending.
 
 I was approached by IT a while back about a job opening that they wanted me for. But considering the shift in focus, a required increase in knowledge of Windows systems integration (icky-poo!) and what I considered inadequate compensation for the level of responsibility that they were demanding I decided to stay in Marketing in my current role of Junior (yeah, quit laughing) Web Designer.
 
-<!--more-->
+
 
 At this point I was way overdue for a yearly review and knew that there would be an increase of compensation accompanied by a title change to bump me up to plain old Web Designer. So I went to my boss, who had been brought into the loop on IT wanting me to move over to them, and discussed changing my title and upping compensation. 
 

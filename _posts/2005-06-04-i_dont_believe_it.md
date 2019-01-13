@@ -22,6 +22,6 @@ I'm gonna put my 2 cents in now: I don't believe it.
 
 So my vote is in. I don't think a switch is gonna happen. I think it'll be a collaborative effort on adding more PPC fabrication capabilities or maybe that Intel has bright ideas for where to take the PPC next. Its no secret that IBM is not enthused about the low yield and profitability of the Macintosh variant of the PPC970, aka: G5, so it would stand to reason that Apple (who is also not happy with Intel's progress on the G5) to seek alternate methods of fabrication.
 
-## Claim Chowder
+#### Claim Chowder
 
 Well, this certainly didn't age well…

@@ -18,7 +18,7 @@ My brain is so confused right now as to which way is up and what it is like to n
 
 Add on top of that work being, well, a let down, I'm not feeling that great about where I am right now. The only constants I have in my life right now are that my Wife loves me, my dogs fight with each other, and the house is here when I get home.
 
-<!--more-->
+
 
 Andy and I have talked about the possibility of me going freelance once the work website is done – but I'm starting to doubt that it will ever get done. They've outsourced the re-imaging of the company at work but I fear that the content that I'm going to get from that is going to be less than complete and I'm going to be in a fight to either get the content I need or put out a mediocre, unorganized product.
 

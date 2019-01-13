@@ -19,7 +19,7 @@ Well, I guess we can't give away a dog with issues. Nobody wants him. Everybody 
 
 I guess that's OK, it would be strange here without him. So, now that its apparent that he's here to stay, we've opted to start on with a behaviorist.
 
-<!--more-->
+
 
 The wife took him to a new vet on Friday. Though bear did freak out during the visit the vet concluded that it was still a good visit. She got Bear to warm up to her and Bear even let her examine his belly.
 

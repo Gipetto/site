@@ -21,7 +21,7 @@ tags:
   - tmbundle
   - update
 ---
-## This script has been updated
+#### This script has been updated
 
 This script was updated on 2008/01/17. Since the version released here had a fatal flaw I have replaced the file linked below. [Click here to see the details on the latest version of this script](/2008/01/17/tmbundle_update).
 
@@ -29,9 +29,9 @@ I'm lazy. I'll admit it. It comes at weird expenses though. I'm too lazy to reme
 
 [tmbundle.sh](/files/scripts/tmbundle.sh) is the result of that effort. Its a pretty simple bash script that allows for listing available bundles, installing a bundle, and updating all installed bundles. This script is only for items from the Subversion repository of TextMate bundles, so if you haven't pulled the SVN version of the HTML.tmbundle it will not update the default bundle that shipped with TextMate. It will not update a bundle that you have not already pulled from the SVN repository. Install only allows for installing one bundle at a time (I haven't researched function overloading in bash yet).
 
-<!--more-->
 
-## Listing available bundles
+
+#### Listing available bundles
 
 ``` sh
 ./tmbundle.sh list
@@ -39,7 +39,7 @@ I'm lazy. I'll admit it. It comes at weird expenses though. I'm too lazy to reme
 
 This will show all bundles available in the SVN repository.
 
-## Installing a bundle
+#### Installing a bundle
 
 ``` sh
 ./tmbundle.sh install XML
@@ -53,7 +53,7 @@ This will install the XML bundle. The script will assume the `.tmbundle` extensi
 
 Any install will automatically update the bundle support folder so that any dependencies are met.
 
-## Updating bundles
+#### Updating bundles
 
 ``` sh
 ./tmbundle.sh update
@@ -61,6 +61,6 @@ Any install will automatically update the bundle support folder so that any depe
 
 This will update all the bundles that you have installed from SVN as well as the bundle support folder. If you need to just update one bundle, do an install instead.
 
-## Conclusion
+#### Conclusion
 
 So, that's it. Pretty simple and nothing fancy. I'm sure others could easily improve on this or even encapsulate it in an automator action or maybe even using [Pashua](http://www.bluem.net/downloads/pashua_en/). For now, though, this works gangbusters for me, and hopefully helps one or two of you out there as well.

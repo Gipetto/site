@@ -21,11 +21,11 @@ Just recently I noticed that WordPress will do something evil: if you don't have
 
 This means that you're spinning up WordPress twice for every page load just by not having a file in the server root.
 
-## BAD! BAD! BAD!
+#### BAD! BAD! BAD!
 
 There are 2 ways to fix this.
 
-<!--more-->
+
 
   1. Use a favicon. Get more details about favicons at [favicon.com](http://www.favicon.com/n). You can also [create one quickly](http://www.favicon.cc/) if you just want to get at it.
   2. Modify WordPress' .htaccess rules to exclude the favicon.ico file from being an option for WordPress to handle. I'll show you how to do that next.

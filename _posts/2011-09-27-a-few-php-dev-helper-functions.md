@@ -25,7 +25,7 @@ I've come to be pretty reliant on a few little dev helper functions that I've wr
 
 These helpers are designed to help give consistently formatted output no matter where they're used. They output specific styling inline to override the current site's style sheets and output readable, monospace formatted code in most scenarios.
 
-<!--more-->
+
 
 The `pp()` & `dp()` functions output to screen and the `ep()` function outputs to the error log.
 
@@ -88,11 +88,11 @@ function __v_build_message($vars, $func = 'print_r', $sep = ', ') {
 }
 ```
 
-## Install
+#### Install
 
 Copy the code above, or copy from [the Gist File](https://gist.github.com/1244452). Paste the contents in to a file that is accessible to your web-server software. Next, edit your `php.ini` file and edit the line with the `auto_prepend_file` setting with the full path to your helper file. Now restart apache to reload the `php.ini`.
 
-## Usage</h3> 
+#### Usage</h3> 
 
 All methods will output simple scalar values in their normal format and will translate boolean values to their string values instead of their numerical values. Object and arrays are then run through either `print_r()` or `var_dump()` depending upon which method you use.
 
@@ -102,7 +102,7 @@ The `ep()` method outputs to the PHP error log. Handy for inspecting data in aja
 
 All functions can be overloaded to take as many arguments as required. Each parameter is parsed separately and output comma separated.
 
-## Caveat
+#### Caveat
 
 There's only one: make sure that you don't commit code that contains these function calls – others likely won't have the same helper methods and your production server most assuredly doesn't. There's nothing like committing these methods and not realizing it until someone asks you why `dp() is undefined`. I'm actually pretty close to putting pre-commit hooks in to my version control repositories that reject any commit that has these methods in it. Its very easy to forget to strip them out first.
 

@@ -26,7 +26,7 @@ My MacBook Pro has been acting up again lately. Crashes, stalls, and overall wac
 
 When I restarted it I was faced with a question mark flashing inside a folder icon. The computer couldn't find a valid system to boot from.
 
-<!--more-->
+
 
 I was able to see a valid system directory when using the Startup Disk selector on the OS X install DVD. I was able to use the Terminal on the DVD to browse the disk as well. All the data was still there. 
 

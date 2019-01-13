@@ -31,6 +31,6 @@ So, now, go forth and pay attention to better things and let the placeholder tex
 
 **Update 2009-02-21:** Plugin is working fine with the latest release of 2.7.1, so I don't see any reason to fret about compatibility.
 
-## Download
+#### Download
 
 **[Download the Lipsum Plugin for WordPress 2.0+](/files/scripts/lipsum.php.zip)**.

@@ -18,9 +18,9 @@ tags:
 ---
 After a while of using and not using this plugin I decided that it needed an update. The previous version would simply insert paragraphs of lipsum but now the plugin is set up to return a few helpful elements as well.
 
-<!--more-->
 
-## Supported Elements
+
+#### Supported Elements
 
 Now supported is:
 
@@ -39,13 +39,13 @@ Items can be combined to get the layout you want. For example, to get 3 paragrap
 {lipsum:1}
 ```
 
-## Why?
+#### Why?
 
 While I know that there are plenty of people supplying demo content out there sometimes we need to test the creation of pages or shortcode and input/output filters. Having dummy text easily at hand is very useful. At least, to me it is.
 
 So, there it is. Hopefully one or two people find this useful. If not, well, it kept me entertained for a while and will keep me flush with demo text.
 
-## Download
+#### Download
 
 **[Download the Lipsum Plugin for WordPress 2.0+](/files/scripts/lipsum.php.zip)**.
 

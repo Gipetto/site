@@ -19,7 +19,7 @@ This one is pretty fun. Well, at least I think it is.
 
 I was working with jQuery UI Sortables the other day and getting the reordered elements from jQuery back in to PHP for reordering via Ajax I ended up with an array whose elements matched the array keys of the array that I needed to order. Pretty standard fare. But I knew that there had to be a keen way to tackle the reordering process without going through some convoluted code. I was right. The way was the merge the two arrays.
 
-<!--more-->
+
 
 The way [array_merge](http://php.net/array_merge) works is if your array keys are non-numeric and that if the second given array has the same keys as the first given array the data from the second given array replaces the data in the first given array without reordering the first given array. 
 

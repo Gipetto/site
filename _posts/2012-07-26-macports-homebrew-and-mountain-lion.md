@@ -22,7 +22,7 @@ The inevitable happened today. Mountain Lion was installed in a couple of differ
 
 But first&hellip;
 
-## XCode
+#### XCode
 
 Prior to Mountain Lion the Xcode Command Line Tools could be downloaded separately from Xcode. This saved many of us the bandwidth and storage space required to install Xcode. As of the time of this writing I can only find the individually downloadable Command Line tools available for regular old Lion.
 
@@ -42,7 +42,7 @@ Press space a few times to get through the whole thing and then type &#8220;acce
 
 We're done with Xcode. We're now ready to compile applications on Mountain Lion.
 
-## MacPorts
+#### MacPorts
 
 MacPorts survived the upgrade just fine. MySQL, PHP and Apache were all running when Mountain Lion restarted. But just to be safe I updated MacPorts. 
 
@@ -58,7 +58,7 @@ $ sudo port -cup upgrade outdated
 
 But, all in all, done and done. Ok, eventually it was done after 6 hours of compiling.
 
-## Homebrew
+#### Homebrew
 
 Homebrew was harder. Homebrew's base philosophy, a philosophy that everyone loves about it (well, except for me) is that it uses already installed system libraries to run. Today that proved to be a bad thing.
 
@@ -78,7 +78,7 @@ $ ln -s /opt/X11 X11
 
 Now, since this was an OS upgrade all of the config and ini files have been renamed and replaced. This means that the Apache conf and PHP ini files needed replacing. Fortunately for us we had a custom Homebrew Formula that handled this portion of the environment for us. So we just had to uninstall and reinstall that Formula to re-configure Apache and PHP how we had it. Your setup will of course be different.
 
-## Conclusion
+#### Conclusion
 
 So, overall, while my total time spent troublehsooting, updating and fixing a Homebrew install today took up a little more than 4 hours of my day, it was fixed and working. 
 

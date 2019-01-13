@@ -22,13 +22,13 @@ I had been telling myself for the longest time, with the help of Andy, of course
 
 But then there was Gears of War. Truly addictive, very fun, and bloodier than hell.
 
-<!--more-->
+
 
 Since we let our old xBox Live subscription expire we couldn't get out old names back, but at least I could find something fun. Come and kick my ass if you see me online. I really suck. Though I'm starting to think that the Berserkers are actually kinda cute…
 
 <img src="https://i0.wp.com/card.mygamercard.net/sig/GamerPhag.png" alt="image" data-recalc-dims="1" />
 
-## That other game we got too
+#### That other game we got too
 
 As part of the package we also got Project Gotham Racing. And while I've enjoyed this game in the past I was sorely disappointed in the graphics after playing Gears of War.
 

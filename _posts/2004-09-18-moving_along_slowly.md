@@ -17,6 +17,6 @@ Next implementations are gonna be: adding comments, a page where I can add stori
 
 If that &#91;more&#93; tag works, then you shouldn't see anything below this paragraph.
 
-<!--more-->
+
 
 This is more text… It should only show up on the Archives pages

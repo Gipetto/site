@@ -11,7 +11,7 @@ categories:
 ---
 I've been testing out many a search script to find something that will run fast, comprehensively index pages, and be highly customizeable because I sure as hell wasn't going to write one myself. My search took about 36 hours of time dedicated to installing and running different search applications. I finally found what I was looking for in a free program called [htdig](http://www.htdig.org).
 
-<!--more-->
+
 
 Even though I haven't yet put it into production Htdig has proven to be everything I was looking for in a search script. I will spider a site, it respects robots.txt files, you can specify areas of pages that are not to be indexed (handy for excluding common navigational elements – be careful though – it won't follow the links in these areas either so be sure that anything you comment out is able to be found through a sitemap or something) and will display results by relevance and apply a 5 star rank to listings.
 

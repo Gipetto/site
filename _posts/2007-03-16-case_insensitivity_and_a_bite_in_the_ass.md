@@ -22,7 +22,7 @@ tags:
 ---
 I made a disturbing discovery lately and I can't believe that it has taken me this long to run across it. Case insensitivity in OS X can play havoc with a website, like completely bring it down, if any capitalization errors are made and not caught before moving to a case-sensitive server, like a unix server. And its all, most likely, attributable to HFS+.
 
-<!--more-->
+
 
 I first noticed issues with including files in PHP. If I include a file that is named _File.php_ and I request _file.php_ there will be no error on OS X and the file will include. On unix this will fail. 4 years and I've never run into this before… I don't know why. This one at least makes sense as it is the file system's behavior and should be expected.
 

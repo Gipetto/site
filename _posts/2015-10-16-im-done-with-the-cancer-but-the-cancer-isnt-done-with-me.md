@@ -40,7 +40,7 @@ Either way it won't be fun. I'll get an epidural, a catheter down my nose and in
 
 So, yeah… I need a drink.
 
-## So much for normalcy
+#### So much for normalcy
 
 I'm let down by this news. I let myself get too comfortable with the thought that despite the tumors showed no change in size from the chemo that I could relax and call it done. I feel like my oncologist could have better prepared me for the reality of my situation. But that's neither here nor there.
 

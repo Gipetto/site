@@ -23,7 +23,7 @@ tags:
 ---
 **UPDATE:** Being a linux n00b I didn't think that even though Ghostscript 7.07 can support everything I've done here it doesn't mean that its been compiled with everything needed to do the job right. My test server at work and my production server both run GS 7.07 but the production server is lacking the EPS Crop support – so I get nothing… While this script works well on OSX and a custom built linux box I can't guarantee that my production servers, which are not owned or managed by me, are set up correctly. So I'm resorting to purchasing a license for PStill. Bah! I was so close too.
 
-## Now, on with the original story:
+#### Now, on with the original story:
 
 Let me start this off by saying what I know about bash scripting can be written on the head of a pin in 24pt type.
 
@@ -33,7 +33,7 @@ Of course I want the end result to be the best it can be so naturally I want the
 
 At first I questioned this policy, now I know why PDFlib doesn't accept EPS files. They're a pain in the ass.
 
-<!--more-->
+
 
 EPS files contain a `BoundingBox` parameter that defines just the area that is occupied by the graphic data. However for reasons unknown to me that bounding box data is not always interpreted correctly and I could not figure out just how to get it to be recognized.
 
@@ -41,11 +41,11 @@ Between trying to get a Bash script written correctly and trying to figure out h
 
 So, in case anybody needs to do this in the future here is what to do and why:
 
-## The Problem
+#### The Problem
 
 I still don't know why but on some EPS files a conversion to PDF using GhostScript would place the artwork from the EPS on an 8.5" x 11" canvas. For some reason the Bounding Box data in the file was not being read and the graphic was being placed where it normally sits when opened in a Vector Illustration program (like Illustrator or Freehand). The problem with this is that when the resulting PDF was imported into another PDF via PDFlib the entire 8.5" x 11" canvas was seen as a graphic – there was no crop box to guide the import.
 
-## The Solution…
+#### The Solution…
 
 Wasn't easy to figure out. GhostScript has got to have one of the most complete and thorough documentation that tells you nothing! Despite having documentation going back several versions the documentation tells you all about the program without telling you how to use it. At least, that's how I found it…
 
@@ -62,7 +62,7 @@ My next thought was to try a custom page size. Using `-dDEVICEWIDTHPOINTS` and `
   -sProcessColorModel=DeviceCMYK -dEPSCrop $1
 ```
 
-## How the hell do I get that in there?
+#### How the hell do I get that in there?
 
 For my next trick I needed to get the bounding box information from a script output into the command above so that `$height` and `$width` correctly corresponded to the bounding box information I pulled from the file. I had to learn some Bash voodoo.
 
@@ -89,7 +89,7 @@ Setting bbox as the device for GhostScript returns the bounding box values. Usin
 
 There is another method of assigning the output of a command to a variable and I actually used that on the next section with the `$( … )` portion. I piped the echo to awk to grab just the portions that I need.
 
-## Its all in a name
+#### Its all in a name
 
 I designed the script to be passed a filename so that it can process that file. I needed to change the file extension on that name so I could give it to GhostScript as a name for my new file. I had to look around for help on this one and got this:
 
@@ -99,7 +99,7 @@ for f in $1; do
 done
 ```
 
-## Put it all together and Voila
+#### Put it all together and Voila
 
 All together that makes a handy little script for converting EPS files into PDF files with GhostScript as far back as 7.0.7. It may go back even further but I didn't test older systems since I don't need to go back any further than 7.0.7 and I think just about any host out there has at least 7.0.7.
 

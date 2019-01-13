@@ -24,7 +24,7 @@ tags:
 
 Maybe I've got too much time. Maybe not. Read on if you dare… I take no responsibility for you absorbing useless information if you read this.
 
-<!--more-->
+
 
 I couldn't find a definitive answer online about the kinds of file formats that my new (used) Nokia N-Gage would accept as file formats when uploading a wallpaper. The only thing I could find was that it could take RGB JPEG files. So I made myself a fun little wallpaper and uploaded it.
 

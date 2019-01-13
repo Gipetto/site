@@ -21,17 +21,17 @@ We bought a 14 game package to the Colorado Avalanche and so far have been to 2 
 
 I took the little Nikon camera with me this time just for fun.
 
-<!--more-->
 
-## The view
+
+#### The view
 
 ![image](https://top-frog.com/images/articles/hockey_game_1.jpg)
 
-## The kids
+#### The kids
 
 ![image](https://top-frog.com/images/articles/hockey_game_2.jpg)
 
-## The Final Score
+#### The Final Score
 
 ![image](https://top-frog.com/images/articles/hockey_game_3.jpg)
 

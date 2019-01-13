@@ -22,7 +22,7 @@ Its that time of year again. Blood, bites, and Zombies.
 
 Downtown Denver turned in to a Zombie infection zone last night as thousands of revelers showed up to have a bloody good time. For whatever reason this year's crawl started during the day and as a result produced a little more of a jovial crowd than last year. But that didn't stop the flow of disturbing scenes… oh no.
 
-<!--more-->
+
 
 {% flickr_photo '5111039189' %}
 

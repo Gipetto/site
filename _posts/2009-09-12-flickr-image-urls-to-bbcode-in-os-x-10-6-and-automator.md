@@ -21,7 +21,7 @@ So what do lazy programmers do? They automate the task 😉
 
 So here's a little Automator Setup for OS X 10.6 (aka: Snow Leopard) that'll add an item to the Services Menu so that all you have to do is highlight the HTML in Flickr to have it copied to the Clipboard.
 
-<!--more-->
+
 
 The heart of Service is a little PHP that uses preg_replace to transform the HTML in to BBCode.
 

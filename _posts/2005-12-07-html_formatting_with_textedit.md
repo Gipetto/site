@@ -24,7 +24,7 @@ I imagine that I'm not alone in my job duties of having to format long passages 
 
 Hopefully I'm not going into something that the rest of you have found and that is painfully obvious by writing this.
 
-<!--more-->
+
 
 It just takes a quick trip into the preferences to set up the correct settings for your environment (as illustrated below). Set your HTML output type, character encoding and type of CSS styling, open your document and save as an HTML file. 
 

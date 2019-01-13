@@ -13,7 +13,7 @@ threads:
 ---
 We've been agonizing over this for quite a while now and have finally come to a decision. We'll be seeking a new home for Bear. It is a combination of many things like his misdirected aggression towards his brother, Dozer, and his insecurities which lead towards other aggressive actions such as attacking other dogs and us.
 
-<!--more-->
+
 
 His actions on one occasion had Dozer hiding behind Andy. Dozer typically has no problem standing up for himself but Bear had gotten himself so worked up that he was uncontrollable.
 

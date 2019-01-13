@@ -20,7 +20,7 @@ So, in my infinite wisdom I decided to get myself a generic PC, used, and dual b
 
 So as not to bore you with a long, sorded story about the entire troubleshooting process I'll get straight to the point. It is super easy to botch up a Intel machine, especially one like an HP EPC where you have a very limited BIOS and no floppy drive.
 
-<!--more-->
+
 
 I used qtparted to adjust the partition table on the hard drive. This is standard practice and I didn't think anything of it. Well, silly me, I didn't check my BIOS version first and found out the hard way that qtparted kills the MBR on older BIOS setups. Basically my drive was taken out of LBR mode and everything on it was essentially invisible to the computer.
 
@@ -30,7 +30,7 @@ Everything that I found out there on teh intarweb about how to set a drive into 
 
 I don't own a computer with a floppy drive. And I own 6 computers.
 
-## Don't worry, it gets better
+#### Don't worry, it gets better
 
 The situation, not the story.
 

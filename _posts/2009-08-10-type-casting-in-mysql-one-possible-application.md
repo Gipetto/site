@@ -17,7 +17,7 @@ tags:
 ---
 Long story short: If you have a closed system and have to store signed integers in a MySQL varchar field you can still get the benefits of the signed integer by type casting the field during the query.
 
-<!--more-->
+
 
 Sometimes when writing functionality for a system like WordPress that has a definite benefit to using the built in storage mechanism the data can end up being stored in less than optimal formats. For example, signed integers in a varchar field. Fortunately it can still be made to work using the built in MySQL [CAST function](http://dev.mysql.com/doc/refman/5.0/en/cast-functions.html#function_cast).
 
