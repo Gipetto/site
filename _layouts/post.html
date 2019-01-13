@@ -5,13 +5,27 @@ section: article
 
 <article class="drivel">
     <h3>{{ page.title | escape }}</h3>
-    <p class="dates-n-stuff">
+    <p class="muted-n-stuff">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }} | {{ page.categories | join: ', ' }}
     </p>
+    
     {{ content }}
+
+    <p class="muted-n-stuff">Tagged as: {{ page.tags | join: ', ' | downcase }}</p>
 </article>
 
-<hr class="divider" />
-
 {% include pagination.html %}
+
+<section class="drivel maybe-related">
+    <h4>Maybe Related, Maybe Not:</h4>
+    <ul>
+        {% for related in site.related_posts %}
+            {% unless related.title == page.title %}
+            <li class="chevron">
+                <a href="{{ related.url }}">{{ related.title }}</a>
+            </li>
+            {% endunless %}
+        {% endfor %}
+    </ul>                
+</section>

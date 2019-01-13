@@ -8,14 +8,19 @@ guid: http://top-frog.com/?p=90
 permalink: /2005/06/05/the_order_of_things/
 categories:
   - Life
+tags:
+  - order
+  - habit 
+  - memory
+  - change
+  - working
+  - process
 ---
 Though I'm not a particularly suspicious person now – I'm more a creature of habit than anything else – when I was younger I often wondered if the order in which actions were performed would have any bearing on the outcome of the event. My clearest memory of this is in reference to G.I. Joe action figures and comic books.
 
 At the time we were living in Europe. We lived just outside of Brunssum, NL. My father was a Navy Commander attached to what was then AFCENT (Allied Forces Central Europe, Netherlands). I was about 11 when this takes place.
 
 A ritual treat to me was a regular trip to the Air Force Base just across the border in Germany – the name of which escapes me now – where we'd do the whole station-wagon full of groceries thing. But before going to the Commissary we'd hit the PX and the book store. This is where my little pea brain would start to wonder: would the outcome be different depending upon my choice of initial destination?
-
-<!--more-->
 
 ## Where to go first?
 

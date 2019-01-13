@@ -17,9 +17,9 @@ tags:
   - ssh
   - tunnel
 ---
-If you use FTP to connect to your Mac, TURN IT OFF! While FTP is nice and convenient its not terribly secure.
+If you use <dfn title="File Transfer Protocol">FTP</dfn> to connect to your Mac, TURN IT OFF! While FTP is nice and convenient its not terribly secure.
 
-## FTP over SSH
+### FTP over SSH
 
 A little known fact is that if you turn off FTP, but turn on Secure Shell Access in the Sharing Preferences you then can connect to your Mac using Secure FTP (SFTP) – [Wikipedia entry](http://en.wikipedia.org/wiki/Secure_FTP). Regular FTP is left off and an SSH tunnel is then required to connect via FTP and is done over port 22. 
 

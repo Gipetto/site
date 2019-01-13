@@ -63,7 +63,7 @@ I recently started using Smarty as my templating engine but was disappointed in 
 
 ## TextEdit: Word, RTF
 
-As I previously wrote about [TextEdit's HTML exporting capabilites](/2005/12/07/html_formatting_with_textedit) this can be short: Word => RTF=>TextEdit => XHTML. I might do a post in the future about the options of getting text out of Word and into usable HTML – there's more than just TextEdit working for us here. Now, if TextEdit just had RegEx it would be about as nice an RTF editor as I could ask for, though with [TextExtras](http://www.lorax.com/FreeStuff/TextExtras.html) it comes very close – I've still only scratched the surface of what TextExtras can add to a "normal" application.
+As I previously wrote about [TextEdit's HTML exporting capabilites](/2005/12/07/html_formatting_with_textedit) this can be short: Word &rArr; RTF &rArr; TextEdit &rArr; XHTML. I might do a post in the future about the options of getting text out of Word and into usable HTML – there's more than just TextEdit working for us here. Now, if TextEdit just had RegEx it would be about as nice an RTF editor as I could ask for, though with [TextExtras](http://www.lorax.com/FreeStuff/TextExtras.html) it comes very close – I've still only scratched the surface of what TextExtras can add to a "normal" application.
 
 ## CocoaMySQL: SQL
 
