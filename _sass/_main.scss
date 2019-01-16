@@ -140,6 +140,32 @@ body {
 			}
 		}
 
+		@mixin linkHanger() {
+			margin-right: 3px;
+			display: inline-block;
+			text-decoration: none !important;
+		}
+	
+		.chevron {
+			&:before {
+				content: '\000BB';
+				@include linkHanger();
+			}
+		}
+	
+		.hellip {
+			&:after {
+				content: '\02026';
+			}
+		}
+	
+		.darr {
+			&:before {
+				content: '\02193';
+				@include linkHanger();
+			}
+		}
+
 		code {
 			background: #eee;
 			border: 1px solid lightgray;

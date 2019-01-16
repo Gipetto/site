@@ -1,5 +1,17 @@
 
 <aside class="widget">
+        <div class="recent-crap">
+            <h2 class="widget-title">Recently:</h2>
+            <ul>
+                {% for recent_post in site.posts limit:5 %}
+                    <li>
+                        <a class="chevron" href="{{ site.url }}{{ recent_post.url }}">{{ recent_post.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </aside>
+<aside class="widget">
     <h2 class="widget-title">What is this?</h2>
     <div class="textwidget">
         <p>{{ site.description }}</p>
@@ -46,7 +58,7 @@
     </div>
 </aside>
 <aside class="widget">
-    <h2 class="widget-title">Subscribe</h2>
+    <h2 class="widget-title">Subscribe:</h2>
     <div class="textwidget">
         <p>If you're the self-loathing type, you can <a href="{{ site.url }}/feed">get updates to this site via RSS.</a></p>
         <p><a href="{{ site.url }}/what-is-rss/">What is RSS?</a></p>
