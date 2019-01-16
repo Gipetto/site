@@ -2,7 +2,6 @@
 id: 2581
 title: Progress scans are inconclusive
 date: 2015-08-15T12:48:33+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2581
 permalink: /2015/08/15/progress-scans-are-inconclusive/

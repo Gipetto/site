@@ -2,12 +2,13 @@
 id: 83
 title: Temporary Email Addresses
 date: 2005-05-26T13:15:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=83
 permalink: /2005/05/26/temporary_email_addresses/
 categories:
   - Jabberwocky
+tags:
+  - email
 ---
 I don't normally comment on something that should be posted to the links section but this seemed worth writing about.
 

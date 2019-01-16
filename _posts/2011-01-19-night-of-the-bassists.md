@@ -2,7 +2,6 @@
 id: 1850
 title: Night of the Bassists
 date: 2011-01-19T21:09:45+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1850
 permalink: /2011/01/19/night-of-the-bassists/

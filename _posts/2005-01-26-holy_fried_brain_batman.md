@@ -2,12 +2,15 @@
 id: 35
 title: Holy fried brain, Batman!
 date: 2005-01-26T00:40:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=35
 permalink: /2005/01/26/holy_fried_brain_batman/
 categories:
   - Life
+tags: 
+  - work
+  - duties
+  - freelance
 ---
 Haven't had an update in a while. Work has been grueling. Home has been busy. My brain is fried.
 
@@ -19,7 +22,7 @@ On top of that there was a color issue on the pocket folder that caused the boss
 
 Now, onto my actual job. I've got almost all the content I need to launch. Unfortunately it is not enough to be really good – we have a lot of sections that are still in need of rewrite and others that have rewritten content but are still vague. We have a website but it doesn't tell you anything but what product vendors we stock. We can't even give a comprehensive list of actual products we sell due to the inability of some systems to talk to each other or even export the data needed to CSV. Yep, I can't even get CSV files from Crystal Reports. The world MUST be coming to an end. Enterprise level software can't deliver the basics…
 
-Bah – I guess I needed to get that out. So, who ever gets this far in reading – thanks – and keep your eyes on [Puddlemonkey](http://www.puddlemonkey.com). I'm getting Andy a blog going so she can get to doing more creative writing and poetry – there's something about having an audience that makes writing easier. The design won't be anything unique or extraordinary to begin wth, but she'll at least have a place to publish. You can also find a bit of her handiwork [here](http://www.mikeindustries.com/blog/archive/2005/01/one-million-served#2286) at a Haiku writing contest. I really think hers is the best. It still makes me laugh just thinking about it.
+Bah – I guess I needed to get that out. So, who ever gets this far in reading – thanks – and keep your eyes on ~~Puddlemonkey~~. I'm getting Andy a blog going so she can get to doing more creative writing and poetry – there's something about having an audience that makes writing easier. The design won't be anything unique or extraordinary to begin wth, but she'll at least have a place to publish. You can also find a bit of her handiwork [here for a Haiku writing contest](http://www.mikeindustries.com/blog/archive/2005/01/one-million-served#comment-2739). I really think hers is the best. It still makes me laugh just thinking about it.
 
 Hm, what else?
 

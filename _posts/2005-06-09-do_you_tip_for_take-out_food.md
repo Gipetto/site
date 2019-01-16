@@ -2,7 +2,6 @@
 id: 93
 title: Do you tip for take-out food?
 date: 2005-06-09T12:51:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=93
 permalink: /2005/06/09/do_you_tip_for_take-out_food/

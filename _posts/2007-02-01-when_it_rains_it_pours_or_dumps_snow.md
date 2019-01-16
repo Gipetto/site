@@ -2,7 +2,6 @@
 id: 208
 title: When it rains it pours, or dumps snow
 date: 2007-02-01T20:00:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=208
 permalink: /2007/02/01/when_it_rains_it_pours_or_dumps_snow/

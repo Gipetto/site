@@ -2,7 +2,6 @@
 id: 244
 title: Quick thought for the day
 date: 2008-09-07T16:38:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=244
 permalink: /2008/09/07/quick_thought_for_the_day/

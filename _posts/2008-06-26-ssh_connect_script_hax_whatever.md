@@ -2,7 +2,6 @@
 id: 237
 title: 'SSH Connect Script, Hax, Whatever…'
 date: 2008-06-26T20:58:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=237
 permalink: /2008/06/26/ssh_connect_script_hax_whatever/

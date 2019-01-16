@@ -2,7 +2,6 @@
 id: 194
 title: InDesign, XML Import, and Whitespace
 date: 2006-11-10T10:19:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=194
 permalink: /2006/11/10/indesign_xml_import_and_whitespace/

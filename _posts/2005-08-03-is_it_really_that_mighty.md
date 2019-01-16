@@ -2,7 +2,6 @@
 id: 118
 title: Is it really that mighty?
 date: 2005-08-03T12:21:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=118
 permalink: /2005/08/03/is_it_really_that_mighty/

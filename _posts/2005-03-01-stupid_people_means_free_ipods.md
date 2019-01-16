@@ -2,12 +2,15 @@
 id: 48
 title: Stupid people means free iPods
 date: 2005-03-01T07:54:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=48
 permalink: /2005/03/01/stupid_people_means_free_ipods/
 categories:
   - Computers
+tags:
+  - ipod
+  - repair
+  - clubhouse
 ---
 Yep, I said it. Contrary to popular belief stupid people can contribute to society – to me in particular on occaision. Our little family is the owner of a semi-used 20gig 4th Generation iPod. It was free.
 

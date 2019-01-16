@@ -2,7 +2,6 @@
 id: 153
 title: "Hawai'i Is Beautiful"
 date: 2006-02-18T19:04:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=153
 permalink: /2006/02/18/hawaii_is_beautiful/

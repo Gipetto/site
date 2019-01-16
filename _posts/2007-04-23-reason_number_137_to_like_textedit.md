@@ -2,7 +2,6 @@
 id: 210
 title: 'Reason #137 to like TextEdit'
 date: 2007-04-23T11:34:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=210
 permalink: /2007/04/23/reason_number_137_to_like_textedit/

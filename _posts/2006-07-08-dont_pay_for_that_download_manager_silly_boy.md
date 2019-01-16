@@ -2,7 +2,6 @@
 id: 168
 title: "Don't pay for that download manager, silly boy!"
 date: 2006-07-08T16:31:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=168
 permalink: /2006/07/08/dont_pay_for_that_download_manager_silly_boy/

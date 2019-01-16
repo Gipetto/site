@@ -2,7 +2,6 @@
 id: 115
 title: "That's just embarrassing"
 date: 2005-07-28T14:22:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=115
 permalink: /2005/07/28/thats_just_embarrasing/

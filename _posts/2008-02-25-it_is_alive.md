@@ -2,7 +2,6 @@
 id: 225
 title: It is Alive!
 date: 2008-02-25T20:58:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=225
 permalink: /2008/02/25/it_is_alive/

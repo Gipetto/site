@@ -2,7 +2,6 @@
 id: 95
 title: "I've got it, now what the hell am I gonna do with it?"
 date: 2005-06-15T20:53:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=95
 permalink: /2005/06/15/ive_got_it_now_what_the_hell/

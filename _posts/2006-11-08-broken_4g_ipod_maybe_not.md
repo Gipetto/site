@@ -2,7 +2,6 @@
 id: 191
 title: 'Broken 4G iPod? Maybe not…'
 date: 2006-11-08T13:31:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=191
 permalink: /2006/11/08/broken_4g_ipod_maybe_not/

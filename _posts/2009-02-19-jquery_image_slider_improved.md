@@ -2,7 +2,6 @@
 id: 253
 title: 'jQuery Image Slider: Improved'
 date: 2009-02-19T01:16:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=253
 permalink: /2009/02/19/jquery_image_slider_improved/

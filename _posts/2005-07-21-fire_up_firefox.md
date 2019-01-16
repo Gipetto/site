@@ -2,7 +2,6 @@
 id: 111
 title: Fire Up Firefox
 date: 2005-07-21T13:23:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=111
 permalink: /2005/07/21/fire_up_firefox/
@@ -23,11 +22,9 @@ tags:
   - toolbar
   - web developer
 ---
-Though I prefer to use [Safari](http://www.apple.com/macosx/features/safari/) for everyday browsing I keep [Firefox](http://www.mozilla.org/products/firefox/) on hand because it represents a major player in the browser market that I need to test against and because it has a wealth of extensions that make web development easier.
+Though I prefer to use Apple's Safari for everyday browsing I keep [Firefox](http://www.mozilla.org/products/firefox/) on hand because it represents a major player in the browser market that I need to test against and because it has a wealth of extensions that make web development easier.
 
 Of the many extensions for Firefox I have found a small set of extensions that really help me on a daily basis: [Fangs Screen Reader Emulator](https://addons.mozilla.org/extensions/moreinfo.php?id=402), [Javascript Debugger](https://addons.mozilla.org/extensions/moreinfo.php?id=216), [TextMarker](https://addons.mozilla.org/extensions/moreinfo.php?id=559), [View Rendered Source](https://addons.mozilla.org/extensions/moreinfo.php?id=655), [Web Developer](https://addons.mozilla.org/extensions/moreinfo.php?id=60). One that was pointed out to me just today is [fireFTP](https://addons.mozilla.org/extensions/moreinfo.php?id=684). And, of course, we all need to get our RSS fix so when I'm in Firefox I use [Sage](https://addons.mozilla.org/extensions/moreinfo.php?id=77) to get that fix.
-
-
 
 #### Making development easier
 

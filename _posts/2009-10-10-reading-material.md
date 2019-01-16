@@ -2,7 +2,6 @@
 id: 1034
 title: Reading Material
 date: 2009-10-10T08:57:16+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1034
 permalink: /2009/10/10/reading-material/

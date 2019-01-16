@@ -2,7 +2,6 @@
 id: 822
 title: Excluding packages from MacPorts operations
 date: 2009-07-14T07:59:33+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=822
 permalink: /2009/07/14/excluding-packages-from-macports-operations/
@@ -18,15 +17,16 @@ This creates a problem, though, as MacPorts constantly lists my PHP 5.2 as outda
 
 While I don't want to upgrade to PHP 5.3 right away, I still want to have a quick and easy upgrade of everything else that I have installed. There's not any clear documentation about excluding ports from a port command, but there is a tasty morsel in the `port` man page.
 
+```
+Logical operators "and", "or", "not", "!", "(" and ")" may be 
+used to combine individual portnames, port glob patterns and/or 
+pseudo-portnames to construct complex port expressions that 
+expand to the set of matching ports. For example:
 
-
-> Logical operators &#8220;and&#8221;, &#8220;or&#8221;, &#8220;not&#8221;, &#8220;!&#8221;, &#8220;(&#8221; and &#8220;)&#8221; may be used to combine individual portnames, port glob patterns and/or pseudo-portnames to construct complex port expressions that expand to the set of matching ports. For example:
-> 
-> &nbsp;&nbsp;port upgrade installed and apache*
-  
-> &nbsp;&nbsp;port echo maintainer:jberry and uninstalled and \
-  
-> &nbsp;&nbsp;&nbsp;&nbsp;( category:java and not commons* )
+ port upgrade installed and apache*  
+ port echo maintainer:jberry and uninstalled and \  
+   ( category:java and not commons* )
+```
 
 That means I can do this to exclude the PHP 5.3 upgrade until I'm ready:
 

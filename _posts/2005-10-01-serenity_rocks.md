@@ -2,7 +2,6 @@
 id: 137
 title: Serenity Rocks
 date: 2005-10-01T23:14:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=137
 permalink: /2005/10/01/serenity_rocks/

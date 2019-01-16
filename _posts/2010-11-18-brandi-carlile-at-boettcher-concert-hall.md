@@ -2,7 +2,6 @@
 id: 1733
 title: Brandi Carlile at Boettcher Concert Hall
 date: 2010-11-18T08:22:32+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1733
 permalink: /2010/11/18/brandi-carlile-at-boettcher-concert-hall/

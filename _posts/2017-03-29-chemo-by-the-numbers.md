@@ -2,7 +2,6 @@
 id: 2669
 title: Chemo by the numbers
 date: 2017-03-29T20:58:52+00:00
-author: Shawn
 layout: post
 guid: https://top-frog.com/?p=2669
 permalink: /2017/03/29/chemo-by-the-numbers/

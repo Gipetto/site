@@ -2,7 +2,6 @@
 id: 175
 title: Hard drive failure is good?
 date: 2006-09-15T23:05:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=175
 permalink: /2006/09/15/hard_drive_failure_is_good/

@@ -2,7 +2,6 @@
 id: 1115
 title: 'Its a wet snow…'
 date: 2009-11-15T11:27:24+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1115
 permalink: /2009/11/15/its-a-wet-snow/

@@ -2,7 +2,6 @@
 id: 226
 title: Neglected!
 date: 2008-04-23T10:51:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=226
 permalink: /2008/04/23/neglected/

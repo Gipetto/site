@@ -2,7 +2,6 @@
 id: 2435
 title: Murderous Family Jewel
 date: 2015-04-08T23:08:24+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2435
 permalink: /2015/04/08/the-murderous-family-jewel/
@@ -19,9 +18,7 @@ tags:
 threads:
   - The Wailing Wookiee
 ---
-<div class="quicknav" style="padding: 5px 10px">
-  I'm probably premature in posting this but having it out in the open means that I can talk freely about it. My apologies but this is going to be a bit discombobulated.
-</div>
+I'm probably premature in posting this but having it out in the open means that I can talk freely about it. My apologies but this is going to be a bit discombobulated.
 
 [My left testicle was trying to kill me](http://www.testicularcancerawarenessfoundation.org/testicular-cancer-info/). He has since been banished from his sac. I also have swollen lymph nodes around my kidneys. It is still unknown if the cancer has metasticized. We'll be keeping an eye on the lymph nodes to see if they respond to the removal of the testicle and I have a CT scan scheduled to see if there's any indication that the cancer has spread further.
 

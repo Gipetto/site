@@ -2,7 +2,6 @@
 id: 944
 title: Grand Funk Railroad
 date: 2009-09-04T22:19:34+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=944
 permalink: /2009/09/04/grand-funk-railroad/

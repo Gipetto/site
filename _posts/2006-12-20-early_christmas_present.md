@@ -2,7 +2,6 @@
 id: 202
 title: Early Christmas Present
 date: 2006-12-20T15:43:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=202
 permalink: /2006/12/20/early_christmas_present/

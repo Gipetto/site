@@ -2,7 +2,6 @@
 id: 2251
 title: Art at Stanford
 date: 2013-01-24T22:06:36+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2251
 permalink: /2013/01/24/art-at-stanford/

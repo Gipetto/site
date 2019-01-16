@@ -2,7 +2,6 @@
 id: 158
 title: Ajaxy goodness and Safari form behavior
 date: 2006-04-14T22:52:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=158
 permalink: /2006/04/14/ajaxy_goodness_and_safari_form_behavior/
@@ -31,8 +30,6 @@ Then I went on to tackle the fact that Safari's form labels don't act like form 
 Read on to find out how I finally caught up to last year.
 
 **Update:** Now that I go browsing through old code to reuse something I've found that my little piece of borrowed code is actually something that is less than what I've been using for some time, but had just forgotten about.
-
-
 
 #### I feel so behind
 
@@ -68,7 +65,7 @@ function $(objNm) {
 }
 ```
 
-It is basically a shortcut to getting an element by id so it is now possible to use $(&#8216;myObj') to access an object on the page.
+It is basically a shortcut to getting an element by id so it is now possible to use `$('myObj')` to access an object on the page.
 
 **Update:** As it turns out, this little tidbit is something that I've been doing for some time, but at the time stole it from somebody else \*\*cough\*\* john \*\*cough\*\* but had forgotten about.
 

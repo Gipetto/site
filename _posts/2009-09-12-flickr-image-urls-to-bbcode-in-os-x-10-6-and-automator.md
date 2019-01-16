@@ -2,7 +2,6 @@
 id: 961
 title: Flickr Image URLs to BBCode in OS X 10.6 and Automator
 date: 2009-09-12T21:42:58+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=961
 permalink: /2009/09/12/flickr-image-urls-to-bbcode-in-os-x-10-6-and-automator/
@@ -34,7 +33,7 @@ Next step is to add this to Automator. When Automator is launched it asks what k
 Save the action and it shows up in the Services Menu without restarting your applications. Below is the way it should look (plus a little extra command line goodness to pop a Growl notification when its done).
 
 <div class="frame">
-  <img src="https://i0.wp.com/top-frog.com/wp/wp-content/uploads/2009/09/automator-flickr-2.png?resize=510%2C358" alt="automator-flickr" title="automator-flickr" width="510" height="358" class="alignnone size-full wp-image-964" data-recalc-dims="1" />
+  <img src="/assets/automator-flickr-2.png" alt="automator-flickr" title="automator-flickr" />
 </div>
 
 To use it, go to one of your Flickr images, click on &#8220;all sizes&#8221; and select the image you'd like to use. Highlight the HTML in Section 1 below the heading &#8220;To link to this photo on other websites you can either:&#8221; that appears under the photo. Go to the Services Menu, select your service, and then paste the result in to whatever forum post you're working on. 

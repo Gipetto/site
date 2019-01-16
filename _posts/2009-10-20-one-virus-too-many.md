@@ -2,7 +2,6 @@
 id: 1066
 title: One Virus Too Many
 date: 2009-10-20T22:04:47+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1066
 permalink: /2009/10/20/one-virus-too-many/

@@ -2,7 +2,6 @@
 id: 481
 title: Server Room
 date: 2008-04-02T23:13:50+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.local/?p=481
 permalink: /2008/04/02/server-room/

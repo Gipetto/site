@@ -2,16 +2,17 @@
 id: 74
 title: Giving Photoshop Two Fingers
 date: 2005-04-25T12:56:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=74
 permalink: /2005/04/25/giving_photoshop_two_fingers/
 categories:
   - Computers
+tags:
+  - photoshop
+  - interface
+  - trackpad
 ---
 Yet another reason to love two fingered scrolling on the new Aluminum PowerBooks. I just found this last night by accident. If you already knew, well, then, WHY THE HELL DIDN'T YOU TELL ME?!? It turns out that photoshop will allow you to scroll the levels (and other sliders that are accompanied by manual imput boxes) with two fingered scrolling.
-
-
 
 ![image](https://top-frog.com/images/articles/scroll-control.jpg)
 

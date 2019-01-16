@@ -2,7 +2,6 @@
 id: 217
 title: 'File upload class – it is fixed!'
 date: 2007-08-30T21:53:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=217
 permalink: /2007/08/30/file_upload_class_it_is_fixed/

@@ -2,7 +2,6 @@
 id: 193
 title: Fun with Finder Windows
 date: 2006-11-10T09:27:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=193
 permalink: /2006/11/10/fun_with_finder_windows/

@@ -2,7 +2,6 @@
 id: 121
 title: "I'll not make that mistake again"
 date: 2005-08-17T23:05:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=121
 permalink: /2005/08/17/ill_not_make_that_mistake_again/

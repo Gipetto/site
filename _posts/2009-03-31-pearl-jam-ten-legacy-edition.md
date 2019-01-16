@@ -2,7 +2,6 @@
 id: 531
 title: 'Pearl Jam: Ten > Ten (Legacy Edition)'
 date: 2009-03-31T23:38:38+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=531
 permalink: /2009/03/31/pearl-jam-ten-legacy-edition/

@@ -2,7 +2,6 @@
 id: 1503
 title: It was a flower kinda day this morning
 date: 2010-08-01T12:39:09+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1503
 permalink: /2010/08/01/it-was-a-flower-kinda-day-this-morning/

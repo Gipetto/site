@@ -2,7 +2,6 @@
 id: 107
 title: "Isn't she lovely?"
 date: 2005-07-14T22:58:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=107
 permalink: /2005/07/14/isnt_she_lovely/
@@ -15,7 +14,11 @@ tags:
   - washington
 ---
 
-<img src="https://top-frog.com/images/articles/andy1.jpg" alt="DC Monkey" />
+<center>
+  <div class="frame">
+    <img src="/assets/andy1.jpg" alt="Andy at the FDR Memorial in DC" />
+  </div>
+</center>
 
 Yes, she is.
 

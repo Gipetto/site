@@ -2,7 +2,6 @@
 id: 179
 title: Setting the base directory in PHP
 date: 2006-09-30T14:48:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=179
 permalink: /2006/09/30/setting_the_base_directory_in_php/

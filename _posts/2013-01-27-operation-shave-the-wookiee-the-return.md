@@ -2,7 +2,6 @@
 id: 2274
 title: Operation Shave the Wookiee, the Return
 date: 2013-01-27T20:32:23+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2274
 permalink: /2013/01/27/operation-shave-the-wookiee-the-return/
@@ -17,9 +16,8 @@ tags:
   - shave
   - st. baldricks
 ---
-<div class="frame">
-  <img src="https://i2.wp.com/farm9.staticflickr.com/8374/8422727846_bc687beaa6_o.jpg?resize=500%2C281" width="500" height="281" alt="shave-the-wookiee-the-return" data-recalc-dims="1" />
-</div>
+
+{% flickr_photo '8422727846' %}
 
 Here we go again.
 

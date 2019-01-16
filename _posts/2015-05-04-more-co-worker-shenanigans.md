@@ -2,7 +2,6 @@
 id: 2519
 title: More co-worker shenanigans
 date: 2015-05-04T17:23:13+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2519
 permalink: /2015/05/04/more-co-worker-shenanigans/

@@ -2,7 +2,6 @@
 id: 1476
 title: Firefox view-source tab-width
 date: 2010-07-15T17:53:37+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1476
 permalink: /2010/07/15/firefox-view-source-tab-width/

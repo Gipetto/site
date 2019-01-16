@@ -2,7 +2,6 @@
 id: 212
 title: I want my OS X VM
 date: 2007-05-04T11:11:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=212
 permalink: /2007/05/04/i_want_my_os_x_vm/

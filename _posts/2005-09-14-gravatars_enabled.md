@@ -2,7 +2,6 @@
 id: 131
 title: Gravatars Enabled
 date: 2005-09-14T22:36:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=131
 permalink: /2005/09/14/gravatars_enabled/

@@ -2,7 +2,6 @@
 id: 993
 title: 'WordPress users: USE A FAVICON!'
 date: 2009-09-18T16:33:37+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=993
 permalink: /2009/09/18/wordpress-users-use-a-favicon/

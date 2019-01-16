@@ -2,16 +2,16 @@
 id: 69
 title: Passing by Reference
 date: 2005-04-21T15:18:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=69
 permalink: /2005/04/21/passing_by_reference/
 categories:
   - PHP Scripting
+tags:
+  - php
+  - reference
 ---
 Being a self taught php programmer I tend to learn something every time I run accross an article outlining different techniques. Lately I've been learning about references. At first I thought "so what?" at the thought of using a reference to a variable instead of the variable itself. But once I thought about it some more it made more and more sense.
-
-
 
 Passing by reference, in case you don't know, means that you can make a statement like:
 
@@ -25,10 +25,9 @@ echo($var1);
 In this instance the last echo statement will print 2. Right now, if you've never used references before you're thinking "yeah, so what?" Well, let's dive into a more complex example.
 
 ``` php
-function manipulate_var(&$num)
-    {
-        $num = $num * $num;
-    }
+function manipulate_var(&$num) {
+  $num = $num * $num;
+}
 $var = 4;
 manipulate_var($var);
 echo ($var);

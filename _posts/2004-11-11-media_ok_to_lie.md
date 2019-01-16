@@ -2,20 +2,20 @@
 id: 15
 title: 'Florida Appeals Court to FOX News: It is OK to lie!'
 date: 2004-11-11T13:40:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=15
 permalink: /2004/11/11/media_ok_to_lie/
 categories:
   - Jabberwocky
+tags:
+  - faux news
+  - media
 ---
 As it turns out the Florida Court of Appeals ruled that news organisations are not bound by law to truthfully report stories they air.
 
 In a ruling last year, the Florida Court of Appeals awarded 24.3 Billion dollars in damages and compensation to FOX News when it overturned a previous ruling that held FOX News liable in the wrongful termination of two of its employees. The previous ruling stated that two employees were wrongfully terminated when they refused to air a story that FOX News had demanded they alter. The alterations to the story would have taken out facts and replaced then with, well, lies.
 
 [Get the full story](http://www.relfe.com/media_can_legally_lie.html)
-
-
 
 The premise under which the initial ruling was overturned was that the FCCs regulations which state that news organisations must truthfully relay the news is not law and thus not punishable in court when broken.
 
@@ -33,7 +33,7 @@ Outside influences are too much for them to bear. And right off the bat politics
 
 Consider scientific stories where media outlets maintain that a &#8220;balanced story&#8221; must prevail and insist on finding or even creating an opposing viewpoint to create the illusion that a story is in fact fair and impartial. 
 
-[This is a long article](http://www.cjr.org/issues/2004/6/mooney-science.asp) but well worth the read. It really creates doubt as to the effectiveness of major media outlets.
+~~[This is a long article](http://www.cjr.org/issues/2004/6/mooney-science.asp)~~ but well worth the read. It really creates doubt as to the effectiveness of major media outlets.
 
 And, not surprisingly, politics shows up in the scientific debate as politicians are some of the highest offenders of scientific fact manipulation because the backing of big industry is the cornerstone of their power. They'll bow to industry and feed the media biased and wrong facts that the media will accept and probably distort so that it seems fair and balanced or so that it meets the requirments of their shareholders.
 

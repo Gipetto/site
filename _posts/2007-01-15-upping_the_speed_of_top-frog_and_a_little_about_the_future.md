@@ -2,7 +2,6 @@
 id: 207
 title: Upping the speed of top-frog, and a little about the future
 date: 2007-01-15T09:53:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=207
 permalink: /2007/01/15/upping_the_speed_of_top-frog_and_a_little_about_the_future/

@@ -2,7 +2,6 @@
 id: 2614
 title: "I'm done with the cancer, but the cancer isn't done with me"
 date: 2015-10-16T22:09:17+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2614
 permalink: /2015/10/16/im-done-with-the-cancer-but-the-cancer-isnt-done-with-me/

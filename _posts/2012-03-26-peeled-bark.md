@@ -2,7 +2,6 @@
 id: 2153
 title: Peeled Bark
 date: 2012-03-26T22:25:45+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2153
 permalink: /2012/03/26/peeled-bark/

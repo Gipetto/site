@@ -2,12 +2,14 @@
 id: 30
 title: Everybody should have one
 date: 2004-12-16T09:23:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=30
 permalink: /2004/12/16/everybody_should_have_one/
 categories:
   - 'Web Design &amp; Development'
+tags:
+  - domain-name
+  - fuzzycoconut
 ---
 Think about it, everybody wants thier own playground, someplace they can put funny or even stupid things and not have it completetly associated with official business.
 

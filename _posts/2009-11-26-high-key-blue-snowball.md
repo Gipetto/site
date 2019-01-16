@@ -2,7 +2,6 @@
 id: 1122
 title: High-key Blue Snowball
 date: 2009-11-26T01:46:06+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1122
 permalink: /2009/11/26/high-key-blue-snowball/

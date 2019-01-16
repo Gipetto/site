@@ -2,7 +2,6 @@
 id: 1081
 title: Zombie Crawl Denver, 2009
 date: 2009-10-24T22:57:39+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1081
 permalink: /2009/10/24/zombie-crawl-denver-2009/

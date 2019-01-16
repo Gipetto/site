@@ -2,7 +2,6 @@
 id: 1542
 title: "Now that's a lot of frogs!"
 date: 2010-08-30T20:30:07+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1542
 permalink: /2010/08/30/now-thats-a-lot-of-frogs/

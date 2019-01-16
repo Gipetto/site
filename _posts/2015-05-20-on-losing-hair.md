@@ -2,7 +2,6 @@
 id: 2560
 title: On losing hair
 date: 2015-05-20T11:45:37+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2560
 permalink: /2015/05/20/on-losing-hair/

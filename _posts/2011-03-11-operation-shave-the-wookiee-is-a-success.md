@@ -2,7 +2,6 @@
 id: 1929
 title: 'Operation "Shave the Wookiee" is a success!'
 date: 2011-03-11T23:29:50+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1929
 permalink: /2011/03/11/operation-shave-the-wookiee-is-a-success/

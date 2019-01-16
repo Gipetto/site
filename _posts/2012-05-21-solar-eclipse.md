@@ -2,7 +2,6 @@
 id: 2160
 title: Solar Eclipse
 date: 2012-05-21T00:06:01+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2160
 permalink: /2012/05/21/solar-eclipse/

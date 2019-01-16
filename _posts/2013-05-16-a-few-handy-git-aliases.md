@@ -2,7 +2,6 @@
 id: 2299
 title: A few handy git aliases
 date: 2013-05-16T00:34:19+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2299
 permalink: /2013/05/16/a-few-handy-git-aliases/
@@ -74,11 +73,9 @@ I don't now about you, but I've not been able to get on board with the dedicated
 $ git lg
 ```
 
-<div class="frame">
-  <img src="https://i2.wp.com/top-frog.com/wp-content/uploads/2013/05/git-lg.gif?resize=500%2C258" alt="" title="git-lg" width="500" height="258" class="alignnone size-full wp-image-2313" srcset="https://i2.wp.com/top-frog.com/wp-content/uploads/2013/05/git-lg.gif?w=500&ssl=1 500w, https://i2.wp.com/top-frog.com/wp-content/uploads/2013/05/git-lg.gif?resize=75%2C38&ssl=1 75w" sizes="(max-width: 500px) 100vw, 500px" data-recalc-dims="1" />
-</div>
-
-
+<span class="frame">
+  <img src="/assets/git-lg.gif" alt="Git Aliases Screenshot" title="git-lg" />
+</span>
 
 ### Ok, enough jabber, gimme the code
 

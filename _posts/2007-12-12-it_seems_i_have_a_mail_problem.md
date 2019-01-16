@@ -2,7 +2,6 @@
 id: 219
 title: 'It seems I have a mail problem…'
 date: 2007-12-12T21:11:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=219
 permalink: /2007/12/12/it_seems_i_have_a_mail_problem/

@@ -2,7 +2,6 @@
 id: 152
 title: 'Well, that was easy…'
 date: 2006-02-03T07:38:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=152
 permalink: /2006/02/03/well_that_was_easy/

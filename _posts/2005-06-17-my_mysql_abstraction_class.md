@@ -2,7 +2,6 @@
 id: 96
 title: My MySQL Abstraction Class
 date: 2005-06-17T13:03:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=96
 permalink: /2005/06/17/my_mysql_abstraction_class/

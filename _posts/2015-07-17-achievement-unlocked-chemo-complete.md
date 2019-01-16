@@ -2,7 +2,6 @@
 id: 2578
 title: 'Achievement Unlocked: Chemo Complete!'
 date: 2015-07-17T17:51:40+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2578
 permalink: /2015/07/17/achievement-unlocked-chemo-complete/

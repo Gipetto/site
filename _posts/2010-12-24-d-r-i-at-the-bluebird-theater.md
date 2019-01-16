@@ -2,7 +2,6 @@
 id: 1807
 title: D.R.I. at the Bluebird Theater
 date: 2010-12-24T10:35:08+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1807
 permalink: /2010/12/24/d-r-i-at-the-bluebird-theater/

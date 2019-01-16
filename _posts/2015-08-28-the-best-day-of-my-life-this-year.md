@@ -2,7 +2,6 @@
 id: 2587
 title: The best day of my life this year!
 date: 2015-08-28T16:36:17+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2587
 permalink: /2015/08/28/the-best-day-of-my-life-this-year/

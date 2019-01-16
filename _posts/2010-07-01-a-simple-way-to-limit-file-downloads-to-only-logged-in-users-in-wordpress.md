@@ -2,7 +2,6 @@
 id: 1344
 title: A simple way to limit file downloads to only logged in users in WordPress
 date: 2010-07-01T12:51:38+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1344
 permalink: /2010/07/01/a-simple-way-to-limit-file-downloads-to-only-logged-in-users-in-wordpress/

@@ -2,7 +2,6 @@
 id: 192
 title: 'PHP: Sort Multidimensional arrays by key'
 date: 2006-11-08T15:53:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=192
 permalink: /2006/11/08/php_sort_multidimensional_arrays_by_key/

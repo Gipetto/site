@@ -2,7 +2,6 @@
 id: 169
 title: Javascript, IE and Generating Tables
 date: 2006-07-09T22:31:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=169
 permalink: /2006/07/09/javascript_ie_and_generating_tables/

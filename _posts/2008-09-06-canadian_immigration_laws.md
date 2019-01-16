@@ -2,7 +2,6 @@
 id: 243
 title: Canadian Immigration Laws
 date: 2008-09-06T20:31:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=243
 permalink: /2008/09/06/canadian_immigration_laws/

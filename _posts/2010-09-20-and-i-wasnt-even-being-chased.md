@@ -2,7 +2,6 @@
 id: 1580
 title: "And I wasn't even being chased!"
 date: 2010-09-20T22:13:50+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1580
 permalink: /2010/09/20/and-i-wasnt-even-being-chased/

@@ -2,7 +2,6 @@
 id: 2059
 title: A few PHP Dev Helper functions
 date: 2011-09-27T00:51:47+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2059
 permalink: /2011/09/27/a-few-php-dev-helper-functions/

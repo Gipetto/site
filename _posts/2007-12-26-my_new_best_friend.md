@@ -2,7 +2,6 @@
 id: 221
 title: My New Best Friend
 date: 2007-12-26T22:23:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=221
 permalink: /2007/12/26/my_new_best_friend/

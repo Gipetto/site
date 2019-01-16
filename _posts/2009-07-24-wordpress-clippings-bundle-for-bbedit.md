@@ -2,7 +2,6 @@
 id: 861
 title: WordPress Clippings Bundle for BBEdit
 date: 2009-07-24T00:21:43+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=861
 permalink: /2009/07/24/wordpress-clippings-bundle-for-bbedit/

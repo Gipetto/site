@@ -2,12 +2,15 @@
 id: 24
 title: um, what the fuck?
 date: 2004-11-29T10:34:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=24
 permalink: /2004/11/29/um_what_the_fuck/
 categories:
   - Life
+tags:
+  - driving
+  - attention-span
+  - memory
 ---
 I ran a red light this morning.
 

@@ -2,7 +2,6 @@
 id: 215
 title: 'Apple Software Update on Windows XP – What a Crock!'
 date: 2007-06-14T13:26:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=215
 permalink: /2007/06/14/apple_software_update_on_windows_xp_what_a_crock/

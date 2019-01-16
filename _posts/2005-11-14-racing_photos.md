@@ -2,7 +2,6 @@
 id: 142
 title: Racing Photos
 date: 2005-11-14T18:47:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=142
 permalink: /2005/11/14/racing_photos/
@@ -29,4 +28,30 @@ I won't babble too much, I'll just tell ya about the pics. The first one here is
 
 The shots are bit soft. I couldn't track these guys manually and my old camera just couldn't push the autofocus on my lens fast enough to get hard focus. Couple that with putting a doubler on an 80-200 to get a little extra reach and the pics end up being a bit soft. S'okay though – not bad for not having shot seriously in quite some time.
 
-<a class="thickbox" rel="racing-gallery" href="https://top-frog.com/images/articles/p1h.jpg" title="1967 Porsche 912"><img class="tuck" src="https://top-frog.com/images/articles/p1.jpg" alt="image" /></a><a class="thickbox" rel="racing-gallery" href="https://top-frog.com/images/articles/p2h.jpg" title="Porsche GT3"><img class="tuck" src="https://top-frog.com/images/articles/p2.jpg" alt="image" /></a><a class="thickbox" rel="racing-gallery" href="https://top-frog.com/images/articles/p3h.jpg" title="Porsche 911 Carrera"><img class="tuck" src="https://top-frog.com/images/articles/p3.jpg" alt="image" /></a>
+<center>
+
+{% include lightbox.html 
+  id="porsche1"
+  img_lg="/assets/p1h.jpg"
+  img_sm="/assets/p1.jpg"
+  title="1967 Porsche 912"
+  caption="1967 Porsche 912"
+%} 
+
+{% include lightbox.html 
+  id="porsche2"
+  img_lg="/assets/p2h.jpg"
+  img_sm="/assets/p2.jpg"
+  title="Porsche GT3"
+  caption="Porsche GT3"
+%}
+
+{% include lightbox.html 
+  id="porsche3"
+  img_lg="/assets/p3h.jpg"
+  img_sm="/assets/p3.jpg"
+  title="Porsche 911 Carrera"
+  caption="Porsche 911 Carrera"
+%}
+
+</center>

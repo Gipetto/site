@@ -2,7 +2,6 @@
 id: 116
 title: Getting to know vim
 date: 2005-08-02T22:41:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=116
 permalink: /2005/08/02/getting_to_know_vim/

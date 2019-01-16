@@ -2,7 +2,6 @@
 id: 186
 title: Javascript to embed YouTube and Google Video
 date: 2006-10-13T13:03:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=186
 permalink: /2006/10/13/javascript_embed_youtube_and_google_video/

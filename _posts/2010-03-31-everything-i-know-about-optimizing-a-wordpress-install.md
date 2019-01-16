@@ -2,7 +2,6 @@
 id: 1247
 title: Everything I know about optimizing a WordPress install on Apache
 date: 2010-03-31T00:03:34+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1247
 permalink: /2010/03/31/everything-i-know-about-optimizing-a-wordpress-install/

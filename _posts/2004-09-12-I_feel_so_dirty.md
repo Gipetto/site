@@ -2,12 +2,14 @@
 id: 2
 title: I feel so dirty
 date: 2004-09-12T22:24:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2
 permalink: /2004/09/12/I_feel_so_dirty/
 categories:
   - Computers
+tags:
+  - windows
+  - os
 ---
 I have a Windows&trade; machine on my desk. An **old** HP Omnibook.
 

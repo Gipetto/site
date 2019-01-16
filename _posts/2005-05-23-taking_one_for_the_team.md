@@ -2,12 +2,14 @@
 id: 82
 title: Taking one for the team
 date: 2005-05-23T20:35:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=82
 permalink: /2005/05/23/taking_one_for_the_team/
 categories:
   - Life
+tags:
+  - burnout
+  - work
 ---
 48 hours in a weekend.
 

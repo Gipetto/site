@@ -2,7 +2,6 @@
 id: 110
 title: 'A Moose once bit my sister…'
 date: 2005-07-19T00:24:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=110
 permalink: /2005/07/19/a_moose_once_bit_my_sister/
@@ -14,7 +13,7 @@ tags:
   - python
   - red rocks
 ---
-<img class="th" src="https://top-frog.com/images/articles/monty.jpg" alt="image" />My, oh, my, how I had forgotten how good that movie really is. And when you see it with 8,500 other eager fans you can count on having a good time. The venue was Red Rocks Amphitheater, the movie, of course, was _Monty Python and the Holy Grail_ (aka: Monti Python ik den Holie Grailen). Granted, a few of the subtleties of shadow detail are lost when viewing outdoors but when you get the sound of clacking coconuts from all around you all is forgiven… what a wonderful way to see this movie.
+<img class="alignright" src="/assets/monty.jpg" alt="Monty Python and the Holy Grail Movie Poster" />My, oh, my, how I had forgotten how good that movie really is. And when you see it with 8,500 other eager fans you can count on having a good time. The venue was Red Rocks Amphitheater, the movie, of course, was _Monty Python and the Holy Grail_ (aka: Monti Python ik den Holie Grailen). Granted, a few of the subtleties of shadow detail are lost when viewing outdoors but when you get the sound of clacking coconuts from all around you all is forgiven… what a wonderful way to see this movie.
 
 
 
@@ -26,7 +25,7 @@ The show started just after dusk, and after a live concert by a local brass band
 
 I was a little worried at first that I had blown the night since I waited so long to get tickets. Fortunately there were plenty of tickets on sale up to the start of the show (which eventually sold out) and we were able to join Angie and Charlie who had been there since 5:30! They saved some great seats for us, but wow, 5:30. The show started around 8:30 and we didn't actually get home until 11:45. Thanks again to Angie and Charlie.
 
-#### You mother was a hamster and your father smelt of elderberries
+#### You mother was a hamster and your father smelt of elderberries!
 
 Ah, so many quotable lines, I could keep going. All I can really say now is that if you have an outdoor movie program in your area, go, just once, especially if they're playing a classic such as this. I don't think I would have come out for _Terms of Endearment_ but probably would have shown up for _Attack of the Killer Tomatoes_ or _The Rocky Horror Picture Show_ just because the audiences that would attend shows like that are worthwhile company.
 

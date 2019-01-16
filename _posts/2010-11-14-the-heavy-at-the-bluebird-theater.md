@@ -2,7 +2,6 @@
 id: 1725
 title: The Heavy at The Bluebird Theater
 date: 2010-11-14T16:53:32+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1725
 permalink: /2010/11/14/the-heavy-at-the-bluebird-theater/

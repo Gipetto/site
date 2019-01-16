@@ -2,7 +2,6 @@
 id: 794
 title: Simple, but handy .htaccess tricks
 date: 2009-07-10T22:14:34+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=794
 permalink: /2009/07/10/simple-but-handy-htaccess-tricks/

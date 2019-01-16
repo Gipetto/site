@@ -2,7 +2,6 @@
 id: 2127
 title: Religion in Politics
 date: 2012-01-23T22:42:08+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2127
 permalink: /2012/01/23/religion-in-politics/

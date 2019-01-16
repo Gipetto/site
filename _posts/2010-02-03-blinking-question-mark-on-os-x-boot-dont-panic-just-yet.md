@@ -2,7 +2,6 @@
 id: 1196
 title: "Blinking question mark on OS X Boot? Don't panic just yet."
 date: 2010-02-03T21:53:53+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1196
 permalink: /2010/02/03/blinking-question-mark-on-os-x-boot-dont-panic-just-yet/

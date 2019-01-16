@@ -2,12 +2,14 @@
 id: 21
 title: 'That was quick…'
 date: 2004-11-23T16:55:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=21
 permalink: /2004/11/23/that_was_quick/
 categories:
   - Home Improvement
+tags:
+  - water heater
+  - replacement
 ---
 Swapping out a water heater is pretty darn easy for someone who knows what they're doing.
 

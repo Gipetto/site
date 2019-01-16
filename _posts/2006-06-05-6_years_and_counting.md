@@ -2,7 +2,6 @@
 id: 161
 title: '6  years and counting'
 date: 2006-06-05T23:04:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=161
 permalink: /2006/06/05/6_years_and_counting/

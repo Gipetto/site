@@ -2,7 +2,6 @@
 id: 228
 title: Furry Scurry
 date: 2008-05-04T09:51:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=228
 permalink: /2008/05/04/furry_scurry/

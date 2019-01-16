@@ -2,7 +2,6 @@
 id: 521
 title: Holy Spam, Batman!
 date: 2009-03-30T07:56:37+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=521
 permalink: /2009/03/30/holy-spam-batman/

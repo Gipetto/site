@@ -2,7 +2,6 @@
 id: 190
 title: Gippy vs. HP EPC
 date: 2006-10-22T00:44:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=190
 permalink: /2006/10/22/gippy_vs_hp_epc/

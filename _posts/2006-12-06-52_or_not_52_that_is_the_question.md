@@ -2,7 +2,6 @@
 id: 198
 title: '5.2 or not 5.2, that is the question…'
 date: 2006-12-06T08:01:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=198
 permalink: /2006/12/06/52_or_not_52_that_is_the_question/

@@ -2,7 +2,6 @@
 id: 156
 title: Watch Those Teeth!
 date: 2006-03-11T11:36:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=156
 permalink: /2006/03/11/watch_those_teeth/

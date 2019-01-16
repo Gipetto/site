@@ -2,7 +2,6 @@
 id: 206
 title: "Let's hear it for customizeable toolbars"
 date: 2007-01-11T13:40:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=206
 permalink: /2007/01/11/lets_hear_it_for_customizeable_toolbars/

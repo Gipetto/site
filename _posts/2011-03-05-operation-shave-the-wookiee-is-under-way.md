@@ -2,7 +2,6 @@
 id: 1901
 title: 'Operation "Shave the Wookiee" is under way.'
 date: 2011-03-05T21:50:15+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1901
 permalink: /2011/03/05/operation-shave-the-wookiee-is-under-way/

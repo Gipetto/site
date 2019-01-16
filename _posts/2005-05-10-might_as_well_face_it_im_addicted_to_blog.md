@@ -2,16 +2,13 @@
 id: 78
 title: "Might as well face it I'm addicted to blog"
 date: 2005-05-10T20:55:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=78
 permalink: /2005/05/10/might_as_well_face_it_im_addicted_to_blog/
 categories:
   - Computers
 ---
-Hi, my name is Shawn and I'm addicted to blogs. Not so much the personal blogs, but anything informational, both useful & useless. I just can't get enough. I've got RSS readers both at home and at work and religiously check them periodically during the day in the hopes that I'll pick up some useful tip on either web design or on using the Mac.
-
-
+Hi, my name is Shawn and I'm addicted to blogs. Not so much the personal blogs, but anything informational, both useful and useless. I just can't get enough. I've got RSS readers both at home and at work and religiously check them periodically during the day in the hopes that I'll pick up some useful tip on either web design or on using the Mac.
 
 The last time I counted the list was at 67. That was last week so there might be one or two more in there now. 
 
@@ -24,7 +21,7 @@ I'm not sure if its an affliction or not, but I'm addicted. No, I don't think I 
 Now, in case any of you are wondering what this huge list of blogs is, here they are in no particular order. And I'm sure I'm missing a few that I like to read but haven't been added to the list yet, so if you don't see your blog in this don't feel rejected. After all, my acceptance shouldn't mean anything to you anyway… just kidding.
 
   * [About Design](feed://www.rbird.com/aboutdesign/index.xml) 
-  * [456 Berea Street](feed://www.456bereastreet.com/feed.xml) 
+  * [456 Berea Street](https://www.456bereastreet.com/feed.xml) 
   * [Basseq](feed://basseq.com/index.xml) 
   * [A List Apart: for people who make websites](feed://alistapart.com/rss.xml) 
   * [Wired News: Technology](feed://wired.com/news/feeds/rss2/0,2610,3,00.xml) 

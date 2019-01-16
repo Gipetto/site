@@ -2,7 +2,6 @@
 id: 1404
 title: '10 Years of Marriage…'
 date: 2010-06-05T08:31:20+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1404
 permalink: /2010/06/05/10-years-of-marriage/

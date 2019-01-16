@@ -2,7 +2,6 @@
 id: 583
 title: Announcing the WordPress TextMate Bundle
 date: 2009-04-29T09:11:41+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=583
 permalink: /2009/04/29/announcing-the-wordpress-textmate-bundle/

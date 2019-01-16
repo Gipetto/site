@@ -2,7 +2,6 @@
 id: 176
 title: Disk Image to the Rescue!
 date: 2006-09-19T09:06:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=176
 permalink: /2006/09/19/disk_image_to_the_rescue/

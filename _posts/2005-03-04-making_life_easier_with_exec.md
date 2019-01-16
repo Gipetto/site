@@ -2,7 +2,6 @@
 id: 51
 title: Making life easier with exec
 date: 2005-03-04T22:45:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=51
 permalink: /2005/03/04/making_life_easier_with_exec/

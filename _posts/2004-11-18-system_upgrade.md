@@ -2,18 +2,18 @@
 id: 17
 title: System upgrade
 date: 2004-11-18T10:00:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=17
 permalink: /2004/11/18/system_upgrade/
 categories:
   - Computers
+tags:
+  - osx
+  - server
 ---
 Well, finally got this computer upgraded to 10.3 Server. And since the version of PHP that comes with 10.3 Server is a bit lacking I upgraded the whole bit and took the plunge into PHP 5.
 
-Everything seems to be OK so far. The server admin software is a bit lacking for in depth server configs so I actually had to dive into the httpd.conf file to get everything how I wanted it. It might have something to do with wanting to run this site out of a user Sites folder but a couple of minor tweaks and all is good.
-
-
+Everything seems to be OK so far. The server admin software is a bit lacking for in depth server configs so I actually had to dive into the `httpd.conf` file to get everything how I wanted it. It might have something to do with wanting to run this site out of a user Sites folder but a couple of minor tweaks and all is good.
 
 Everything seems to have transfered over just fine – my main concern was SQL and my Avatar script but both are performing splendidly.
 

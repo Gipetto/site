@@ -2,7 +2,6 @@
 id: 577
 title: Taming iTunes lack of auto-window resizing
 date: 2009-08-09T15:24:51+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=577
 permalink: /2009/08/09/taming-itunes-lack-of-auto-window-resizing/

@@ -2,7 +2,6 @@
 id: 1516
 title: A bit wonky, but I still like it
 date: 2010-08-10T21:44:28+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1516
 permalink: /2010/08/10/a-bit-wonky-but-i-still-like-it/

@@ -2,7 +2,6 @@
 id: 138
 title: It has been a while
 date: 2005-10-17T09:01:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=138
 permalink: /2005/10/17/it_has_been_a_while/

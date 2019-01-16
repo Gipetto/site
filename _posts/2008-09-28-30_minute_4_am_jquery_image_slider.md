@@ -2,7 +2,6 @@
 id: 245
 title: 30 Minute, 4 AM, jQuery image slider
 date: 2008-09-28T21:37:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=245
 permalink: /2008/09/28/30_minute_4_am_jquery_image_slider/
@@ -23,8 +22,6 @@ As fate would have it the first night of my trip to Provo, Utah turned in to an 
 
 I have to admit it feels a bit hackish, but in my defense it was done at 4am. Please also keep in mind I'm writing this after being up all night.
 
-
-
 #### For Example
 
 First, the example: [Click here to view the example page](/stuff/slider/).
@@ -33,8 +30,8 @@ The goal was to have a screenshot gallery viewer that nicely and quietly sat in 
 
 Unlike some other carousel plugins/libraries/scripts, Javascript (jQuery) is used here only for the animation and to create the navigation links. All display is handled by CSS. This gave us a lot of freedom to keep it lightweight and maintain tight control over the display of the images. It also allowed for control of the images and dynamic generation of the navigation buttons in just 35 lines of javascript.
 
-So, is there anything extra special about this? I don't think so. Is it still neat? Yeah, I think so. Its nice, clean functionality in a small package. I think the neatest little thing going on is that in all browsers jQuery recognizes that "'left':+=-760" is negative movement.
+So, is there anything extra special about this? I don't think so. Is it still neat? Yeah, I think so. Its nice, clean functionality in a small package. I think the neatest little thing going on is that in all browsers jQuery recognizes that `'left':+=-760` is negative movement.
 
 #### Shameless plug
 
-If you're so inclined, [head on over to the site and see it in action](http://crowdfavorite.com/portfolio/addictomatic/). I guess that pretty much says where I work (I've tried my best to keep my employers away from this blog, but now that I'm actually working in the social networking space I guess its ok). Or, if you're so bold, steal this script!
+If you're so inclined, ~~[head on over to the site and see it in action](http://crowdfavorite.com/portfolio/addictomatic/)~~. I guess that pretty much says where I work (I've tried my best to keep my employers away from this blog, but now that I'm actually working in the social networking space I guess its ok). Or, if you're so bold, steal this script!

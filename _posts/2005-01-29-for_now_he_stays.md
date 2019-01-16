@@ -2,7 +2,6 @@
 id: 37
 title: 'For now he stays…'
 date: 2005-01-29T22:05:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=37
 permalink: /2005/01/29/for_now_he_stays/

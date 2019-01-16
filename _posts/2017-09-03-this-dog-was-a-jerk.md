@@ -2,7 +2,6 @@
 id: 2677
 title: This Dog was a Jerk
 date: 2017-09-03T09:00:38+00:00
-author: Shawn
 layout: post
 categories:
   - Dogs

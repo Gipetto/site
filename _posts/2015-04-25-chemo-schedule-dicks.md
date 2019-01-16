@@ -2,7 +2,6 @@
 id: 2504
 title: 'Chemo Schedule & Dicks'
 date: 2015-04-25T14:04:50+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2504
 permalink: /2015/04/25/chemo-schedule-dicks/

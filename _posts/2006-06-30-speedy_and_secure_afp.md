@@ -2,7 +2,6 @@
 id: 166
 title: Speedy and Secure AFP
 date: 2006-06-30T09:05:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=166
 permalink: /2006/06/30/speedy_and_secure_afp/

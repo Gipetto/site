@@ -2,7 +2,6 @@
 id: 1757
 title: "Gettin' Tattoo'd"
 date: 2010-11-27T13:08:29+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1757
 permalink: /2010/11/27/gettin-tattood/

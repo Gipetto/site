@@ -2,12 +2,14 @@
 id: 44
 title: Note to self
 date: 2005-02-21T07:45:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=44
 permalink: /2005/02/21/note_to_self/
 categories:
   - 'Web Design &amp; Development'
+tags:
+  - javascript
+  - css
 ---
 I haven't read this yet, but am leaving it as a reminder for me to read it as I need to bone up on my JS.
 

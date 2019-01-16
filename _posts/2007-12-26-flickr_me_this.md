@@ -2,7 +2,6 @@
 id: 220
 title: Flickr Me This
 date: 2007-12-26T02:37:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=220
 permalink: /2007/12/26/flickr_me_this/

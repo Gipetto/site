@@ -2,7 +2,6 @@
 id: 1788
 title: Freelance Whales at the Hi-Dive, Denver
 date: 2010-12-04T22:43:28+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1788
 permalink: /2010/12/04/freelance-whales-at-the-hi-dive-denver/

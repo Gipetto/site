@@ -2,7 +2,6 @@
 id: 1886
 title: The Dum Dum Girls
 date: 2011-02-26T18:00:41+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1886
 permalink: /2011/02/26/the-dum-dum-girls/

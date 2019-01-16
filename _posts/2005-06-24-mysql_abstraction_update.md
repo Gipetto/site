@@ -2,7 +2,6 @@
 id: 99
 title: 'MySQL Abstraction update…'
 date: 2005-06-24T23:16:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=99
 permalink: /2005/06/24/mysql_abstraction_update/

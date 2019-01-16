@@ -2,7 +2,6 @@
 id: 234
 title: "Apple's MobileMe drops support for IE6"
 date: 2008-06-09T21:41:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=234
 permalink: /2008/06/09/apples_mobileme_drops_support_for_ie_6/

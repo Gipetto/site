@@ -2,16 +2,17 @@
 id: 25
 title: My wife is a dork
 date: 2004-12-02T20:18:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=25
 permalink: /2004/12/02/my_wife_is_a_dork/
 categories:
   - Life
+tags:
+  - wife
+  - marriage
+  - memory
 ---
 Got a phone call from my wife this afternoon. She was pretty frantic and upset. She had gone to lunch, come back to the office, worked for a while and was getting ready to head out to a dentist appointment. It was then that she realized that she could not find her purse or her keys.
-
-
 
 Now, I have to admit that at this point my reaction was mixed. I was concerned because it is a huge undertaking to take care of everything that you lose when you lose a wallet or a purse, not to mention keys. But there was a part of me that was upset because I had finally found time to bury myself in coding a website. I quickly got over it, it was a fleeting thought, but I still thought it…
 
@@ -29,7 +30,7 @@ Now, I'm pretty stubborn and often times do things just to satisfy my curiosity 
 
 At this point, you've probably already guessed that the purse was in there with her keys.
 
-**I am married to a dork**.
+#### I am married to a dork
 
 With filing cabinets like these, the smaller models that fit under desks, it is possible to lock them if you don't open the lock all the way. If you don't open the lock all the way and then slap shut a drawer, the latch can drop back down and lock the drawer. In this case it was bad since the drawer contained the keys.
 

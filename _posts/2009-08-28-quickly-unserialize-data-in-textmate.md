@@ -2,7 +2,6 @@
 id: 927
 title: Quickly unserialize PHP array data in TextMate
 date: 2009-08-28T22:51:14+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=927
 permalink: /2009/08/28/quickly-unserialize-data-in-textmate/

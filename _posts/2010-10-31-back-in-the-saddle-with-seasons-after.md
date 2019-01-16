@@ -2,7 +2,6 @@
 id: 1665
 title: "Back in the saddle with Season's After"
 date: 2010-10-31T10:12:27+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1665
 permalink: /2010/10/31/back-in-the-saddle-with-seasons-after/

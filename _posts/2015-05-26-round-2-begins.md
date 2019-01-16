@@ -2,7 +2,6 @@
 id: 2563
 title: Round 2 begins
 date: 2015-05-26T07:46:15+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2563
 permalink: /2015/05/26/round-2-begins/

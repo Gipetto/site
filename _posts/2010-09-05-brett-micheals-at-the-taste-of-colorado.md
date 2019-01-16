@@ -2,7 +2,6 @@
 id: 1552
 title: Brett Michaels at the Taste of Colorado
 date: 2010-09-05T23:55:20+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1552
 permalink: /2010/09/05/brett-micheals-at-the-taste-of-colorado/

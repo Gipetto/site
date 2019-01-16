@@ -2,7 +2,6 @@
 id: 2146
 title: Subway Fiddler
 date: 2012-02-11T19:16:19+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2146
 permalink: /2012/02/11/subway-fiddler/

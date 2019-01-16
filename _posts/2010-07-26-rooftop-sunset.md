@@ -2,7 +2,6 @@
 id: 1493
 title: Rooftop Sunset
 date: 2010-07-26T23:23:06+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1493
 permalink: /2010/07/26/rooftop-sunset/

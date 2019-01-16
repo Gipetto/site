@@ -2,7 +2,6 @@
 id: 56
 title: Spoiled on Gentoo
 date: 2005-03-18T21:20:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=56
 permalink: /2005/03/18/spoiled_on_gentoo/

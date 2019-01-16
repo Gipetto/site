@@ -2,7 +2,6 @@
 id: 1217
 title: 'Springtime in Denver…'
 date: 2010-03-19T20:47:20+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1217
 permalink: /2010/03/19/springtime-in-denver/

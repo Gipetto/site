@@ -2,7 +2,6 @@
 id: 1988
 title: man Files as PDF, revisited.
 date: 2011-05-24T13:32:37+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1988
 permalink: /2011/05/24/man-files-as-pdf-revisited/

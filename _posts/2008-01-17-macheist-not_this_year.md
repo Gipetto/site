@@ -2,7 +2,6 @@
 id: 223
 title: 'MacHeist – not this year'
 date: 2008-01-17T07:00:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=223
 permalink: /2008/01/17/macheist-not_this_year/

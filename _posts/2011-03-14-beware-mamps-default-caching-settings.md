@@ -2,7 +2,6 @@
 id: 1954
 title: "Beware MAMP's default Caching Settings"
 date: 2011-03-14T15:20:46+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1954
 permalink: /2011/03/14/beware-mamps-default-caching-settings/

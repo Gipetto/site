@@ -2,7 +2,6 @@
 id: 252
 title: What I want in my next digital camera
 date: 2009-02-17T23:25:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=252
 permalink: /2009/02/17/what_i_want_in_my_next_digital_camera/

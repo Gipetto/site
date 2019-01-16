@@ -2,7 +2,6 @@
 id: 134
 title: Colorado Avalanche Schedule in iCal
 date: 2005-09-24T01:00:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=134
 permalink: /2005/09/24/colorado_avalanche_schedule_in_ical/
@@ -21,4 +20,4 @@ I bit the bullet and entered this manually into iCal. I don't really know if any
 
 It was made on Tiger but should be backwards compatible. Windows users can import the file into Outlook, Palm users can import the file after changing the file extension to .vcs
 
-[ ![image](https://top-frog.com/images/articles/ical.gif)Colorado Avalanche 2005-06 Schedule](/files/ical/ColoradoAvalanche2005-06.ics)
+~~[ ![image](https://top-frog.com/images/articles/ical.gif) Colorado Avalanche 2005-06 Schedule](/files/ical/ColoradoAvalanche2005-06.ics)~~

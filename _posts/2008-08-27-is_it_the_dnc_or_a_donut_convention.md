@@ -2,7 +2,6 @@
 id: 241
 title: Is it the DNC or a donut convention?
 date: 2008-08-27T23:23:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=241
 permalink: /2008/08/27/is_it_the_dnc_or_a_donut_convention/

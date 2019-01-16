@@ -2,7 +2,6 @@
 id: 106
 title: Preparing for fully compliant XHTML
 date: 2005-07-11T19:27:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=106
 permalink: /2005/07/11/preparing_for_fully_compliant_xhtml/

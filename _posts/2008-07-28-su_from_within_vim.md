@@ -2,7 +2,6 @@
 id: 238
 title: SU from within VIM
 date: 2008-07-28T09:22:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=238
 permalink: /2008/07/28/su_from_within_vim/

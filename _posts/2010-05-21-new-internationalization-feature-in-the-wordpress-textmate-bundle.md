@@ -2,7 +2,6 @@
 id: 1319
 title: New Internationalization feature in the WordPress TextMate Bundle
 date: 2010-05-21T23:46:18+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1319
 permalink: /2010/05/21/new-internationalization-feature-in-the-wordpress-textmate-bundle/

@@ -2,7 +2,6 @@
 id: 565
 title: Matching Wedding Rings
 date: 2009-04-16T23:26:51+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=565
 permalink: /2009/04/16/matching-wedding-rings/

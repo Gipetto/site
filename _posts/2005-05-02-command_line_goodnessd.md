@@ -2,16 +2,17 @@
 id: 76
 title: Command line goodness
 date: 2005-05-02T00:22:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=76
 permalink: /2005/05/02/command_line_goodnessd/
 categories:
   - Computers
+tags:
+  - terminal
+  - efficiency
+  - keyboard shortcuts
 ---
 Just learned these and thought I'd log it for posterity (and so I don't forget). I'm always looking to do things, fun things, in the terminal and thought these were cool.
-
-
 
 The first is a way to easily add that long, long path to your next command in Terminal. Say you're looking to see what's in a directory and you do:
 

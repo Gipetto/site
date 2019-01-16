@@ -2,12 +2,15 @@
 id: 53
 title: Microsoft solicits for bugs
 date: 2005-03-10T22:06:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=53
 permalink: /2005/03/10/microsoft_solicits_for_bugs/
 categories:
   - 'Web Design &amp; Development'
+tags:
+  - microsoft
+  - bugs
+  - internet explorer
 ---
 So it seems that Microsoft may actually be serious in its bid to shore Internet Explorer in version 7 and actually make an up to date product. [IE Blog is soliciting for suggested fixes](http://blogs.msdn.com/ie/archive/2005/03/09/391362.aspx) for possible inclusion into IE7. They mention some popular IE7 bug fix sites as points of reference in their article as well and claim to be attentive to their development, so they should know what is wrong already.
 

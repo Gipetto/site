@@ -2,7 +2,6 @@
 id: 2400
 title: Digging up the past
 date: 2013-07-17T01:03:27+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2400
 permalink: /2013/07/17/digging-up-the-past/

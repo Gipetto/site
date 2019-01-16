@@ -2,7 +2,6 @@
 id: 674
 title: WordPress TextMate bundle updated for WordPress 2.8
 date: 2009-06-19T18:33:03+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=674
 permalink: /2009/06/19/wordpress-textmate-bundle-updated-for-wordpress-28/

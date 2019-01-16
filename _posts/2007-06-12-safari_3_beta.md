@@ -2,7 +2,6 @@
 id: 214
 title: Safari 3 Beta
 date: 2007-06-12T06:44:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=214
 permalink: /2007/06/12/safari_3_beta/

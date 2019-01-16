@@ -2,7 +2,6 @@
 id: 1144
 title: WordPress TextMate Bundle updates
 date: 2009-12-06T02:03:52+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1144
 permalink: /2009/12/06/wordpress-textmate-bundle-updates/

@@ -2,12 +2,15 @@
 id: 19
 title: "That's why I keep doing it…"
 date: 2004-11-21T15:50:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=19
 permalink: /2004/11/21/thats_why_i_keep_doing_it/
 categories:
   - Life
+tags:
+  - freelance
+  - freebies
+  - printer
 ---
 Well, after turning in the work for this client and picking up more work (hey! don't look at me like that – lemme finish) my client turned around and gave me an old printer since she recently upgraded.
 

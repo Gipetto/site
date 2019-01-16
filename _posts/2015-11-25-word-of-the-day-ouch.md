@@ -2,7 +2,6 @@
 id: 2629
 title: 'Word of the day: Ouch.'
 date: 2015-11-25T16:21:16+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2629
 permalink: /2015/11/25/word-of-the-day-ouch/

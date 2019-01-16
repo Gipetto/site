@@ -2,7 +2,6 @@
 id: 231
 title: Who would do such a thing?
 date: 2008-05-26T17:00:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=231
 permalink: /2008/05/26/who_would_do_such_a_thing/

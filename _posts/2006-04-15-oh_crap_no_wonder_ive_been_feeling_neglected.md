@@ -2,7 +2,6 @@
 id: 159
 title: "Oh, crap. No wonder I've been feeling neglected…"
 date: 2006-04-15T22:56:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=159
 permalink: /2006/04/15/oh_crap_no_wonder_ive_been_feeling_neglected/

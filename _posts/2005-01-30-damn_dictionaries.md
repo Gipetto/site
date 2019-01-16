@@ -2,16 +2,17 @@
 id: 38
 title: Damn Dictionaries
 date: 2005-01-30T23:48:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=38
 permalink: /2005/01/30/damn_dictionaries/
 categories:
   - Jabberwocky
+tags:
+  - dictionary
+  - lookup
+  - definitions
 ---
 I don't claim to have the widest vocabulary on the planet, but I do have a decent range of words that I can readily use. That said – I had to look up quandary the other day to get the correct spelling. In doing so I noticed something stupid in the definition.
-
-
 
 > a situation from which extrication is difficult especially an unpleasant or trying one; 
 

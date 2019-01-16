@@ -1,5 +1,5 @@
 {% if include.center %}<center>{% endif %}
-<a href="#{{ include.id }}" class="thickbox frame">
+<a href="#{{ include.id }}" class="thickbox frame {{ include.additional_classes | default: '' }}">
     <img src="{{ include.img_sm }}" alt="{{ include.title }}" />
 </a>
 {% if include.center %}</center>{% endif %}

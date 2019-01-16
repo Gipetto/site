@@ -2,7 +2,6 @@
 id: 173
 title: Freebies galore.
 date: 2006-09-01T22:28:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=173
 permalink: /2006/09/01/freebies_galore/

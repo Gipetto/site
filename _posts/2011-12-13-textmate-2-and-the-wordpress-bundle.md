@@ -2,7 +2,6 @@
 id: 2094
 title: TextMate 2 and the WordPress Bundle
 date: 2011-12-13T22:17:27+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2094
 permalink: /2011/12/13/textmate-2-and-the-wordpress-bundle/

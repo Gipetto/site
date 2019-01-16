@@ -2,7 +2,6 @@
 id: 2379
 title: So, who likes that new Y! nav bar on Flickr?
 date: 2013-07-13T13:03:48+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2379
 permalink: /2013/07/13/so-who-likes-that-new-y-nav-bar-on-flickr/

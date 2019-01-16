@@ -2,7 +2,6 @@
 id: 779
 title: Announcing the SP Source Code Highlighter plugin for WordPress
 date: 2009-07-07T00:55:04+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=779
 permalink: /2009/07/07/announcing-the-sp-source-code-highlighter-plugin-for-wordpress/

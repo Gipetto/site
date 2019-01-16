@@ -2,7 +2,6 @@
 id: 1914
 title: 'The Dropkick Murphys & Against Me! at The Fillmore Auditorium'
 date: 2011-03-06T23:07:41+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1914
 permalink: /2011/03/06/the-dropkick-murphys-against-me-at-the-fillmore-auditorium/

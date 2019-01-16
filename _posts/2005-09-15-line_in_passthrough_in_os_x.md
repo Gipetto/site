@@ -2,7 +2,6 @@
 id: 132
 title: Line In Passthrough in OS X
 date: 2005-09-15T18:48:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=132
 permalink: /2005/09/15/line_in_passthrough_in_os_x/
@@ -23,8 +22,6 @@ I was really kind of upset today to find out that I couldn't easily pass audio t
 
 Nope.
 
-
-
 #### Why?
 
 One of the reasons I didn't want to use iTunes at all was that it would try to sync with the iPod if I hooked it up normally. That would have invoked a long drawn out process of changing preferences or waiting for connections to time out since all the music it would be trying to sync is far, far away. Plus, simply using the line in should be easy, right?
@@ -41,7 +38,7 @@ While this worked, it was a bit of a weird thing to do if I wanted to do this re
 
 I looked around, halfway expecting to find a way around this at everyone's favorite OS X hacking site [Mac OS X Hints](http://www.macosxhints.com) but found nothing. I was starting to get disappointed that there was no built in way to simply pass the audio through to the speakers. There was in OS 9 and this was on a Mac, supposedly the easiest OS out there. I'd think that this would be a no brainer feature.
 
-<img class="th" src="https://top-frog.com/images/articles/linein.jpg" alt="image" />After looking around a bit more I did find a little utility to take care of it. Rogue Amoeba makes [a nice little ditty named LineIn](http://www.rogueamoeba.com/freebies/) that solved the problem. With one click (ok, 3 if you count launching the program) I was listening to my iPod through my laptop.
+<img class="alignright" src="https://top-frog.com/images/articles/linein.jpg" alt="old-timey microphone" />After looking around a bit more I did find a little utility to take care of it. Rogue Amoeba makes [a nice little ditty named LineIn](http://www.rogueamoeba.com/freebies/) that solved the problem. With one click (ok, 3 if you count launching the program) I was listening to my iPod through my laptop.
 
 #### Still not completely happy with it
 

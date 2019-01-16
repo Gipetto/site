@@ -2,7 +2,6 @@
 id: 574
 title: 'Client side pre- and post-svn hooks with Unix Aliases'
 date: 2009-04-23T08:31:10+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=574
 permalink: /2009/04/23/client-side-pre-and-post-svn-hooks-with-unix-aliases/

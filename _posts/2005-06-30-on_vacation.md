@@ -2,7 +2,6 @@
 id: 102
 title: On Vacation
 date: 2005-06-30T22:51:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=102
 permalink: /2005/06/30/on_vacation/

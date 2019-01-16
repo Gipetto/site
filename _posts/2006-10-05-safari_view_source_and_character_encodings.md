@@ -2,7 +2,6 @@
 id: 181
 title: Safari, View Source and Character Encodings
 date: 2006-10-05T13:31:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=181
 permalink: /2006/10/05/safari_view_source_and_character_encodings/

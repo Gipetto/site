@@ -2,7 +2,6 @@
 id: 1061
 title: A Grand View
 date: 2009-10-15T13:28:18+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1061
 permalink: /2009/10/15/a-grand-view/

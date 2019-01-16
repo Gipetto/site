@@ -2,7 +2,6 @@
 id: 1211
 title: Enable Etherpad to send email via GMail
 date: 2010-03-15T14:42:34+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1211
 permalink: /2010/03/15/enable-etherpad-to-send-email-via-gmail/

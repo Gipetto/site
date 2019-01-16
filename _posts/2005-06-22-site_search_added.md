@@ -2,7 +2,6 @@
 id: 98
 title: Site Search Added
 date: 2005-06-22T16:23:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=98
 permalink: /2005/06/22/site_search_added/

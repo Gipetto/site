@@ -2,7 +2,6 @@
 id: 2220
 title: A Winters Day at the Beach with the Fuji X-E1
 date: 2013-01-09T00:56:35+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2220
 permalink: /2013/01/09/a-winters-day-at-the-beach-with-the-fuji-x-e1/

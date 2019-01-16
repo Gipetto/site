@@ -2,7 +2,6 @@
 id: 171
 title: Turn off FTP. Go Secure!
 date: 2006-08-03T07:18:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=171
 permalink: /2006/08/03/turn_off_ftp_go_secure/

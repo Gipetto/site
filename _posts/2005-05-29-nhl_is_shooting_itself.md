@@ -2,12 +2,14 @@
 id: 85
 title: NHL is shooting itself
 date: 2005-05-29T00:48:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=85
 permalink: /2005/05/29/nhl_is_shooting_itself/
 categories:
   - Jabberwocky
+tags:
+  - nhl
+  - television
 ---
 So [ESPN reports that it is not picking up its $60M option to retain some exclusive rights for next years hockey season.](http://sports.espn.go.com/nhl/news/story?id=2070927&CMP=OTC-DT9705204233) It has declined further comment but promises a clarification in the coming week.
 

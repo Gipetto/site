@@ -2,7 +2,6 @@
 id: 97
 title: "More gettin' my OOP on: Aggregation"
 date: 2005-06-21T22:30:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=97
 permalink: /2005/06/21/more_gettin_my_oop_on/

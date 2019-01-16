@@ -2,14 +2,15 @@
 id: 65
 title: Minor Site Update
 date: 2005-04-06T19:07:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=65
 permalink: /2005/04/06/minor_site_update/
 categories:
   - 'Web Design &amp; Development'
+tags:
+  - site
 ---
-Added the 5 most recent &#8216;Around &#8216;n' About' links to the end of the RSS feed and shortened the feed to 5 entries.
+Added the 5 most recent "Around n' About" links to the end of the RSS feed and shortened the feed to 5 entries.
 
 Not sure if anyone is really interested in the stuff I pick up around the internet but I've been wanting to put it there just to put it there for a while.
 

@@ -2,18 +2,19 @@
 id: 88
 title: Searching for the perfect proofing solution
 date: 2005-06-04T15:39:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=88
 permalink: /2005/06/04/searching_for_the_perfect_proofing_solution/
 categories:
   - 'Web Design &amp; Development'
+tags:
+  - site
+  - test
+  - preview
 ---
 The dynamic nature of the web makes updating websites and content a snap to do. You make the change, upload and its live. Got a typo – log in and edit directly on the server. Beauty.
 
 But what happens when you need to make a major change to a site and have it proofed by people who don't have access to your test server? My quest for the perfect proofing solution unfortunately still has me wanting more.
-
-
 
 The drawback to proofing at work is that our network is private and many of the eyes that need to look at pages before they go live are outside the network.
 
@@ -23,7 +24,7 @@ I kinda felt up against a wall until late last week I got a revelation that I sh
 
 #### Microsoft Internet Explorer
 
-At work, this is easy. From MSIE you load your page and select &#8216;Save As' from the file menu. Before saving change the file type to the web archive format which carries a .mht extension. Voila, you have a self contained web page, complete with graphics, that can be emailed out for proofing and on the other end the person just has to have MSIE on Windows. For work this is perfect since I'm in the corporate world everybody has MSIE on Windows.
+At work, this is easy. From MSIE you load your page and select "Save As" from the file menu. Before saving change the file type to the web archive format which carries a .mht extension. Voila, you have a self contained web page, complete with graphics, that can be emailed out for proofing and on the other end the person just has to have MSIE on Windows. For work this is perfect since I'm in the corporate world everybody has MSIE on Windows.
 
 The format works really well so long as your recipient has MSIE. A pure CSS layout gets translated to a table based layout in some cases and is converted to HTML 4 spec, but the look of the page stays perfect (so long as your page rendered correctly in IE to begin with). The format is proprietary to MSIE and I haven't found a way to view it with anything else other than MS Word on Windows. MS Word will open the files but if you've used a CSS layout Word won't know what to do with the formatting. 
 

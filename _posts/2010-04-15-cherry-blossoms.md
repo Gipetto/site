@@ -2,7 +2,6 @@
 id: 1286
 title: Cherry Blossoms
 date: 2010-04-15T19:24:45+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1286
 permalink: /2010/04/15/cherry-blossoms/

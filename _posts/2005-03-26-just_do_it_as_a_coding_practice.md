@@ -2,16 +2,16 @@
 id: 60
 title: Just Do It as a coding practice
 date: 2005-03-26T21:01:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=60
 permalink: /2005/03/26/just_do_it_as_a_coding_practice/
 categories:
   - 'Web Design &amp; Development'
+tags:
+  - coding
+  - refactor
 ---
 From time to time I've found that a project can be rather overwhelming that it is hard to find a place to start no matter what kind of planning is involved. And no matter how hard I try I cannot get it the way I want it without a lot of tweaking and often times by the time I'm done I want to rewrite everything to fix all the mistakes that I've made. I'm starting to think that this is a natural evolution of writing code. Well, at least for me.
-
-
 
 It seems that no matter how hard I try I always end up with code that I completely want to rewrite or at the very least need to go back and overhaul to make cleaner so that the code is more compartmentalized, easy to read, and more efficient. It doesn't seem like the first time around really leaves a product worth dealing with for much longer than it takes to rewrite it. 
 

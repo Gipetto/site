@@ -2,7 +2,6 @@
 id: 184
 title: A Welcome Change to TextEdit
 date: 2006-10-06T12:24:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=184
 permalink: /2006/10/06/a_welcome_change_to_textedit/

@@ -2,7 +2,6 @@
 id: 1373
 title: "Open a file's parent folder as a Project in TextMate"
 date: 2010-05-27T22:31:55+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1373
 permalink: /2010/05/27/open-a-files-parent-folder-as-a-project-in-textmate/
@@ -10,9 +9,11 @@ categories:
   - TextMate
 ---
 
+<div class="alert warning">
 **NOTICE:** This is long since obsolete with the addition of the `mate` command line helper.
+</div>
 
-<img src="https://i0.wp.com/top-frog.com/wp-content/uploads/2010/05/TextMate-icon.png?resize=128%2C128" alt="" title="TextMate-icon" width="128" height="128" class="floatright size-full wp-image-1376" srcset="https://i0.wp.com/top-frog.com/wp-content/uploads/2010/05/TextMate-icon.png?w=128&ssl=1 128w, https://i0.wp.com/top-frog.com/wp-content/uploads/2010/05/TextMate-icon.png?resize=75%2C75&ssl=1 75w" sizes="(max-width: 128px) 100vw, 128px" data-recalc-dims="1" />So, I can't count how many times I've opened a single file for editing in TextMate and then realized that I need to do more than just edit that one file. And most of the time the other files that I need to edit are in the same folder as the file that I'm currently editing. Rather than head back out to the finder each time I do this I finally wrote a command to do it for me. The following code will close the current document and open its parent folder as a TextMate project. 
+<img class="alignright" src="/assets/TextMate-icon.png" alt="TextMate Icon" title="TextMate-icon" />So, I can't count how many times I've opened a single file for editing in TextMate and then realized that I need to do more than just edit that one file. And most of the time the other files that I need to edit are in the same folder as the file that I'm currently editing. Rather than head back out to the finder each time I do this I finally wrote a command to do it for me. The following code will close the current document and open its parent folder as a TextMate project. 
 
 
 

@@ -2,7 +2,6 @@
 id: 894
 title: Type Casting in MySQL, One Possible Application
 date: 2009-08-10T18:53:51+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=894
 permalink: /2009/08/10/type-casting-in-mysql-one-possible-application/

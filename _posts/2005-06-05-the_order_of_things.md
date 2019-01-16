@@ -2,7 +2,6 @@
 id: 90
 title: The order of things
 date: 2005-06-05T21:30:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=90
 permalink: /2005/06/05/the_order_of_things/

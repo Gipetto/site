@@ -2,7 +2,6 @@
 id: 1537
 title: Colorado Sport International Airshow.
 date: 2010-08-28T23:57:12+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1537
 permalink: /2010/08/28/colorado-sport-international-airshow/

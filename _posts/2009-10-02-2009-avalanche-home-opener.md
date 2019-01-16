@@ -2,7 +2,6 @@
 id: 1021
 title: 2009 Avalanche Home Opener
 date: 2009-10-02T07:54:17+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1021
 permalink: /2009/10/02/2009-avalanche-home-opener/

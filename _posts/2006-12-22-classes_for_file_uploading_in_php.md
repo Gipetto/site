@@ -2,7 +2,6 @@
 id: 205
 title: Classes for file uploading in PHP
 date: 2006-12-22T13:18:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=205
 permalink: /2006/12/22/classes_for_file_uploading_in_php/
@@ -18,7 +17,7 @@ tags:
   - script
   - upload
 ---
-Surprisingly, I still get a lot of referrals from [The Stickman](http://the-stickman.com/web-development/javascript/upload-multiple-files-with-a-single-file-element/) for his work on a multi-file javascript upload helper on which I briefly assisted on Safari compatibility. The script adds and removes file upload form elements as requested by the user. So a form can be designed to handle as many uploads as you'd like and the user can have up to that many files uploaded to the server. It really is a nice script.
+Surprisingly, I still get a lot of referrals from ~~[The Stickman](http://the-stickman.com/web-development/javascript/upload-multiple-files-with-a-single-file-element/)~~ for his work on a multi-file javascript upload helper on which I briefly assisted on Safari compatibility. The script adds and removes file upload form elements as requested by the user. So a form can be designed to handle as many uploads as you'd like and the user can have up to that many files uploaded to the server. It really is a nice script.
 
 I posted a comment there that linked back to a file upload script that I wrote. Well, since then I've written something much better and its about time to show it off. I actually wrote it a while back and recently cleaned it up to go all PHP5 with it.
 

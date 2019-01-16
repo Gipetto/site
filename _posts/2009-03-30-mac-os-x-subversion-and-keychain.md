@@ -2,7 +2,6 @@
 id: 524
 title: Mac OS X, Subversion, and Keychain
 date: 2009-03-30T12:30:36+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=524
 permalink: /2009/03/30/mac-os-x-subversion-and-keychain/

@@ -2,7 +2,6 @@
 id: 167
 title: 'Side Scrolling in Adobe – keep your hands on the keyboard'
 date: 2006-06-30T23:01:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=167
 permalink: /2006/06/30/side_scrolling_in_adobe_keep_your_hands_on_the_keyboard/

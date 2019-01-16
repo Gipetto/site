@@ -2,7 +2,6 @@
 id: 1015
 title: Sunrise at the track
 date: 2009-09-28T08:11:29+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1015
 permalink: /2009/09/28/sunrise-at-the-track/

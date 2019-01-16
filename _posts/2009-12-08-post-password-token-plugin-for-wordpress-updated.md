@@ -2,7 +2,6 @@
 id: 1149
 title: Post Password Token plugin for WordPress updated.
 date: 2009-12-08T09:29:17+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1149
 permalink: /2009/12/08/post-password-token-plugin-for-wordpress-updated/

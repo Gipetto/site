@@ -2,7 +2,6 @@
 id: 792
 title: "Video Tutorials: just because you can, doesn't mean you should"
 date: 2009-07-09T22:20:04+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=792
 permalink: /2009/07/09/video-tutorials-just-because-you-can-doesnt-mean-you-should/

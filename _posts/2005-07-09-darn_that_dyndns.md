@@ -2,7 +2,6 @@
 id: 103
 title: 'Darn that DynDns…'
 date: 2005-07-09T12:26:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=103
 permalink: /2005/07/09/darn_that_dyndns/

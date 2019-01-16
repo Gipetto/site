@@ -66,11 +66,12 @@
 
 	.alignright {
 		float: right;
+		margin: 0 0 5px 1rem;
 	}
 
 	.muted-n-stuff {
 		font-size: 0.9em;
-		color: #888;
+		color: #595959;
 		margin-top: 3px;
 	}
 
@@ -82,6 +83,10 @@
 			padding: 2px;
 			border: 1px solid lightgray;	
 		}
+	}
+
+	.oversize {
+		margin-left: -20px;
 	}
 
 	.stupid-wookiee {
@@ -120,6 +125,10 @@
 			line-height: 1.2;
 			margin-top: 20px;
 			font-size: 1.3em;
+		}
+
+		h5 {
+			font-size: 1.2em;
 		}
 
 		a {

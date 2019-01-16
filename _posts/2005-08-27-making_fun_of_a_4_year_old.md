@@ -2,7 +2,6 @@
 id: 124
 title: Making fun of a 4 year old
 date: 2005-08-27T00:16:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=124
 permalink: /2005/08/27/making_fun_of_a_4_year_old/
@@ -23,7 +22,7 @@ These conversation snippets are from conversations with my Nephew. I really wish
 **Adult:** Your mom's a girl, ya know.  
 **Nephew:** No she's not.  
 **Adult:** Yes, she is. So's your Guma (grandma).  
-**Nephew:** uh-uh!  
+**Nephew:** Nuh-uh!  
 **Adult:** Yep, your mom is a girl.  
 **Nephew:** No she's not, she's my mom!
 

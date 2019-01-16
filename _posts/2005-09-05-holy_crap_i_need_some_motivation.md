@@ -2,7 +2,6 @@
 id: 127
 title: Holy crap I need some motivation
 date: 2005-09-05T22:25:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=127
 permalink: /2005/09/05/holy_crap_i_need_some_motivation/

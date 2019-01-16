@@ -2,7 +2,6 @@
 id: 183
 title: 'And now an iTunes bitch…'
 date: 2006-10-06T09:58:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=183
 permalink: /2006/10/06/and_now_an_itunes_bitch/

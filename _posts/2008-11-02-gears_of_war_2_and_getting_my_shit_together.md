@@ -2,7 +2,6 @@
 id: 246
 title: Gears of War 2 and getting my shit together
 date: 2008-11-02T09:35:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=246
 permalink: /2008/11/02/gears_of_war_2_and_getting_my_shit_together/

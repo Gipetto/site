@@ -2,7 +2,6 @@
 id: 1469
 title: photos.top-frog.com
 date: 2010-07-10T22:58:06+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1469
 permalink: /2010/07/10/photos-top-frog-com/

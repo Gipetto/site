@@ -2,7 +2,6 @@
 id: 213
 title: Easily install and update TextMate bundles from SVN
 date: 2007-05-31T10:36:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=213
 permalink: /2007/05/31/easily_install_and_update_textmate_bundles_from_svn/

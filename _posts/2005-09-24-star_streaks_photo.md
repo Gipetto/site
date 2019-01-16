@@ -2,7 +2,6 @@
 id: 135
 title: Star Streaks Photo
 date: 2005-09-24T02:12:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=135
 permalink: /2005/09/24/star_streaks_photo/
@@ -24,7 +23,15 @@ tags:
   - streak
   - time
 ---
-[<img class="th" src="https://top-frog.com/images/articles/stars1-thumb.jpg" alt="image" />](https://top-frog.com/images/articles/stars1.jpg){:.thickbox.frame}This is a photo taken at Dillon Resevoir just outside of Dillon, CO.
+
+{% include lightbox.html 
+  id="starStreaks"
+  img_lg="/assets/stars1.jpg"
+  img_sm="/assets/stars1-thumb.jpg"
+  title="Star Trails Photo"
+  caption="Star Trails Photo"
+  additional_classes="alignright"
+%} This is a photo taken at Dillon Resevoir just outside of Dillon, CO.
 
 I actually took this photo when out trying to catch a meteor shower but messed up my dates and went out a day early. I caught no meteors on film that night…
 

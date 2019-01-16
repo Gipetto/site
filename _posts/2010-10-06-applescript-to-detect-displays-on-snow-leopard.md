@@ -2,7 +2,6 @@
 id: 1620
 title: AppleScript to Detect Displays on Snow Leopard
 date: 2010-10-06T08:26:28+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1620
 permalink: /2010/10/06/applescript-to-detect-displays-on-snow-leopard/

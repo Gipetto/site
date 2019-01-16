@@ -2,7 +2,6 @@
 id: 1654
 title: Denver Zombie Crawl, 2010
 date: 2010-10-24T16:14:27+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1654
 permalink: /2010/10/24/denver-zombie-crawl-2010/

@@ -2,7 +2,6 @@
 id: 240
 title: Stop moving my iPhone icons!
 date: 2008-08-20T00:20:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=240
 permalink: /2008/08/20/stop_moving_my_iphone_icons/

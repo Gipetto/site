@@ -2,7 +2,6 @@
 id: 2591
 title: So long, Alex King
 date: 2015-09-28T22:26:20+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2591
 permalink: /2015/09/28/so-long-alex-king/

@@ -2,7 +2,6 @@
 id: 256
 title: Of MacBook Pros and Hard Drive swapping
 date: 2009-03-05T08:30:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=256
 permalink: /2009/03/05/of_macbook_pros_and_hard_drive_swapping/

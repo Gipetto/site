@@ -2,7 +2,6 @@
 id: 2348
 title: Point Reyes
 date: 2013-07-07T12:59:03+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2348
 permalink: /2013/07/07/point-reyes/

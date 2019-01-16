@@ -2,7 +2,6 @@
 id: 151
 title: 'Traveling Again – need recommendations'
 date: 2006-01-22T20:34:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=151
 permalink: /2006/01/22/traveling_again_need_recommendations/

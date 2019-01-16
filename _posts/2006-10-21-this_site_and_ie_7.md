@@ -2,7 +2,6 @@
 id: 189
 title: This site and IE 7
 date: 2006-10-21T00:00:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=189
 permalink: /2006/10/21/this_site_and_ie_7/

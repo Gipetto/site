@@ -2,7 +2,6 @@
 id: 2013
 title: A day at the beach
 date: 2011-08-06T23:35:11+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2013
 permalink: /2011/08/06/a-day-at-the-beach/

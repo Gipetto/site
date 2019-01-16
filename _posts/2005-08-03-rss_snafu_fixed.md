@@ -2,7 +2,6 @@
 id: 117
 title: RSS Snafu Fixed
 date: 2005-08-03T10:13:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=117
 permalink: /2005/08/03/rss_snafu_fixed/

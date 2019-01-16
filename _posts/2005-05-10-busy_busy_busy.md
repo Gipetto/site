@@ -2,12 +2,17 @@
 id: 77
 title: 'Busy busy busy…'
 date: 2005-05-10T12:23:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=77
 permalink: /2005/05/10/busy_busy_busy/
 categories:
   - Life
+tags:
+  - php
+  - fuzzy coconut
+  - remodel
+  - work
+  - stress
 ---
 I haven't made a post in 8 days yet it feels like I've let this site fall into an abyss of obscurity. Odd the way time feels when you don't really pay attention. I'm bad at judging the passage of time anyway but it seems that lately anything I let sit for a while seems to fall away so quickly that it feels like I've left it to rot.
 

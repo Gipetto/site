@@ -2,7 +2,6 @@
 id: 2449
 title: Pathology, Finally
 date: 2015-04-16T22:31:09+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2449
 permalink: /2015/04/16/pathology-finally/

@@ -2,20 +2,18 @@
 id: 29
 title: Humans 1; Mouse 0
 date: 2004-12-08T05:56:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=29
 permalink: /2004/12/08/humans_1_mouse_0/
 categories:
   - Life
+tags:
+  - mouse
+  - home
 ---
 We woke up this morning to find that the little sticky trap that we'd bought worked and caught our mouse.
 
-The unfortunate part, and I knew it was coming, was that he was still alive. Plastered to the glue, breathing heavy, trying to get loose.
-
-Basically he was scared out of his mind.
-
-
+The unfortunate part, and I knew it was coming, was that he was still alive. Plastered to the glue, breathing heavy, trying to get loose. Basically he was scared out of his mind.
 
 The next decision was what to do with him.
 
@@ -31,6 +29,6 @@ It sucks. Him being in the house didn't bother me, really, it was what he could 
 
 I didn't like doing it, but it had to be done.
 
-Who would think that something so small could effect me so much. Its just a mouse, but I killed it. You'd think I was 12 by the way I'm reacting to this.
+Who would think that something so small could effect me so much. Its just a mouse, but I killed it. You'd think I was 12 years old by the way I'm reacting to this.
 
 He was just so cute…

@@ -2,7 +2,6 @@
 id: 196
 title: Show PHP source without duplicating files
 date: 2006-11-22T15:50:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=196
 permalink: /2006/11/22/show_php_source_without_duplicating_files/

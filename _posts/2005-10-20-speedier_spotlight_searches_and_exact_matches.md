@@ -2,7 +2,6 @@
 id: 140
 title: Speedier Spotlight searches and exact matches
 date: 2005-10-20T12:02:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=140
 permalink: /2005/10/20/speedier_spotlight_searches_and_exact_matches/

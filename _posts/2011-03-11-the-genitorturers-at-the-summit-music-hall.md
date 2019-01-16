@@ -2,7 +2,6 @@
 id: 1934
 title: The Genitorturers at the Summit Music Hall
 date: 2011-03-11T23:00:16+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1934
 permalink: /2011/03/11/the-genitorturers-at-the-summit-music-hall/

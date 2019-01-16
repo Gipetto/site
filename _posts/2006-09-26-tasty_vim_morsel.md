@@ -2,7 +2,6 @@
 id: 177
 title: Tasty VIM Morsel
 date: 2006-09-26T10:27:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=177
 permalink: /2006/09/26/tasty_vim_morsel/

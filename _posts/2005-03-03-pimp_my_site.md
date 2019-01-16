@@ -2,7 +2,6 @@
 id: 50
 title: Pimp my site
 date: 2005-03-03T13:03:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=50
 permalink: /2005/03/03/pimp_my_site/
@@ -14,7 +13,7 @@ Read an interesting article today on [css signatures](http://www.rdrop.com/~half
 The concept of a css signature is to label your body with an identifier that is unique to your site, like:
 
 ``` html
-<body id="gipetto-dyn-dns-org">
+<body id="top-frog-com">
 ```
 
 This way someone can use a custom stlye sheet to change something they don't like about your site. Granted, few of us would really like for someone to strip a bunch of formatting from out sites because we have a vision on how we'd like to present our data – but how many times have you run accross a site that had one, or maybe two things that bugged you but otherwise you like the site, or for some reason or another you need to change the size of just one type of text on a certain site, or maybe someone writes great articles but their background image makes it unreadable.

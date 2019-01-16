@@ -2,7 +2,6 @@
 id: 1563
 title: 2010 National Radial Engine Exhibition
 date: 2010-09-12T19:52:59+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1563
 permalink: /2010/09/12/2010-national-radial-engine-exhibition/

@@ -2,7 +2,6 @@
 id: 128
 title: 'Gippy Pages turns 1 year old…'
 date: 2005-09-11T13:51:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=128
 permalink: /2005/09/11/gippy_pages_turns_1_year_old/

@@ -2,7 +2,6 @@
 id: 125
 title: No More Carpooling
 date: 2005-08-31T00:21:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=125
 permalink: /2005/08/31/no_more_carpooling/
@@ -21,13 +20,11 @@ tags:
 ---
 After 5 years of carpooling, first in a 1995 Camry and then in a 2002 Tacoma, we finally bought another car. This past Saturday we picked up a 2004 Subaru Impreza WRX. One word will suffice in describing this car.
 
-Wow.
-
-
+**Wow.**
 
 It looks just like this one.
 
-![image](https://top-frog.com/images/articles/wrx.jpg)
+![image](/assets/wrx.jpg)
 
 #### Compared to the truck
 
@@ -45,7 +42,7 @@ Once I figured out how to drive the car a little bit (going from a supercharger 
 
 #### So, how much am I gonna pay for gas?
 
-While it takes Premium gasoline to keep the turbo fit the car can actually attain decent gas mileage so long as you behave. Keeping a short and slow accelerator pedal while driving can keep the turbo from kicking in and save a ton on gas. Stepping on it for long periods (hard to do, really, since it goes so damn fast there really isn't anywhere to let it go and stretch its legs for a long time) can, and will, change that gas mileage significantly.
+While it takes Premium gasoline to keep the turbo happy the car can actually attain decent gas mileage so long as you behave. Keeping a short and slow accelerator pedal while driving can keep the turbo from kicking in and save a ton on gas. Stepping on it for long periods (hard to do, really, since it goes so damn fast there really isn't anywhere to let it go and stretch its legs for a long time) can, and will, change that gas mileage significantly.
 
 #### Very pleased
 

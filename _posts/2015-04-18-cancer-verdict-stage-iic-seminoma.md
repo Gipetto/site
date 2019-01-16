@@ -2,7 +2,6 @@
 id: 2456
 title: 'Cancer verdict: Stage IIC Seminoma'
 date: 2015-04-18T04:10:37+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2456
 permalink: /2015/04/18/cancer-verdict-stage-iic-seminoma/

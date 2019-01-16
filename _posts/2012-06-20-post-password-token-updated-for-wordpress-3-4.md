@@ -2,7 +2,6 @@
 id: 2170
 title: Post Password Token updated for WordPress 3.4
 date: 2012-06-20T00:51:49+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2170
 permalink: /2012/06/20/post-password-token-updated-for-wordpress-3-4/

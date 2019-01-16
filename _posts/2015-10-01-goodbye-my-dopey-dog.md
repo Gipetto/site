@@ -2,7 +2,6 @@
 id: 2599
 title: Goodbye, my dopey dog.
 date: 2015-10-01T10:45:56+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2599
 permalink: /2015/10/01/goodbye-my-dopey-dog/

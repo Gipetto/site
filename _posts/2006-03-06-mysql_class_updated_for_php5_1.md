@@ -1,8 +1,7 @@
 ---
 id: 155
-title: mySQL Class Updated for PHP 5 part 1
+title: MySQL Class Updated for PHP 5 part 1
 date: 2006-03-06T15:42:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=155
 permalink: /2006/03/06/mysql_class_updated_for_php5_1/

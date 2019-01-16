@@ -2,7 +2,6 @@
 id: 1200
 title: "Lil' Miss Hummingbird"
 date: 2010-02-15T13:26:23+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1200
 permalink: /2010/02/15/lil-miss-hummingbird/

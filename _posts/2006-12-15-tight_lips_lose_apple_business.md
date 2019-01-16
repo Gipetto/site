@@ -2,7 +2,6 @@
 id: 201
 title: Tight lips lose Apple business
 date: 2006-12-15T10:08:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=201
 permalink: /2006/12/15/tight_lips_lose_apple_business/

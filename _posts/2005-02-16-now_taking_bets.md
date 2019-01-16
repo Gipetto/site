@@ -2,12 +2,14 @@
 id: 43
 title: Now Taking Bets
 date: 2005-02-16T22:15:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=43
 permalink: /2005/02/16/now_taking_bets/
 categories:
   - 'Web Design &amp; Development'
+tags:
+  - microsoft
+  - internet explorer
 ---
 So, today Microsoft announced a new version of Internet Explorer is on the horizon: [IE7](http://blogs.msdn.com/ie/archive/2005/02/15/373104.aspx). They say they've listened to their customers and are respoding to a great deal of end user input when putting together this update.
 

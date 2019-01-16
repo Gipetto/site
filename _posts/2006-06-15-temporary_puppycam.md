@@ -2,7 +2,6 @@
 id: 165
 title: Temporary Puppycam
 date: 2006-06-15T10:05:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=165
 permalink: /2006/06/15/temporary_puppycam/

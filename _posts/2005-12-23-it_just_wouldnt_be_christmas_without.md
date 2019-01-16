@@ -2,7 +2,6 @@
 id: 147
 title: "It just wouldn't be christmas without…"
 date: 2005-12-23T15:32:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=147
 permalink: /2005/12/23/it_just_wouldnt_be_christmas_without/
@@ -22,7 +21,13 @@ A bloody dog fight…
 
 You won't be thanking me for this pic.
 
-[![image](https://top-frog.com/images/articles/ear-thumb.jpg)](https://top-frog.com/images/articles/ear.jpg "Bear's ear repair"){:.thickbox.frame}
+{% include lightbox.html 
+  id="dogEar"
+  img_lg="/assets/ear.jpg"
+  img_sm="/assets/ear-thumb.jpg"
+  title="Bear's ear damage"
+  caption="Bear's ear damage"
+%} 
 
 More details soon.
 

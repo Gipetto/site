@@ -2,7 +2,6 @@
 id: 1509
 title: WordPress export, import and double serialization.
 date: 2010-08-02T23:32:47+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1509
 permalink: /2010/08/02/wordpress-export-import-and-double-serialization/

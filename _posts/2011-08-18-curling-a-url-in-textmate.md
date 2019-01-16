@@ -2,7 +2,6 @@
 id: 2029
 title: "curl'ing a URL in TextMate"
 date: 2011-08-18T10:07:32+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2029
 permalink: /2011/08/18/curling-a-url-in-textmate/

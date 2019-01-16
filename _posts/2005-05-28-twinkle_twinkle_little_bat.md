@@ -2,12 +2,13 @@
 id: 84
 title: 'Twinkle, Twinkle, Little Bat…'
 date: 2005-05-28T21:57:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=84
 permalink: /2005/05/28/twinkle_twinkle_little_bat/
 categories:
   - Life
+tags:
+  - bats
 ---
 > Twinkle, twinkle, little bat !  
 > How I wonder what you're at !  

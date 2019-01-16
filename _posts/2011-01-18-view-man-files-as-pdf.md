@@ -2,7 +2,6 @@
 id: 1845
 title: View man files as PDF
 date: 2011-01-18T09:58:40+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1845
 permalink: /2011/01/18/view-man-files-as-pdf/

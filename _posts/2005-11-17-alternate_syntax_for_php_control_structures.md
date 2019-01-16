@@ -2,7 +2,6 @@
 id: 143
 title: Alternate Syntax for PHP Control Structures
 date: 2005-11-17T09:45:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=143
 permalink: /2005/11/17/alternate_syntax_for_php_control_structures/

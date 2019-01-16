@@ -2,7 +2,6 @@
 id: 1338
 title: "Playin' close to home"
 date: 2010-05-24T22:32:33+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1338
 permalink: /2010/05/24/playin-close-to-home/

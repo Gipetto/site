@@ -2,7 +2,6 @@
 id: 867
 title: Sort arrays by key revisited
 date: 2009-07-29T00:15:19+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=867
 permalink: /2009/07/29/sort-arrays-by-key-revisited/

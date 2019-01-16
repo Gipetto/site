@@ -2,7 +2,6 @@
 id: 2098
 title: Building a web
 date: 2011-12-18T14:02:16+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2098
 permalink: /2011/12/18/building-a-web/

@@ -2,7 +2,6 @@
 id: 154
 title: Time is not on my side
 date: 2006-03-01T22:37:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=154
 permalink: /2006/03/01/time_is_not_on_my_side/

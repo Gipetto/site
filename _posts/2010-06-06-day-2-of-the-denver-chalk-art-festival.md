@@ -2,7 +2,6 @@
 id: 1418
 title: Day 2 of the Denver Chalk Art Festival
 date: 2010-06-06T16:17:48+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1418
 permalink: /2010/06/06/day-2-of-the-denver-chalk-art-festival/

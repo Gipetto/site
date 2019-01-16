@@ -2,7 +2,6 @@
 id: 1151
 title: Dragon Scale Bracelet
 date: 2009-12-09T01:42:30+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1151
 permalink: /2009/12/09/dragon-scale-bracelet/

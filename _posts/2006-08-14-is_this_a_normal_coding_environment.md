@@ -2,7 +2,6 @@
 id: 172
 title: Is this a normal coding enviroment?
 date: 2006-08-14T20:55:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=172
 permalink: /2006/08/14/is_this_a_normal_coding_environment/

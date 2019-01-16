@@ -2,7 +2,6 @@
 id: 1441
 title: Non race photos from a day at the races
 date: 2010-06-19T22:38:10+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1441
 permalink: /2010/06/19/non-race-photos-from-a-day-at-the-races/

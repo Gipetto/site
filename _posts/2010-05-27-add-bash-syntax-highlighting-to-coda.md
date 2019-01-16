@@ -2,7 +2,6 @@
 id: 1364
 title: Add Bash syntax highlighting to Coda
 date: 2010-05-27T10:39:37+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1364
 permalink: /2010/05/27/add-bash-syntax-highlighting-to-coda/

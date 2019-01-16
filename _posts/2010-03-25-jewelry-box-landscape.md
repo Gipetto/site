@@ -2,7 +2,6 @@
 id: 1230
 title: Jewelry Box Landscape
 date: 2010-03-25T23:18:32+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1230
 permalink: /2010/03/25/jewelry-box-landscape/

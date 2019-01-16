@@ -2,12 +2,14 @@
 id: 16
 title: Still the best
 date: 2004-11-18T11:02:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=16
 permalink: /2004/11/18/still_the_best/
 categories:
   - 'Web Design &amp; Development'
+tags:
+  - subethaedit
+  - editor
 ---
 Well the Coding Monkeys have done it again with their latest release of [SubEthaEdit](http://www.codingmonkeys.de/subethaedit/index.html).
 

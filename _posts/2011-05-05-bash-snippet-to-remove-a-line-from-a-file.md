@@ -2,7 +2,6 @@
 id: 1970
 title: Bash snippet to remove a line from a file
 date: 2011-05-05T09:03:42+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1970
 permalink: /2011/05/05/bash-snippet-to-remove-a-line-from-a-file/

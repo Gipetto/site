@@ -2,7 +2,6 @@
 id: 502
 title: Site rebuilt on WordPress
 date: 2009-03-30T00:00:22+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.local/?p=502
 permalink: /2009/03/30/site-rebuilt-on-wordpress/
@@ -19,9 +18,7 @@ tags:
   - thickbox
   - wordpress
 ---
-<img src="/assets/blue-m.png" alt="blue-m" title="blue-m" width="100" height="100" />After much futzing, fidgeting, and neglecting of other things I've finally got this site converted to [WordPress](http://wordpress.org). It was just a logical thing to do for many reasons (one of which that I'm in it so damn much I know how to hack the crap out of it. The other main one being: let someone else build the core, I just want to extend and use it). Read on in you're interested in some of the high-level details about what's different.
-
-
+<img src="/assets/blue-m.png" alt="Wordpress Logo" class="alignright" />After much futzing, fidgeting, and neglecting of other things I've finally got this site converted to [WordPress](http://wordpress.org). It was just a logical thing to do for many reasons (one of which that I'm in it so damn much I know how to hack the crap out of it. The other main one being: let someone else build the core, I just want to extend and use it). Read on in you're interested in some of the high-level details about what's different.
 
 #### The Theme
 

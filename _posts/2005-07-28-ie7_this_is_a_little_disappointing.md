@@ -2,7 +2,6 @@
 id: 114
 title: 'IE 7: this is a little disappointing'
 date: 2005-07-28T22:24:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=114
 permalink: /2005/07/28/ie7_this_is_a_little_disappointing/

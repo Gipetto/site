@@ -2,7 +2,6 @@
 id: 230
 title: "I'm one sorry out of shape sod"
 date: 2008-05-25T01:22:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=230
 permalink: /2008/05/25/im_one_sorry_out_of_shape_sod/

@@ -2,7 +2,6 @@
 id: 1295
 title: The Rockies from the Window Seat.
 date: 2010-05-05T23:26:24+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1295
 permalink: /2010/05/05/the-rockies-from-the-window-seat/

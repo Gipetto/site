@@ -2,7 +2,6 @@
 id: 2189
 title: MacPorts, Homebrew and Mountain Lion
 date: 2012-07-26T21:25:41+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2189
 permalink: /2012/07/26/macports-homebrew-and-mountain-lion/

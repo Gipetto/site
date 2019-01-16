@@ -2,7 +2,6 @@
 id: 218
 title: MDS (Spotlight) and Parallels
 date: 2007-10-12T10:54:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=218
 permalink: /2007/10/12/mds_spotlight_and_parallels/

@@ -2,7 +2,6 @@
 id: 2506
 title: Ya know what? I work for a wonderful company.
 date: 2015-05-01T23:34:12+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2506
 permalink: /2015/05/01/ya-know-what-i-work-for-a-wonderful-company/

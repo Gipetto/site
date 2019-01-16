@@ -2,7 +2,6 @@
 id: 157
 title: Tabular image layouts in print and on the web
 date: 2006-03-28T23:13:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=157
 permalink: /2006/03/28/tabular_image_layouts_in_print_and_web/
@@ -29,8 +28,6 @@ tags:
 ---
 For a long time I've been lusting over a way to neatly arrange a block of images on paper the way it is so easy to do on screen. Or, at least, they way it has become so easy to do on screen. CSS actually opened the door to me finding a nice way to do this. I know this is vague, but if you've ever had to arrange images in a grid in print you'll like this (and maybe even be ahead of me on doing it!).
 
-
-
 To clarify, here's what I'm after. At work we have several publications in which we show off all the logos of the vendor product that we distribute. We typically show them off in a grid and they change often. That means that keeping an updated arrangement is a pain in the butt. Common thinking (for me at least) would be to draw out a grid to fit into or, in the case of newer page layout software, make a table so that all the rows and columns lined up nicely.
 
 My way, maybe not a new way, sets everything so the logos are dynamically placed, so that its easy to slip a new one in the grid and have everything else reflow to a correct position.
@@ -43,7 +40,7 @@ _Yeah, that was a cheap shot but this is my website!_
 
 Pretty much any page layout software that is worth a damn from the last 8 years is Quark, PageMaker or InDesign, supports putting an image inline in a text box. I'm going to use InDesign as the example since it is what I use and by far the leading application in its market.
 
-The concept for InDesign is the same as for the web. Where on the web I use a <p> tag or <div> as the container in print I use a textbox. Instead of CSS's padding there's tracking values in print.
+The concept for InDesign is the same as for the web. Where on the web I use a `<p>` tag or `<div>` as the container in print I use a textbox. Instead of CSS's padding there's tracking values in print.
 
 Simply make sure that all your image boxes are all the same width and paste them into the text box. Change your tracking so that your images space apart in the correct number of columns and adjust your leading to get the vertical spacing you want. It takes a while to set up as you can only paste one image at a time into the text box but once set up it makes adding a new image a snap.
 

@@ -2,7 +2,6 @@
 id: 709
 title: Quickly validate PHP files
 date: 2009-06-26T15:13:54+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=709
 permalink: /2009/06/26/quickly-validate-php-files/

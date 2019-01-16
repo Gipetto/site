@@ -2,7 +2,6 @@
 id: 239
 title: Water water.
 date: 2008-08-18T08:48:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=239
 permalink: /2008/08/18/water_water/

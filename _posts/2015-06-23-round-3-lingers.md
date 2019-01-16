@@ -2,7 +2,6 @@
 id: 2570
 title: 'Round 3 lingers…'
 date: 2015-06-23T17:36:37+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2570
 permalink: /2015/06/23/round-3-lingers/

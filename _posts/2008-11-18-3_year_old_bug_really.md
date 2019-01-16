@@ -2,7 +2,6 @@
 id: 247
 title: 3 year old bug, really?
 date: 2008-11-18T07:19:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=247
 permalink: /2008/11/18/3_year_old_bug_really/

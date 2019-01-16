@@ -2,7 +2,6 @@
 id: 1827
 title: WordPress TextMate Bundle Updated
 date: 2010-12-27T21:20:20+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1827
 permalink: /2010/12/27/wordpress-textmate-bundle-updated-wp-31-rc1/
@@ -21,7 +20,7 @@ tags:
   - update
   - wordpress
 ---
-[<img src="https://i2.wp.com/top-frog.com/wp-content/uploads/2009/12/wp-logo-cropped.png?resize=166%2C124" alt="" title="wp-logo-cropped" width="166" height="124" class="alignright size-full wp-image-1177" srcset="https://i2.wp.com/top-frog.com/wp-content/uploads/2009/12/wp-logo-cropped.png?w=166&ssl=1 166w, https://i2.wp.com/top-frog.com/wp-content/uploads/2009/12/wp-logo-cropped.png?resize=75%2C56&ssl=1 75w" sizes="(max-width: 166px) 100vw, 166px" data-recalc-dims="1" />](https://i2.wp.com/top-frog.com/wp-content/uploads/2009/12/wp-logo-cropped.png)[WordPress 3.1 RC is here](http://wordpress.org/news/2010/12/wordpress-3-1-release-candidate/), so I figure its time enough to issue an update my [recently neglected, sorry 'bout that, its been busy] [WordPress TextMate Bundle](http://top-frog.com/projects/wordpress-textmate-bundle/). All function definitions have been updated to the 3.1 RC code base. There is a tag for the 3.0 branch as it sat this afternoon. 
+[<img class="alignright" src="/assets/wp-logo-cropped.png" alt="WordPress logo" title="wp-logo-cropped" />](https://i2.wp.com/top-frog.com/wp-content/uploads/2009/12/wp-logo-cropped.png)[WordPress 3.1 RC is here](http://wordpress.org/news/2010/12/wordpress-3-1-release-candidate/), so I figure its time enough to issue an update my [recently neglected, sorry 'bout that, its been busy] [WordPress TextMate Bundle](http://top-frog.com/projects/wordpress-textmate-bundle/). All function definitions have been updated to the 3.1 RC code base. There is a tag for the 3.0 branch as it sat this afternoon. 
 
 No new features have been added yet, but this will at least jump you to the right place in the code base when needing to inspect an internal function. Suggestions for feature additions are always welcome, so lemme know how you use the bundle and how any improvements can help you use it better and I'll see what I can do. As it always has been, the project's source is freely available so you're welcome to contribute as well if you wanna dive in to a little bit of Ruby code.
 

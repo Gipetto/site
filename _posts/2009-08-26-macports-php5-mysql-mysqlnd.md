@@ -2,7 +2,6 @@
 id: 917
 title: 'MacPorts, php5-mysql & mysqlnd'
 date: 2009-08-26T11:59:02+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=917
 permalink: /2009/08/26/macports-php5-mysql-mysqlnd/

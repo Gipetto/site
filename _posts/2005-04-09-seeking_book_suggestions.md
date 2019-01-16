@@ -2,16 +2,16 @@
 id: 66
 title: Seeking Book Suggestions
 date: 2005-04-09T15:22:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=66
 permalink: /2005/04/09/seeking_book_suggestions/
 categories:
   - 'Web Design &amp; Development'
+tags:
+  - javascript
+  - book
 ---
 So it seems that I'm gonna have to learn some javascript for work. Our eCommerce package is a proprietary piece of shit that runs on MAS and Providex and is the slow and has a very odd construct in the way is processes information.
-
-
 
 Take for example is method of repeating a table row based on a template. The template contains code like this (greatly simplified to show only one item):
 

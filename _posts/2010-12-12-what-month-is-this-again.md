@@ -2,7 +2,6 @@
 id: 1794
 title: What month is this again?
 date: 2010-12-12T11:46:13+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1794
 permalink: /2010/12/12/what-month-is-this-again/

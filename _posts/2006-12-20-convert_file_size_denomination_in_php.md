@@ -2,7 +2,6 @@
 id: 203
 title: Convert file size denominations in PHP
 date: 2006-12-20T14:58:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=203
 permalink: /2006/12/20/convert_file_size_denomination_in_php/

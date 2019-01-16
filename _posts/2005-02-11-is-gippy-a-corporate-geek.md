@@ -2,18 +2,18 @@
 id: 41
 title: Is Gippy a corporate geek?
 date: 2005-02-11T19:00:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=41
 permalink: /2005/02/11/is-gippy-a-corporate-geek/
 categories:
   - Life
+tags:
+  - work
+  - corporate-slave
 ---
-Well, good news came down the pipe today at work – I get to shed the Jr. Web Designer moniker and start referring to myself as Web & Graphic Designer. This is a huge step as I started this job with just a working knowledge of Adobe GoLive's automated workflow and have since moved on to programming xhtml, php and css all by hand and have gained the ability to run a command line Unix box and install and manage a multitude of services on it.
+Well, good news came down the pipe today at work – I get to shed the Jr. Web Designer moniker and start referring to myself as Web & Graphic Designer. This is a huge step as I started this job with just a working knowledge of Adobe GoLive's automated workflow and have since moved on to programming XHTML, PHP and CSS all by hand and have gained the ability to run a command line Unix box and install and manage a multitude of services on it.
 
-I guess I could just sum that up as $geek++;
-
-
+I guess I could just sum that up as `$geek++;`
 
 The surprising part is that I'll be making a bit more than I asked for in this move. What I had asked for when discussing moving up in the company would be at the very beginning of what this position deserved to be paid and what my boss did was push for me to get a bit over that. So not only do I shed a putrid Jr. moniker I gain a handsome new salary.
 

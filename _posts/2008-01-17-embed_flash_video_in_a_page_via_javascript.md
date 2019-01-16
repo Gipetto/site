@@ -2,7 +2,6 @@
 id: 222
 title: Embed Flash Video in a page via JavaScript
 date: 2008-01-17T22:31:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=222
 permalink: /2008/01/17/embed_flash_video_in_a_page_via_javascript/

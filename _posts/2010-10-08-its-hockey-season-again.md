@@ -2,7 +2,6 @@
 id: 1637
 title: Its hockey season again!
 date: 2010-10-08T07:26:04+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1637
 permalink: /2010/10/08/its-hockey-season-again/

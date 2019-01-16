@@ -2,7 +2,6 @@
 id: 104
 title: Another baton? What will they think of next?
 date: 2005-07-10T23:19:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=104
 permalink: /2005/07/10/another_baton/
@@ -21,9 +20,7 @@ tags:
   - powermac
   - setup
 ---
-So, it seems, I've been passed [another baton](http://milkcarton.protonage.net/). This time on system setup. I use a 15" powerbook so there's not much of a thrill there. The desk is still a mess from moving the server, but [I do have a pic of the server for those interested enough to look](https://top-frog.com/images/articles/server.jpg).
-
-
+So, it seems, I've been passed ~~[another baton](http://milkcarton.protonage.net/)~~. This time on system setup. I use a 15" powerbook so there's not much of a thrill there. The desk is still a mess from moving the server but [I do have a pic of the server for those interested enough to look](/assets/server.jpg).
 
 So, I guess the system specs are in order.
 
@@ -41,7 +38,7 @@ The wife uses a 2005 12" PowerBook that is stock aside from its 768mb of Ram.
 
 #### The Server
 
-The server, which is running this site as well as [Puddlemonkey's site](http://puddlemonkey.com) is a Dual 1ghz MDD PowerMac, 1.75gb of Ram, 110gb of internal hard drive and another 180gb of firewire hard drive (used for backup).
+The server, which is running this site as well as ~~[Puddlemonkey's site](http://puddlemonkey.com)~~ is a Dual 1ghz MDD G4 Tower, 1.75gb of Ram, 110gb of internal hard drive and another 180gb of FireWire hard drive (used for backup).
 
 It is running 10.3 Server with Apache 1.3, MySQL 4.1 and PHP 5. The system is the central hub of the house providing print, DNS, AFP, web, FTP, Mail (outgoing only), and will soon be providing Open Directory services as soon as I get around to organizing it.
 

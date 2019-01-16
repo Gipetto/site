@@ -2,12 +2,13 @@
 id: 9
 title: Voting my conscience
 date: 2004-10-18T22:12:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=9
 permalink: /2004/10/18/voting_my_conscience/
 categories:
   - Life
+tags:
+  - election
 ---
 Like a lot of other people I know I will not be voting for Bush in the coming election. But I also cannot in good conscience vote for Kerry. This leaves somewhat of a dilemma since none of the 3rd party candidates are worth casting a vote for either.
 

@@ -2,7 +2,6 @@
 id: 2573
 title: Down with a sickness
 date: 2015-07-07T16:52:10+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2573
 permalink: /2015/07/07/down-with-a-sickness/

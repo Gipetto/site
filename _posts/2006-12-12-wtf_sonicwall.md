@@ -2,7 +2,6 @@
 id: 199
 title: WTF, SonicWALL?
 date: 2006-12-12T00:03:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=199
 permalink: /2006/12/12/wtf_sonicwall/

@@ -2,7 +2,6 @@
 id: 1976
 title: "Window Seat: I just can't help myself…"
 date: 2011-05-22T16:46:13+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1976
 permalink: /2011/05/22/window-seat-i-just-cant-help-myself/

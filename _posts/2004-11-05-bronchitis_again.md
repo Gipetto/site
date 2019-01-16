@@ -2,7 +2,6 @@
 id: 13
 title: Bronchitis Again
 date: 2004-11-05T07:56:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=13
 permalink: /2004/11/05/bronchitis_again/

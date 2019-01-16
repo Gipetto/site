@@ -2,7 +2,6 @@
 id: 2494
 title: 'With co-workers like these…'
 date: 2015-04-20T19:26:06+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2494
 permalink: /2015/04/20/with-co-workers-like-these/

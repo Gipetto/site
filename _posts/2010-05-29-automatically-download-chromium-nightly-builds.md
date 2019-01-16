@@ -2,7 +2,6 @@
 id: 1381
 title: Automatically download Chromium nightly builds
 date: 2010-05-29T13:59:52+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1381
 permalink: /2010/05/29/automatically-download-chromium-nightly-builds/

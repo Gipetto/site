@@ -2,7 +2,6 @@
 id: 2527
 title: Gaining strength through the pain of others.
 date: 2015-05-05T01:59:32+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2527
 permalink: /2015/05/05/gaining-strength-through-the-pain-of-others/

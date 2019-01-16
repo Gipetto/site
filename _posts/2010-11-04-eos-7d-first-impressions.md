@@ -2,7 +2,6 @@
 id: 1678
 title: EOS 7D First Impressions
 date: 2010-11-04T22:00:18+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1678
 permalink: /2010/11/04/eos-7d-first-impressions/

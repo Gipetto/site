@@ -2,7 +2,6 @@
 id: 174
 title: "Ok, NOW I'm pissed at the OS X Finder"
 date: 2006-09-07T20:51:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=174
 permalink: /2006/09/07/ok_now_im_pissed_at_the_os_x_finder/

@@ -2,7 +2,6 @@
 id: 2558
 title: "Solving the World's Fluffy Tailed Rodent Problem"
 date: 2015-05-15T10:53:52+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=2558
 permalink: /2015/05/15/solving-the-worlds-fluffy-tailed-rodent-problem/

@@ -2,7 +2,6 @@
 id: 232
 title: Is Twitter a bit creepy? And spammy.
 date: 2008-06-03T17:42:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=232
 permalink: /2008/06/03/is_twitter_a_bit_creepy_and_spammy/

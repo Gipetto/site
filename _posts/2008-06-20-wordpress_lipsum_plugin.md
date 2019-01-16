@@ -2,7 +2,6 @@
 id: 236
 title: WordPress Lipsum Plugin
 date: 2008-06-20T22:57:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=236
 permalink: /2008/06/20/wordpress_lipsum_plugin/

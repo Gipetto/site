@@ -2,7 +2,6 @@
 id: 1163
 title: Quickly View WordPress DB Credentials
 date: 2009-12-18T15:40:22+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1163
 permalink: /2009/12/18/quickly-view-wordpress-db-credentials/

@@ -2,7 +2,6 @@
 id: 109
 title: Training dogs, training humans
 date: 2005-07-15T22:37:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=109
 permalink: /2005/07/15/training_dogs_training_humans/

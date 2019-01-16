@@ -2,7 +2,6 @@
 id: 112
 title: A couple of Firefox fixes
 date: 2005-07-23T21:46:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=112
 permalink: /2005/07/23/a_couple_of_firefox_fixes/

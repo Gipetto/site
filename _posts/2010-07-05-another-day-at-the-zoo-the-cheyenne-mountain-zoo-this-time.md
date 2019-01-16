@@ -2,7 +2,6 @@
 id: 1459
 title: 'Another day at the zoo: the Cheyenne Mountain Zoo this time'
 date: 2010-07-05T00:45:17+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=1459
 permalink: /2010/07/05/another-day-at-the-zoo-the-cheyenne-mountain-zoo-this-time/

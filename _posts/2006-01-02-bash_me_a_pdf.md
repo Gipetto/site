@@ -2,7 +2,6 @@
 id: 148
 title: Bash me a PDF
 date: 2006-01-02T21:19:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=148
 permalink: /2006/01/02/bash_me_a_pdf/

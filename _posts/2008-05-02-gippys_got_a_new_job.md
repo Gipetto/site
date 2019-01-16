@@ -2,7 +2,6 @@
 id: 227
 title: "Gippy's Got a New Job"
 date: 2008-05-02T22:47:00+00:00
-author: Shawn
 layout: post
 guid: http://top-frog.com/?p=227
 permalink: /2008/05/02/gippys_got_a_new_job/
