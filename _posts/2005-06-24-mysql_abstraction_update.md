@@ -16,6 +16,6 @@ tags:
 ---
 Yep, the script needed updating already.
 
-I left out a routine in the arrayAssoc and arrayNum functions to account for an empty result set. So if you've downloaded it, grab this new version [here](/dl/scripts/dbConnect.class.zip).
+I left out a routine in the arrayAssoc and arrayNum functions to account for an empty result set. So if you've downloaded it, grab this new version **Update:** link removed as it is old code and of no use to anyone.
 
 Did anyone actually download and use the first one?

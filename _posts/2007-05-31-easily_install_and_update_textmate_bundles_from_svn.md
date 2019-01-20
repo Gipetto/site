@@ -20,13 +20,14 @@ tags:
   - tmbundle
   - update
 ---
-#### This script has been updated
 
-This script was updated on 2008/01/17. Since the version released here had a fatal flaw I have replaced the file linked below. [Click here to see the details on the latest version of this script](/2008/01/17/tmbundle_update).
+<div class="alert warning">
+  This script was rendered obsolete by newer versions of TextMate and is no longer available.
+</div>
 
 I'm lazy. I'll admit it. It comes at weird expenses though. I'm too lazy to remember the subversion commands for updating TextMate bundles and keeping the support folder up to date, and the GetBundle bundle never seems to completely update or remember what it has updated, so I spend time learning how to script the damn thing via bash. Weird. But handy.
 
-[tmbundle.sh](/files/scripts/tmbundle.sh) is the result of that effort. Its a pretty simple bash script that allows for listing available bundles, installing a bundle, and updating all installed bundles. This script is only for items from the Subversion repository of TextMate bundles, so if you haven't pulled the SVN version of the HTML.tmbundle it will not update the default bundle that shipped with TextMate. It will not update a bundle that you have not already pulled from the SVN repository. Install only allows for installing one bundle at a time (I haven't researched function overloading in bash yet).
+~~tmbundle.sh~~ is the result of that effort. Its a pretty simple bash script that allows for listing available bundles, installing a bundle, and updating all installed bundles. This script is only for items from the Subversion repository of TextMate bundles, so if you haven't pulled the SVN version of the `HTML.tmbundle` it will not update the default bundle that shipped with TextMate. It will not update a bundle that you have not already pulled from the SVN repository. Install only allows for installing one bundle at a time (I haven't researched function overloading in bash yet).
 
 
 

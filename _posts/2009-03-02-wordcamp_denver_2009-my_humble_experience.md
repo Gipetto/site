@@ -19,8 +19,6 @@ tags:
 ---
 Amazingly enough I had the opportunity to speak at WordCamp Denver. As nervous as I was before hand (I very well could have puked) I came out pumped. Hopefully a few others did as well.
 
-
-
 #### Say what?
 
 My talk was about the basics of WordPress plugin development: actions and filters. The amount of ground I had to cover was akin to having 10lbs. of shit in a 5lb. bag. In retrospect I could have cut one part of the plugin short to leave myself time to cover the other bases at a bit more of a leisurely pace, but in reality what I needed was about 2 more hours to have time to discuss what I was doing and why. Hopefully, though, the amount of ground covered in a short amount of time was a decent illustration of just how quickly one can develop for WordPress. While its not the optimal system (don't take that the wrong way, nothing is optimal in the blogging space right now) WordPress makes changing the system very straight forward. 
@@ -76,9 +74,9 @@ span.mfp-featured {
 
 #### Extras
 
-To compliment the talk I've put together [a Tag Cloud of the WordPress actions and filters from WordPress 1.5 to present](/htc). It is a first revision and has just some basic styling and functionality, but covers all the bases. I can see this turning in to a larger deconstruction of the WordPress core so we'll just have to see what kind of time I have to put in to it. This all by itself is pretty durned handy and I know I'll be referencing it quite a bit. I just like mousing around and watching the pop-ups too 😉 It has been tested in Firefox and Safari. _I haven't even gandered at it in IE and probably never will_. 
+To compliment the talk I’ve put together a Tag Cloud of the [WordPress actions and filters from WordPress 1.5 to present](/htc/). It is a first revision and has just some basic styling and functionality, but covers all the bases. I can see this turning in to a larger deconstruction of the WordPress core so we’ll just have to see what kind of time I have to put in to it. This all by itself is pretty durned handy and I know I’ll be referencing it quite a bit. I just like mousing around and watching the pop-ups too 😉 It has been tested in Firefox and Safari. I haven’t even gandered at it in IE and probably never will. **Updated 2019 to require JavaScript only and update to WP 5.0**.
 
-There is one filter in there that's not completely right. If anyone can point it out before I fix it I'll buy ya cup of coffee.
+There is one filter in there that’s not completely right. If anyone can point it out before I fix it I’ll buy ya cup of coffee.
 
 #### Not yet extra
 
