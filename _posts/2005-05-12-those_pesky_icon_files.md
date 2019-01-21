@@ -13,7 +13,7 @@ tags:
   - automator
   - applescript
 ---
-<img class="alignright" src="https://top-frog.com/images/articles/launch.png" alt="iTunes Icon" />Now that I've been playing with Tiger for a while I keep finding new uses for Automator. So far its just two things but there's a few more on the drawing board.
+<img class="alignright" src="/assets/articles/launch.png" alt="iTunes Icon" />Now that I've been playing with Tiger for a while I keep finding new uses for Automator. So far its just two things but there's a few more on the drawing board.
 
 However my first hurdle was to get rid of that pesky little robot icon and replace it with something more becoming of the purpose. Don't get me wrong I don't have anything against the little guy, but he's not very appropriate and when you start accumulating little applications like this it is counter intuitive to have a duplicate icons in a folder all identifying different objects.
 

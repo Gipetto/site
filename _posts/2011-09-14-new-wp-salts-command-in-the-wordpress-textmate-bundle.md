@@ -16,9 +16,7 @@ tags:
   - textmate
   - wordpress
 ---
-[<img class="alignright" src="/assets/articles/TextMate-icon.png" alt="TextMate Icon" title="TextMate-icon" />](https://i0.wp.com/top-frog.com/wp-content/uploads/2010/05/TextMate-icon.png)
-
-I just merged a pull request from [Simon Wheatley](https://github.com/simonwheatley) in to the [WordPress TextMate Bundle](/projects/wordpress-textmate-bundle/) that adds the command `wpsalts` to generate the [Security Keys](http://codex.wordpress.org/Editing_wp-config.php#Security_Keys) for the WP Config file. The command uses the [WordPress.org secret-key Service](https://api.wordpress.org/secret-key/1.1/salt).
+<img class="alignright" src="/assets/articles/TextMate-icon.png" alt="TextMate Icon" aria-hidden="true" /> I just merged a pull request from [Simon Wheatley](https://github.com/simonwheatley) in to the [WordPress TextMate Bundle](/projects/wordpress-textmate-bundle/) that adds the command `wpsalts` to generate the [Security Keys](http://codex.wordpress.org/Editing_wp-config.php#Security_Keys) for the WP Config file. The command uses the [WordPress.org secret-key Service](https://api.wordpress.org/secret-key/1.1/salt).
 
 Very handy. 
 

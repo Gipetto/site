@@ -14,7 +14,7 @@ tags:
 ---
 Yet another reason to love two fingered scrolling on the new Aluminum PowerBooks. I just found this last night by accident. If you already knew, well, then, WHY THE HELL DIDN'T YOU TELL ME?!? It turns out that photoshop will allow you to scroll the levels (and other sliders that are accompanied by manual imput boxes) with two fingered scrolling.
 
-![Screenshot of the PhotoShop Levels dialog](https://top-frog.com/images/articles/scroll-control.jpg)
+![Screenshot of the PhotoShop Levels dialog](/assets/articles/scroll-control.jpg)
 
 The proceedure is pretty easy. Open an image and then open the Levels dialog box. Click into one of the input boxes above the histogram. Now, mouse over to the image and scroll up and down – the levels slider that you selected will then proceed to move left or right with your up and down movement.
 

@@ -11,7 +11,7 @@ tags:
   - drawing
   - seeing things
 ---
-<img class="alignright" src="https://top-frog.com/images/articles/thing.png" alt="something I saw in the noise pattern on a bathroom stall" />Whatever it is that is inside waiting to get out – let it out…
+<img class="alignright" src="/assets/articles/thing.png" alt="something I saw in the noise pattern on a bathroom stall" />Whatever it is that is inside waiting to get out – let it out…
 
 For me its odd imagery that I often pick out of random noise patterns – like the faux marble coating on the bathroom stalls or in stucco.
 

@@ -12,7 +12,7 @@ tags:
   - south park
   - cartoon
 ---
-<img class="alignright" src="https://top-frog.com/images/articles/sp-shawn.png" alt="Me, as a South Park character." />Saw this first over at ~~[Mr. Scott's site](http://smhill.net/article/129)~~, so I can't say I'm the first. But I thought it was hilarious to do. Notice I'm not wearing any pants – the possibilities for accurate self representation are definitely there.
+<img class="alignright" src="/assets/articles/sp-shawn.png" alt="Me, as a South Park character." />Saw this first over at ~~[Mr. Scott's site](http://smhill.net/article/129)~~, so I can't say I'm the first. But I thought it was hilarious to do. Notice I'm not wearing any pants – the possibilities for accurate self representation are definitely there.
 
 Check it out over at ~~[Planearium](http://www.planearium2.de/flash/sp-studio-e.html)~~. Make one, post it here using the image tags. It's what all the cool kids are doing, really, I'm a cool kid.
 

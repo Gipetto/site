@@ -35,7 +35,7 @@ For those that are interested, [the plugin source can be viewed here](/script_sr
 
 For anyone who wants to go for the full effect, here is the image I used as a badge and the CSS used to place it:
 
-![Featured Article Starburst Icon](https://top-frog.com/images/articles/starburst-omg-white.png)
+![Featured Article Starburst Icon](/assets/articles/starburst-omg-white.png)
 
 ``` css
 /* BASIC STYLING */

@@ -20,4 +20,4 @@ I bit the bullet and entered this manually into iCal. I don't really know if any
 
 It was made on Tiger but should be backwards compatible. Windows users can import the file into Outlook, Palm users can import the file after changing the file extension to .vcs
 
-~~[ ![iCal Icon](https://top-frog.com/images/articles/ical.gif) Colorado Avalanche 2005-06 Schedule](/files/ical/ColoradoAvalanche2005-06.ics)~~
+~~[ ![iCal Icon](/assets/articles/ical.gif) Colorado Avalanche 2005-06 Schedule](/files/ical/ColoradoAvalanche2005-06.ics)~~

@@ -37,7 +37,7 @@ I apologize now to anyone who gets an RSS update each time I edit this. I'm goin
 
 #### Page Rendering
 
-[The complex spiral page](http://meyerweb.com/eric/css/edge/complexspiral/demo.html) over at Eric Meyer's site gets completely mutilated – but this is nothing new to IE users. Compare that link in your standards compliant web browser to [this screenshot](https://top-frog.com/images/articles/spiral.png). 
+[The complex spiral page](http://meyerweb.com/eric/css/edge/complexspiral/demo.html) over at Eric Meyer's site gets completely mutilated – but this is nothing new to IE users. Compare that link in your standards compliant web browser to [this screenshot](/assets/articles/spiral.png). 
 
 I tested a list of knows bugs over at positioniseverything.net and here is what I got:
 

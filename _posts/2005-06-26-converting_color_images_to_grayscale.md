@@ -23,8 +23,8 @@ This is an old technique but one that I think far too few people know about. The
 
 {% include lightbox.html 
   id="colorOrig"
-  img_lg="https://top-frog.com/images/articles/grayscale-orig.jpg"
-  img_sm="https://top-frog.com/images/articles/grayscale-orig-thumb.jpg"
+  img_lg="/assets/articles/grayscale-orig.jpg"
+  img_sm="/assets/articles/grayscale-orig-thumb.jpg"
   title="Original Color Image"
   caption="Original Color Image"
   additional_classes="alignright"
@@ -34,8 +34,8 @@ This is an old technique but one that I think far too few people know about. The
 
 {% include lightbox.html 
   id="grayscaleBad"
-  img_lg="https://top-frog.com/images/articles/grayscale-bad.jpg"
-  img_sm="https://top-frog.com/images/articles/grayscale-bad-thumb.jpg"
+  img_lg="/assets/articles/grayscale-bad.jpg"
+  img_sm="/assets/articles/grayscale-bad-thumb.jpg"
   title="Example of bad grayscale"
   caption="Example of bad grayscale"
   additional_classes="alignright"
@@ -45,8 +45,8 @@ This is an old technique but one that I think far too few people know about. The
 
 {% include lightbox.html 
   id="channelMixerDefault"
-  img_lg="https://top-frog.com/images/articles/grayscale-mix-default.jpg"
-  img_sm="https://top-frog.com/images/articles/grayscale-mix-default-thumb.jpg"
+  img_lg="/assets/articles/grayscale-mix-default.jpg"
+  img_sm="/assets/articles/grayscale-mix-default-thumb.jpg"
   title="Example with Channel Mixer default settings"
   caption="Example with Channel Mixer default settings"
   additional_classes="alignright"
@@ -54,8 +54,8 @@ This is an old technique but one that I think far too few people know about. The
 
 {% include lightbox.html 
   id="channelMixerTweaked"
-  img_lg="https://top-frog.com/images/articles/grayscale-mix-tweak.jpg"
-  img_sm="https://top-frog.com/images/articles/grayscale-mix-tweak-thumb.jpg"
+  img_lg="/assets/articles/grayscale-mix-tweak.jpg"
+  img_sm="/assets/articles/grayscale-mix-tweak-thumb.jpg"
   title="Example with Channel Mixer with modified settings"
   caption="Example with Channel Mixer with modified settings"
   additional_classes="alignright"

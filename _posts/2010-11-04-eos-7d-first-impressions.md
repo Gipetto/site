@@ -21,8 +21,6 @@ tags:
 
 I recently decided that it was time to upgrade old faithful (A Canon EOS 20D) to some new hotness (a Canon EOS 7D). The differences are amazing. Even the feel of the CF Card door opening and closing feels sturdier and smoother. This is gonna seem like a lot of ragging on the 20D, but its not. Its just simply that the 7D offers so much more than the 20D that it really makes the 20D feel old in its technology. 
 
-
-
 #### Viewfinder {#viewfinder}
 
 One of the first things that I noticed (aside from the size of the LCD Screen) was the size and brightness of the viewfinder. The 20D has a 96% coverage viewfinder which means that there's more than you see that is recorded with every shot. With the 7D you see 100% of the scene and the viewfinder is large, too. 
@@ -53,7 +51,7 @@ Here's a quick sample of the performance at 12800 with the Plastic Fantastic (50
 
 And a 100% crop of the above (with High ISO Smoothing turned OFF):
 
-<img src="https://i0.wp.com/farm5.static.flickr.com/4091/5147217827_b74e3dbb5d.jpg?resize=500%2C500" width="500" height="500" alt="star-wars-crop" data-recalc-dims="1" />
+{% flickr_photo '5147217827' %}
 
 Quite impressive, indeed! I know others don't like it but I think that the ISO expansion of 12800 is gonna be just fine for a lot of situations. Just remember to turn off the High ISO Smoothing custom function. The auto smoothing makes the image look blurry.
 

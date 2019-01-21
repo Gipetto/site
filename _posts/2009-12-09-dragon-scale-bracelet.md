@@ -19,9 +19,7 @@ tags:
 
 Read on to see the setup for this shot.
 
-
-
-I'm doing some photography for [Seod&oacute;ir](http://web.me.com/neddierah/Seodoir/Welcome.html), a friend who makes hand made chain mail jewelry. Its turning out to be a fun exercise. I don't have a heck of a lot of room to work and don't have some of the proper tools for doing studio work, but we make due with what we have, eh? So, consider the attached photo above and then check out the setup shot below. I used:
+I'm doing some photography for ~~[Seod&oacute;ir](http://web.me.com/neddierah/Seodoir/Welcome.html)~~, a friend who makes hand made chain mail jewelry. Its turning out to be a fun exercise. I don't have a heck of a lot of room to work and don't have some of the proper tools for doing studio work, but we make due with what we have, eh? So, consider the attached photo above and then check out the setup shot below. I used:
 
   * 3 muslin shims cut out from a cheap-o &#8220;studio box&#8221; aparatus
   * 2 monkey wrenches
@@ -33,6 +31,12 @@ I'm doing some photography for [Seod&oacute;ir](http://web.me.com/neddierah/Seod
   * 1 black sheet
   * 1 black ceramic cylinder (purchased for $1.99 at Goodwill)
 
-[<img src="https://i0.wp.com/top-frog.com/wp/wp-content/uploads/2009/12/articles/dragon-scales-setup-small.jpg?resize=500%2C333" alt="dragon-scales-setup-small" title="" width="500" height="333" rel="http://top-frog.com/wp/wp-content/uploads/2009/12/dragon-scales-setup-large.jpg" data-recalc-dims="1" />](https://i1.wp.com/top-frog.com/wp/wp-content/uploads/2009/12/dragon-scales-setup-large.jpg)
+{% include lightbox.html 
+  id="dragonScalesSetup"
+  img_lg="/assets/articles/dragon-scales-setup-large.jpg"
+  img_sm="/assets/articles/dragon-scales-setup-small.jpg"
+  title="Dragon Scales photo setup"
+  caption="Dragon Scales photo setup"
+%}
 
 Who says you need the right tools 😉

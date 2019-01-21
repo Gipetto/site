@@ -38,7 +38,7 @@ While this worked, it was a bit of a weird thing to do if I wanted to do this re
 
 I looked around, halfway expecting to find a way around this at everyone's favorite OS X hacking site [Mac OS X Hints](http://www.macosxhints.com) but found nothing. I was starting to get disappointed that there was no built in way to simply pass the audio through to the speakers. There was in OS 9 and this was on a Mac, supposedly the easiest OS out there. I'd think that this would be a no brainer feature.
 
-<img class="alignright" src="https://top-frog.com/images/articles/linein.jpg" alt="old-timey microphone" />After looking around a bit more I did find a little utility to take care of it. Rogue Amoeba makes [a nice little ditty named LineIn](http://www.rogueamoeba.com/freebies/) that solved the problem. With one click (ok, 3 if you count launching the program) I was listening to my iPod through my laptop.
+<img class="alignright" src="/assets/articles/linein.jpg" alt="old-timey microphone" />After looking around a bit more I did find a little utility to take care of it. Rogue Amoeba makes [a nice little ditty named LineIn](http://www.rogueamoeba.com/freebies/) that solved the problem. With one click (ok, 3 if you count launching the program) I was listening to my iPod through my laptop.
 
 #### Still not completely happy with it
 
