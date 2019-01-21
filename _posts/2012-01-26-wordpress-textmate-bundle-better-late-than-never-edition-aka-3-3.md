@@ -17,7 +17,7 @@ tags:
   - update
   - wordpress
 ---
-<img class="alignright" src="/assets/late.png" alt="late" title="Google tells me that this is the Japanese character meaning &#039;Late&#039;" />FINALLY! WordPress 3.3 support is up for the [TextMate Bundle](http://top-frog.com/projects/wordpress-textmate-bundle/). This is pretty much an update to the function definitions to add in new functions that were added in WordPress 3.3. 
+<img class="alignright" src="/assets/articles/late.png" alt="Google tells me that this is the Japanese character meaning 'Late'" />FINALLY! WordPress 3.3 support is up for the [TextMate Bundle](http://top-frog.com/projects/wordpress-textmate-bundle/). This is pretty much an update to the function definitions to add in new functions that were added in WordPress 3.3. 
 
 I've been out of the WordPress loop for a little while now and I'm not up to speed to what some of the new developer oriented hotness is that could be added to the bundle so if you're looking for something in particular drop a comment here or open an [issue on GitHub](https://github.com/Gipetto/wordpress.tmbundle/issues).
 

@@ -16,8 +16,8 @@ tags:
 
 {% include lightbox.html 
   id="sunrise"
-  img_lg="/assets/sunrise.jpg"
-  img_sm="/assets/sunrise-preview.jpg"
+  img_lg="/assets/articles/sunrise.jpg"
+  img_sm="/assets/articles/sunrise-preview.jpg"
   title="Sunrise over Parking Lot"
   caption="Sunrise over Parking Lot"
 %} 

@@ -10,7 +10,7 @@ section: projects
     If you'd like to take over this plugin do let me know.
 </div>
 
-<img src="/assets/bundle-announce-header.png" alt="bundle-announce-header" title="bundle-announce-header" width="450" height="152" class="alignnone size-full wp-image-587" />
+<img src="/assets/articles/bundle-announce-header.png" alt="WordPress TextMate Bundle Screenshot" aria-hidden="true" />
 
 The WordPress TextMate Bundle is a <a href="http://macromates.com">TextMate</a> bundle built with the sole purpose of reducing the amount of time spent digging around the <a href="http://wordpress.org">WordPress</a> core to look up the little things that we work with every day.
 

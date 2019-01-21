@@ -16,7 +16,7 @@ tags:
 
 <center>
   <div class="frame">
-    <img src="/assets/andy1.jpg" alt="Andy at the FDR Memorial in DC" />
+    <img src="/assets/articles/andy1.jpg" alt="Andy at the FDR Memorial in DC" />
   </div>
 </center>
 

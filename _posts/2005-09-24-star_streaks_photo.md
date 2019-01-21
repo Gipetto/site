@@ -26,8 +26,8 @@ tags:
 
 {% include lightbox.html 
   id="starStreaks"
-  img_lg="/assets/stars1.jpg"
-  img_sm="/assets/stars1-thumb.jpg"
+  img_lg="/assets/articles/stars1.jpg"
+  img_sm="/assets/articles/stars1-thumb.jpg"
   title="Star Trails Photo"
   caption="Star Trails Photo"
   additional_classes="alignright"

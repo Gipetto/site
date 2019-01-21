@@ -17,7 +17,7 @@ I've been playing more and more with the [php exec command](http://us3.php.net/m
 
 So I decided to find out if using exec to do directory listing would save any script length or not.
 
-Well, as you can see [in this file](/stuff/exec_vs_php.phps) there is little difference in length and a tradeoff or two to get there.
+Well, as you can see [in this file](/script_src/exec_vs_php.html) there is little difference in length and a tradeoff or two to get there.
 
 Initially the script looks more compact and there is definitely less individual things going on. The scripts are so short though that trying to benchmark them is pretty futile.
 
@@ -33,4 +33,4 @@ This is far from being a conclusive test but I think the ability to interact wit
 
 I pondered a different application for this earlier in the day – uploading files. If the command could be handed off to a terminal command for an FTP upload then the time limit on running php scripts could be overcome for very large files. Also, when moving files after an upload the file then becomes property of the www user – this is bad since it requires a chmod or another script to run to delete the files. With an exec command the file could be moved with normal user credentials to make later deletion of the file manually easier.
 
-Overall I can't say that this is a conclusive test, but it certainly was a neat excercise in using php in a different way. And finding ways to interact with the system like we find ways to interact with the user will be a new way of thinking. Now I need to go perusing /usr/bin to see what I can use to make life easier.
+Overall I can't say that this is a conclusive test, but it certainly was a neat excercise in using php in a different way. And finding ways to interact with the system like we find ways to interact with the user will be a new way of thinking. Now I need to go perusing `/usr/bin` to see what I can use to make life easier.

@@ -21,7 +21,7 @@ Surprisingly, I still get a lot of referrals from ~~[The Stickman](http://the-st
 
 I posted a comment there that linked back to a file upload script that I wrote. Well, since then I've written something much better and its about time to show it off. I actually wrote it a while back and recently cleaned it up to go all PHP5 with it.
 
-The script works in two parts. In OOP fashion I separated out tasks that could be shared by other processes and that gave me an [upload class](/script_src/Upload.class.phps) and a [mime-type class](/script_src/MimeTypes.class.phps).
+The script works in two parts. In OOP fashion I separated out tasks that could be shared by other processes and that gave me an [upload class](/script_src/Upload.class.php.html) and a [mime-type class](/script_src/MimeTypes.class.php.html).
 
 With these two classes, processing uploaded files is as easy as:
 

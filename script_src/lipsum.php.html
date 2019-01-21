@@ -1,0 +1,309 @@
+---
+layout: source
+title: lipsum.php
+article: /2008/06/20/wordpress_lipsum_plugin/
+---
+
+{% highlight php linenos %}
+<?php
+/*
+Plugin Name: Lipsum
+Plugin URI: http://top-frog.com/
+Description: Tired of copy/pasting lipsum text? Me too. There is a 10 paragraph limit for practical reasons. Effective on the creation and editing of comments, posts, pages. Simply enter <em>{lipsum}</em> to get 3 paragraphs of text or <em>{lipsum:2}</em> (up to 10) to get a specific number of paragraphs. New in version 2 you can also get pre built HTML elements: <em>ol</em>, <em>ul</em>, <em>dl</em>, <em>table</em> and <em>blockquote</em>. For example: <em>{lipsum:dl}</em> inserts a definition list. Also available is <em>all</em> for a combination of elements and <em>pages</em> for multiple pages of mixed elements.
+Author: Shawn Parker
+Version: 2
+Author URI: http://top-frog.com/
+*/
+
+// Code 
+
+/**
+ * Stupid function for entering lipsum text on comment, post and page save
+ * simply create a post body with {lipsum} in it and it'll be replaced by
+ * a paragraph of lipsum text.
+ * {lipsum:3} will replace it with 3 paragaphs of lipsum text
+ *
+ * Options:
+ *		- integer: number of lipsum paragraphs to output (up to 10)
+ * 		- ul: unordered list
+ * 		- ol: ordered list
+ * 		- blockquote: blockquote with nested paragraph
+ *		- table: semantic table sample
+ *		- dl: definition list
+ *		- all: everything in one post, with a read-more break
+ *		- pages: all on the first page with 3 more pages of text
+ *
+ * @param int $post_id - the id of the post or comment that we're working on
+ */
+function sp_lipsum_replace($post_id) {
+    global $wpdb;
+    $string = false;
+    $library = new sp_lipsumLibrary;
+    $queries = array(
+        'post' => "UPDATE {$wpdb->posts} SET post_content='%s' WHERE ID='%d'",
+        'comment' => "UPDATE {$wpdb->comments} SET comment_content='%s' WHERE comment_ID='%d'"
+    );
+    
+    if (isset($_POST['content']) && strpos($_POST['content'], '{lipsum') !== false) {
+        $string = $_POST['content'];
+        if(isset($_POST['action']) && $_POST['action'] == 'editedcomment') { 
+            $type = 'comment'; 
+        } else { 
+            $type = 'post'; 
+        }
+    } elseif (isset($_POST['comment']) && strpos($_POST['comment'], '{lipsum') !== false) {
+        $string = $_POST['comment'];
+        $type = 'comment';
+    }
+
+    if ($string != false) {
+        if (preg_match_all('/({lipsum:[a-z0-9]+?}|{lipsum})/i',$string,$matches)) {
+            foreach ($matches[0] as $match){
+                if (strpos($match, ':')) {
+                    $parts = explode(':', str_replace(array('{','}'), '', $match));
+                    $lipsum_type = $parts[1];
+                } else {
+                    $lipsum_type = 3;
+                }
+                $string = str_replace($match, $library->get_lipsum($lipsum_type), $string);					
+            }
+        }
+        $wpdb->query(sprintf($queries[$type], $wpdb->escape(trim($string)), $post_id));
+    }
+}
+add_action('save_post', 'sp_lipsum_replace');
+add_action('comment_post', 'sp_lipsum_replace');
+add_action('edit_comment', 'sp_lipsum_replace');
+
+// Library
+
+class sp_lipsumLibrary {
+
+    /**
+     * Get a block of lipsum
+     *
+     * @param mixed $type 
+     * @return string
+     */
+    function get_lipsum($type=3) {
+        $text = false;
+    
+        if(method_exists($this, 'lipsum_' . $type)) {
+            $text = $this->{'lipsum_' . $type}();
+        } elseif(isset($this->{'lipsum_' . $type})) {
+            $text = $this->{'lipsum_' . $type};
+        } elseif(is_numeric($type)) {
+            $type = intval($type);
+            if(!$this->lipsum_parts) { 
+                $this->explode_lipsum(); 
+            }
+        
+            // for now we're limited to the count of the lipsum parts.
+            // @TODO: implement wrap around by telling explode_parts how many parts we need
+            if($type > count($this->lipsum_parts)) { 
+                $type = count($this->lipsum_parts); 
+            }
+        
+            for($i = 0; $i <= $type; $i++) {
+                $text .= $this->lipsum_parts[$i] . "\n\n";
+            }
+        }
+    
+        return apply_filters('lipsum_text', $text, $type);	
+    }
+    
+    /**
+     * Cram together an ouput of the whole ball of wax
+     *
+     * @return string
+     */
+    function lipsum_all() {
+        if(!$this->lipsum_parts) { 
+            $this->explode_lipsum(); 
+        }
+        $nl = "\n\n";
+        
+        $string = '<a href="http://wordpress.com">' .
+            '<image class="alignright" align="right" src="http://i35.tinypic.com/990wtx.png" alt="WordPress!" />' .
+            '</a>' .
+            $this->lipsum_parts[1]. $nl .
+            $this->lipsum_parts[2]. $nl .
+            $this->lipsum_ol .
+            $this->lipsum_parts[3] . $nl .
+            '<!--more-->' .
+            $this->lipsum_blockquote .
+            $this->lipsum_parts[4] . $nl .
+            $this->lipsum_ul .
+            $this->lipsum_parts[5] . $nl .
+            $this->lipsum_parts[6] . $nl . 
+            $this->lipsum_table .
+            $this->lipsum_parts[7] . $nl . 
+            $this->lipsum_code .
+            $this->lipsum_parts[8] . $nl . 
+            $this->lipsum_dl .
+            $this->lipsum_parts[9] . $nl;
+        return $string;
+    }
+    
+    /**
+     * Lipsum formatted for WordPress pagination
+     *
+     * @return string
+     */
+    function lipsum_pages() {
+        return  $this->lipsum_all() .
+            '<!--nextpage-->'.
+            $this->lipsum_parts[1] . $nl . 
+            $this->lipsum_parts[2] . $nl . 
+            $this->lipsum_ul .
+            $this->lipsum_parts[3] . $nl . 
+            $this->lipsum_parts[4] . $nl . 
+            $this->lipsum_parts[5] . $nl . 
+            $this->lipsum_parts[6] . $nl . 
+            '<!--nextpage-->' .
+            $this->lipsum_parts[1] . $nl . 
+            $this->lipsum_parts[2] . $nl . 
+            $this->lipsum_parts[3] . $nl . 
+            $this->lipsum_table .
+            $this->lipsum_parts[4] . $nl . 
+            $this->lipsum_parts[5] . $nl . 
+            $this->lipsum_parts[6] . $nl . 
+            '<!--nextpage-->' .
+            $this->lipsum_parts[1] . $nl . 
+            $this->lipsum_parts[2] . $nl . 
+            $this->lipsum_dl .
+            $this->lipsum_parts[3] . $nl . 
+            $this->lipsum_parts[4] . $nl . 
+            $this->lipsum_ol .
+            $this->lipsum_parts[5] . $nl . 
+            $this->lipsum_parts[6] . $nl;
+    }
+
+    /**
+     * Break the lipsum graphs up in to parts
+     *
+     * @return bool
+     */
+    function explode_lipsum() {
+        return $this->lipsum_parts = explode("\n", $this->lipsum);
+    }
+
+    /**
+     * Lipsum pars
+     *
+     * @var placeholder for broken up $lipsum parts
+     */
+    var $lipsum_parts = false;
+
+    /**
+     * 10 Paragraphs of lipsum
+     *
+     * @var string
+     */
+    var $lipsum = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer ultricies. Sed sit amet nisi. Aliquam felis nibh, vestibulum sit amet, aliquet ut, tempus et, nunc. Mauris suscipit ultricies sapien. Vivamus et quam. Nulla facilisi. Ut volutpat diam eu <a href=\"#\">augue euismod</a> elementum. Aenean in justo. Phasellus id sem in felis lacinia facilisis. Aliquam pulvinar blandit metus. Phasellus rhoncus sollicitudin augue. Vestibulum ultrices, urna non suscipit dapibus, eros nisl cursus neque, ut venenatis velit orci quis erat. Maecenas convallis justo et velit. Quisque et lacus at dui accumsan eleifend. Donec justo nulla, porta at, imperdiet ut, suscipit ac, lacus. Integer vel sapien. Maecenas feugiat mattis nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Nullam justo magna, consequat non, placerat mattis, porta ut, dui. Phasellus diam. Sed convallis porttitor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed sed nisl non felis euismod commodo. Ut sed magna sed turpis gravida tempus. Curabitur lacinia lectus in metus. Nullam facilisis dapibus odio. Quisque pharetra.
+Suspendisse est pede, varius vel, <i>commodo sed</i>, hendrerit et, felis. In turpis mi, pellentesque sed, fringilla id, laoreet consequat, tellus. Fusce facilisis, est dapibus suscipit mollis, pede libero dapibus massa, eget dapibus metus ligula at sapien. Curabitur accumsan ultricies arcu. Etiam id nibh non risus interdum rhoncus. Nulla tincidunt erat aliquet elit. Integer turpis. Vestibulum sit amet tellus vitae ante scelerisque suscipit. Sed aliquam felis vitae dolor. <b>Etiam ultrices</b> erat sit amet dui.
+Aenean mauris. Cum sociis natoque penatibus <abbr title=\"HyperText Markup Language\">HTML</abbr> et magnis dis parturient montes, nascetur ridiculus mus. Sed et nisi. <dfn title=\"Nullam vitae erat\">Nullam auctor</dfn> pharetra risus. Ut blandit neque ut ligula. Maecenas in neque vel risus convallis ornare. Nam leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras hendrerit velit in ante. Praesent bibendum, nunc non auctor consectetuer, enim arcu ultrices metus, sed condimentum lacus velit ut sem. Ut at risus rutrum purus eleifend aliquet. Aenean ultricies neque in augue. Cras euismod scelerisque nulla. Sed molestie nulla sit amet neque. Integer aliquet.
+Nulla ante. <b>Vivamus</b> laoreet ornare leo. <ins>Cras egestas scelerisque sapien.</ins> Cras turpis. Integer nibh. Morbi quis tellus. Sed eget orci tristique nisl blandit pulvinar. Pellentesque lacus dolor, aliquet at, interdum quis, varius a, nisi. Etiam id felis sed lacus lobortis ultricies. Donec pede justo, feugiat nec, bibendum et, dignissim sed, massa. Vestibulum sagittis tempus orci. Proin fringilla molestie tortor. Curabitur pellentesque bibendum risus. Proin egestas varius diam.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam vitae erat. Duis in libero ut mauris posuere volutpat. Vivamus nec libero sed mi volutpat pretium. In porta, velit et pulvinar sodales, ante sem dictum erat, a semper lorem odio ac mauris. Donec magna nibh, mollis ut, viverra eu, accumsan id, purus. In pharetra, pede convallis dictum lobortis, dui nisi congue arcu, vel commodo mauris lacus ut risus. Nulla fermentum libero eu urna. Quisque ullamcorper. Vivamus eleifend risus nec est. Nunc ut tortor in est molestie ultrices. Sed vitae diam. Nulla pede nunc, auctor vel, sodales vitae, varius in, libero. <a href=\"#\">Morbi non metus</a>.
+Duis sit amet libero a massa tincidunt porta. Pellentesque eu mauris vitae risus vehicula mollis. Nullam blandit diam ac velit. Vivamus dapibus faucibus turpis. Vivamus semper. Curabitur elementum dui nec enim mollis laoreet. Praesent vel magna suscipit mi <cite>elementum rhoncus</cite>. Maecenas arcu. Cras hendrerit leo. Fusce purus tellus, tincidunt sit amet, dignissim ut, dapibus id, tortor. Aliquam risus tellus, consequat sed, fermentum quis, vestibulum eu, nisi. Aenean tempor elit et nibh.
+Nulla suscipit rhoncus quam. Integer nec pede. Suspendisse velit felis, fermentum ac, feugiat non, egestas vel, lacus. Phasellus sed enim ut pede cursus imperdiet. Nulla molestie suscipit libero. Duis ut justo ac leo malesuada suscipit. Duis mi pede, luctus sit amet, adipiscing ut, ornare at, arcu. Nulla quam. Duis eu magna. Pellentesque ut mi ut sapien interdum aliquam. Maecenas dolor erat, porta nec, elementum ut, suscipit vitae, pede. Nulla nulla. <del>Quisque dictum augue molestie metus.</del> Nunc porta nibh a purus. Sed egestas, risus mattis dictum luctus, metus lacus viverra massa, sed consectetuer elit turpis a risus. Phasellus id felis ut erat rutrum accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec purus ante, pretium sit amet, porttitor a, cursus ac, tellus. Donec consectetuer euismod lectus. Donec rutrum.
+Vivamus nisi quam, vestibulum ultricies, aliquam eleifend, consectetuer vitae, justo. Pellentesque diam. Vivamus ultricies adipiscing nisi. Aliquam erat volutpat. Proin nec velit. Cras quis orci eget pede scelerisque accumsan. Fusce dictum pharetra nunc. Etiam pulvinar, metus ac rutrum commodo, enim sem faucibus eros, sit amet pretium ipsum orci in eros. Mauris faucibus ornare sapien. Suspendisse felis mauris, feugiat et, adipiscing ut, pulvinar eu, pede. Nunc blandit enim at lorem. Curabitur ut orci. Duis fermentum. Phasellus malesuada, eros nec ornare sodales, tellus eros euismod sapien, eget bibendum ipsum lorem a nibh.
+Suspendisse lacinia, metus ut ultrices commodo, velit justo pretium dui, sed posuere est mi ac diam. Nulla et sem. Aenean non arcu eu leo mattis facilisis. Fusce odio. Curabitur libero velit, sollicitudin sit amet, volutpat sed, faucibus ac, magna. Mauris cursus nisl vitae pede dignissim lobortis. Mauris rutrum posuere nunc. Quisque dictum ipsum vel sapien. Maecenas est. Sed in metus. Nunc faucibus. Nulla in metus sit amet enim tempor gravida. Nulla facilisi. Sed risus. Morbi nec leo. Donec gravida odio in sapien viverra varius. Proin posuere iaculis arcu.";
+
+    /**
+     * Lipsum UL
+     *
+     * @var string
+     */
+    var $lipsum_ul = '
+<ul>
+    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+    <li>Aliquam tincidunt mauris eu risus.</li>
+</ul>
+';
+
+    /**
+     * Lipsum OL
+     *
+     * @var string
+     */
+    var $lipsum_ol = '
+<ol>
+    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+    <li>Aliquam tincidunt mauris eu risus.</li>
+</ol>
+';
+
+    /**
+     * Lipsum Blockquote
+     *
+     * @var string
+     */
+    var $lipsum_blockquote = '
+<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+<cite><a href="#">Quote Source</a></cite>
+';
+
+    /**
+     * Lipsum Definition List
+     *
+     * @var string
+     */
+    var $lipsum_dl = '
+<dl>
+    <dt>Definition list</dt>
+    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+commodo consequat.</dd>
+    <dt>Lorem ipsum dolor sit amet</dt>
+    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+commodo consequat.</dd>
+</dl>
+';
+
+    /**
+     * Lipsum Table
+     *
+     * @var string
+     */
+    var $lipsum_table = '
+<table summary="Table summary">
+<caption>Caption sit amet</caption>
+<thead>
+    <tr>
+        <th>Lorem</th>
+        <th>Ipsum</th>
+        <th>Dolor</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>sit</td>
+        <td>amet</td>
+        <td>consecteteur</td>
+    </tr>
+    <tr>
+        <td>adipisicing</td>
+        <td>elit</td>
+        <td>vivamus</td>
+    </tr>
+</tbody>
+</table>
+';
+    /**
+     * Lipsum Code Block
+     *
+     * @var string
+     */
+    var $lipsum_code = '
+<pre><code>
+$var = "hello world";
+echo $var;
+</pre></code>	
+';
+
+}
+?>
+{% endhighlight %}

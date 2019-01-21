@@ -4,6 +4,10 @@ title: SP Source Code Highlighter WordPress Plugin
 section: projects
 ---
 
+<div class="alert warning">
+    <b>Notice:</b> This plugin is no longer maintained, but I think still serves as a decent plugin example from its time. Don't use it. Its not worth it.
+</div>
+
 The SP Source Code Highlighter WordPress plugin is a free plugin that taps the power of the Pear <a href="http://pear.php.net/package/Text_Highlighter" title="Pear Text_Highlighter class">Text_Highlighter</a> class to provide attractive and layout friendly code blocks for your blog.
 
 Usage is very straight forward and is designed to provide a backwards compatible method of providing source code sections in your posts. The plugin looks for `<code>` blocks in your post and converts and colors them according to a class name applied to the code block.

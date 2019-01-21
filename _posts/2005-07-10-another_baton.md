@@ -20,7 +20,7 @@ tags:
   - powermac
   - setup
 ---
-So, it seems, I've been passed ~~[another baton](http://milkcarton.protonage.net/)~~. This time on system setup. I use a 15" powerbook so there's not much of a thrill there. The desk is still a mess from moving the server but [I do have a pic of the server for those interested enough to look](/assets/server.jpg).
+So, it seems, I've been passed ~~[another baton](http://milkcarton.protonage.net/)~~. This time on system setup. I use a 15" powerbook so there's not much of a thrill there. The desk is still a mess from moving the server but [I do have a pic of the server for those interested enough to look](/assets/articles/server.jpg).
 
 So, I guess the system specs are in order.
 

@@ -19,6 +19,11 @@ tags:
   - ssh
   - _ssh
 ---
+
+<div class="alert error">
+<p><b>Don't do this</b>: this script pre-dates suitable password managers. This is not how you manage server access!</p>
+</div>
+
 I work with many different servers at work. Most tedious part is that I need to ssh in to them on a regular basis. Not all of them can I, nor do I feel should I, be adding SSH keys on to.
 
 So I finally got around to writing a little script to hold onto logins and passwords in a handy little connection script.
@@ -29,9 +34,60 @@ Is it a bit insecure to put these into a single file in my home folder? Maybe. I
 
 **So, now on to it:**
 
+``` sh
+#!/bin/bash
+#
+# Server Nicknames
+#
+# ServerName
+nickname='me@server.com';
+nicknamepassword='12345';
+nicknameextra='an extra reminder';
+#
+# etc...
 
+# Do not edit below this line
+#
+if ! [ $1 ]; then
+	echo '_ssh error:';
+	echo '	please enter a dev server address';
+	echo '';
+	exit 1;
+fi
 
-If you just want to get to the meat then [click here to see the source](/script_src/_ssh.sh).
+SERVER=$(eval echo \${$1:=0});
+PASSWORD=$(eval echo \${$1password:=0});
+EXTRA=$(eval echo \${$1extra:=0});
+
+if ! [ $SERVER == 0 ]; then
+	# show extra
+	if ! [[ $EXTRA == 0 ]]; then
+		echo $EXTRA;
+	fi
+	# handle password
+	if ! [ $PASSWORD == 0 ]; then
+		echo $PASSWORD | pbcopy;
+		echo 'Password copied to clipboard, paste when prompted to connect';
+	else
+		echo '* No password recorded for $1';
+		echo '* add the password to this file to have it copied for you when connecting';
+	fi
+	# connect
+	if [[ $SERVER =~ '@' ]]; then
+		# we were provided user@server
+		ssh $SERVER;
+	else
+		# we were provided just server, assume server name as user name
+		ssh $SERVER@$SERVER;
+	fi
+else
+	# error
+	echo '_ssh error:';
+	echo "	server name '$1' not found";
+	echo '';
+	exit 2;
+fi
+```
 
 The script is simple to use and add servers to. Simply add a server's credentials under a nickname and use that nickname to connect to the server. 
 

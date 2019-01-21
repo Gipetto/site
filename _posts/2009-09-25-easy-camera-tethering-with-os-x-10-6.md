@@ -19,6 +19,6 @@ The secret lies in the Image Capture application that you may or may not have no
 
 Simply launch Image Capture with your camera attached to the computer and you'll get the main Image Capture window with your camera listed on the left. If you camera isn't already selected then select it. Next, from the File menu select &#8220;Take Picture&#8221;. You'll get a window like the image below. 
 
-<img class="oversize" src="/assets/image-capture-2.png" alt="OS X Image Capture Live Capture" title="image-capture" />
+<img class="oversize" src="/assets/articles/image-capture-2.png" alt="OS X Image Capture Live Capture" title="image-capture" />
 
 From here its pretty self explanatory. You can set the camera to download to a folder or set it on a timer. I just might have to do a time lapse of our ever exciting work day downtown…

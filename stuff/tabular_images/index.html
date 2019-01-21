@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Tabular Images</title>
+	<style type="text/css" media="all">
+		@import "style.css";
+	</style>
+</head>
+
+<body>
+	<div id="content">
+		<p>Be forewarned, for reasons I and a few others have not been able to figure out, removing images from this grid
+			with Safari will crash. All other browsers are fine and no syntax errors show up in any debugger. If you have any
+			suggestions please feel free to leave them in the story comments.</p>
+		<div id="controls">
+			<p>Tracking / margin: <a href="#" id="trackDown" onclick="spaceImgs('trackL','down'); return false;">&laquo; down</a>
+				| <a href="#" id="trackUp" onclick="spaceImgs('trackL','up'); return false">up &raquo;</a></p>
+			<p>Leading / line-height: <a href="#" onclick="spaceImgs('lead','down'); return false;">&laquo; down</a> | <a href="#"
+				 onclick="spaceImgs('lead','up'); return false">up &raquo;</a></p>
+			<p>Align: <a href="#" onclick="align('left'); return false;">&laquo; left</a> | <a href="#" onclick="align('center'); return false;">center
+					&raquo;</a></p>
+			<p>Random Image (careful, this can crash Safari): <a href="#" onclick="removeRandom(); return false;">&laquo; Remove</a>
+				| <a href="#" onclick="insertRandom(); return false;">Insert &raquo;</a></p>
+		</div>
+		<div id="images"><img src="myImage.gif" alt="Sample Gray Image" /><img src="myImage.gif" alt="Sample Gray Image" /><img
+			 src="myImage.gif" alt="Sample Gray Image" /><img src="myImage.gif" alt="Sample Gray Image" /><img src="myImage.gif"
+			 alt="Sample Gray Image" /><img src="myImage.gif" alt="Sample Gray Image" /><img src="myImage.gif" alt="Sample Gray Image" /><img
+			 src="myImage.gif" alt="Sample Gray Image" /><img src="myImage.gif" alt="Sample Gray Image" /><img src="myImage.gif"
+			 alt="Sample Gray Image" /></div>
+	</div>
+	<script type="text/javascript">
+	//<![CDATA[
+		var imgDiv = document.getElementById('images');
+		var theImages = imgDiv.getElementsByTagName('img');
+
+		for (i = 0; i < theImages.length; i++) {
+			theImages[i].style.marginRight = '50px';
+		}
+
+		imgDiv.style.lineHeight = '150px';
+
+		imgDiv.style.textAlign = 'left';
+		var currentStyle = 'left';
+
+		function getMargin(obj) {
+			return obj.style.marginRight.replace(/[\D]+/i, '');
+		}
+
+		function adjustValue(val, dir) {
+			return (dir == 'up' ? parseInt(val) + 1 : parseInt(val) - 1);
+		}
+
+		function alignMargins(style) {
+			if (theImages.length > 0) {
+				var currMargin = getMargin(theImages[0]);
+
+				for (i = 0; i < theImages.length; i++) {
+					if (style == 'left' && currentStyle == 'center') {
+						theImages[i].style.marginRight = Math.round(parseInt(currMargin) * 2) + 'px';
+						theImages[i].style.marginLeft = '0px';
+					} else if (style == 'center' && currentStyle == 'left') {
+						theImages[i].style.marginRight = Math.round(parseInt(currMargin) / 2) + 'px';
+						theImages[i].style.marginLeft = Math.round(parseInt(currMargin) / 2) + 'px';
+					}
+				}
+
+				currentStyle = style;
+			}
+
+		}
+
+		function align(dir) {
+			if (dir == 'left') {
+				imgDiv.style.textAlign = 'left';
+				document.getElementById('trackUp').onclick = function () {
+					spaceImgs('trackL', 'up');
+					return false;
+				}
+				document.getElementById('trackDown').onclick = function () {
+					spaceImgs('trackL', 'down');
+					return false;
+				}
+				alignMargins('left');
+			} else if (dir == 'center') {
+				imgDiv.style.textAlign = 'center';
+				document.getElementById('trackUp').onclick = function () {
+					spaceImgs('trackC', 'up');
+					return false;
+				}
+				document.getElementById('trackDown').onclick = function () {
+					spaceImgs('trackC', 'down');
+					return false;
+				}
+				alignMargins('center');
+			}
+		}
+
+		function spaceImgs(kind, direction) {
+			for (i = 0; i < theImages.length; i++) {
+				if (kind == 'trackC') {
+					var currentMargin = getMargin(theImages[i]);
+					var newMargin = adjustValue(currentMargin, direction);
+					theImages[i].style.marginRight = newMargin + 'px';
+					theImages[i].style.marginLeft = newMargin + 'px';
+				}
+
+				if (kind == 'trackL') {
+					var currentMargin = getMargin(theImages[i]);
+					var newMargin = adjustValue(currentMargin, direction);
+					theImages[i].style.marginRight = newMargin + 'px';
+				}
+
+				if (kind == 'lead') {
+					var currentLead = imgDiv.style.lineHeight.replace(/[\D]+/i, '');
+					var newLead = adjustValue(currentLead, direction);
+					imgDiv.style.lineHeight = newLead + 'px';
+				}
+			}
+		}
+
+		function insertRandom() {
+			var newImg = document.createElement('img');
+			newImg.src = 'myImage2.gif';
+
+			if (theImages.length > 0) {
+				var cMargin = getMargin(theImages[0]);
+
+				if (currentStyle == 'left') {
+					newImg.style.marginRight = cMargin + 'px';
+				} else {
+					newImg.style.marginRight = cMargin + 'px';
+					newImg.style.marginLeft = cMargin + 'px';
+				}
+
+				myRand = Math.round((theImages.length - 1) * Math.random());
+
+				imgDiv.insertBefore(newImg, theImages[myRand]);
+			} else {
+				if (currentStyle == 'left') {
+					newImg.style.marginRight = '50px';
+				} else {
+					newImg.style.marginRight = '25px';
+					newImg.style.marginLeft = '25px';
+				}
+
+				imgDiv.appendChild(newImg);
+			}
+
+		}
+
+		function removeRandom() {
+			if (theImages.length > 0) {
+				victim = Math.round((theImages.length - 1) * Math.random());
+				imgDiv.removeChild(theImages[victim]);
+			}
+		}
+
+	//]]>
+	</script>
+</body>
+</html>

@@ -18,7 +18,7 @@ tags:
   - thickbox
   - wordpress
 ---
-<img src="/assets/blue-m.png" alt="Wordpress Logo" class="alignright" />After much futzing, fidgeting, and neglecting of other things I've finally got this site converted to [WordPress](http://wordpress.org). It was just a logical thing to do for many reasons (one of which that I'm in it so damn much I know how to hack the crap out of it. The other main one being: let someone else build the core, I just want to extend and use it). Read on in you're interested in some of the high-level details about what's different.
+<img src="/assets/articles/blue-m.png" alt="Wordpress Logo" class="alignright" />After much futzing, fidgeting, and neglecting of other things I've finally got this site converted to [WordPress](http://wordpress.org). It was just a logical thing to do for many reasons (one of which that I'm in it so damn much I know how to hack the crap out of it. The other main one being: let someone else build the core, I just want to extend and use it). Read on in you're interested in some of the high-level details about what's different.
 
 #### The Theme
 

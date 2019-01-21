@@ -24,8 +24,8 @@ tags:
 
 {% include lightbox.html 
   id="abandonedCar"
-  img_lg="/assets/abandoned-car.jpg"
-  img_sm="/assets/abandoned-car-thumb.jpg"
+  img_lg="/assets/articles/abandoned-car.jpg"
+  img_sm="/assets/articles/abandoned-car-thumb.jpg"
   title="Abandoned Car"
   caption="Abandoned Car"
   additional_classes="alignright"

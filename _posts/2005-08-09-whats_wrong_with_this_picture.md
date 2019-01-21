@@ -15,5 +15,5 @@ tags:
   - short
 ---
 <span class="frame">
-  ![Shawn Parker](https://top-frog.com/images/articles/me.jpg)
+  ![Shawn Parker](/assets/articles/me.jpg)
 </span>

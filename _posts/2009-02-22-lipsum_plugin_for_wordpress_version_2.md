@@ -48,4 +48,4 @@ So, there it is. Hopefully one or two people find this useful. If not, well, it 
 
 **[Download the Lipsum Plugin for WordPress 2.0+](/files/scripts/lipsum.php.zip)**.
 
-[Click here to view the source](/script_src/lipsum.php).
+[Click here to view the source](/script_src/lipsum.php.html).

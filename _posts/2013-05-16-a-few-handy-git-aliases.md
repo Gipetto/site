@@ -74,7 +74,7 @@ $ git lg
 ```
 
 <span class="frame">
-  <img src="/assets/git-lg.gif" alt="Git Aliases Screenshot" title="git-lg" />
+  <img src="/assets/articles/git-lg.gif" alt="Git Aliases Screenshot" title="git-lg" />
 </span>
 
 ### Ok, enough jabber, gimme the code

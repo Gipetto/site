@@ -26,6 +26,11 @@ tags:
   - tracking
   - web
 ---
+
+<div class="alert warning">
+<p><b>NOTICE</b>: This article pre-dates nicities such as <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank" rel="noopener">CSS Flex-Box</a> and newer Javascript techniques, so read this as a historical curiosity. It is no longer modern by any stretch of the imagination.</p>
+</div>
+
 For a long time I've been lusting over a way to neatly arrange a block of images on paper the way it is so easy to do on screen. Or, at least, they way it has become so easy to do on screen. CSS actually opened the door to me finding a nice way to do this. I know this is vague, but if you've ever had to arrange images in a grid in print you'll like this (and maybe even be ahead of me on doing it!).
 
 To clarify, here's what I'm after. At work we have several publications in which we show off all the logos of the vendor product that we distribute. We typically show them off in a grid and they change often. That means that keeping an updated arrangement is a pain in the butt. Common thinking (for me at least) would be to draw out a grid to fit into or, in the case of newer page layout software, make a table so that all the rows and columns lined up nicely.

@@ -24,4 +24,4 @@ Yeah, I know: woe is me… I'll get caught up one of these days. And maybe I'll 
 
 
 
-<img src="https://i0.wp.com/www.fuzzycoconut.com/shawn/uploads/jump.gif" alt="image" data-recalc-dims="1" />
+<img src="/images/articles/jump.gif" alt="Dozer bounding through the snow" />

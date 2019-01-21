@@ -17,7 +17,7 @@ tags:
 ---
 After about a month in development (not counting the time that we set it down and didn't work on it) the [FuzzyCoconut XHTML Widget is here](http://www.fuzzycoconut.com/widget/).
 
-![image](https://top-frog.com/images/articles/fcxhtml.png)
+![Fuzzy Coconut XHTML Dashboard Widget for OS X](https://top-frog.com/images/articles/fcxhtml.png)
 
 I have to say that this project wouldn't have come to fruition without the initial push by [John](http://www.pennypacker.net) but after a lot of tweaking and critiquing [Fuzzy Coconut](http://www.fuzzycoconut.com), made up of [John](http://www.pennypacker.net), [Joel](http://www.joelschou.com), [Harold](http://www.halbie.com), and me has finally produced a product. 
 

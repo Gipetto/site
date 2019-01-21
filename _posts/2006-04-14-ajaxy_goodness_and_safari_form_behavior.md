@@ -23,13 +23,18 @@ tags:
   - safari
   - xmlhttprequest
 ---
+
+<div class="alert warning">
+<p><b>Don't do this</b>: This pre-dates the appearance of Javascript libraries that nicely wrapped up cross browser Ajax behavior. Consider this a nice peek in to the early, ugyly, days of Ajax content loading.</p>
+</div>
+
 Yeah, so I'm about a year behind everybody else on this one. I finally wrote my own little Ajax class. Most other classes out there were way too much for what I needed and I also needed to get my feet wet in OOP programming for Javascript so this was a keen little exercise for me.
 
 Then I went on to tackle the fact that Safari's form labels don't act like form labels in the other browsers – they don't bring focus to their associated form element when clicked. Seems like a minor issue, but when you really think about form usability it is nice to be able to click on the name of an element to select it and not always have to hit the element itself. This is particularly handy for radio buttons and checkboxes.
 
 Read on to find out how I finally caught up to last year.
 
-**Update:** Now that I go browsing through old code to reuse something I've found that my little piece of borrowed code is actually something that is less than what I've been using for some time, but had just forgotten about.
+**Update:** Now that I go browsing through old code to reuse something, I've found that my little piece of borrowed code is actually something that is less than what I've been using for some time, but had just forgotten about.
 
 #### I feel so behind
 

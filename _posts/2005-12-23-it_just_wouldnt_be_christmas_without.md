@@ -23,8 +23,8 @@ You won't be thanking me for this pic.
 
 {% include lightbox.html 
   id="dogEar"
-  img_lg="/assets/ear.jpg"
-  img_sm="/assets/ear-thumb.jpg"
+  img_lg="/assets/articles/ear.jpg"
+  img_sm="/assets/articles/ear-thumb.jpg"
   title="Bear's ear damage"
   caption="Bear's ear damage"
 %} 

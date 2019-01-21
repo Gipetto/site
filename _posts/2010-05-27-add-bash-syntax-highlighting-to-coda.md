@@ -14,7 +14,7 @@ tags:
   - subethaedit
   - syntax
 ---
-<img class="floatright" src="https://i0.wp.com/top-frog.com/wp-content/uploads/2010/05/coda-icon.png" alt="Coda Logo" data-recalc-dims="1" />Just a quick tip here. [Panic's web-focused IDE Coda](http://panic.com/coda/) uses [SubEthaEdit's](http://www.codingmonkeys.de/subethaedit/) rendering engine. Coda uses an OLDER version of SubEthaEdit's rendering engine. So if you want to add syntax highlighting modes to Coda they have to be older versions. 
+<img class="floatright" src="https://i0.wp.com/top-frog.com/wp-content/uploads/2010/05/articles/coda-icon.png" alt="Coda Logo" data-recalc-dims="1" />Just a quick tip here. [Panic's web-focused IDE Coda](http://panic.com/coda/) uses [SubEthaEdit's](http://www.codingmonkeys.de/subethaedit/) rendering engine. Coda uses an OLDER version of SubEthaEdit's rendering engine. So if you want to add syntax highlighting modes to Coda they have to be older versions. 
 
 I wanted to add the Bash syntax mode from SubEthaEdit to Coda, but had to go back a few versions in SubEthaEdit to get one that would load. Fortunately SubEthaEdit 2.2 is still available for download and contains a compatible Bash mode.
 

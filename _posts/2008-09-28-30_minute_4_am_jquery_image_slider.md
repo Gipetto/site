@@ -16,7 +16,9 @@ tags:
   - utah
   - wordcamp
 ---
-**Update:** This script has been overhauled since this post. [View the new code and demo here](/2009/02/19/jquery_image_slider_improved).
+<div class="alert info">
+<b>Update:</b> This script has been overhauled since this post. <a href="/2009/02/19/jquery_image_slider_improved">View the new code and demo here</a>.
+</div>
 
 As fate would have it the first night of my trip to Provo, Utah turned in to an all night work session to get a few things wrapped up so that we could release them during [WordCamp Utah](http://utah.wordcamp.org/). As it turned out we needed a last minute feature to show off some images. Thanks to the miracle of jQuery it turned out to be all of a 30 minute venture.
 

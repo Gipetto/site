@@ -33,7 +33,7 @@ Next step is to add this to Automator. When Automator is launched it asks what k
 Save the action and it shows up in the Services Menu without restarting your applications. Below is the way it should look (plus a little extra command line goodness to pop a Growl notification when its done).
 
 <div class="frame">
-  <img src="/assets/automator-flickr-2.png" alt="automator-flickr" title="automator-flickr" />
+  <img src="/assets/articles/automator-flickr-2.png" alt="automator-flickr" title="automator-flickr" />
 </div>
 
 To use it, go to one of your Flickr images, click on &#8220;all sizes&#8221; and select the image you'd like to use. Highlight the HTML in Section 1 below the heading &#8220;To link to this photo on other websites you can either:&#8221; that appears under the photo. Go to the Services Menu, select your service, and then paste the result in to whatever forum post you're working on. 

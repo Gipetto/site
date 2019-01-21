@@ -21,7 +21,7 @@ tags:
 ---
 Maybe you noticed already, maybe you didn't (I'll wager on the latter 😉 ) that recently this site got new source code highlighting in posts. Or, should I say, that it GOT source code highlighting in posts.
 
-I had made a simple [Script Source](http://top-frog.com/script_src/source.phps) viewer a while back. Something simple and straight forward that I could use to display full source code files in an easy to read and copy format (since the source is an ordered list the line numbers don't copy). I was so happy with the way the source highlighting along with the line numbers turned out that I really wanted to put that in my posts. But I guess not wanted bad enough to do right away.
+I had made a simple Script Source viewer a while back. Something simple and straight forward that I could use to display full source code files in an easy to read and copy format (since the source is an ordered list the line numbers don't copy). I was so happy with the way the source highlighting along with the line numbers turned out that I really wanted to put that in my posts. But I guess not wanted bad enough to do right away.
 
 So, now I finally got around to putting this together for use inline in my posts and decided to package it together for public consumption. The highlighting is pretty durned nice and fully CSS configurable. It supports a decent number of languages and if it doesn't support your language of choice, chances are there's something in there that's close enough.
 

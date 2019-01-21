@@ -17,6 +17,11 @@ tags:
   - video
   - youtube
 ---
+
+<div class="alert warning">
+<p><b>Don't do this</b>: the techniques used in this post and the sample pages use older techniques and don't account for modern browser safety precautions. Consider this a historical curiosity, like a circus freak show&hellip;</p>
+</div>
+
 **NOTICE:** This script has been updated and there is a new version available [here](/2006/12/14/embed_google_video_and_youtube-now_bigger_and_better). Thanks!
 
 A while back I got the urge to write this for no other reason than to make my life over at the [Clubhouse](http://www.clubhouse54.com) a bit more convenient. Frankly, I didn't want to have to click through to watch YouTube and Google Videos.
@@ -26,8 +31,6 @@ So, with a little bit of JavaScript I was able to make it work. Its really nothi
 **Updated: 2006-10-14.**
 
 **Updated: 2006-10-20.**
-
-
 
 So, I won't really bore you with the details. The script works off of a link URL – so merely pasting a link into your text won't suffice, it has to actually be a link to the video. I did it this way for usability reasons. If JavaScript is disabled the link to the video will still work. Basic usability.
 

@@ -19,8 +19,8 @@ tags:
 
 {% include lightbox.html 
   id="porsche"
-  img_lg="/assets/Porsche-with-Paths.jpg"
-  img_sm="/assets/porsche-thumb.png"
+  img_lg="/assets/articles/Porsche-with-Paths.jpg"
+  img_sm="/assets/articles/porsche-thumb.png"
   title="Porsche 911 Illustration"
   caption="Porsche 911 Illustration"
   additional_classes="alignright"

@@ -13,7 +13,7 @@ tags:
   - python
   - red rocks
 ---
-<img class="alignright" src="/assets/monty.jpg" alt="Monty Python and the Holy Grail Movie Poster" />My, oh, my, how I had forgotten how good that movie really is. And when you see it with 8,500 other eager fans you can count on having a good time. The venue was Red Rocks Amphitheater, the movie, of course, was _Monty Python and the Holy Grail_ (aka: Monti Python ik den Holie Grailen). Granted, a few of the subtleties of shadow detail are lost when viewing outdoors but when you get the sound of clacking coconuts from all around you all is forgiven… what a wonderful way to see this movie.
+<img class="alignright" src="/assets/articles/monty.jpg" alt="Monty Python and the Holy Grail Movie Poster" />My, oh, my, how I had forgotten how good that movie really is. And when you see it with 8,500 other eager fans you can count on having a good time. The venue was Red Rocks Amphitheater, the movie, of course, was _Monty Python and the Holy Grail_ (aka: Monti Python ik den Holie Grailen). Granted, a few of the subtleties of shadow detail are lost when viewing outdoors but when you get the sound of clacking coconuts from all around you all is forgiven… what a wonderful way to see this movie.
 
 
 

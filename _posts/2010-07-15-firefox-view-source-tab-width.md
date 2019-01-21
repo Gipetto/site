@@ -16,7 +16,7 @@ tags:
   - source
   - view
 ---
-[<img src="https://i0.wp.com/top-frog.com/wp-content/uploads/2010/07/firefox.png?resize=128%2C128" alt="" title="firefox" width="128" height="128" class="alignright size-full wp-image-1478" srcset="https://i0.wp.com/top-frog.com/wp-content/uploads/2010/07/firefox.png?w=128&ssl=1 128w, https://i0.wp.com/top-frog.com/wp-content/uploads/2010/07/firefox.png?resize=75%2C75&ssl=1 75w" sizes="(max-width: 128px) 100vw, 128px" data-recalc-dims="1" />](https://i0.wp.com/top-frog.com/wp-content/uploads/2010/07/firefox.png)Rejoice! There's a way to set the tab with of the view-source window in Firefox. In March of this year Mozilla [finally added an about:config option](https://bugzilla.mozilla.org/show_bug.cgi?id=295506) to control the tab-width in Firefox.
+[<img src="/assets/articles/firefox.png />](/assets/articles/firefox.png)Rejoice! There's a way to set the tab with of the view-source window in Firefox. In March of this year Mozilla [finally added an about:config option](https://bugzilla.mozilla.org/show_bug.cgi?id=295506) to control the tab-width in Firefox.
 
 I'm on Firefox 3.6.6 and it works like so:
 

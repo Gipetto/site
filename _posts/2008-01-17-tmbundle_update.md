@@ -26,7 +26,7 @@ Read on for the nitty gritty.
 
 
 
-The file remains at a new URL: [tmbundle.sh](/script_src/tmbundle.sh). Again, this only works with the SVN bundle repository. It will not update the default bundles that ship with TextMate. So be sure that if you need to update a default bundle you need to install it before updating it, however, if you do try to update a non-installed bundle this version of the script will attempt to find and install that bundle. Its not perfect – an error will be ugly, but not harmful. I haven't fully taken advantage of error codes to intelligently handle errors – that will come in a future update.
+The file remains at a new URL: [tmbundle.sh](/script_src/tmbundle.sh.html). Again, this only works with the SVN bundle repository. It will not update the default bundles that ship with TextMate. So be sure that if you need to update a default bundle you need to install it before updating it, however, if you do try to update a non-installed bundle this version of the script will attempt to find and install that bundle. Its not perfect – an error will be ugly, but not harmful. I haven't fully taken advantage of error codes to intelligently handle errors – that will come in a future update.
 
 The scripts basic functions haven't changed, but I'll still do a full description here.
 

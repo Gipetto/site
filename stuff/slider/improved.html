@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>jQuery Image Slider Improved : The Gippy Pages</title>
+		<meta name="description" content="jQuery image slider demo by Shawn Parker. This code was written in 30 minutes at 3am" />
+		<meta name="keywords" content="jquery image slider" />
+		<style type="text/css">
+			@import url(css/slider.css);
+		</style>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/slider-improved.js"></script>
+	</head>
+	<body>
+		<h1>30 Minute, 4 AM, image slider demo: Improved</h1>
+			<div class="gallery">
+				<div class="gallery-viewer">
+					<ul class="slider">
+						<li><img src="images/slider-test-image-1.gif" alt="" /></li>
+						<li><img src="images/slider-test-image-2.gif" alt="" /></li>
+						<li><img src="images/slider-test-image-3.gif" alt="" /></li>
+					</ul>
+				</div>
+			</div>
+			<div class="code">
+				<h2>The Code</h2>
+<code>jQuery(document).ready(function(){
+	// image slider
+	if(viewer_images = $(&#x27;.gallery-viewer img&#x27;)) {
+		active = 0;
+		width = $(&#x27;.gallery-viewer&#x27;).width();
+		sliding = false;
+		// create gallery nav bar
+		$(&#x27;.gallery-viewer&#x27;).parent().after(&#x27;&lt;ul class=&quot;gallery-nav&quot;&gt;&#x27;);
+		viewer_images.each(function(i){
+			var $a = $(&#x27;&lt;a&gt;&#x27;).appendTo(&#x27;&lt;li&#x27;+(i == 0 ? &#x27; class=&quot;active&quot;&#x27; : &#x27;&#x27;)+&#x27;&gt;&#x27;)
+						.parent().appendTo(&quot;.gallery-nav&quot;).end()
+						.html(i+1).attr({&#x27;href&#x27;:&quot;#&quot;,&#x27;number&#x27;:i}).click(function(){
+							number = $(this).attr(&#x27;number&#x27;); // grab position reference
+							if(sliding || active == number) { return false; } // don&#x27;t do anything if we&#x27;re already on the move or this is the active image
+
+							sliding = true; // enter sliding mode
+
+							var distance = ((active * width) - (number * width));
+							$(&#x27;.slider&#x27;).animate({&quot;left&quot;:&#x27;+=&#x27;+distance},&#x27;slow&#x27;,&#x27;swing&#x27;); // slide...
+
+							// switch active link styles
+							$(&#x27;.gallery-nav a[number=&quot;&#x27; + active +&#x27;&quot;]&#x27;).parent(&#x27;li&#x27;).removeClass(&#x27;active&#x27;);
+							$(this).parent(&#x27;li&#x27;).addClass(&#x27;active&#x27;);
+							window.location.hash = i+1;
+
+							active = number; // set new active
+							sliding = false; // exit sliding mode
+							return false; // return false so link doesn&#x27;t activate
+						});
+		});
+		// if there&#x27;s a hash value, try to use it to target a default slider position
+ 		$(&#x27;.gallery-nav a[number=&quot;&#x27; + (parseInt(document.location.hash.replace(&#x27;#&#x27;,&#x27;&#x27;))-1) + &#x27;&quot;]&#x27;).trigger(&#x27;click&#x27;);
+	}    
+});</code>
+			</div>
+			<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+			<script type="text/javascript">
+				var pageTracker = _gat._getTracker("UA-4629283-1");
+				pageTracker._initData();
+				pageTracker._trackPageview();
+			</script>
+	</body>
+</html>

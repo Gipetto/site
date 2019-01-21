@@ -15,7 +15,7 @@ tags:
   - ten
   - warm
 ---
-<img src="/assets/pj-comparison.jpg" alt="Pearl Jam: Ten" />
+<img src="/assets/articles/pj-comparison.jpg" alt="Pearl Jam: Ten" />
 
 I have to admit I'm a Pearl Jam whore. I'm so in love with their live recordings that I typically prefer them to any studio work, though that's not to say that I dislike their studio work. That said, here goes:
 

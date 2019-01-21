@@ -1,0 +1,13 @@
+#content {
+	margin: 30px;
+}
+
+#controls {
+	margin-bottom: 30px;
+}
+#images {
+	padding: 0;
+	display: block;
+	width: 750px;
+	border: 1px dotted gray;
+}

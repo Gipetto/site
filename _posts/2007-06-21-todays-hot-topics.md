@@ -20,8 +20,8 @@ tags:
 
 {% include lightbox.html 
   id="goCart1"
-  img_lg="/assets/microphone.png"
-  img_sm="/assets/hot_topic_logo_thumb.png"
+  img_lg="/assets/articles/microphone.png"
+  img_sm="/assets/articles/hot_topic_logo_thumb.png"
   title="Today's Hot Topics logo"
   caption="Today's Hot Topics logo"
   additional_classes="alignright"

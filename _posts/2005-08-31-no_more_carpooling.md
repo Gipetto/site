@@ -24,7 +24,7 @@ After 5 years of carpooling, first in a 1995 Camry and then in a 2002 Tacoma, we
 
 It looks just like this one.
 
-![image](/assets/wrx.jpg)
+![Stock image of a Subaru WRX](/assets/articles/wrx.jpg)
 
 #### Compared to the truck
 

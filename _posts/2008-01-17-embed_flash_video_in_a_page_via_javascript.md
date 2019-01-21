@@ -19,6 +19,11 @@ tags:
   - video
   - youtube
 ---
+
+<div class="alert warning">
+<p><b>Don't do this</b>: the techniques used in this post and the sample pages use older techniques and don't account for modern browser safety precautions. Consider this a historical curiosity, like a circus freak show&hellip;</p>
+</div>
+
 I just finished up a new version of my script that embeds flash video in a web page to make it more diversified in what kinds of video it can handle. There are some that will not work since they're doing some url manipulation on the ID of the flash object that make it impossible to gather the requisite information via the URL, but for the most part this script can cover most sites that are worth doing.
 
 
@@ -43,7 +48,7 @@ The script uses some convenient Hash functions present in Prototype.js 1.5.1+
 
 The script can be seen in action [here](/stuff/clubhouse/embed/). 
 
-The script source is [available heer](/script_src/embed_flash_video.js).
+The script source is [available here](/script_src/embed_flash_video.js).
 
 #### Conclusion
 

@@ -23,7 +23,7 @@ tags:
   - seagate momentus
   - upgrade
 ---
-<img class="alignright" src="/assets/hd-icons.png" alt="hard drive icons" /> Unibody MacBook Pro + MCE OptiBay + Seagate Momentus 500GB drive = 768 GB of useable hard drive space.
+<img class="alignright" src="/assets/articles/hd-icons.png" alt="hard drive icons" /> Unibody MacBook Pro + MCE OptiBay + Seagate Momentus 500GB drive = 768 GB of useable hard drive space.
 
 I bit the bullet and purchased the MCE OptiBay and a big fat hard drive for my MacBook Pro. I needed more space to allow my penchant for virtual machines to grow as well as keep my ever expanding music library with me instead of having it live only at home.
 
@@ -33,7 +33,7 @@ Though its been worth it, it could be better. Installation was a bit odd as the 
 
 The next disappointment came when actually mounting the DVD drive in the supplied external case. Yeah, it slid right in and snapped together just fine, mounted right away, but the front of the case is wide open and will require me finding a case for the case so that it stays clean and I should also find a hard case for it since the case is very flimsy and provides absolutely no support for the DVD drive's internals. The case flexes and if pressed enough would damage the DVD drive. It provides no protection from pressure or dust. 1 extra piece on the assembly would have gone a long way to protect the drive. Again, not a deal breaker, but certainly a disappointment. It did, however, go together easily and work as expected. 
 
-<img src="/assets/mce-usb-optical.jpg" alt="The flimsy MCE USB External DVD drive case" />
+<img src="/assets/articles/mce-usb-optical.jpg" alt="The flimsy MCE USB External DVD drive case" />
 
 That said, the extra space as well as the extra speed gains are well worth it. I now travel with my music library. I also have the space to grow with my expanding photo library. I also have a space to keep and run my VMs from. I'm seeing at least a 40% increase in performance on my virtual machines. According to my employer its almost as fast as his Mac Pro tower. There's nice swap space for Photoshop and Illustrator as well. 
 

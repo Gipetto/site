@@ -46,7 +46,7 @@ He loved to play… oh, boy, did he love to play. Wether playing tug of war or j
 {% include lightbox.html 
   id="dscn5275"
   img_lg="https://i0.wp.com/top-frog.com/wp-content/uploads/2015/10/DSCN5275.jpg"
-  img_sm="https://i1.wp.com/top-frog.com/wp-content/uploads/2015/10/DSCN5275-500x375.jpg"
+  img_sm="https://i1.wp.com/top-frog.com/wp-content/uploads/2015/10/articles/DSCN5275-500x375.jpg"
   title="Bear &amp; Dozer cuddles"
   caption="Bear &amp; Dozer cuddles"
 %}

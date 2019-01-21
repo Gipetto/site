@@ -19,8 +19,8 @@ tags:
 
 {% include lightbox.html 
   id="recover"
-  img_lg="/assets/Road-to-Recovery.jpg"
-  img_sm="/assets/road_to_recovery_thumb.png"
+  img_lg="/assets/articles/Road-to-Recovery.jpg"
+  img_sm="/assets/articles/road_to_recovery_thumb.png"
   title="Road to Recovery graphic"
   caption="Road to Recovery graphic"
   additional_classes="alignright"

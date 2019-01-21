@@ -17,7 +17,7 @@ tags:
   - update
   - wordpress
 ---
-<img class="alignright" src="/assets/TextMate2.png" alt="TextMate 2 Icon" title="I love this icon!" />The WordPress TextMate bundle now works just fine with the TextMate 2 Alpha. It was easier than I thought it would be. It boiled down to some environment variables changing a little bit. No biggie.
+<img class="alignright" src="/assets/articles/TextMate2.png" alt="TextMate 2 Icon" title="I love this icon!" />The WordPress TextMate bundle now works just fine with the TextMate 2 Alpha. It was easier than I thought it would be. It boiled down to some environment variables changing a little bit. No biggie.
 
 So, there it is. TextMate 2 Alpha support. If you notice anything weird please open a [Support Ticket on GitHub](https://github.com/Gipetto/wordpress.tmbundle/issues). Please include the full text of the error that you receive as that'll most likely be what I need to fix the problem.
 

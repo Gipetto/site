@@ -29,7 +29,7 @@ It just takes a quick trip into the preferences to set up the correct settings f
 
 (story continues after image)
 
-![image](https://top-frog.com/images/articles/text-edit.gif)
+![OS X TextEdit Preferences Dialog](https://top-frog.com/images/articles/text-edit.gif)
 
 The file is constructed complete with a valid (X)HTML header. The only real drawback is that you'll get `<b>` and `<i>` tags instead of `<strong>` and `<em>` and there is no way that I know of to change it. Another drawback, one that I won't run into nearly as much is the use of align attributes for table cells. Since I don't use tables much it won't be too much of an issue. 
 

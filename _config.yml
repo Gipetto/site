@@ -27,6 +27,9 @@ plugins:
 kramdown:
   input: GFM
   syntax-highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
 # Exclude from processing.
 exclude:
   - _drafts

@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>jQuery Image Slider : The Gippy Pages</title>
+		<meta name="description" content="jQuery image slider demo by Shawn Parker. This code was written in 30 minutes at 3am" />
+		<meta name="keywords" content="jquery image slider" />
+		<style type="text/css">
+			@import url(css/slider.css);
+		</style>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/slider.js"></script>
+	</head>
+	<body>
+		<h1>30 Minute, 4 AM, image slider demo</h1>
+			<div class="gallery">
+				<div class="gallery-viewer">
+					<ul class="slider">
+						<li><img src="images/slider-test-image-1.gif" alt="" /></li>
+						<li><img src="images/slider-test-image-2.gif" alt="" /></li>
+						<li><img src="images/slider-test-image-3.gif" alt="" /></li>
+					</ul>
+				</div>
+			</div>
+			<div class="code">
+				<h2>The Code</h2>
+<code>jQuery(document).ready(function(){
+	// image slider
+	viewer_images = $(&#x27;.gallery-viewer img&#x27;);
+	if(viewer_images.length &gt; 1) {
+		// create gallery nav bar
+		navbar = &#x27;&lt;ul class=&quot;gallery-nav&quot;&gt;&#x27;;
+		for(i=0; i &lt; viewer_images.length; i++) {
+			navbar += &#x27;&lt;li&#x27;+(i == 0 ? &#x27; class=&quot;active&quot;&#x27; : &#x27;&#x27;)+&#x27;&gt;&lt;a href=&quot;#&quot;&gt;&#x27;+ (i + 1) +&#x27;&lt;/a&gt;&lt;/li&gt;&#x27;;
+		}
+		navbar += &#x27;&lt;/ul&gt;&#x27;;
+		$(&#x27;.gallery-viewer&#x27;).parent().after(navbar);
+
+		// assign slider functions
+		active = 0;
+		width = $(&#x27;.gallery-viewer&#x27;).width();
+		sliding = false;
+		$(&#x27;.gallery-nav li a&#x27;).each(function(i){
+			// assign position reference
+			$(this).attr(&#x27;number&#x27;,i);
+			$(this).click(function(){
+				if(sliding) { return false; } // don&#x27;t do anything if we&#x27;re already on the move
+				number = $(this).attr(&#x27;number&#x27;); // grab position reference
+
+				if(active == number) { return false; } // if the active button is clicked, do nothing
+				sliding = true; // enter sliding mode
+
+				if(active &lt; number) { // move to the right
+					distance = ((active * width) - (number * width));
+				}
+				else { // move to the left
+					distance = ((active * width) - (number * width));
+				}
+				$(&#x27;.slider&#x27;).animate({&quot;left&quot;:&#x27;+=&#x27;+distance},&#x27;slow&#x27;,&#x27;swing&#x27;); // slide...
+
+				// switch active link styles
+				$(&#x27;.gallery-nav a[number=&quot;&#x27; + active +&#x27;&quot;]&#x27;).parent(&#x27;li&#x27;).removeClass(&#x27;active&#x27;);
+				$(this).parent(&#x27;li&#x27;).addClass(&#x27;active&#x27;);
+
+				active = number; // set new active
+				sliding = false; // exit sliding mode
+				return false; // return false so link doesn&#x27;t activate
+			});
+		});
+	}	
+});</code>
+			</div>
+			<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+			<script type="text/javascript">
+				var pageTracker = _gat._getTracker("UA-4629283-1");
+				pageTracker._initData();
+				pageTracker._trackPageview();
+			</script>
+
+	</body>
+</html>

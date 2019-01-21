@@ -19,7 +19,7 @@ tags:
 I've added partial function definitions to the [WordPress TextMate Bundle](/projects/wordpress-textmate-bundle/). The tool-tips list the function definition as well as the file and line number where the function is defined so that the full function definition can be looked up easily.
 
 <span class="frame">
-  <img src="/assets/wp-tmbundle-tool-tip.png" alt="wp-tmbundle-tool-tip" title="wp-tmbundle-tool-tip" />
+  <img src="/assets/articles/wp-tmbundle-tool-tip.png" alt="WordPress TextMate Bundle Screenshot" aria-hidden="true" />
 </span>
 
 The function definitions can be brought up by selecting or setting the carat inside the function that needs to be defined and then using `Command-Shift-H` to bring up the tool tip.

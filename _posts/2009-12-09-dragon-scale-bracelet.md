@@ -33,6 +33,6 @@ I'm doing some photography for [Seod&oacute;ir](http://web.me.com/neddierah/Seod
   * 1 black sheet
   * 1 black ceramic cylinder (purchased for $1.99 at Goodwill)
 
-[<img src="https://i0.wp.com/top-frog.com/wp/wp-content/uploads/2009/12/dragon-scales-setup-small.jpg?resize=500%2C333" alt="dragon-scales-setup-small" title="" width="500" height="333" rel="http://top-frog.com/wp/wp-content/uploads/2009/12/dragon-scales-setup-large.jpg" data-recalc-dims="1" />](https://i1.wp.com/top-frog.com/wp/wp-content/uploads/2009/12/dragon-scales-setup-large.jpg)
+[<img src="https://i0.wp.com/top-frog.com/wp/wp-content/uploads/2009/12/articles/dragon-scales-setup-small.jpg?resize=500%2C333" alt="dragon-scales-setup-small" title="" width="500" height="333" rel="http://top-frog.com/wp/wp-content/uploads/2009/12/dragon-scales-setup-large.jpg" data-recalc-dims="1" />](https://i1.wp.com/top-frog.com/wp/wp-content/uploads/2009/12/dragon-scales-setup-large.jpg)
 
 Who says you need the right tools 😉

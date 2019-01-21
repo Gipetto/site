@@ -13,7 +13,7 @@ categories:
 **NOTICE:** This is long since obsolete with the addition of the `mate` command line helper.
 </div>
 
-<img class="alignright" src="/assets/TextMate-icon.png" alt="TextMate Icon" title="TextMate-icon" />So, I can't count how many times I've opened a single file for editing in TextMate and then realized that I need to do more than just edit that one file. And most of the time the other files that I need to edit are in the same folder as the file that I'm currently editing. Rather than head back out to the finder each time I do this I finally wrote a command to do it for me. The following code will close the current document and open its parent folder as a TextMate project. 
+<img class="alignright" src="/assets/articles/TextMate-icon.png" alt="TextMate Icon" title="TextMate-icon" />So, I can't count how many times I've opened a single file for editing in TextMate and then realized that I need to do more than just edit that one file. And most of the time the other files that I need to edit are in the same folder as the file that I'm currently editing. Rather than head back out to the finder each time I do this I finally wrote a command to do it for me. The following code will close the current document and open its parent folder as a TextMate project. 
 
 
 

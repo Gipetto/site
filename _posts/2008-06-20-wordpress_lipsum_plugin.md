@@ -20,7 +20,7 @@ Tired of copying/pasting Lipsum placeholder text?
 
 Me too.
 
-Behold [Gippy's Lipsum Plugin](/script_src/lipsum.php). Bask in its laziness. With a simple {lipsum} in your post, page or comment you can embed 3 paragraphs of Lipsum text. It works on the creation or edit of those items. 
+Behold [Gippy's Lipsum Plugin](/script_src/lipsum.php.html). Bask in its laziness. With a simple {lipsum} in your post, page or comment you can embed 3 paragraphs of Lipsum text. It works on the creation or edit of those items. 
 
 Want a more specific number of paragraphs? Ok, you can do {lipsum:1} to get just on paragraph, or {lipsum:5}, all the way up to 10. I stopped at 10 'cause its a reasonably long enough post or page to fill. 
 

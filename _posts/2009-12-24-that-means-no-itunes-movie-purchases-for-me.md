@@ -16,6 +16,6 @@ tags:
 ---
 Ever. Sheerly out of principle.
 
-<img class="oversize" src="/assets/no-hdcp-for-gippy.png?resize=570%2C267" alt="iTunes says: This movie cannot play because iTunes is requiring HDCP copy protection and making my not-so-old TV useless for iTunes video watching" title="no-hdcp-for-gippy" />
+<img class="oversize" src="/assets/articles/no-hdcp-for-gippy.png" alt="iTunes says: This movie cannot play because iTunes is requiring HDCP copy protection and making my not-so-old TV useless for iTunes video watching" title="no-hdcp-for-gippy" />
 
 This is from a Macbook Pro "Late 2008" connected to a Samsung HDTV over VGA because all of my HDMI ports on the TV are taken.

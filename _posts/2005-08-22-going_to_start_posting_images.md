@@ -18,8 +18,8 @@ tags:
 
 {% include lightbox.html 
   id="aHorseIsAHorse"
-  img_lg="/assets/horse.jpg"
-  img_sm="/assets/horse-thumb.jpg"
+  img_lg="/assets/articles/horse.jpg"
+  img_sm="/assets/articles/horse-thumb.jpg"
   title="Funny looking horse"
   caption="Funny looking horse"
   additional_classes="alignright"

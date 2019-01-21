@@ -19,6 +19,11 @@ tags:
   - video
   - youtube
 ---
+
+<div class="alert warning">
+<p><b>Don't do this</b>: the techniques used in this post and the sample pages use older techniques and don't account for modern browser safety precautions. Consider this a historical curiosity, like a circus freak show&hellip;</p>
+</div>
+
 Well, technically smaller. This new version actually has less lines of code. See, I was trying to be a good boy when [I first wrote the script](/2006/10/13/javascript_embed_youtube_and_google_video). I tried to be fully DOM compliant and not use innerHTML as it is a non-standard function and has somewhat of a dubious reputation.
 
 Well. Screw it. IE will do the DOM standard element replacement, but doesn't do setAttribute. Opera would take the DOM replacement and make space for it in the layout but wouldn't show the video element. All this goes away with innerHTML.

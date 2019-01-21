@@ -31,11 +31,11 @@ All in all: **I want to do it again. And I hope I have the chance to.**
 
 The demo plugin I chose to build was a Featured Post plugin. The goal was simple: create a plugin that adds a meta box to the post-edit admin screen so that I could record the post's status as being featured and then differentiate the post on the wordpress front end. I also wanted to show a list of featured posts in the sidebar as well as at the bottom of each post. And to do it all without touching the WordPress core or a theme file.
 
-For those that are interested, [the plugin source can be viewed here](/script_src/my-featured-posts.php). That source is heavily commented to help anyone learn from the file. If there's anything I left out I'd be glad to add more information, and if there's demand I could write up a post here that details the creation of the plugin even more. Just let me know. That script can also be downloaded along with my presentation slides (in PDF format) by [going here](/dl/wordcamp) (that is the same page linked to from the WordCamp schedule page).
+For those that are interested, [the plugin source can be viewed here](/script_src/my-featured-posts.php.html). That source is heavily commented to help anyone learn from the file. If there's anything I left out I'd be glad to add more information, and if there's demand I could write up a post here that details the creation of the plugin even more. Just let me know. That script can also be downloaded along with my presentation slides (in PDF format) by [going here](/dl/wordcamp) (that is the same page linked to from the WordCamp schedule page).
 
 For anyone who wants to go for the full effect, here is the image I used as a badge and the CSS used to place it:
 
-![image](https://top-frog.com/images/articles/starburst-omg-white.png)
+![Featured Article Starburst Icon](https://top-frog.com/images/articles/starburst-omg-white.png)
 
 ``` css
 /* BASIC STYLING */

@@ -32,24 +32,24 @@ The shots are bit soft. I couldn't track these guys manually and my old camera j
 
 {% include lightbox.html 
   id="porsche1"
-  img_lg="/assets/p1h.jpg"
-  img_sm="/assets/p1.jpg"
+  img_lg="/assets/articles/p1h.jpg"
+  img_sm="/assets/articles/p1.jpg"
   title="1967 Porsche 912"
   caption="1967 Porsche 912"
 %} 
 
 {% include lightbox.html 
   id="porsche2"
-  img_lg="/assets/p2h.jpg"
-  img_sm="/assets/p2.jpg"
+  img_lg="/assets/articles/p2h.jpg"
+  img_sm="/assets/articles/p2.jpg"
   title="Porsche GT3"
   caption="Porsche GT3"
 %}
 
 {% include lightbox.html 
   id="porsche3"
-  img_lg="/assets/p3h.jpg"
-  img_sm="/assets/p3.jpg"
+  img_lg="/assets/articles/p3h.jpg"
+  img_sm="/assets/articles/p3.jpg"
   title="Porsche 911 Carrera"
   caption="Porsche 911 Carrera"
 %}

@@ -15,7 +15,7 @@ The solution: give password-protected posts a secret url that can be shared with
 
 #### The Details
 
-The encoded tokens are made by taking the post-name and post-password and encoding them together. The plugin's admin page also allows you to create a &#8220;salt&#8221;, or a unique key that makes the resulting encoded token more secure. Please note that once the salt option is set, changing it will change the secret urls for all posts. Unless you want to invalidate all of your old secret urls, it is recommended that you set the salt and leave it.
+The encoded tokens are made by taking the post-name and post-password and encoding them together. The plugin's admin page also allows you to create a "salt", or a unique key that makes the resulting encoded token more secure. Please note that once the salt option is set, changing it will change the secret urls for all posts. Unless you want to invalidate all of your old secret urls, it is recommended that you set the salt and leave it.
 
 #### Frequently Asked Questions
 
@@ -35,7 +35,7 @@ Can I have a single token for all protected content?
 : Not yet.
 
 How do I revoke a secret url?
-: If you need to revoke the secret urls for an individual post, you can simply change the post password. Once you save the post it will create new secret urls and invalidate the old ones: the old url will no longer automatically log readers in and they'll be asked to enter a password if they use that URL. You can also revoke all secret urls site-wide (the &#8220;nuclear&#8221; option). To do so, go to the plugin admin page and change the password salt.
+: If you need to revoke the secret urls for an individual post, you can simply change the post password. Once you save the post it will create new secret urls and invalidate the old ones: the old url will no longer automatically log readers in and they'll be asked to enter a password if they use that URL. You can also revoke all secret urls site-wide (the "nuclear" option). To do so, go to the plugin admin page and change the password salt.
 
 Does this work with caching plugins such as WP Super Cache?
 : Yes. The token in the URL triggers a unique cache. Be aware that this does create a potential security risk. Not huge, but potential. If you don't want these pages cached then use the settings in your caching plugin to keep urls with <code>ppt=</code> in the url from being cached.

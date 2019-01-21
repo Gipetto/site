@@ -32,5 +32,3 @@ So, enough said for now, the new script has been added to the old page [located 
 #### And source file highlighting
 
 I've also updated the source file highlighting to use the Pear package Text_Highlighter. I won't go into details about how to use Pear since there are many many good articles about that already, but I had to apply [this patch](http://pear.php.net/bugs/bug.php?id=11478) to the installed package to get the renderer to format the output correctly so CSS styling would display as expected. I installed the stable version and had to apply the patch.
-
-So now the source highlighting looks much much better. The proof is in the pudding: [Upload class file](/script_src/Upload.class.phps), [my directory listing class (PHP 5.1+ ONLY)](/script_src/ListDirectory.class.phps), [and maybe some javascript](/script_src/stripe_table.js).

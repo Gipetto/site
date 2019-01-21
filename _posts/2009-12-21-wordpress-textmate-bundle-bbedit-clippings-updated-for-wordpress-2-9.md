@@ -20,7 +20,7 @@ tags:
   - textmate
   - wordpress
 ---
-<img class="alignright" src="/assets/wp-logo-cropped.png?resize=166%2C124" alt="" title="wp-logo-cropped" />I can actually say that I'm timely on this one! The [WordPress TextMate Bundle](/projects/wordpress-textmate-bundle) and the [WordPress Clippings for BBEdit](/projects/wordpress-clippings-for-bbedit/)have been updated for [WordPress 2.9 &#8220;Carmen&#8221;](http://codex.wordpress.org/Version_2.9). 
+<img class="alignright" src="/assets/articles/wp-logo-cropped.png?resize=166%2C124" alt="" title="wp-logo-cropped" />I can actually say that I'm timely on this one! The [WordPress TextMate Bundle](/projects/wordpress-textmate-bundle) and the [WordPress Clippings for BBEdit](/projects/wordpress-clippings-for-bbedit/)have been updated for [WordPress 2.9 &#8220;Carmen&#8221;](http://codex.wordpress.org/Version_2.9). 
 
 There wasn't a lot that changed as far as the bundle is concerned, most of it being about a shift in line numbers of where the functions are located in the core so that the Jump to Function action works properly. There's also a built in About page now that provides documentation on the plugin as well as credits to the folks who have helped out. 
 

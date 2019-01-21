@@ -15,4 +15,4 @@ Donations buy donuts. Donuts help keep me motivated. When I'm motivated I make p
 	</form>
 </div>
 
-<img src="/assets/donate.jpg" alt="donate" title="Donate to the cause: Dollars leads to donuts." />
+<img src="/assets/donate.jpg" alt="Donate to the cause: Dollars leads to donuts." />

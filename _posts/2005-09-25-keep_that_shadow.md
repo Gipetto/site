@@ -28,8 +28,8 @@ This isn't a magic way to pull a drop shadow off of a complex background – thi
 
 {% include lightbox.html 
   id="step1"
-  img_lg="/assets/start.jpg"
-  img_sm="/assets/start-thumb.jpg"
+  img_lg="/assets/articles/start.jpg"
+  img_sm="/assets/articles/start-thumb.jpg"
   title="Step 1: raw photo with white background"
   caption="Step 1: raw photo with white background"
   additional_classes="alignright"
@@ -39,8 +39,8 @@ This isn't a magic way to pull a drop shadow off of a complex background – thi
 
 {% include lightbox.html 
   id="step2"
-  img_lg="/assets/step2.jpg"
-  img_sm="/assets/step2-thumb.jpg"
+  img_lg="/assets/articles/step2.jpg"
+  img_sm="/assets/articles/step2-thumb.jpg"
   title="Step 2: photo with subject 'cut out' and transparent background"
   caption="Step 2: photo with subject 'cut out' and transparent background"
   additional_classes="alignright"
@@ -48,8 +48,8 @@ This isn't a magic way to pull a drop shadow off of a complex background – thi
 
 {% include lightbox.html 
   id="step3"
-  img_lg="/assets/finish.jpg"
-  img_sm="/assets/finish-thumb.jpg"
+  img_lg="/assets/articles/finish.jpg"
+  img_sm="/assets/articles/finish-thumb.jpg"
   title="Step 3: photo with background replaced"
   caption="Step 3: photo with background replaced"
   additional_classes="alignright"
@@ -65,8 +65,8 @@ I've used variations of this technique with success. This example is of one I pu
 
 {% include lightbox.html 
   id="goCart1"
-  img_lg="/assets/go_cart_lo.jpg"
-  img_sm="/assets/go_cart_lo-thumb.jpg"
+  img_lg="/assets/articles/go_cart_lo.jpg"
+  img_sm="/assets/articles/go_cart_lo-thumb.jpg"
   title="Photo of Go Cart Racing"
   caption="Photo of Go Cart Racing"
   additional_classes="alignright"
@@ -76,8 +76,8 @@ I've used variations of this technique with success. This example is of one I pu
 
 {% include lightbox.html 
   id="goCart2"
-  img_lg="/assets/go_cart_lo2.jpg"
-  img_sm="/assets/go_cart_lo2-thumb.jpg"
+  img_lg="/assets/articles/go_cart_lo2.jpg"
+  img_sm="/assets/articles/go_cart_lo2-thumb.jpg"
   title="Go cart coutout"
   caption="Go cart cutout"
   additional_classes="alignright"
@@ -87,8 +87,8 @@ I've used variations of this technique with success. This example is of one I pu
 
 {% include lightbox.html 
   id="goCart3"
-  img_lg="/assets/Title1.jpg"
-  img_sm="/assets/Title1-thumb.jpg"
+  img_lg="/assets/articles/Title1.jpg"
+  img_sm="/assets/articles/Title1-thumb.jpg"
   title="Go cart with new background"
   caption="Go cart with new background"
   additional_classes="alignright"
@@ -98,8 +98,8 @@ I've used variations of this technique with success. This example is of one I pu
 
 {% include lightbox.html 
   id="goCart4"
-  img_lg="/assets/Title2.jpg"
-  img_sm="/assets/Title2-thumb.jpg"
+  img_lg="/assets/articles/Title2.jpg"
+  img_sm="/assets/articles/Title2-thumb.jpg"
   title="Slick shadow effect on modified go cart photo"
   caption="Slick shadow effect on modified go cart photo"
   additional_classes="alignright"
@@ -116,8 +116,8 @@ I say, what about black backgrounds?
 
 {% include lightbox.html 
   id="nano1"
-  img_lg="/assets/nano-start.jpg"
-  img_sm="/assets/nano-start-thumb.jpg"
+  img_lg="/assets/articles/nano-start.jpg"
+  img_sm="/assets/articles/nano-start-thumb.jpg"
   title="iPod Nano on black background"
   caption="iPod Nano on black background (image &copy; Apple Computer)"
   additional_classes="alignright"
@@ -131,8 +131,8 @@ After that, change the new layer to Overlay mode. If the mask for this layer was
 
 {% include lightbox.html 
   id="nano2"
-  img_lg="/assets/nano.jpg"
-  img_sm="/assets/nano-thumb.jpg"
+  img_lg="/assets/articles/nano.jpg"
+  img_sm="/assets/articles/nano-thumb.jpg"
   title="iPod Nano on fancy new background"
   caption="iPod Nano on fancy new background"
   additional_classes="alignright"
@@ -144,8 +144,8 @@ This new layer was moved to be inbetween the main image (the full strength image
 
 {% include lightbox.html 
   id="nano3"
-  img_lg="/assets/nano-water.jpg"
-  img_sm="/assets/nano-water-thumb.jpg"
+  img_lg="/assets/articles/nano-water.jpg"
+  img_sm="/assets/articles/nano-water-thumb.jpg"
   title="Photo of Go Cart Racing"
   caption="Photo of Go Cart Racing"
   additional_classes="alignright"

@@ -23,19 +23,19 @@ I took the little Nikon camera with me this time just for fun.
 #### The view
 
 <span class="frame">
-  ![image](/assets/hockey_game_1.jpg)
+  ![Inside the Pepsi Center](/assets/articles/hockey_game_1.jpg)
 </span>
 
 #### The kids
 
 <span class="frame">
-  ![image](/assets/hockey_game_2.jpg)
+  ![Shawn & Andy](/assets/articles/hockey_game_2.jpg)
 </span>
 
 #### The Final Score
 
 <span class="frame">
-  ![image](/assets/hockey_game_3.jpg)
+  ![Pepsi Center Scoreboard](/assets/articles/hockey_game_3.jpg)
 </span>
 
 I'm actually still getting used to all the new names. Not just on the Avs, but on the opposition as well. But I can get used to Luongo being a Canuck – he couldn't win against the Avs when he was in Florida – lets hope that carries through the season in Vancouver as well.
