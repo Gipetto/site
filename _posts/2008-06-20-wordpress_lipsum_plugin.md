@@ -32,4 +32,4 @@ So, now, go forth and pay attention to better things and let the placeholder tex
 
 #### Download
 
-**[Download the Lipsum Plugin for WordPress 2.0+](/files/scripts/lipsum.php.zip)**.
+[Click here to view the plugin source](/script_src/lipsum.php.html).

@@ -44,4 +44,4 @@ I can now use `__construct` and `__destruct` in a PHP 4 compatible script and ha
 
 Hopefully this is useful to somebody…
 
-You can view the entire source [here](/files/scripts/dbConnect.class.phps), and download the zipped php file (basically just an extension change from the source file) [here](/files/scripts/dbConnect.class.php.zip).
+You can view the entire source [here](/script_src/dbConnect.class.php.html).

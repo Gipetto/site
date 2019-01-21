@@ -17,6 +17,11 @@ tags:
   - source
   - w3c
 ---
+
+<div class="alert info">
+<b>Update:</b> With modern browsers this issue appears to be long gone. Browsers are now smarter about how they interpret the source and are more forgiving about what they will and won't automatically correct.
+</div>
+
 I just hit an interesting snafu with Apple's Safari browser. While correctly rendering special characters from a page that lacked a doctype and character encoding meta tag, I viewed the page's source and noticed that Safari wasn't rendering any special characters that it was rendering in the actual page view.
 
 With the help of the W3C validator I was able to figure out what character encoding the page was in fact using, windows-1252. That's not really any obscure. So I wonder why Safari was able to correctly decipher the page in HTML view but couldn't apply the same logic the the source view.

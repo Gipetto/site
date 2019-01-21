@@ -67,7 +67,7 @@ The Homebrew folks saw it coming a while back. There are pull requests and chang
 
 There is a work around, and it relies on installing XQuartz to provide the required X11 libraries. This may not be required for everyone, but for those of us that run specific versions of software it means a headache. In our case, for PHP, it meant that libraries required for font and image handling were missing. And these are just the errors that came up first. I'm not sure how many other things that X11 provided were waiting to error out should we have tried to link in the parts as we found the errors.
 
-First, download and install [XQuartz](http://xquartz.macosforge.org/landing/). After doing that symlink it in to where Homebrew expects X11 to be. We had folder there, presumably left over from the upgrade.
+First, download and install [XQuartz](https://www.xquartz.org/). After doing that symlink it in to where Homebrew expects X11 to be. We had folder there, presumably left over from the upgrade.
 
 ``` sh
 $ cd /usr

@@ -17,8 +17,6 @@ tags:
 ---
 After a while of using and not using this plugin I decided that it needed an update. The previous version would simply insert paragraphs of lipsum but now the plugin is set up to return a few helpful elements as well.
 
-
-
 #### Supported Elements
 
 Now supported is:
@@ -46,6 +44,4 @@ So, there it is. Hopefully one or two people find this useful. If not, well, it 
 
 #### Download
 
-**[Download the Lipsum Plugin for WordPress 2.0+](/files/scripts/lipsum.php.zip)**.
-
-[Click here to view the source](/script_src/lipsum.php.html).
+[Click here to view the plugin source](/script_src/lipsum.php.html).

@@ -1,3 +1,10 @@
+---
+layout: source
+title: embed_yt_gv.js
+article: /2006/10/13/javascript_embed_youtube_and_google_video/
+---
+
+{% highlight javascript lineos %}
 // ebmed youtube and google video links in a web page
 // @author - Shawn Parker, shawn@topfroggraphics.com
 //
@@ -144,3 +151,4 @@ function embed_yt_gv() {
 window.onload = function() {
 	var emb = new embed_yt_gv();
 }
+{% endhighlight %}

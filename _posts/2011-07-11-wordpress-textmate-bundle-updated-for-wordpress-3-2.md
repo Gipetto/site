@@ -24,7 +24,7 @@ tags:
 ---
 So, WordPress 3.2 has been out for a little while now and I've just gotten around to updating the bundle. My apologies, I've just been super swamped with a new job in a new city. But that's some whining for another post.
 
-After much fiddling, the updated [WordPress TextMate Bundle](http://top-frog.com/projects/wordpress-textmate-bundle/) is here and it has been updated with a much better function definition display. I've ditched the old function scraper that was an abomination of grep & regex matches and replaced it with [doxygen](http://www.stack.nl/~dimitri/doxygen/) and some ruby abomination to provide much more information about the function or method being inspected.
+After much fiddling, the updated [WordPress TextMate Bundle](http://top-frog.com/projects/wordpress-textmate-bundle/) is here and it has been updated with a much better function definition display. I've ditched the old function scraper that was an abomination of grep & regex matches and replaced it with [doxygen](http://www.doxygen.nl/) and some ruby abomination to provide much more information about the function or method being inspected.
 
 {% flickr_photo '5925516548' %}
 

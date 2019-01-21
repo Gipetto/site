@@ -26,7 +26,7 @@ It is quiet too. I've heard complaints about noise and heard Andy's work machine
 
 I'm very pleased with the purchase of this machine. I can't wait to get my programs loaded up and start using it for work.
 
-We also got the yard done yesterday. It looks so spiffy nice that when walking up to the house if feels like a new home. I've posted pics ~~[here](/gallery/TheYard)~~. The grass is nice to see and the mutts dig it too. Or, more so, they dig in it too. Hasn't been too bad – they ate up one square but beyond that they've been pretty good and we've been able to catch them in the act a couple times so hopefully that has sunk in. Probably not. But we've got an extra 5 squares to fill in with should they go nuts on the grass.
+We also got the yard done yesterday. It looks so spiffy nice that when walking up to the house if feels like a new home. The grass is nice to see and the mutts dig it too. Or, more so, they dig in it too. Hasn't been too bad – they ate up one square but beyond that they've been pretty good and we've been able to catch them in the act a couple times so hopefully that has sunk in. Probably not. But we've got an extra 5 squares to fill in with should they go nuts on the grass.
 
 The bricks and flagstone add so much to the look of the house as well. And the funny thing is the dogs will use the stepping stones in the yard to get to the back. They like to poop in the back of the yard (thankfully) and to get back there they trot along the path until they need to actually come out to poop. Funny to watch.
 

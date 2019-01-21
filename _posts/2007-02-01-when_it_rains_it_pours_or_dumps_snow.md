@@ -23,5 +23,8 @@ For some reason, though, I just can't get to a point where I feel like I'm caugh
 Yeah, I know: woe is me… I'll get caught up one of these days. And maybe I'll have something interesting to write about too! I'm resisting writing about all the snow, but that gets harder with every storm.
 
 
-
-<img src="/images/articles/jump.gif" alt="Dozer bounding through the snow" />
+<center>
+  <span class="frame">
+    <img src="/assets/articles/jump.gif" alt="Dozer bounding through the snow" />
+  </span>
+</center>

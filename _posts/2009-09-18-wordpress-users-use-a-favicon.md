@@ -26,7 +26,7 @@ There are 2 ways to fix this.
 
 
 
-  1. Use a favicon. Get more details about favicons at [favicon.com](http://www.favicon.com/n). You can also [create one quickly](http://www.favicon.cc/) if you just want to get at it.
+  1. Use a favicon. Get more details about favicons at [favicon.com](http://www.favicon.com). You can also [create one quickly](http://www.favicon.cc/) if you just want to get at it.
   2. Modify WordPress' .htaccess rules to exclude the favicon.ico file from being an option for WordPress to handle. I'll show you how to do that next.
 
 The fix, if you don't want to add a favicon file to your site, is pretty straight forward, but requires modifying a file on in the webroot. You'll need to have file system level access to your server and permissions to write to this file. If the WordPress install was done automatically by the host or through a control panel you may not have permissions to edit this file and may find it easier to just add a favicon to your web root.

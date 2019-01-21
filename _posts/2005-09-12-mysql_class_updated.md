@@ -40,4 +40,4 @@ $query = $db->buildQuery($base_query,$var1,$var2,etc...);
 
 The function is nothing extraordinary (it actually emulates using sprintf with a foreach loop) but it can save you some typing on long queries that use a lot of outside data.
 
-So, nothing huge, just trying to be correct. Download the updated [dbConnect script here](/files/scripts/dbConnect.class.zip) or [peruse the source code here](/files/scripts/dbConnect.class.phps).
+So, nothing huge, just trying to be correct. [Peruse the source code here](/script_src/dbConnect.class.php.html).

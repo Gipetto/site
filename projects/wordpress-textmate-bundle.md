@@ -16,7 +16,7 @@ The WordPress TextMate Bundle is a <a href="http://macromates.com">TextMate</a> 
 
 <a class="darr" href="#download">Skip to download link</a>
 
-The plugin features auto-completion of WordPress functions, snippets for common sections of code, and templates for WordPress components. We even snuck in function completion for the <a href="http://carrington-blog.com">Carrington</a> template framework functions. We're always making improvements as we find more that we want covered by the plugin (merged from WordPress MU with the WordPress 3.0 code base consolidation).
+The plugin features auto-completion of WordPress functions, snippets for common sections of code, and templates for WordPress components. We even snuck in function completion for the Carrington theme framework functions. We're always making improvements as we find more that we want covered by the plugin (merged from WordPress MU with the WordPress 3.0 code base consolidation).
 
 #### Features {#features}
 

@@ -26,15 +26,13 @@ tags:
 ---
 {% flickr_photo '8355557065' %}
 
-The wife and I decided to take the mutts for a walk on the beach this past weekend. We expected cold and dreary weather but were pleasantly greeted by partly cloudy skies and quite warm temperatures when the sun was out. All in all a good day to play with the new [Fuji X-E1](http://www.fujifilm.com/products/digital_cameras/x/fujifilm_x_e1/). In case you're about to bolt, weary of more shots of my dogs, please venture forth, they're not the feature of this post 😉 Fair warning, though, I had every intention of going out and shooting for black and white images, so there's very little color in these photos.
-
-
+The wife and I decided to take the mutts for a walk on the beach this past weekend. We expected cold and dreary weather but were pleasantly greeted by partly cloudy skies and quite warm temperatures when the sun was out. All in all a good day to play with the new [Fuji X-E1](http://www.fujifilm.com/support/digital_cameras/specifications/x/fujifilm_x_e1/). In case you're about to bolt, weary of more shots of my dogs, please venture forth, they're not the feature of this post 😉 Fair warning, though, I had every intention of going out and shooting for black and white images, so there's very little color in these photos.
 
 {% flickr_photo '8356620710' %}
 
 I must say that I'm still getting used to this camera. How to hold it, shoot with it, and how best to use its autofocus. The HUGE difference of using a digital viewfinder as opposed to a traditional optical viewfinder. Having a viewfinder that adjusts to the shooting conditions almost feels like cheating.
 
-The overall ergonomics of the camera are quite good but being a person who has big old monkey hands it can get a bit weird to hold sometimes. I'm waiting eagerly for the nice folks at [Match Technical](http://www.matchtechnical.com/Pages/default.aspx) to wrap up production on a version of the Thumbs Up for the X-E1. (They've communicated that they should be available soon). After that I may entertain the thought of the grip accessory for the X-E1, though I'd prefer not to as the compact size of the X-E1 was one of the key factors in my decision to purchase it.
+The overall ergonomics of the camera are quite good but being a person who has big old monkey hands it can get a bit weird to hold sometimes. I'm waiting eagerly for the nice folks at [Match Technical](https://www.matchtechnical.com) to wrap up production on a version of the Thumbs Up for the X-E1. (They've communicated that they should be available soon). After that I may entertain the thought of the grip accessory for the X-E1, though I'd prefer not to as the compact size of the X-E1 was one of the key factors in my decision to purchase it.
 
 {% flickr_photo '8358273022' %}
 

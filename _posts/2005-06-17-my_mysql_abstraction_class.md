@@ -19,7 +19,7 @@ We all do it, and its a foundation of providing dynamic web content. The databas
 
 
 
-If you'd like to just dive in and see the script, [Dive in and take a look](/files/scripts/dbConnect.class.phps).
+If you'd like to just dive in and see the script, [Dive in and take a look](/script_src/dbConnect.class.php.html).
 
 #### History
 
@@ -112,7 +112,7 @@ It is php4 compatable since we all mostly work on php4 right now – I'm itching
 
 Other future improvements might be to move the error reporting into its own, more general, class and integrate it through aggregation. But I've got a few other things to do before that.
 
-So, if you're interested, download it here: ~~dbConnect.class.php.zip~~ **Update:** link removed. Its super old code and of no use to anyone any more.
+So, if you're interested, you can view the source [here](/script_src/dbConnect.class.php.html)
 
 There's a full usage description at the bottom of the file where the full functionality is documented.
 

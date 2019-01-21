@@ -16,7 +16,7 @@ tags:
   - server
 ---
 
-<img class="frame" src="/images/articles/server_room.jpg" alt="A digital composite made of Janitorial Equipment crowded in a server room.">
+<img class="frame" src="/assets/articles/server_room.jpg" alt="A digital composite made of Janitorial Equipment crowded in a server room.">
 
 We needed a shot of a server room crowded with janitorial equipment. Something that no IT Manager would ever let happen, not even if the equipment were dry and empty and if everybody &#8220;promised to be careful&#8221;. Just not gonna happen. So I got permission to shoot our server room and then reconstructed the angle in another part of the building to get the equipment at as close an angle as possible. Next I composited them together, added some suds and a puddle and opened up the right side to fit the banner design I wanted to do.
 

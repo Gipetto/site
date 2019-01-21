@@ -40,9 +40,9 @@ The script also has no outside dependencies. I originally constructed it to use 
 
 #### Less babble, more script!
 
-So, without further ado, [here's a sample page](/stuff/clubhouse/embed/) – you can see the slight flash between the page loading and the content switching out. Aside from a server side solution there's no way to get rid of that. I personally don't care about it since doing this via JavaScript makes the script very portable and easy to integrate just about anywhere.
+So, without further ado, [here's a sample page](/stuff/clubhouse/embed_new/) – you can see the slight flash between the page loading and the content switching out. Aside from a server side solution there's no way to get rid of that. I personally don't care about it since doing this via JavaScript makes the script very portable and easy to integrate just about anywhere.
 
-You can view the JavaScript directly [here (embed\_yt\_gv.js)](/stuff/clubhouse/embed/embed_yt_gv.js). Feel free to use it. Just please give me a link back somewhere if you do.
+You can view the JavaScript directly [here (embed\_yt\_gv.js)](/script_src/embed_yt_gv.js.html). Feel free to use it. Just please give me a link back somewhere if you do.
 
 Implementation is easy as the file takes care of everything. All you need to do it link to it in the head of your document like so:
 

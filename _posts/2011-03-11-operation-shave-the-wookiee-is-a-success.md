@@ -23,8 +23,8 @@ All in all it was a good night. Combining web donations with direct foundation d
 
 
 
-The actual shave process was quite entertaining as well. The two gals at the end of the shaving line were both eager to get to shave my head and the announcers had some fun with it as well. I actually enjoyed getting a little attention. Here's what it was like, as recorded by an iPhone 4:
+The actual shave process was quite entertaining as well. The two gals at the end of the shaving line were both eager to get to shave my head and the announcers had some fun with it as well. I actually enjoyed getting a little attention.
 
-And last, but not least, for everyone's enjoyment: [A few of the rejects from this portrait shoot](http://dl.dropbox.com/u/2181792/rejects.gif).
+And last, but not least, for everyone's enjoyment: (sadly this has been lost to the black hole of Dropbox).
 
 Enjoy, and thanks to everyone who contributed!

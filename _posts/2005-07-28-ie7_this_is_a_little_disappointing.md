@@ -60,7 +60,7 @@ Though it has issues, at least it is fast. I'm posting this over an RDP connecti
 
 It does seem to improve some Javascript support. A script I was having issues with before that involved fading alpha seems to work now. So there is one upside.
 
-[John](http://blog.pennypacker.net) will be pleased to know that his new window link javascript works in the new version – though all the little images do have link borders on them the functionality of the Javascript is there. ***Correction:** The link icons show up but the links do not open in a new window/tab.
+[John](http://www.pennypacker.net) will be pleased to know that his new window link javascript works in the new version – though all the little images do have link borders on them the functionality of the Javascript is there. ***Correction:** The link icons show up but the links do not open in a new window/tab.
 
 #### Phishing Filter
 

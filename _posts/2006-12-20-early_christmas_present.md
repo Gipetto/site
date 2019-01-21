@@ -14,7 +14,7 @@ tags:
   - present
   - tipmann
 ---
-I got one of my presents early since we had to go pick it out. A [Tippmann A-5](http://www.tippmann.com/product_guide/markerDetails.aspx?categoryid=1) with 20oz. tank and goggles. FUN!
+I got one of my presents early since we had to go pick it out. A [Tippmann A-5](https://www.tippmann.com/p/a-5-basic-marker?pp=24) with 20oz. tank and goggles. FUN!
 
 ![Tipmann A-5 Paintball Gun](/assets/articles/a-5.jpg)
 

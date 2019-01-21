@@ -28,7 +28,7 @@ Clippings are also provided for all the Actions and Filters contained within Wor
 
 #### Carrington Functions {#carrington}
 
-If you're doing <a href="http://carringtontheme.com/">Carrington Theme</a> development these extra function helpers should come in handy.
+If you're doing Carrington Theme Framework development these extra function helpers should come in handy.
 
 #### Installation {#installation}
 

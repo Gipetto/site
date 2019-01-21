@@ -20,8 +20,6 @@ tags:
 ---
 September 11 marks a few treacherous days in history: The Battle of Brandywine in 1777, the crashing of airliners into the world trade center in 2001, and the founding of the Gippy Pages in 2004. No, I don't claim to be as influential and significant as those, but it does go to show that bad things do happen in 3s. Even if they are sometime separated by more than a hundred years…
 
-
-
 #### Feeble beginnings
 
 This site started off as a way for me to host a title generating image script that I couldn't do on [Top Frog Graphics](http://www.topfroggraphics.com) site because that server didn't have the correct version of the GD graphics library that I needed to use. From there it became a way to show off the (now suspended) Puppycam after we got Bear and Dozer and to play around with PHP and CSS.
@@ -30,7 +28,7 @@ This site started off as a way for me to host a title generating image script th
 
 What started out as a small technical learning project has turned into something that I really love doing. Though I have decent communication skills I've never really seen myself as a writer. A year after filling this blog with drivel I still haven't changed my mind on that, but I do feel like writing is a productive and therapeutic exercise.
 
-Writing about general things and also writing out a few thoughts about what I'm doing has been a great way to keep my head straight and its something that, despite the rate at which I post now, is something that I don't feel like I do enough of. Maybe that's because my participation in both the [MacAddict Forums](http://www.macaddict.com/forums/) and the [Clubhouse 54 Forums](http://www.clubhouse54.com/phpbb2/) takes up some of that time or maybe I just don't have much to say – sometimes I feel its the latter despite my little list of potential story ideas.
+Writing about general things and also writing out a few thoughts about what I'm doing has been a great way to keep my head straight and its something that, despite the rate at which I post now, is something that I don't feel like I do enough of. Maybe that's because my participation in both the MacAddict Forums (RIP) and the [Clubhouse 54 Forums](http://www.clubhouse54.com/) (also RIP) takes up some of that time or maybe I just don't have much to say – sometimes I feel its the latter despite my little list of potential story ideas.
 
 I'm really not sure what kind of effect its had on the stories here, but I've made a conscious effort to not really plan out and refine too much what I'm going to write. I wanted it to be pretty much my first thoughts and musings on the subjects that I write, so typically the stories are written and then immediately posted. I correct a few things for grammar and spelling but for the most part the stories are unedited and how they originally came out of my head. I like posting that way, it feels more natural to me for a blog setting. My feeble attempt at stream of consciousness writing (which I've never really been able to do effectively).
 

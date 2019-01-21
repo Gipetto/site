@@ -15,8 +15,15 @@ tags:
   - racing
   - vintage
 ---
+
+{% flickr_photo '2206120863' %}
+
 I had a chance to photograph my dad's racing club this past weekend and had an absolute blast. It took me 2 days to edit down all the photos. I took more than 650. Its just so easy to do when shooting digital.
 
-I've put together an Aperture gallery for those who are interested. Check it out and let me know what you think. They're not all of just the vintage racers. There was drag racing the night before and some of those pics are in there as well.
+{% flickr_photo '2206919402' %}
 
-~~[Gallery of 250+ images](http://www.topfroggraphics.com/rmvr_2006-06/index.html)~~. Yeah, that's right, I posted a ton of pics. Be sure to lemme know what you think.
+I've put together an Flickr gallery for those who are interested. Check it out and let me know what you think. They're not all of just the vintage racers. There was drag racing the night before and some of those pics are in there as well.
+
+{% flickr_photo '2207587971' %}
+
+[View the Flickr gallery here](https://www.flickr.com/photos/tehgipster/albums/72157606048525920) Be sure to lemme know what you think.

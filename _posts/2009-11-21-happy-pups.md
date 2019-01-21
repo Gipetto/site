@@ -17,6 +17,5 @@ tags:
 threads:
   - Dogs
 ---
-{% flickr_photo '4123368826' %}
 
-[More pics from today](http://www.flickr.com/photos/tehgipster/archives/date-taken/2009/11/21/).
+{% flickr_photo '4123368826' %}
