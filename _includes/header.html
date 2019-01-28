@@ -1,11 +1,19 @@
 <header class="grid-cell">
     <h1>The Gippy Pages</h1>
-    <a href="/"><img class="frog" src="/assets/big-frog.svg" rel="home index" alt="Top Frog Logo" /></a>
-    <a href="/"><img class="what-it-called" src="/assets/name.svg" rel="home index" alt="The Gippy Pages" /></a>
-    <nav>
+    <a href="/" rel="index"><img class="frog" src="/assets/big-frog.svg" rel="home index" alt="Top Frog Logo" /></a>
+    <a href="/" rel="index"><img class="what-it-called" src="/assets/name.svg" rel="home index" alt="The Gippy Pages" /></a>
+    <nav id="ada">
         <ul>
+            <li class="hamburger">
+                <a href="#">
+                    {% include hamburger-menu.svg %}
+                </a>
+            </li>
+            <li class="homeboy">
+                <a href="/">Home</a>
+            </li>
             <li class="archives">
-                <a href="/archives">archives</a>
+                <a href="/archives" rel="archives">archives</a>
             </li>
             <li class="photography">
                 <a href="/photography">photography</a>
@@ -21,7 +29,7 @@
                 -->
             </li>
             <li class="about">
-                <a href="/about">about</a>
+                <a href="/about" rel="author">about</a>
             </li>
         </ul>
     </nav>
