@@ -5,7 +5,7 @@
             <ul>
                 {% for recent_post in site.posts limit:5 %}
                     <li>
-                        <a class="chevron" href="{{ site.url }}{{ recent_post.url }}">{{ recent_post.title }}</a>
+                        <a class="chevron" href="{{ recent_post.url }}">{{ recent_post.title }}</a>
                     </li>
                 {% endfor %}
             </ul>
@@ -19,7 +19,7 @@
 </aside>
 <!-- <aside class="widget">
     <div class="wookieewidget">
-        <img src="{{ site.url }}/assets/chicken.jpg" alt="Wookiee with Chicken Hat" />
+        <img src="/assets/chicken.jpg" alt="Wookiee with Chicken Hat" />
     </div>
 </aside> -->
 <aside class="widget">
@@ -60,7 +60,7 @@
 <aside class="widget">
     <h2 class="widget-title">Subscribe:</h2>
     <div class="textwidget">
-        <p>If you're the self-loathing type, you can <a href="{{ site.url }}/feed">get updates to this site via RSS.</a></p>
-        <p><a href="{{ site.url }}/what-is-rss/">What is RSS?</a></p>
+        <p>If you're the self-loathing type, you can <a href="/feed">get updates to this site via RSS.</a></p>
+        <p><a href="/what-is-rss/">What is RSS?</a></p>
     </div>
 </aside>

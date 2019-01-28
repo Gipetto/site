@@ -58,6 +58,30 @@ module Jekyll
       end
     end
 
+    # naive: all sizes based on max-width
+    def getSizes(photo)
+      wideVersions = [
+        'Small',
+        'Small 320',
+        'Medium',
+        'Medium 640',
+        'Large',
+        'Original'
+      ]
+
+      filtered = photo['sizes'].select { |k, v|
+        wideVersions.include?(k)
+      }.values.sort_by { |s| 
+        s['width'].to_i
+      }
+      
+      srcset = filtered.map { |v| 
+        "#{v['source']} #{v['width']}w"
+      }
+
+      return srcset
+    end
+
     def render(context)
       photo = getPhotoInfo(@photo_id)
 
@@ -76,6 +100,23 @@ module Jekyll
 <a href=\\\"#{flickr_url}\\\" rel=\\\"external\\\" target=\\\"_blank\\\">View on Flickr.</a>
       ".strip()
 
+      srcset = getSizes(photo)
+
+      sizesSmall = [
+        "(max-width: 320px) 320px",
+        "(max-width: 640px) 640px",
+        "(max-width: 870px) 1024px",
+        "500px"
+      ]
+
+      sizesLarge = [
+        "(max-width: 340px) 320px",
+        "(max-width: 520px) 500px",
+        "(max-width: 660px) 640px", 
+        photo['sizes'].key?('Large') ? "(max-width: 1044px) 1024px" : "1024", 
+        photo['sizes'].key('Large') ? "1650px" : ""
+      ].reject!(&:empty?)
+
       # Seems fucky, but works
       Liquid::Template.parse("{% include lightbox.html 
         id=\"#{@photo_id}\"
@@ -84,6 +125,9 @@ module Jekyll
         title=\"#{xml_escape(photo['info']['title'])}\"
         caption=\"#{caption}\"
         center=#{vertical}
+        srcset=\"#{srcset.join(', ')}\"
+        sizesSmall=\"#{sizesSmall.join(', ')}\"
+        sizesLarge=\"#{sizesLarge.join(', ')}\"
       %}").render(context)
     end
   end

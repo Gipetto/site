@@ -2,7 +2,7 @@
     <div class="previous newer">
         {% if page.next %}
             <div class="muted-n-stuff" aria-hidden="true">&laquo;</div>
-            <a href="{{ site.url }}{{ page.next.url }}" rel="next">
+            <a href="{{ page.next.url }}" rel="next">
                 <span class="muted-n-stuff">Newer</span>
                 <span>{{ page.next.title }}</span>
             </a>
@@ -10,7 +10,7 @@
     </div>
     <div class="next older">
         {% if page.previous %}
-            <a href="{{ site.url }}{{ page.previous.url }}" rel="prev">
+            <a href="{{ page.previous.url }}" rel="prev">
                 <span class="muted-n-stuff">Older</span>
                 <span>{{ page.previous.title }}</span>
             </a>

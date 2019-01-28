@@ -1,6 +1,6 @@
 #less-important-stuff {
-	background: #c4c8c1;
-	border-left: 1px solid #7f8a76;
+	background: $sidebarBackgroundColor;
+	border-left: 1px solid $innerBorderColor;
 	box-sizing: border-box;
 	-mox-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -8,6 +8,11 @@
 
 	aside {
 		margin: 10px 17px 30px;
+	}
+
+	@media screen and (max-width: $maxResponsiveWidth) {
+		border-left: 0;
+		border-top: 1px solid $innerBorderColor;
 	}
 
 	/*

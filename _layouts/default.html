@@ -5,21 +5,23 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="{{ page.lang | default: site.lang | default: 'en' }}"> <!--<![endif]-->
 {%- include head.html -%}
 <body id="top-frog-com" class="{{ page.section | default: layout.section }}">
-    <div id="bag-o-holding">
-        <div id="inner-liner" class="grid grid-col">
-            {%- include header.html -%}
-            <div id="it" class="grid-cell">
-                <div class="grid grid-row">
-                    <div id="stuff" class="grid-cell">
-                        <h2 class="tome">{{ page.section | default: layout.section }}</h2>
-                        {{ content }}
-                    </div>
-                    <div id="less-important-stuff" class="grid-cell">
-                        {%- include sidebar.html -%}
+    <div id="bag-o-holding" class="grid grid-col">
+        <div class="grid-cell">
+            <div id="inner-liner" class="grid grid-col">
+                {%- include header.html -%}
+                <div id="it" class="grid-cell">
+                    <div class="grid grid-row">
+                        <div id="stuff" class="grid-cell">
+                            <h2 class="tome">{{ page.section | default: layout.section }}</h2>
+                            {{ content }}
+                        </div>
+                        <div id="less-important-stuff" class="grid-cell">
+                            {%- include sidebar.html -%}
+                        </div>
                     </div>
                 </div>
+                {%- include footer.html -%}
             </div>
-            {%- include footer.html -%}
         </div>
     </div>
     {%- include scripts.html -%}

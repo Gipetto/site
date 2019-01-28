@@ -1,55 +1,45 @@
 @import 'boilerplate';
+@import 'variables';
 @import 'layout';
 
 body {
-	background-color: #ced6c9;
+	background-color: $backgroundColor;
 	font-family: "Lucida Grande",Arial,Helvetica,sans-serif;
 
-	@mixin activeNav($activeClass) {
-		&.#{$activeClass} {
-			nav {
-				& .#{$activeClass} {
-					a {
-						&:before, &:after {
-							color: rgba(255, 255, 255, 0.5)
-						}
-						&:before {
-							content: '[';
-						}
-						&:after {
-							content: ']';
-						}
-					}
-				}	
-			}
-		}
+	@media screen and (max-width: $maxResponsiveWidth) {
+		background-color: $innerBackgroundColor;
 	}
 
-	@include activeNav('archives');
-	@include activeNav('photography');
-	@include activeNav('projects');
-	@include activeNav('about');
+	@import 'nav';
 
 	#bag-o-holding {
-		background-color: #f4feee;
-		border: 1px solid #9ca397;
+		background-color: $innerBackgroundColor;
+		border: 1px solid $borderColor;
 		border-radius: 5px;
-		box-shadow: 0 0 5px 2px #b3b9ae;
+		box-shadow: 0 0 5px 2px $boxShadowColor;
 		margin: 15px auto;
 		position: relative;
 		width: 842px;
+
+		@media screen and (max-width: $maxResponsiveWidth) {
+			width: 100%;
+			margin: 0;
+			border-radius: 0;
+			border: none;
+			box-shadow: none;
+			background: transparent;
+		}
 		
 		#inner-liner {
 			background-color: white;
-			border: 1px solid #7f8a76;
+			border: 1px solid $innerBorderColor;
 			margin: 10px;
 			padding: 0;
 			position: inherit;
-			width: 820px;
 		}
 		
 		#it {
-			border: 1px solid #7f8a76;
+			border: 1px solid $innerBorderColor;
 			border-width: 1px 0;
 			overflow: hidden;
 		}
@@ -81,13 +71,12 @@ body {
 				z-index: 1;
 				filter: drop-shadow(2px 2px 3px rgb(143, 69, 13))
 			}
-
-			@import 'nav';
 		}
 	
 		footer {
 			background: #6b6d6a;
 			overflow: hidden;
+			padding: 0 15px;
 		
 			p {
 				color: white;
@@ -106,10 +95,10 @@ body {
 			color: black;
 			
 			&:hover {
-				color: #EC762C;
+				color: $orange;
 			}
 			&:active {
-				color: #EC762C;
+				color: $orange;
 			}
 		}
 	
@@ -119,8 +108,8 @@ body {
 		@import 'syntax_highlighting';
 		.highlight {
 			& pre {
-				background:#eee;
-				border: 1px solid lightgray;
+				background: $lightGrayBackgroundColor;
+				border: 1px solid $lightGrayBorderColor;
 				border-radius: 3px;
 				padding: 5px 10px;
 				line-height: 1.5;
@@ -167,8 +156,8 @@ body {
 		}
 
 		code {
-			background: #eee;
-			border: 1px solid lightgray;
+			background: $lightGrayBackgroundColor;
+			border: 1px solid $lightGrayBorderColor;
 			border-radius: 3px;
 			padding: 2px 4px;
 		}

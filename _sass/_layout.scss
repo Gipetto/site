@@ -3,6 +3,7 @@
 
 	&.grid-col {
 		flex-direction: column;
+		
 		.grid-cell {
 			flex: 1;
 		}
@@ -10,8 +11,13 @@
 
 	&.grid-row {
 		flex-direction: row;
+		
 		.grid-cell {
 			flex: none !important;
+		}
+
+		@media screen and (max-width: $maxResponsiveWidth) {
+			flex-direction: column;
 		}
 	}
 }
@@ -19,8 +25,16 @@
 #it {
 	#stuff {
 		width: 69.5%;
+
+		@media screen and (max-width: $maxResponsiveWidth) {
+			width: 100%;
+		}
 	}
 	#less-important-stuff {
 		width: 30.5%;
-	}	
+
+		@media screen and (max-width: $maxResponsiveWidth) {
+			width: 100%;
+		}
+	}
 }
