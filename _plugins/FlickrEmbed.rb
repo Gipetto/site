@@ -97,7 +97,7 @@ module Jekyll
  
       caption = "
 #{xml_escape(photo['info']['title'])}<br />
-<a href=\\\"#{flickr_url}\\\" rel=\\\"external\\\" target=\\\"_blank\\\">View on Flickr.</a>
+<a href=\\\"#{flickr_url}\\\" rel=\\\"external\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\">View on Flickr.</a>
       ".strip()
 
       srcset = getSizes(photo)

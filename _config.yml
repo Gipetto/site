@@ -12,9 +12,20 @@ encoding: utf-8
 timezone: America/Los_Angeles
 # Build settings
 markdown: kramdown
+sass:
+  style: compressed
+compress_html:
+  clippings: all
+  # note the spaces, this preserves conditional comments
+  comments: ["<!-- ", " -->"]
+  startings: []
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+# Build on top of the Minima theme functionality
 theme: minima
-# paginate: 5
-# paginate_path: /:num/
 excerpt_separator: <!--more-->
 feed:
   path: feed
@@ -22,7 +33,6 @@ plugins:
 #  - jekyll-seo-tag
 #  - jekyll-sitemap
   - jekyll-feed
-#  - jekyll-paginate
   - jekyll-twitter-plugin
 kramdown:
   input: GFM

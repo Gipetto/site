@@ -1,12 +1,13 @@
 "use strict";
 
-document.addEventListener('DOMContentLoaded', function(event) {
-    let nav = document.getElementsByTagName('header')[0]
-        .getElementsByTagName('nav')[0];
-    let hamburger = nav.getElementsByClassName('hamburger')[0];
-    
-    hamburger.getElementsByTagName('a')[0].onclick = function(e) {
+const hamburger = (function() {
+    let nav = false;
+    return function(e) {
         e.preventDefault();
+        if (!nav) {
+            nav = document.getElementsByTagName('header')[0]
+                .getElementsByTagName('nav')[0];        
+        }
         nav.classList.toggle('hamburgled');
-    };
-});
+    }
+})();
