@@ -11,6 +11,8 @@ section: home
         {{ page.date | date: date_format }}
     </p>
     {{ page.excerpt }}
+
+    <p class="muted-n-stuff">Tagged as: {{ page.tags | join: ', ' | downcase }}</p>
 </section>
 
 {% include pagination.html %}
