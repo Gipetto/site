@@ -24,14 +24,14 @@
 
 #it {
 	#stuff {
-		width: 69.5%;
+		width: 70%;
 
 		@media screen and (max-width: $maxResponsiveWidth) {
 			width: 100%;
 		}
 	}
 	#less-important-stuff {
-		width: 30.5%;
+		width: 30%;
 
 		@media screen and (max-width: $maxResponsiveWidth) {
 			width: 100%;

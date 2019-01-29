@@ -23,11 +23,6 @@
 nav {
 	position: absolute;
 
-	&:not(&.hamburgled) {
-		bottom: 0;
-		right: 5px;	
-	}
-
 	#hamburger {
 		fill: white;
 	}
@@ -96,16 +91,41 @@ nav {
 		}
 	}
 
+	@media screen and (min-width: $menuReflowWidth) {
+		bottom: 0;
+		right: 5px;
+	}
+
+	// gentle reflow
+	@media screen and (max-width: $menuReflowWidth) {
+		position: relative;
+		margin-top: 70px;
+
+		ul {
+			height: 35px;
+			justify-content: center;
+			
+			li {
+				flex-grow: 1;
+
+				a {
+					padding: 0;
+				}
+			}
+		}
+	}
+
+	// smallest state, hamburger it!
 	@media screen and (max-width: $menuCollapseWidth) {
 		position: relative;
-		top: 5px;
+		top: 10px;
+		margin: 0;
 
 		ul {
 			flex-direction: column;
 			width: 100%;
 			height: auto;
-
-			background: green;
+			margin-bottom: 10px;
 
 			li {
 				text-align: right;
@@ -114,8 +134,14 @@ nav {
 
 			li:first-child {
 				display: block;
+
 				a {
 					text-decoration: none;
+
+					svg {
+						transition: all linear .5s;
+						transition-property: transform;
+					}
 				}
 			}
 
@@ -124,14 +150,25 @@ nav {
 				opacity: 0;
 				height: 0;
 				transition: all linear .5s;
+				text-align: center;
+
+				a {
+					width: 100%;
+				}
 			}
 		}
 
 		&.hamburgled {
 			ul {
+				li:first-child {
+					a {
+						svg {
+							transform: rotate(-90deg);
+						}
+					}
+				}
 				li:not(:first-child) {
-					display: block;
-					height: 20px;
+					height: 30px;
 					opacity: 1;
 				}
 			}
