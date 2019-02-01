@@ -13,3 +13,6 @@ serve:
 		--livereload \
 		--incremental \
 		--profile
+
+serve-avatar:
+	cd avatar && php -S 0.0.0.0:8000

@@ -9,7 +9,19 @@ description: >-
 baseurl: ""
 url: "https://top-frog.com"
 encoding: utf-8
+lang: en_US
 timezone: America/Los_Angeles
+twitter:
+  username: wookieeboy
+  card: summary
+logo: /assets/big-frog.svg
+social:
+  name: Shawn Parker
+  links:
+    - https://twitter.com/WookieeBoy
+    - https://www.linkedin.com/in/ShawnParker
+    - https://www.flickr.com/photos/tehgipster
+    - https://github.com/Gipetto
 # Build settings
 markdown: kramdown
 sass:
@@ -30,8 +42,8 @@ excerpt_separator: <!--more-->
 feed:
   path: feed
 plugins:
-#  - jekyll-seo-tag
-#  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-feed
   - jekyll-twitter-plugin
 kramdown:

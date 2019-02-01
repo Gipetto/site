@@ -37,7 +37,8 @@ gem 'gsl'
 gem "hpricot"
 gem "jekyll-twitter-plugin" # only to satisfy the minima base theme
 gem "open_uri_redirections"
-# gem 'jekyll-paginate'
 gem 'flickraw-cached'
 gem 'classifier-reborn'
+gem 'jekyll-sitemap'
+gem 'jekyll-seo-tag'
 # gem 'jekyll-include-cache'

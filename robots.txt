@@ -1,0 +1,4 @@
+User-agent: * 
+Disallow: /dl
+Disallow: /script_src
+Sitemap: http://top-frog.com/sitemap.xml 
