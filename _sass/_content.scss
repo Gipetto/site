@@ -144,6 +144,8 @@
 					a {
 						text-decoration: none;
 						&:hover {
+							color: orange;
+							font-weight: bold;
 							text-decoration: underline;
 						}
 					}

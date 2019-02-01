@@ -129,11 +129,33 @@
 
 		.socialwidget {
 			ul {
+				position: relative;
+				display: flex;
+				flex-direction: row;
+
 				li {
 					align-items: center;
-					display: flex;
+					text-align: center;
+					flex-grow: 1;
+
 					a {
 						flex: 1;
+
+						span {
+							display: none;
+						}
+
+						&:hover {
+							span {
+								position: absolute;
+								display: block;
+								left: 0;
+								width: 100%;
+								top: 32px;
+								color: black;
+								font-weight: normal;
+							}
+						}
 					}
 				}
 			}
