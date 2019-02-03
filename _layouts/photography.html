@@ -1,0 +1,13 @@
+---
+layout: base
+section: photography
+---
+<div class="grid grid-row">
+    <div id="stuff" class="grid-cell photography">
+        <h2 class="tome">{{ page.section | default: layout.section }}</h2>
+        <article class="drivel">
+            <h3>{{ page.title | escape }}</h3>
+            {{ content }}
+        </article>
+    </div>
+</div>

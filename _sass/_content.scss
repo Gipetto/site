@@ -67,9 +67,12 @@
 		width: 150px;
 		height: 150px;
 		border-radius: 50%;
-		border: 1px solid #f4feee;
 		float: right;
-		margin: 0 10px 0 35px;
+		margin: -15px 10px 0 35px;
+
+		img {
+			border-radius: 50%;
+		}
 	}
 
 	.drivel {
@@ -165,6 +168,41 @@
 			dd {
 				margin: 5px 0 5px 15px;
 			}	
+		}
+
+		.gallery {
+			margin-top: 2em;
+
+			.loader {
+				opacity: 1;
+				text-align: center;
+				transition-property: opacity;
+				
+				svg {
+					opacity: 0.25;
+					filter: grayscale(100%);
+				}
+			}
+
+			.frame {
+				width: 33%;
+				padding: 0;
+				margin-bottom: 2px;
+
+				@media screen and (max-width: $menuCollapseWidth) {
+					width: 49%;
+				}
+
+				img {
+					transition: all linear .5s;
+					transition-property: opacity;
+					margin: 0;
+					border: none;
+					padding: 0;
+					visibility: 'hidden';
+					opacity: 0;
+				}
+			}
 		}
 	}
 

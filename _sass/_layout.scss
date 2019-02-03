@@ -29,6 +29,10 @@
 		@media screen and (max-width: $maxResponsiveWidth) {
 			width: 100%;
 		}
+
+		&.photography {
+			width: 100%;
+		}
 	}
 	#less-important-stuff {
 		width: 30%;

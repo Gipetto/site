@@ -1,0 +1,24 @@
+---
+layout: compress
+---
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ page.lang | default: site.lang | default: 'en' }}"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="{{ page.lang | default: site.lang | default: 'en' }}"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="{{ page.lang | default: site.lang | default: 'en' }}"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ page.lang | default: site.lang | default: 'en' }}"> <!--<![endif]-->
+{%- include head.html -%}
+<body id="top-frog-com" class="{{ page.section | default: layout.section }}">
+    <div id="bag-o-holding" class="grid grid-col">
+        <div class="grid-cell">
+            <div id="inner-liner" class="grid grid-col">
+                {%- include header.html -%}
+                <div id="it" class="grid-cell">
+                    {{ content }}
+                </div>
+                {%- include footer.html -%}
+            </div>
+        </div>
+    </div>
+    {%- include scripts.html -%}
+</body>
+</html>
