@@ -3,6 +3,8 @@
     <img src="{{ include.img_sm }}" alt="{{ include.title }}" 
         {% if include.srcset %}srcset="{{ include.srcset }}"{% endif %}
         {% if include.sizesSmall %}sizes="{{ include.sizesSmall }}"{% endif %}
+        {% if include.img_sm_width %}width="{{ include.img_sm_width }}"{% endif %}
+        {% if include.img_sm_height %}height="{{ include.img_sm_height }}"{% endif %}
     />
 </a>
 {% if include.center %}</center>{% endif %}

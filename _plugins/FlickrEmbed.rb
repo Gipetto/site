@@ -132,6 +132,8 @@ module FlickrStuff
         id=\"#{@photo_id}\"
         img_lg=\"#{large_photo_url}\"
         img_sm=\"#{photo['sizes']['Medium']['source']}\"
+        img_sm_width=\"#{photo['sizes']['Medium']['width']}\"
+        img_sm_height=\"#{photo['sizes']['Medium']['height']}\"
         title=\"#{xml_escape(photo['info']['title'])}\"
         caption=\"#{caption}\"
         center=#{vertical}
@@ -163,7 +165,7 @@ module FlickrStuff
     def render(context)
       photo_set = getPhotoSet(@photoset_id)
 
-      loader = File.read('./assets/frog-simple.svg')
+      loader = File.read('./assets/big-frog.svg')
 
       stupid_html_string = '<div class="gallery">'
       stupid_html_string << "<div class=\"loader\">#{loader}</div>"
