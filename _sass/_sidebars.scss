@@ -128,6 +128,9 @@
 		}
 
 		.socialwidget {
+			.icon-sprite {
+				display: none;
+			}
 			ul {
 				position: relative;
 				display: flex;
@@ -140,6 +143,11 @@
 
 					a {
 						flex: 1;
+
+						.icon {
+							width: 16px;
+							height: 16px;
+						}
 
 						span {
 							display: none;

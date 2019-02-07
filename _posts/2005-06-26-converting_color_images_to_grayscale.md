@@ -21,7 +21,7 @@ This is an old technique but one that I think far too few people know about. The
 
 #### Getting started
 
-{% include lightbox.html 
+{% include lightbox.html
   id="colorOrig"
   img_lg="/assets/articles/grayscale-orig.jpg"
   img_sm="/assets/articles/grayscale-orig-thumb.jpg"

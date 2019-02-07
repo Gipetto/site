@@ -1,19 +1,23 @@
-{% if include.center %}<center>{% endif %}
-<a href="#{{ include.id }}" class="thickbox frame {{ include.additional_classes | default: '' }}">
-    <img src="{{ include.img_sm }}" alt="{{ include.title }}" 
-        {% if include.srcset %}srcset="{{ include.srcset }}"{% endif %}
-        {% if include.sizesSmall %}sizes="{{ include.sizesSmall }}"{% endif %}
-        {% if include.img_sm_width %}width="{{ include.img_sm_width }}"{% endif %}
-        {% if include.img_sm_height %}height="{{ include.img_sm_height }}"{% endif %}
-    />
-</a>
-{% if include.center %}</center>{% endif %}
-<div class="lightbox" id="{{ include.id }}">
+<div>
+    {% if include.center %}<center>{% endif %}
+    <a href="#i{{ include.id }}" class="thickbox frame {{ include.additional_classes | default: '' }}">
+        <img src="{{ include.img_sm | default: '' }}" alt="{{ include.title }}"
+            {% if include.data_src_tiny %}data-src-tiny="{{ include.data_src_tiny }}"{% endif %}
+            {% if include.data_src %}data-src="{{ include.data_src }}"{% endif %}
+            {% if include.srcset %}srcset="{{ include.srcset }}"{% endif %}
+            {% if include.sizesSmall %}sizes="{{ include.sizesSmall }}"{% endif %}
+            {% if include.img_sm_width %}width="{{ include.img_sm_width }}"{% endif %}
+            {% if include.img_sm_height %}height="{{ include.img_sm_height }}"{% endif %}
+        />
+    </a>
+    {% if include.center %}</center>{% endif %}
+</div>
+<div class="lightbox" id="i{{ include.id }}">
     <figure>
         <a href="#!">
-            <img src="{{ include.img_lg }}" alt="{{ include.title }}" 
-                {% if include.srcset %}srcset="{{ include.srcset }}"{% endif %}
-                {% if include.sizesLarge %}sizes="{{ include.sizesLarge }}"{% endif %}
+            <img src="" data-src="{{ include.img_lg }}" alt="{{ include.title }}" 
+                {% if include.img_lg_width %}width="{{ include.img_lg_width }}"{% endif %}
+                {% if include.img_lg_height %}height="{{ include.img_lg_height }}"{% endif %}
             />
         </a>
         <figcaption>{{ include.caption }}</figcaption>

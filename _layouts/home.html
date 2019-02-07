@@ -4,7 +4,7 @@ section: home
 ---
 
 {% assign page = site.posts.first %}
-<section class="drivel">
+<article class="drivel">
     <h3><a href="{{ page.url }}" rel="canonical">{{ page.title | escape }}</a></h3>
     <p class="muted-n-stuff">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -13,6 +13,6 @@ section: home
     {{ page.excerpt }}
 
     <p class="muted-n-stuff">Tagged as: {{ page.tags | join: ', ' | downcase }}</p>
-</section>
+</article>
 
 {% include pagination.html %}

@@ -1,7 +1,7 @@
 <header class="grid-cell">
     <h1>The Gippy Pages</h1>
     <a href="/" rel="index">
-        <img class="frog" src="/assets/big-frog.svg" rel="home index" 
+        <img class="frog" src="/assets/big-frog.optimized.svg" rel="home index" 
             alt="Top Frog Logo" height="165" />
     </a>
     <a href="/" rel="index">
@@ -23,16 +23,20 @@
             </li>
             <li class="photography">
                 <a href="/photography">photography</a>
+                <ul class="subnav">
+                    {% comment %} <li>
+                        <a href="/photography">general</a>
+                    </li> {% endcomment %}
+                    <li>
+                        <a href="/photography/concerts">concerts</a>
+                    </li>
+                    <li>
+                        <a href="/photography/dogs">dogs</a>
+                    </li>
+                </ul>
             </li>
             <li class="projects">
                 <a href="/projects">projects</a>
-                <!--
-                <ul class="subnav">
-                    <li>
-                        <a href="/projects/cowsay">PHP Cowsay</a>
-                    </li>
-                </ul>
-                -->
             </li>
             <li class="about">
                 <a href="/about" rel="author">about</a>

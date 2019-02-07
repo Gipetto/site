@@ -33,7 +33,7 @@ nav {
 		height: 43px;
 	
 		li {
-			&:first-child {
+			&.hamburger {
 				display: none;
 			}
 
@@ -52,6 +52,7 @@ nav {
 				padding: 5px 8px;
 				text-decoration: none;
 				z-index: 10;
+				position: relative;
 				cursor: pointer !important;
 
 				&:before, &:after {
@@ -64,6 +65,47 @@ nav {
 				&:hover {
 					color: white;
 					text-decoration: underline;
+				}
+			}
+
+			.subnav {
+				position: absolute;
+				display: none;
+				flex-direction: column;
+				background-color: #d36d2d;
+				height: auto;
+				min-width: 100%;
+				top: -5px;
+				left: 50%;
+				transform: translateX(-50%);
+				font-size: 0.95em;
+				border-radius: 5px;
+				padding-top: 35px;
+				z-index: 2;
+				box-shadow: 1px 1px 3px rgba(143, 69, 13, 0.8);
+
+				li {
+					line-height: 1.5em;
+
+					a {
+						display: block;
+						white-space: nowrap;
+						padding: 5px;
+					
+						&:last-child {
+							padding-bottom: 8px;
+						}
+					}
+				}
+			}
+
+			&:hover {
+				a {
+					z-index: 15;
+				}
+				.subnav {
+					display: flex;
+					z-index: 14;
 				}
 			}
 
@@ -132,7 +174,7 @@ nav {
 				width: 100%;
 			}
 
-			li:first-child {
+			li.hamburger {
 				display: block;
 
 				a {

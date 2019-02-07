@@ -94,6 +94,10 @@ module FlickrStuff
     end
   end
 
+  def getLargePhotoSize(photo)
+    return photo['sizes'].key?('Large') ? 'Large' : 'Original'
+  end
+
   class FlickrPhoto < Liquid::Tag
     include Jekyll::Filters
     include FlickrStuff
@@ -106,8 +110,7 @@ module FlickrStuff
 
     def render(context)
       photo = getPhotoInfo(@photo_id)
-
-      large_photo_url = getLargePhotoUrl(photo)
+      large_photo_size = getLargePhotoSize(photo)
       vertical = isVertical(photo)
       caption = getCaption(photo, context)
       srcset = getSizes(photo)
@@ -119,19 +122,21 @@ module FlickrStuff
         "500px"
       ]
 
-      sizesLarge = [
-        "(max-width: 340px) 320px",
-        "(max-width: 520px) 500px",
-        "(max-width: 660px) 640px", 
-        photo['sizes'].key?('Large') ? "(max-width: 1044px) 1024px" : "1024", 
-        photo['sizes'].key('Large') ? "1650px" : ""
-      ].reject!(&:empty?)
+      # sizesLarge = [
+      #   "(max-width: 340px) 320px",
+      #   "(max-width: 520px) 500px",
+      #   "(max-width: 660px) 640px", 
+      #   photo['sizes'].key?('Large') ? "(max-width: 1044px) 1024px" : "1024", 
+      #   photo['sizes'].key('Large') ? "1650px" : ""
+      # ].reject!(&:empty?)
 
       # Seems fucky, but works
-      Liquid::Template.parse("{% include lightbox.html 
+      Liquid::Template.parse("{%- include lightbox.html 
         id=\"#{@photo_id}\"
-        img_lg=\"#{large_photo_url}\"
-        img_sm=\"#{photo['sizes']['Medium']['source']}\"
+        img_lg=\"#{photo['sizes'][large_photo_size]['source']}\"
+        img_lg_width=\"#{photo['sizes'][large_photo_size]['width']}\"
+        img_lg_height=\"#{photo['sizes'][large_photo_size]['height']}\"
+        img_sm=\"#{photo['sizes']['Small']['source']}\"
         img_sm_width=\"#{photo['sizes']['Medium']['width']}\"
         img_sm_height=\"#{photo['sizes']['Medium']['height']}\"
         title=\"#{xml_escape(photo['info']['title'])}\"
@@ -139,8 +144,7 @@ module FlickrStuff
         center=#{vertical}
         srcset=\"#{srcset.join(', ')}\"
         sizesSmall=\"#{sizesSmall.join(', ')}\"
-        sizesLarge=\"#{sizesLarge.join(', ')}\"
-      %}").render(context)
+      -%}").render(context)
     end
   end
 
@@ -165,22 +169,25 @@ module FlickrStuff
     def render(context)
       photo_set = getPhotoSet(@photoset_id)
 
-      loader = File.read('./assets/big-frog.svg')
-
       stupid_html_string = '<div class="gallery">'
-      stupid_html_string << "<div class=\"loader\">#{loader}</div>"
+      stupid_html_string << Liquid::Template
+        .parse('{%- include gallery-loader.html -%}')
+        .render(context)
 
       photo_set['photo'].each { |photo|
-        large_photo_url = getLargePhotoUrl(photo)
+        large_photo_size = getLargePhotoSize(photo)
         caption = getCaption(photo, context)
 
-        stupid_html_string << Liquid::Template.parse("{% include lightbox.html
+        stupid_html_string << Liquid::Template.parse("{%- include lightbox.html
           id=\"#{photo['info']['id']}\"
-          img_lg=\"#{large_photo_url}\"
-          img_sm=\"#{photo['sizes']['Medium']['source']}\"
+          img_lg=\"#{photo['sizes'][large_photo_size]['source']}\"
+          img_lg_width=\"#{photo['sizes'][large_photo_size]['width']}\"
+          img_lg_height=\"#{photo['sizes'][large_photo_size]['height']}\"
+          data_src=\"#{photo['sizes']['Medium']['source']}\"
+          data_src_tiny=\"#{photo['sizes']['Small']['source']}\"
           title=\"#{xml_escape(photo['info']['title'])}\"
           caption=\"#{caption}\"
-        %}").render(context)
+        -%}").render(context)
       }
       
       stupid_html_string << '</div>'

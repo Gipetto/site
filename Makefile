@@ -7,7 +7,7 @@ watch:
 	jekyll build --lsi --watch
 
 serve:
-	jekyll serve --host=0.0.0.0 \
+	JEKYLL_ENV=local jekyll serve --host=0.0.0.0 \
 		--trace \
 		--lsi \
 		--livereload \
