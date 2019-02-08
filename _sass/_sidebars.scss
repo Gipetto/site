@@ -2,9 +2,6 @@
 	background: $sidebarBackgroundColor;
 	border-left: 1px solid $innerBorderColor;
 	box-sizing: border-box;
-	-mox-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
 
 	aside {
 		margin: 10px 17px 30px;
@@ -85,7 +82,7 @@
 
 		.widget-title {
 			border-bottom: 1px dotted white;
-			font-family: Georgia, "Times New Roman", serif;
+			font-family: $header-font-family;
 			font-size: 1.3em;
 			font-weight: bold;
 			margin: 0;
