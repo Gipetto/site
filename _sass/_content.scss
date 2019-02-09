@@ -352,18 +352,14 @@
 		padding: 1em 3em;
 		text-align: center;
 
-		h2 {
-			font-size: 8em;
-			margin: 1rem 0 0 0;
-			color: #dbdbdb;
-			text-shadow: 
-				1px 1px #f38e4f, 
-				2px 2px #f38e4f, 
-				3px 3px #f38e4f,
-				4px 4px #f38e4f,
-				5px 5px #f38e4f,
-				6px 6px #f38e4f,
-				7px 7px #f38e4f;
+		svg {
+			margin-top: 1em;
+			width: 75%;
+		}
+
+		h3 {
+			font-weight: bold;
+			font-size: 2em;
 		}
 	}
 }

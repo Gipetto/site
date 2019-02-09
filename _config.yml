@@ -8,13 +8,14 @@ description: >-
   content known by the State of California to cause cancer.
 baseurl: ""
 url: "https://top-frog.com"
+permalink: /:year/:month/:day/:title:output_ext
 encoding: utf-8
 lang: en-US
 timezone: America/Los_Angeles
 twitter:
   username: wookieeboy
   card: summary
-logo: /assets/big-frog.svg
+logo: /assets/big-frog.optimized.svg
 social:
   name: Shawn Parker
   links:
@@ -22,22 +23,19 @@ social:
     - https://www.linkedin.com/in/ShawnParker
     - https://www.flickr.com/photos/tehgipster
     - https://github.com/Gipetto
-# Build settings
 markdown: kramdown
 sass:
   style: compressed
 compress_html:
   clippings: all
-  # note the spaces, this preserves conditional comments
-  comments: ["<!-- ", " -->"]
+  comments: ["<!-- ", " -->"] # note the spaces, this preserves conditional comments
   startings: []
   endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
   profile: false
   blanklines: false
   ignore:
-    envs: []
-# Build on top of the Minima theme functionality
-theme: minima
+    envs: ['local']
+theme: minima # Build on top of the Minima theme functionality
 excerpt_separator: <!--more-->
 feed:
   path: feed
@@ -54,9 +52,9 @@ kramdown:
       line_numbers: false
 include:
   - .htaccess
-# Exclude from processing.
 exclude:
   - _drafts
+  - _bin
   - Gemfile
   - Gemfile.lock
   - Makefile

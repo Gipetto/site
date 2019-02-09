@@ -2,4 +2,5 @@
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 {% endif %}
-<script src="/js/behavior.js" async></script>
+
+<script src="/js/behavior{% if jekyll.environment == 'production' %}.min{% endif %}.js" async></script>

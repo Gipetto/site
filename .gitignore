@@ -1,6 +1,9 @@
 _site
+_bin
+js/*.min.*
 .tweet-cache
 .sass-cache
 .jekyll-metadata
 .vscode
 .DS_Store
+.flickr-cache.json

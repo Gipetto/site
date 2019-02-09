@@ -1,7 +1,7 @@
 "use strict";
 
-const hamburger = (function() {
-    let nav = false;
+var hamburger = (function() {
+    var nav = false;
     return function(e) {
         e.preventDefault();
         if (!nav) {
@@ -11,6 +11,29 @@ const hamburger = (function() {
         nav.classList.toggle('hamburgled');
     }
 })();
+
+function lazyLoad(i) {
+    var thisun = thickboxen[i].querySelector('img');
+    console.log(thisun.dataset);
+
+    if (!thisun.dataset.primed && thisun.dataset.src) {
+        thisun.addEventListener('load', function() {
+            var next = ++i;
+            if (thickboxen[next] != undefined) {
+                lazyLoad(next);
+            }
+        });
+
+        thisun.src = is4G ? thisun.dataset.src : thisun.dataset.srcTiny;
+        thisun.dataset.primed = true;
+        thisun.style.visibility = 'visible';
+        msnry.layout();
+
+        setTimeout(function() {
+            thisun.style.opacity = 1;
+        }, 100);
+    }
+}
 
 function fluffyBunnies() {
     var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
@@ -59,28 +82,6 @@ function fluffyBunnies() {
         });
     
         var thickboxen = document.querySelectorAll('.thickbox');
-        function lazyLoad(i) {
-            var thisun = thickboxen[i].querySelector('img');
-            console.log(thisun.dataset);
-    
-            if (!thisun.dataset.primed && thisun.dataset.src) {
-                thisun.addEventListener('load', function() {
-                    var next = ++i;
-                    if (thickboxen[next] != undefined) {
-                        lazyLoad(next);
-                    }
-                });
-    
-                thisun.src = is4G ? thisun.dataset.src : thisun.dataset.srcTiny;
-                thisun.dataset.primed = true;
-                thisun.style.visibility = 'visible';
-                msnry.layout();
-    
-                setTimeout(function() {
-                    thisun.style.opacity = 1;
-                }, 100);
-            }
-        }
         lazyLoad(0, false);
 
         imagesLoaded(gal, function() {
@@ -89,8 +90,6 @@ function fluffyBunnies() {
     }
 }
 
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fluffyBunnies, false);
-} else {
+'loading' === document.readyState ? 
+    document.addEventListener('DOMContentLoaded', fluffyBunnies, false) :
     fluffyBunnies();
-}
