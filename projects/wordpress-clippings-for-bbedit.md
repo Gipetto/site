@@ -5,7 +5,7 @@ section: projects
 ---
 
 <div class="alert warning">
-    <b>Notice:</b> This plugin was last updated in July of 2013. I no longer work in WordPress every day, and TextMate isn't used as much as it used to, so this plugin is not longer in active development.
+    <b>Notice:</b> This plugin was last updated in July of 2013. I no longer work in WordPress every day, and I just don't use BBEdit any more, so this plugin is no longer in active development.
     
     If you'd like to take over this plugin do let me know.
 </div>

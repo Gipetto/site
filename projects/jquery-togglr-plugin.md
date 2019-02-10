@@ -4,6 +4,10 @@ title: jQuery Togglr Plugin
 section: projects
 ---
 
+<div class="alert warning">
+    <b>Notice:</b> This plugin was written in 2013. With the state of modern browser features this plugin is overkill. A few lines of vanilla javascript and some css can take the place of this plugin. Figure it out. You'll be glad you did. 
+</div>
+
 The jQuery Togglr Plugin is designed to eliminate some of the redundant code that we end up using a lot at work. A lot of admin areas in WordPress benefit from the ability to show and hide content. With the Togglr Plugin this can be achieved quickly and consistently and it degrades nicely if some other plugin kills your javascript.
 
 <a class="darr" href="#download">Skip to download link</a>

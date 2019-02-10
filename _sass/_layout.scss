@@ -22,6 +22,23 @@ body {
 				flex-direction: column;
 			}
 		}
+
+		&.grid-box {
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin: 0 -20px 0 -20px;
+
+			.grid-cell {
+				width: 40%;
+				margin: 0 20px;
+				flex-shrink: 1;
+
+				@media screen and (max-width: $menuCollapseWidth) {
+					width: 90%;
+					margin: 0 0 0 20px;
+				}
+			}
+		}
 	}
 
 	#bag-o-holding {

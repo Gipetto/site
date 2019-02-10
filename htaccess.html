@@ -1,12 +1,40 @@
-Header set X-Frame-Options: DENY
-Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+---
+title: .htaccess
+permalink: .htaccess
+---
+{% capture include_to_scssify -%}
+{%- include _layout.scss -%}
+{%- include _nav.scss -%}
+{%- endcapture %}
+{% assign headCssSha = include_to_scssify | scssify | strip | sha256 %}
+{% assign cspDefault = "default-src 'self'" %}
+{% assign cspScript = "script-src 'self' https://unpkg.com" %}
+{% assign cspStyle = "style-src 'self'" %}
+{% assign cspImg = "img-src 'self' *.staticflickr.com *.flickr.com data:" %}
+{% assign cspConnect = "connect-src 'self'" %}
+{% assign cspFrame = "frame-src *.youtube.com" %}
 
-php_value upload_max_file_size 2M
-php_value post_max_size 2M
+{% if jekyll.environment == 'production' %}
+Header unset X-Powered-By
+Header set X-Frame-Options: DENY
+Header set X-Content-Type-Options nosniff
+Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+{% endif %}
+Header set Content-Security-Policy "{{ cspDefault }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }} 'sha256-{{ headCssSha }}'; {{ cspConnect }}; {{ cspFrame }};"
+
+IndexIgnore *
+DirectoryIndex index.html index.php
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+FileETag None
+
+# php_value upload_max_file_size 2M
+# php_value post_max_size 2M
 php_flag log_errors on
 php_flag display_errors off
 php_value error_reporting 32767
 
+{% if jekyll.environment == 'production' %}
 <IfModule mod_expires.c>
 ExpiresActive On
 ExpiresByType application/pdf A31536000
@@ -28,35 +56,38 @@ ExpiresByType application/zip A31536000
         Header set Pragma "public"
         Header append Cache-Control "public, must-revalidate, proxy-revalidate"
     </IfModule>
-    FileETag None
     <IfModule mod_deflate.c>
         SetOutputFilter DEFLATE
-        DeflateCompressionLevel 7
-        DeflateMemLevel 8
-        DeflateWindowSize 10
     </IfModule>
 </FilesMatch>
+{% endif %}
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
 
+# I'm told this is the future...
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-RewriteCond %{REQUEST_URI} ^/video
-RewriteRule . - [L,NC,QSA]
-
 # catch avatar requests
 RewriteCond %{REQUEST_URI} /avatar.png
-RewriteRule ^(.*)? /avatar.php [L]
+RewriteRule ^(.*)? /avatar/index.php [L,NC,QSA]
 
 # catch old RSS feed url
 RewriteCond %{REQUEST_URI} ^/rss
 RewriteRule ^(.*)$ /feed [L,R=301]
 
-# video token
+# video & tokens
+RewriteCond %{REQUEST_URI} ^/video
+RewriteRule . - [L,NC,QSA]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^token.* /token/index.php [L]
+
+# ensure file extensions
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+)$ $1\.html [L]
 </IfModule>

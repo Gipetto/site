@@ -7,9 +7,9 @@ RSS is an XML formatted file that is used to syndicate website content. RSS has 
 
 ### Why use RSS?
 
-RSS is a way of automatically grabbing updated content from frequently visited sites. If you read more than 20 websites regularly then RSS is right for you. Instead of browsing 20 sites a day you check your feed reader to see who has updated and only visit the sites that have new content - provided the sites you read make content available by RSS. This allows you to either save time spent reading or to find more sites to read.
+For a comsumer, RSS is a way of automatically grabbing updated content from frequently visited sites. If you read more than 20 websites regularly then RSS is right for you. Instead of browsing 20 sites a day you check your feed reader to see who has updated and only visit the sites that have new content - provided the sites you read make content available by RSS. This allows you to either save time spent reading or to find more sites to read.
 
-Since a feed reader actually downloads its content you do not have to be connected to read updates that you have already downloaded. Because of this some feed readers allow you to save articles as well for further reference. Most readers will keep a history of read articles so you can go back and find a previously read article if needed. Without actually saving an article the old articles will eventually be purged from the history.
+Since most feed readers download and cache the content you do not have to be connected to read updates that you have already downloaded. Because of this some feed readers allow you to save articles as well for further reference. Most readers will keep a history of read articles so you can go back and find a previously read article if needed. Without actually saving an article the old articles will eventually be purged from the history.
 
 ### How do I use an RSS Feed?
 

@@ -9,6 +9,10 @@ body {
 		background-color: $innerBackgroundColor;
 	}
 
+	.icons-sprite {
+		display: none;
+	}
+
 	#bag-o-holding {
 		background-color: $innerBackgroundColor;
 		border: 1px solid $borderColor;
@@ -64,7 +68,13 @@ body {
 				height: 65px;
 				top: 54px;
 				z-index: 98;
-				filter: drop-shadow(2px 2px 3px rgb(143, 69, 13))
+				filter: drop-shadow(2px 2px 3px rgb(143, 69, 13));
+
+				@media screen and (max-width: $menuReflowWidth) {
+					height: auto !important;
+					max-height: 65px;
+					width: 60%;
+				}
 			}
 		}
 	
@@ -89,10 +99,7 @@ body {
 		a {
 			color: black;
 			
-			&:hover {
-				color: $orange;
-			}
-			&:active {
+			&:hover, &:active {
 				color: $orange;
 			}
 		}
@@ -149,6 +156,15 @@ body {
 				@include linkHanger();
 			}
 		}
+
+		// .ext {
+		// 	&:before {
+		// 		background-image: url('data:image/svg+xml,<svg preserveAspectRatio="xMinYMin meet" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g class="icon_svg-stroke" stroke="#666" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M17 13.5v6H5v-12h6M14 4.5h6v6m0-6l-9 9"/></g></svg>');
+		// 		@include linkHanger();
+		// 		width: 16px;
+		// 		height: 16px;
+		// 	}
+		// }
 
 		code {
 			background: $lightGrayBackgroundColor;
