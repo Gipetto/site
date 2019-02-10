@@ -22,7 +22,7 @@ tags:
   - velvia
 ---
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="abandonedCar"
   img_lg="/assets/articles/abandoned-car.jpg"
   img_sm="/assets/articles/abandoned-car-thumb.jpg"

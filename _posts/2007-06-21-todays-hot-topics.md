@@ -18,7 +18,7 @@ tags:
 ---
 #### Today's Hot Topics
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="goCart1"
   img_lg="/assets/articles/microphone.png"
   img_sm="/assets/articles/hot_topic_logo_thumb.png"

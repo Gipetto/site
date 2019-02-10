@@ -24,7 +24,7 @@ tags:
   - time
 ---
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="starStreaks"
   img_lg="/assets/articles/stars1.jpg"
   img_sm="/assets/articles/stars1-thumb.jpg"

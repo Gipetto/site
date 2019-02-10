@@ -11,7 +11,7 @@ You may have to install `nmatrix` and `narray` gems first, then install `gsl`.
 
 ## Lightbox
 
-	{% include lightbox.html 
+	{% include lightbox-image.html 
 		id="unique-url-safe-id"
 		img_lg="/path/to/large/photo.jpg"
 		img_sm="/path/to/small/photo.jpg"

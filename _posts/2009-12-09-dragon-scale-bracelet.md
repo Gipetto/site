@@ -31,7 +31,7 @@ I'm doing some photography for ~~[Seod&oacute;ir](http://web.me.com/neddierah/Se
   * 1 black sheet
   * 1 black ceramic cylinder (purchased for $1.99 at Goodwill)
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="dragonScalesSetup"
   img_lg="/assets/articles/dragon-scales-setup-large.jpg"
   img_sm="/assets/articles/dragon-scales-setup-small.jpg"

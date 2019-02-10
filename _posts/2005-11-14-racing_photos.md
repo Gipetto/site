@@ -30,7 +30,7 @@ The shots are bit soft. I couldn't track these guys manually and my old camera j
 
 <center>
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="porsche1"
   img_lg="/assets/articles/p1h.jpg"
   img_sm="/assets/articles/p1.jpg"
@@ -38,7 +38,7 @@ The shots are bit soft. I couldn't track these guys manually and my old camera j
   caption="1967 Porsche 912"
 %} 
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="porsche2"
   img_lg="/assets/articles/p2h.jpg"
   img_sm="/assets/articles/p2.jpg"
@@ -46,7 +46,7 @@ The shots are bit soft. I couldn't track these guys manually and my old camera j
   caption="Porsche GT3"
 %}
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="porsche3"
   img_lg="/assets/articles/p3h.jpg"
   img_sm="/assets/articles/p3.jpg"

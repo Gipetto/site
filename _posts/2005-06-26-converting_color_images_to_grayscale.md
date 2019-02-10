@@ -21,7 +21,7 @@ This is an old technique but one that I think far too few people know about. The
 
 #### Getting started
 
-{% include lightbox.html
+{% include lightbox-image.html
   id="colorOrig"
   img_lg="/assets/articles/grayscale-orig.jpg"
   img_sm="/assets/articles/grayscale-orig-thumb.jpg"
@@ -32,7 +32,7 @@ This is an old technique but one that I think far too few people know about. The
 
 #### What we don't want
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="grayscaleBad"
   img_lg="/assets/articles/grayscale-bad.jpg"
   img_sm="/assets/articles/grayscale-bad-thumb.jpg"
@@ -43,7 +43,7 @@ This is an old technique but one that I think far too few people know about. The
 
 #### Introducing the Channel Mixer
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="channelMixerDefault"
   img_lg="/assets/articles/grayscale-mix-default.jpg"
   img_sm="/assets/articles/grayscale-mix-default-thumb.jpg"
@@ -52,7 +52,7 @@ This is an old technique but one that I think far too few people know about. The
   additional_classes="alignright"
 %} So what's the secret? The channel mixer. Simply open Image > Adjustments > Channel Mixer, select the Monochrome option in the lower left hand corner, and start playing. This image is what my image looks like with the default settings in the channel mixer. Even with the defaults my image retains color separation of similar colors and maintains a better range of grays instead of the flat rendition that we get with the convert to grayscale command.
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="channelMixerTweaked"
   img_lg="/assets/articles/grayscale-mix-tweak.jpg"
   img_sm="/assets/articles/grayscale-mix-tweak-thumb.jpg"

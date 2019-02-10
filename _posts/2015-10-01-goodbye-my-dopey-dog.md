@@ -43,7 +43,7 @@ Not to say that he didn't like me… I got my fair share of cuddle time.
 
 He loved to play… oh, boy, did he love to play. Wether playing tug of war or just hiding under the covers on the bed he never needed much convincing that it was play time. You had to watch your hands, though. He'd work his way up that toy and bite ya! Dopey, dopey dog.
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="dscn5275"
   img_lg="/assets/articles/DSCN5275.jpg"
   img_sm="/assets/articles/DSCN5275-500x375.jpg"

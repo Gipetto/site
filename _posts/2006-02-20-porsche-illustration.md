@@ -17,7 +17,7 @@ tags:
   - transparency
 ---
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="porsche"
   img_lg="/assets/articles/Porsche-with-Paths.jpg"
   img_sm="/assets/articles/porsche-thumb.png"

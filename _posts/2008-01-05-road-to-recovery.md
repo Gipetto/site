@@ -17,7 +17,7 @@ tags:
   - road
 ---
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="recover"
   img_lg="/assets/articles/Road-to-Recovery.jpg"
   img_sm="/assets/articles/road_to_recovery_thumb.png"

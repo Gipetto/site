@@ -14,7 +14,7 @@ tags:
   - wonderful
 ---
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="sunrise"
   img_lg="/assets/articles/sunrise.jpg"
   img_sm="/assets/articles/sunrise-preview.jpg"

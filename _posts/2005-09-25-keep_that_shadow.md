@@ -26,7 +26,7 @@ This isn't a magic way to pull a drop shadow off of a complex background – thi
 
 #### Our starting image
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="step1"
   img_lg="/assets/articles/start.jpg"
   img_sm="/assets/articles/start-thumb.jpg"
@@ -37,7 +37,7 @@ This isn't a magic way to pull a drop shadow off of a complex background – thi
 
 #### Let's get rolling
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="step2"
   img_lg="/assets/articles/step2.jpg"
   img_sm="/assets/articles/step2-thumb.jpg"
@@ -46,7 +46,7 @@ This isn't a magic way to pull a drop shadow off of a complex background – thi
   additional_classes="alignright"
 %}The next step is to duplicate your layers. After making a copy, we'll first set our sights on the top layer. On this layer we'll cut out the image. Depending upon your intended use, you should mask appropriately. For web images you can fudge it a bit and just use the eraser but for print images you really should take the time and properly mask out the image..
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="step3"
   img_lg="/assets/articles/finish.jpg"
   img_sm="/assets/articles/finish-thumb.jpg"
@@ -63,7 +63,7 @@ The technique is actually pretty easy but not intuitively obvious.
 
 I've used variations of this technique with success. This example is of one I put together for a go-karting event.
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="goCart1"
   img_lg="/assets/articles/go_cart_lo.jpg"
   img_sm="/assets/articles/go_cart_lo-thumb.jpg"
@@ -74,7 +74,7 @@ I've used variations of this technique with success. This example is of one I pu
 
 <br />
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="goCart2"
   img_lg="/assets/articles/go_cart_lo2.jpg"
   img_sm="/assets/articles/go_cart_lo2-thumb.jpg"
@@ -85,7 +85,7 @@ I've used variations of this technique with success. This example is of one I pu
 
 <br />
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="goCart3"
   img_lg="/assets/articles/Title1.jpg"
   img_sm="/assets/articles/Title1-thumb.jpg"
@@ -96,7 +96,7 @@ I've used variations of this technique with success. This example is of one I pu
 
 <br />
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="goCart4"
   img_lg="/assets/articles/Title2.jpg"
   img_sm="/assets/articles/Title2-thumb.jpg"
@@ -114,7 +114,7 @@ So, Gozer asked "_What about black backgrounds?_"
 
 I say, what about black backgrounds?
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="nano1"
   img_lg="/assets/articles/nano-start.jpg"
   img_sm="/assets/articles/nano-start-thumb.jpg"
@@ -129,7 +129,7 @@ After that, change the new layer to Overlay mode. If the mask for this layer was
 
 #### Make that highlight right
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="nano2"
   img_lg="/assets/articles/nano.jpg"
   img_sm="/assets/articles/nano-thumb.jpg"
@@ -142,7 +142,7 @@ This new layer was moved to be inbetween the main image (the full strength image
 
 #### Another conclusion
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="nano3"
   img_lg="/assets/articles/nano-water.jpg"
   img_sm="/assets/articles/nano-water-thumb.jpg"

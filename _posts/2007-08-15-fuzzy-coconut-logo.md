@@ -15,7 +15,7 @@ tags:
   - logo
 ---
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="fuzzy"
   img_lg="/assets/articles/fuzzycoconut_logo.png"
   img_sm="/assets/articles/fuzzycoconut_logo_thumb.png"

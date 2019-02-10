@@ -78,7 +78,7 @@ module FlickrStuff
     Liquid::Template.parse("{% include flickr-caption.html
       photo_title=\"#{photo_title}\"
       flickr_url=\"#{flickr_url}\"
-    %}").render(context).gsub!('"', '\"')
+    %}").render(context)
   end
 
   def isVertical(photo)
@@ -92,6 +92,18 @@ module FlickrStuff
     else
       return photo['sizes']['Original']['source']
     end
+  end
+
+  def getImgLargeData(photo, context)
+    large_photo_size = getLargePhotoSize(photo)
+    lg_img = {
+      "id" => photo['info']['id'],
+      "src" => photo['sizes'][large_photo_size]['source'],
+      "width" => photo['sizes'][large_photo_size]['width'],
+      "height" => photo['sizes'][large_photo_size]['height'],
+      "title" => photo['info']['title'],
+      "caption" => getCaption(photo, context)
+    }
   end
 
   def getLargePhotoSize(photo)
@@ -110,9 +122,8 @@ module FlickrStuff
 
     def render(context)
       photo = getPhotoInfo(@photo_id)
-      large_photo_size = getLargePhotoSize(photo)
       vertical = isVertical(photo)
-      caption = getCaption(photo, context)
+      lg_img_data = getImgLargeData(photo, context)
       srcset = getSizes(photo)
 
       sizesSmall = [
@@ -131,16 +142,13 @@ module FlickrStuff
       # ].reject!(&:empty?)
 
       # Seems fucky, but works
-      Liquid::Template.parse("{%- include lightbox.html 
+      Liquid::Template.parse("{%- include lightbox-image.html 
         id=\"#{@photo_id}\"
-        img_lg=\"#{photo['sizes'][large_photo_size]['source']}\"
-        img_lg_width=\"#{photo['sizes'][large_photo_size]['width']}\"
-        img_lg_height=\"#{photo['sizes'][large_photo_size]['height']}\"
+        img_lg=\"#{xml_escape(JSON.generate(lg_img_data))}\"
         img_sm=\"#{photo['sizes']['Small']['source']}\"
         img_sm_width=\"#{photo['sizes']['Medium']['width']}\"
         img_sm_height=\"#{photo['sizes']['Medium']['height']}\"
         title=\"#{xml_escape(photo['info']['title'])}\"
-        caption=\"#{caption}\"
         center=#{vertical}
         srcset=\"#{srcset.join(', ')}\"
         sizesSmall=\"#{sizesSmall.join(', ')}\"
@@ -175,18 +183,14 @@ module FlickrStuff
         .render(context)
 
       photo_set['photo'].each { |photo|
-        large_photo_size = getLargePhotoSize(photo)
-        caption = getCaption(photo, context)
+        lg_img_data = getImgLargeData(photo, context)
 
-        stupid_html_string << Liquid::Template.parse("{%- include lightbox.html
+        stupid_html_string << Liquid::Template.parse("{%- include lightbox-image.html
           id=\"#{photo['info']['id']}\"
-          img_lg=\"#{photo['sizes'][large_photo_size]['source']}\"
-          img_lg_width=\"#{photo['sizes'][large_photo_size]['width']}\"
-          img_lg_height=\"#{photo['sizes'][large_photo_size]['height']}\"
+          img_lg=\"#{xml_escape(JSON.generate(lg_img_data))}\"
           data_src=\"#{photo['sizes']['Medium']['source']}\"
           data_src_tiny=\"#{photo['sizes']['Small']['source']}\"
           title=\"#{xml_escape(photo['info']['title'])}\"
-          caption=\"#{caption}\"
         -%}").render(context)
       }
       

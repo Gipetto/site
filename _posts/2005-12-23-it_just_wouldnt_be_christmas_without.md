@@ -21,7 +21,7 @@ A bloody dog fight…
 
 You won't be thanking me for this pic.
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="dogEar"
   img_lg="/assets/articles/ear.jpg"
   img_sm="/assets/articles/ear-thumb.jpg"

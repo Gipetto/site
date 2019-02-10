@@ -16,7 +16,7 @@ tags:
   - Photography
 ---
 
-{% include lightbox.html 
+{% include lightbox-image.html 
   id="aHorseIsAHorse"
   img_lg="/assets/articles/horse.jpg"
   img_sm="/assets/articles/horse-thumb.jpg"
