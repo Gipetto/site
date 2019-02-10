@@ -17,8 +17,8 @@
 	<link rel="preload" href="/css/main.css" as="style">
 	<link rel="stylesheet" href="/css/main.css">
 {% capture include_to_scssify -%}
-{%- include _layout.scss -%}
-{%- include _nav.scss -%}
+{%- include style/_layout.scss -%}
+{%- include style/_nav.scss -%}
 {%- endcapture %}
 	<style type="text/css">{{- include_to_scssify | scssify | strip -}}</style>
 	{% seo %}

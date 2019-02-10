@@ -3,8 +3,8 @@ title: .htaccess
 permalink: .htaccess
 ---
 {% capture include_to_scssify -%}
-{%- include _layout.scss -%}
-{%- include _nav.scss -%}
+{%- include style/_layout.scss -%}
+{%- include style/_nav.scss -%}
 {%- endcapture %}
 {% assign headCssSha = include_to_scssify | scssify | strip | sha256 %}
 {% assign cspDefault = "default-src 'self'" %}
