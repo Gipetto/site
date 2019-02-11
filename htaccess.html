@@ -15,9 +15,9 @@ permalink: .htaccess
 {%- assign cspFrame = "frame-src *.youtube.com" -%}
 
 <IfModule mod_headers.c>
-{%- if jekyll.environment == 'production' %}
+{% if jekyll.environment == 'production' -%}
 Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
-{% endif -%}
+{%- endif %}
 Header unset ETag
 Header set X-Content-Type-Options nosniff
 Header unset X-Powered-By

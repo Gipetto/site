@@ -8,7 +8,14 @@ layout: compress
 <!--[if gt IE 8]><!--> <html class="no-js" lang="{{ page.lang | default: site.lang | default: 'en' }}"> <!--<![endif]-->
 {%- include head.html -%}
 <body id="top-frog-com" class="{{ page.section | default: layout.section }}">
-    <span class="icons-sprite">{% include svg/icons-sprite.optimized.svg %}</span>
+    <p class="hidden"><a href="#it"><img src="/assets/spacer.gif" width="0" height="0" border="0" alt="skip to content" /></a></p>
+    <noscript>
+		<blockquote>
+			<p>How anxiously I yearned for the Javascript I had forsaken.</p>
+			<footer>~ Almost Dostoyevsky</footer>
+		</blockquote>
+	</noscript>
+    <span class="icons-sprite" aria-hidden="true">{% include svg/icons-sprite.optimized.svg %}</span>
     <div id="bag-o-holding" class="grid grid-col">
         <div class="grid-cell">
             <div id="inner-liner" class="grid grid-col">

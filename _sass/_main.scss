@@ -159,6 +159,15 @@ body {
 			}
 		}
 
+		.hidden {
+			position:absolute;
+			left:-10000px;
+			top:auto;
+			width:1px;
+			height:1px;
+			overflow:hidden;
+		}
+
 		// .ext {
 		// 	&:before {
 		// 		background-image: url('data:image/svg+xml,<svg preserveAspectRatio="xMinYMin meet" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g class="icon_svg-stroke" stroke="#666" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M17 13.5v6H5v-12h6M14 4.5h6v6m0-6l-9 9"/></g></svg>');

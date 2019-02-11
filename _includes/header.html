@@ -1,22 +1,22 @@
 <header class="grid-cell">
     <h1>The Gippy Pages</h1>
-    <a href="/" rel="index">
-        <img class="frog" src="/assets/big-frog.optimized.svg" rel="home index" 
-            alt="Top Frog Logo" height="165" />
+    <a href="/" rel="home index" aria-hidden="true">
+        <img class="frog" src="/assets/big-frog.optimized.svg" 
+            alt="Frog Logo" height="165" role="presentation" />
     </a>
-    <a href="/" rel="index">
-        <img class="what-it-called" src="/assets/name.optimized.svg" rel="home index" 
-            alt="The Gippy Pages" height="65" />
+    <a href="/" rel="home index" aria-hidden="true">
+        <img class="what-it-called" src="/assets/name.optimized.svg" 
+            alt="The Gippy Pages" height="65" role="presentation" />
     </a>
     <nav id="ada">
         <ul>
             <li class="hamburger">
-                <a href="#">
+                <a href="#" aria-expanded="false">
                     {% include svg/hamburger-menu.svg %}
                 </a>
             </li>
-            <li class="homeboy">
-                <a href="/">Home</a>
+            <li class="homeboy hidden">
+                <a href="/" rel="home index">Home</a>
             </li>
             <li class="archives">
                 <a href="/archives" rel="archives">archives</a>
@@ -24,9 +24,6 @@
             <li class="photography">
                 <a href="/photography">photography</a>
                 <ul class="subnav">
-                    {% comment %} <li>
-                        <a href="/photography">general</a>
-                    </li> {% endcomment %}
                     <li>
                         <a href="/photography/concerts">concerts</a>
                     </li>

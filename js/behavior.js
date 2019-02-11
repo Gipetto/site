@@ -12,14 +12,13 @@ function fluffyBunnies() {
     }
 
     var hamburger = (function() {
-        var nav = false;
+        var nav = document.querySelector('header').querySelector('nav');
+        var hamburgerToggle = nav.querySelector('.hamburger a');
         return function(e) {
             e.preventDefault();
-            if (!nav) {
-                nav = document.getElementsByTagName('header')[0]
-                    .getElementsByTagName('nav')[0];        
-            }
             nav.classList.toggle('hamburgled');
+            hamburgerToggle
+                .setAttribute('aria-expanded', nav.classList.contains('hamburgled') ? 'true' : 'false');
         }
     })();
     document.querySelector('.hamburger').addEventListener('click', hamburger)
