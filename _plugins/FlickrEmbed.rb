@@ -142,8 +142,9 @@ module FlickrStuff
       # ].reject!(&:empty?)
 
       # Seems fucky, but works
-      Liquid::Template.parse("{%- include lightbox-image.html 
+      Liquid::Template.parse("{%- include lightbox-image.html
         id=\"#{@photo_id}\"
+        href=\"#{photo['info']['urls']['url'][0]['text']}\"
         img_lg=\"#{xml_escape(JSON.generate(lg_img_data))}\"
         img_sm=\"#{photo['sizes']['Small']['source']}\"
         img_sm_width=\"#{photo['sizes']['Medium']['width']}\"
@@ -187,6 +188,7 @@ module FlickrStuff
 
         stupid_html_string << Liquid::Template.parse("{%- include lightbox-image.html
           id=\"#{photo['info']['id']}\"
+          href=\"#{photo['info']['urls']['url'][0]['text']}\"
           img_lg=\"#{xml_escape(JSON.generate(lg_img_data))}\"
           data_src=\"#{photo['sizes']['Medium']['source']}\"
           data_src_tiny=\"#{photo['sizes']['Small']['source']}\"

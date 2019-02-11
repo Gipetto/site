@@ -1,6 +1,6 @@
 <div>
     {% if include.center %}<center>{% endif %}
-    <a href="#i{{ include.id }}" class="thickbox frame {{ include.additional_classes | default: '' }}">
+    <a href="{{ include.href | default: include.img_lg }}" class="thickbox frame {{ include.additional_classes | default: '' }}">
         <img src="{{ include.img_sm | default: '' }}" alt="Photograph: {{ include.title }}"
             {% if include.data_src_tiny %}data-src-tiny="{{ include.data_src_tiny }}"{% endif %}
             {% if include.data_src %}data-src="{{ include.data_src }}"{% endif %}
