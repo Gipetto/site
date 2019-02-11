@@ -54,7 +54,7 @@ deploy:
 		_site/ gipetto1@top-frog.com:top-frog.com/public_html_static
 
 watch:
-	JEKYLL_ENV=local jekyll build \
+	JEKYLL_ENV=production jekyll build \
 		--lsi \
 		--incremental \
 		--limit_posts=50 \

@@ -2,31 +2,49 @@
 title: .htaccess
 permalink: .htaccess
 ---
-{% capture include_to_scssify -%}
+{%- capture include_to_scssify -%}
 {%- include style/_layout.scss -%}
 {%- include style/_nav.scss -%}
-{%- endcapture %}
-{% assign headCssSha = include_to_scssify | scssify | strip | sha256 %}
-{% assign cspDefault = "default-src 'self'" %}
-{% assign cspScript = "script-src 'self' https://unpkg.com" %}
-{% assign cspStyle = "style-src 'self'" %}
-{% assign cspImg = "img-src 'self' *.staticflickr.com *.flickr.com data:" %}
-{% assign cspConnect = "connect-src 'self'" %}
-{% assign cspFrame = "frame-src *.youtube.com" %}
+{%- endcapture -%}
+{%- assign headCssSha = include_to_scssify | scssify | strip | sha256 -%}
+{%- assign cspDefault = "default-src 'self'" -%}
+{%- assign cspScript = "script-src 'self' https://unpkg.com" -%}
+{%- assign cspStyle = "style-src 'self'" -%}
+{%- assign cspImg = "img-src 'self' *.staticflickr.com *.flickr.com data:" -%}
+{%- assign cspConnect = "connect-src 'self'" -%}
+{%- assign cspFrame = "frame-src *.youtube.com" -%}
 
-{% if jekyll.environment == 'production' %}
+<IfModule mod_headers.c>
+{%- if jekyll.environment == 'production' %}
+Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+{% endif -%}
+Header unset ETag
+Header set X-Content-Type-Options nosniff
 Header unset X-Powered-By
 Header set X-Frame-Options: DENY
-Header set X-Content-Type-Options nosniff
-Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
-{% endif %}
 Header set Content-Security-Policy "{{ cspDefault }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }} 'sha256-{{ headCssSha }}'; {{ cspConnect }}; {{ cspFrame }};"
+</IfModule>
+
+FileETag None
 
 IndexIgnore *
-DirectoryIndex index.html index.php
+DirectoryIndex    index.html index.php
 ErrorDocument 404 /404.html
 ErrorDocument 500 /500.html
-FileETag None
+
+AddDefaultCharset utf-8
+AddCharset utf-8 .css .js .xml .json .atom
+
+AddType application/javascript        js
+AddType image/svg+xml                 svg svgz
+AddEncoding                           gzip svgz
+AddType image/x-icon                  ico
+AddType text/cache-manifest           appcache manifest
+AddType text/x-web-app-manifest+json  webapp
+
+<IfModule mod_autoindex.c>
+  Options -Indexes
+</IfModule>
 
 # php_value upload_max_file_size 2M
 # php_value post_max_size 2M
@@ -34,60 +52,110 @@ php_flag log_errors on
 php_flag display_errors off
 php_value error_reporting 32767
 
-{% if jekyll.environment == 'production' %}
-<IfModule mod_expires.c>
-ExpiresActive On
-ExpiresByType application/pdf A31536000
-ExpiresByType application/x-gzip A31536000
-ExpiresByType application/x-javascript A31536000
-ExpiresByType image/gif A31536000
-ExpiresByType image/jpeg A31536000
-ExpiresByType image/png A31536000
-ExpiresByType image/svg+xml A31536000
-ExpiresByType image/x-icon A31536000
-ExpiresByType text/css A31536000
-ExpiresByType text/html A3600
-ExpiresByType application/x-font-ttf A31536000
-ExpiresByType application/zip A31536000
+{% if jekyll.environment == 'production' -%}
+<IfModule mod_setenvif.c>
+  <IfModule mod_headers.c>
+    # mod_headers, y u no match by Content-Type?!
+    <FilesMatch "\.(gif|png|jpe?g|svg|svgz|ico|webp)$">
+      SetEnvIf Origin ":" IS_CORS
+      Header set Access-Control-Allow-Origin "*" env=IS_CORS
+    </FilesMatch>
+  </IfModule>
 </IfModule>
 
-<FilesMatch "\.(js|html|css|svg)$">
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/cache-manifest       "access plus 0 seconds"
+    ExpiresByType text/html                 "access plus 0 seconds"
+    ExpiresByType text/xml                  "access plus 0 seconds"
+    ExpiresByType application/xml           "access plus 0 seconds"
+    ExpiresByType application/json          "access plus 0 seconds"
+    ExpiresByType application/rss+xml       "access plus 1 hour"
+    ExpiresByType application/atom+xml      "access plus 1 hour"
+    ExpiresByType image/x-icon              "access plus 1 week"
+    ExpiresByType image/gif                 "access plus 1 month"
+    ExpiresByType image/png                 "access plus 1 month"
+    ExpiresByType image/jpg                 "access plus 1 month"
+    ExpiresByType image/jpeg                "access plus 1 month"
+    ExpiresByType image/svg+xml             "access plus 1 month"
+    ExpiresByType text/css                  "access plus 1 year"
+    ExpiresByType application/javascript    "access plus 1 year"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  # Force deflate for mangled headers developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/
+  <IfModule mod_setenvif.c>
     <IfModule mod_headers.c>
-        Header set Pragma "public"
-        Header append Cache-Control "public, must-revalidate, proxy-revalidate"
+      SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+      RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
     </IfModule>
-    <IfModule mod_deflate.c>
-        SetOutputFilter DEFLATE
-    </IfModule>
-</FilesMatch>
-{% endif %}
+  </IfModule>
+
+  # HTML, TXT, CSS, JavaScript, JSON, XML, HTC:
+  <IfModule filter_module>
+    FilterDeclare   COMPRESS
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/html
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/css
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/plain
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/xml
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/x-component
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/javascript
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/json
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/xml
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/xhtml+xml
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/rss+xml
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/atom+xml
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/vnd.ms-fontobject
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $image/svg+xml
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $image/x-icon
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/x-font-ttf
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $font/opentype
+    FilterChain     COMPRESS
+    FilterProtocol  COMPRESS  DEFLATE change=yes;byteranges=no
+  </IfModule>
+
+  <IfModule !mod_filter.c>
+    # Legacy versions of Apache
+    AddOutputFilterByType DEFLATE text/html text/plain text/css application/json
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE text/xml application/xml text/x-component
+    AddOutputFilterByType DEFLATE application/xhtml+xml application/rss+xml application/atom+xml
+    AddOutputFilterByType DEFLATE image/x-icon image/svg+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype
+  </IfModule>
+</IfModule>
+{%- endif %}
 
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
+    RewriteEngine On
+    RewriteBase /
 
-# I'm told this is the future...
-RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    # deny access to dot files/directories
+    RewriteCond %{SCRIPT_FILENAME} -d
+    RewriteCond %{SCRIPT_FILENAME} -f
+    RewriteRule "(^|/)\." - [F]
 
-# catch avatar requests
-RewriteCond %{REQUEST_URI} /avatar.png
-RewriteRule ^(.*)? /avatar/index.php [L,NC,QSA]
+    # I'm told this is the future...
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# catch old RSS feed url
-RewriteCond %{REQUEST_URI} ^/rss
-RewriteRule ^(.*)$ /feed [L,R=301]
+    # catch avatar requests
+    RewriteCond %{REQUEST_URI} /avatar.png
+    RewriteRule ^(.*)? /avatar/index.php [L,NC,QSA]
 
-# video & tokens
-RewriteCond %{REQUEST_URI} ^/video
-RewriteRule . - [L,NC,QSA]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^token.* /token/index.php [L]
+    # catch old RSS feed url
+    RewriteCond %{REQUEST_URI} ^/rss
+    RewriteRule ^(.*)$ /feed [L,R=301]
 
-# ensure file extensions
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.+)$ $1\.html [L]
+    # video & tokens
+    RewriteCond %{REQUEST_URI} ^/video
+    RewriteRule . - [L,NC,QSA]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^token.* /token/index.php [L]
+
+    # ensure file extensions
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.html -f
+    RewriteRule ^(.+)$ $1\.html [L]
 </IfModule>
