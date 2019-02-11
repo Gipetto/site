@@ -51,7 +51,6 @@ kramdown:
     block:
       line_numbers: false
 include:
-#  - .htaccess
 exclude:
   - _drafts
   - _bin
