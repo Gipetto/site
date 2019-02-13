@@ -108,8 +108,7 @@ class AP_File_MimeTypes {
      * @param string/bool $group_type
      * @return array
      */
-    public function getTypes($group_type = false)
-    {
+    public function getTypes($group_type = false) {
         if (!$group_type) {return $this->types;} else {
             if (array_key_exists($group_type, $this->groups)) {
                 foreach ($this->types as $key => $mt) {

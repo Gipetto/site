@@ -26,4 +26,4 @@ The function definitions can be brought up by selecting or setting the carat ins
 
 I don't list full definitions (ie: the textual definition that accompanies the functions in DocBlocks) mainly because I haven't worked out the best way to parse the WordPress source tree to get those. I'm sure there's a way, it just hasn't been high priority yet.
 
-Oh, yeah, and [I like donuts!](/donate/) 😉
+{% include paypal.html %}

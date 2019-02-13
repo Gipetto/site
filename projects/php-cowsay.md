@@ -2,6 +2,7 @@
 layout: page
 title: PHP-Cowsay
 section: projects
+paypal: true
 ---
 PHP-CowSay is just that, a PHP port of the Cowsay *nix command line utility. This library is not designed for command line use. You should install the original Cowsay for that.
 
@@ -35,15 +36,4 @@ CowSay can be installed directly or via <a href="https://getcomposer.org">Compos
 
 Issues are handled via <a href="https://github.com/Gipetto/CowSay/issues">PHP-Cowsay Github Issues</a>.
 
-#### Please Donate {#donate}
-
-Donations buy donuts. Donuts help keep us motivated. When we&rsquo;re motivated we make plugins. Please help keep us motivated to make more useful contributions to the coding community.
-
-<div id="paypal">
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-      <input type="hidden" name="cmd" value="_s-xclick" /><br />
-      <input type="hidden" name="hosted_button_id" value="6908957" /><br />
-      <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" /><br />
-      <img alt="" border="0" src="{{ site.baseurl }}/assets/pixel.gif" width="1" height="1" /><br />
-	</form>
-</div>
+{% include paypal.html %}

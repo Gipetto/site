@@ -62,14 +62,4 @@ Options are:
 #### Get it here {#download}
 Check out the <a href="http://top-frog.com/stuff/togglr/" target="_blank" rel="external" rel="noopener">Togglr Plugin in action</a>.<br /> The source can be grabbed from <a href="http://github.com/Gipetto/jquery.togglr.js" target="_blank" rel="external noopener">the jQuery Togglr GitHub Project Page</a>.
 
-#### Please Donate
-Donations buy donuts. Donuts help keep us motivated. When we&rsquo;re motivated we make plugins. Please help keep us motivated to make more useful contributions to the coding community.
-
-<div id="paypal">
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-		<input type="hidden" name="cmd" value="_s-xclick" /><br />
-		<input type="hidden" name="hosted_button_id" value="6908957" /><br />
-		<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" /><br />
-		<img alt="" border="0" src="{{ site.baseurl }}/assets/pixel.gif" width="1" height="1" /><br />
-	</form>
-</div>
+{% include paypal.html %}

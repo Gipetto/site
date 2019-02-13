@@ -179,15 +179,4 @@ If you don't use GetBundles then skip on over to the <a href="http://github.com/
 - <b>Git:</b> If you're familiar with Git then grab the Public Clone url and pull the plugin down to your `~/Library/Application Support/TextMate/Bundles` directory (its OK to create this structure if it doesn't exist). Reload your bundles or restart TextMate to load the bundle.
 - <b>Direct download:</b> If you don't do Git then click on the download link and pull down your preferred compressed format. Decompress it to `~/Library/Application Support/TextMate/Bundles` (its OK to create this structure if it doesn't already exist). Reload your bundles or restart TextMate to load the bundle.
 
-#### Please Donate {#donate}
-
-Donations buy donuts. Donuts help keep us motivated. When we&rsquo;re motivated we make plugins. Please help keep us motivated to make more useful contributions to the coding community.
-
-<div id="paypal">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-		<input type="hidden" name="cmd" value="_s-xclick" /><br />
-		<input type="hidden" name="hosted_button_id" value="6908957" /><br />
-		<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" /><br />
-		<img alt="" border="0" src="{{ site.baseurl }}/assets/pixel.gif" width="1" height="1" /><br />
-	</form>
-</div>
+{% include paypal.html %}

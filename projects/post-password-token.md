@@ -47,3 +47,5 @@ The Post Password Plugin is hosted at the <a href="http://wordpress.org/extend/p
 #### Support
 
 The Post Password Token plugin is supported back to WordPress 3.0. Older versions of WordPress are not supported and will not be.
+
+{% include paypal.html %}
