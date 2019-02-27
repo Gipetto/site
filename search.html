@@ -1,0 +1,36 @@
+---
+layout: default
+section: archives
+sitemap: false
+search: true
+---
+
+<section class="drivel">
+    <div class="search-header grid">
+        <h3 class="grid-item">Search</h3>
+        <div class="search-box grid-item">
+            <form role="search">
+                <input type="text" name="q" placeholder="search"/>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="drivel archives">
+    <div class="found-stuff"></div>
+</section>
+
+<div class="result-item-template hidden" aria-hidden="true">
+    <div class="result-item">
+        <h4 class="result-title">
+            <a href="/"></a>
+        </h4>
+        <p class="result-blurb"></p>
+        <p class="muted-n-stuff">
+            <span class="date"></span> | <span class="category"></span> | Tagged as: <span class="tags"></span>
+        </p>
+        <hr class="divider" />
+    </div>
+    <div class="not-found">
+        <p>Sorry. I still haven't found what you're looking for.</p>
+    </div>
+</div>

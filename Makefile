@@ -21,6 +21,8 @@ install:
 clean:
 	rm -rf $(SITE)
 	rm -f $(JS)/*.min.*
+	rm -f .jekyll-metadata
+	rm -rf .sass-cache/*
 
 optimize-svgs:
 	svgo $(SVGFLAGS) \

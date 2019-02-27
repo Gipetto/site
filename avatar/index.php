@@ -47,7 +47,7 @@ for ($i = 1; $i < $wordCount; $i++) {
     
 $imgHandle = ImageCreate($width, $height) or die("Cannot Create Image");
 $background = ImageColorAllocate($imgHandle, 255, 255, 255);
-//ImageColorTransparent($imgHandle, $background);
+ImageColorTransparent($imgHandle, $background);
 $txt_color = ImageColorAllocate($imgHandle, 1, 1, 1);
 ImageFTText($imgHandle, $size, 0, 00, 9, -13, $font, $finalText, $formattingOpts);
 ImagePNG($imgHandle);

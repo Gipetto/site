@@ -18,3 +18,9 @@ $lightGrayBackgroundColor: #eee;
 $orange: #ec762c;
 
 $header-font-family: Georgia, 'Times New Roman', Times, serif;
+
+@mixin searchBox {
+    border: 1px solid $borderColor;
+    border-radius: 3px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+}

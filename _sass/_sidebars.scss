@@ -5,6 +5,56 @@
 
 	aside {
 		margin: 10px 17px 30px;
+
+		&.eyebrow {
+			$transparentWhite: rgba(255, 255, 255, 0.3);
+			margin: 0;
+			height: 30px;
+			border-bottom: 1px solid $transparentWhite;
+			background-image: repeating-linear-gradient(45deg,
+			transparent,
+			transparent 2px,
+			$transparentWhite 2px,
+			$transparentWhite 4px);
+		}
+
+		&.find-it {
+			.grid-cell {
+				margin: 5px 0;
+			}
+
+			.grid-cell:nth-child(1) {
+				width: 85%;
+
+				input {
+					@include searchBox;
+					box-sizing: border-box;
+					padding: 5px;
+					width: 100%;
+					height: 25px;
+				}
+			}
+			.grid-cell:nth-child(2) {
+				width: 14%;
+				text-align: right;
+
+				button {
+					height: 25px;
+					width: 25px;
+					border: 0;
+					background: none;
+					
+					span {
+						display: none;
+					}
+					
+					svg {
+						position: relative;
+						top: 2px;
+					}
+				}
+			}
+		}
 	}
 
 	@media screen and (max-width: $maxResponsiveWidth) {
@@ -12,64 +62,8 @@
 		border-top: 1px solid $innerBorderColor;
 	}
 
-	/*
-	#gippy-search {
-		background: transparent url(../img/datebox.png) 0 0 repeat-x;
-		height: 31px;
-		margin: 0 0 12px 0;
-		overflow: hidden;
-		padding: 6px 2px 1px 12px;
-
-		div {
-			background-color: #adb1aa;
-			border: 1px solid white;
-			display: inline-block;
-			padding: 1px;
-		
-			input {
-				font-size: 0.9em;
-				outline: none;
-				width: 150px;
-			}
-		}
-
-		#searchsubmit {
-			-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-			-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-			box-shadow:inset 0px 1px 0px 0px #ffffff;
-			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
-			background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
-			background-color:#ededed;
-			-moz-border-radius:6px;
-			-webkit-border-radius:6px;
-			border-radius:6px;
-			border:1px solid #dcdcdc;
-			display:inline-block;
-			color:#777777;
-			font-family:arial;
-			font-size:13px;
-			font-weight:bold;
-			padding:4px 8px;
-			text-decoration:none;
-			text-shadow:1px 1px 0px #ffffff;
-		}
-
-		#searchsubmit:hover {
-			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
-			background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
-			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
-			background-color:#dfdfdf;
-		}
-	
-		#searchsubmit:active {
-			position:relative;
-			top:1px;
-		}
-	}
-	*/
-
 	.widget {
-		&:first-child {
+		&:nth-child(2) {
 			margin-top: 15px;
 		}
 
@@ -134,11 +128,6 @@
 
 					a {
 						flex: 1;
-
-						.icon {
-							width: 16px;
-							height: 16px;
-						}
 
 						span {
 							display: none;

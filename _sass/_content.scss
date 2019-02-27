@@ -5,11 +5,11 @@
 		background: linear-gradient(to bottom, #303030, #454545);
 		border-bottom: 1px solid #7F8A76;
 		color: #797A78;
-		height: 28px;
+		height: 30px;
 		font-size: 1.7em;
 		font-style: bold;
 		font-family: $header-font-family;
-		line-height: 37px;
+		line-height: 41px;
 		margin: 0;
 		overflow: hidden;
 		padding: 0;
@@ -222,6 +222,24 @@
 					visibility: 'hidden';
 					opacity: 0;
 				}
+			}
+		}
+
+		.search-header {
+			.search-box {
+				flex-grow: 2;
+				margin-left: 15px;
+
+				form {
+					margin-top: 5px;
+	
+					input {
+						@include searchBox;
+						height: 25px;
+						width: 100%;
+						padding-left: 5px;
+					}
+				}	
 			}
 		}
 	}
