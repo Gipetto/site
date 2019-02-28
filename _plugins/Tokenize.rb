@@ -9,12 +9,10 @@ module Jekyll
             tokens = Set.new()
 
             stripped = strip_html(input)
-                .downcase.gsub(/[^a-z0-9\s]/i, '')
+                .downcase.gsub(/[^a-z0-9\s]/, '')
 
             stripped.scan(/\w+/) { |word|
-                if !@@stopwords.include?(word) &&
-                    word.length > 2
-
+                if !@@stopwords.include?(word) && word.length > 2
                     tokens.add(word)
                 end
             }

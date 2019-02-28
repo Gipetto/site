@@ -15,7 +15,9 @@ $innerBorderColor: #7f8a76;
 $lightGrayBorderColor: lightgray;
 $lightGrayBackgroundColor: #eee;
 
-$orange: #ec762c;
+$selectionColor: #13bac0;
+
+$orange: #d86b27;
 
 $header-font-family: Georgia, 'Times New Roman', Times, serif;
 
@@ -23,4 +25,10 @@ $header-font-family: Georgia, 'Times New Roman', Times, serif;
     border: 1px solid $borderColor;
     border-radius: 3px;
     box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+@mixin selection {
+    background: $selectionColor; 
+    color: #fff; 
+    text-shadow: none; 
 }

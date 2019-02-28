@@ -8,13 +8,6 @@ function fluffyBunnies() {
     var searchInput = document.querySelector('.search-box input');
     var queryParams = new URLSearchParams(window.location.search);
 
-    var fetch = function(file) {
-        var request = new XMLHttpRequest();
-        request.open('GET', file, false);
-        request.send(null);
-        return JSON.parse(request.responseText);
-    };
-
     // Hamburger
 
     var hamburger = (function() {
@@ -31,14 +24,12 @@ function fluffyBunnies() {
 
     // Search
 
-    var typeAhead = (function() {
+    var typeAhead = function(posts) {
         var maxResults = 10;
         var typeAheadTimer = null;
-        var posts = fetch('/search.json');
         var resultItemTemplate = document.querySelector('.result-item-template .result-item');
         var resultNotFound = document.querySelector('.result-item-template .not-found');
         var resultsList = document.querySelector('.found-stuff');
-        var fuse;
         var fuseOptions = {
             shouldSort: true,
             threshold: 0.5,
@@ -59,6 +50,7 @@ function fluffyBunnies() {
                 weight: 0.25
             }]
         };
+        var fuse = new Fuse(posts, fuseOptions);
 
         var buildResult = function(item) {
             var li = resultItemTemplate.cloneNode(true);
@@ -73,10 +65,6 @@ function fluffyBunnies() {
         };
 
         return function() {
-            if (!fuse) {
-                fuse = new Fuse(posts, fuseOptions);
-            }
-
             var _this = this;
             clearTimeout(typeAheadTimer);
             
@@ -100,24 +88,33 @@ function fluffyBunnies() {
                 }
             }, 700);
         };
-    })();
+    };
 
     if (searchInput) {
-        searchInput.addEventListener('keyup', typeAhead);
-        searchInput.focus();
-
-        if (queryParams.has('q')) {
-            searchInput.value = queryParams.get('q');
-            searchInput.dispatchEvent(new KeyboardEvent('keyup', {'key': 'a'}));
-        }
+        fetch('/search.json')
+            .then(r => { 
+                return r.json() 
+            }).then(posts => {
+                searchInput.addEventListener('keyup', typeAhead(posts));
+                searchInput.focus();
+        
+                if (queryParams.has('q')) {
+                    searchInput.value = queryParams.get('q');
+                    searchInput.dispatchEvent(new KeyboardEvent('keyup', {'key': 'a'}));
+                }        
+            });
     }
 
     // Errors
 
     var errorDiv = document.querySelector('#bofh-reason');
     if (errorDiv) {
-        var reasons = fetch('/js/bofh.js');
-        errorDiv.innerHTML = reasons[Math.floor(Math.random() * reasons.length)];                
+        fetch('/js/bofh.js').then(r => {
+            return r.json();
+        }).then(reasons => {
+            console.log(reasons);
+            errorDiv.innerHTML = reasons[Math.floor(Math.random() * reasons.length)];                
+        })
     }
 
     // Lightbox

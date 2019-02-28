@@ -2,6 +2,13 @@
 @import 'variables';
 
 body {
+	::-moz-selection { 
+		@include selection;
+	}
+	::selection {
+		@include selection;
+	}
+
 	background-color: $backgroundColor;
 	font-family: "Lucida Grande",Arial,Helvetica,sans-serif;
 
