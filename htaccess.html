@@ -8,7 +8,7 @@ permalink: .htaccess
 {%- endcapture -%}
 {%- assign headCssSha = include_to_scssify | scssify | strip | sha256 -%}
 {%- assign cspDefault = "default-src 'self'" -%}
-{%- assign cspScript = "script-src 'self' https://unpkg.com" -%}
+{%- assign cspScript = "script-src 'self' https://unpkg.com https://cdnjs.cloudflare.com" -%}
 {%- assign cspStyle = "style-src 'self'" -%}
 {%- assign cspImg = "img-src 'self' *.staticflickr.com *.flickr.com www.paypalobjects.com data:" -%}
 {%- assign cspConnect = "connect-src 'self'" -%}

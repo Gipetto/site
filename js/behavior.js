@@ -3,10 +3,15 @@
 function fluffyBunnies() {
     // Init
 
+    var cachebuster = document.querySelector('meta[name="cachebuster"]').getAttribute('content');
     var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
     var is4G = connection && connection.effectiveType == '4g' || true;
     var searchInput = document.querySelector('.search-box input');
     var queryParams = new URLSearchParams(window.location.search);
+
+    var cacheBust = function(url) {
+        return url + '?v=' + cachebuster;
+    }
 
     // Hamburger
 
@@ -91,9 +96,9 @@ function fluffyBunnies() {
     };
 
     if (searchInput) {
-        fetch('/search.json')
+        fetch(cacheBust('/js/search.json'))
             .then(r => { 
-                return r.json() 
+                return r.json(); 
             }).then(posts => {
                 searchInput.addEventListener('keyup', typeAhead(posts));
                 searchInput.focus();
@@ -109,10 +114,9 @@ function fluffyBunnies() {
 
     var errorDiv = document.querySelector('#bofh-reason');
     if (errorDiv) {
-        fetch('/js/bofh.js').then(r => {
+        fetch(cacheBust('/js/bofh.json')).then(r => {
             return r.json();
         }).then(reasons => {
-            console.log(reasons);
             errorDiv.innerHTML = reasons[Math.floor(Math.random() * reasons.length)];                
         })
     }
