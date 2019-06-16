@@ -8,7 +8,7 @@ description: >-
   content known by the State of California to cause cancer.
 baseurl: ""
 url: "https://top-frog.com"
-permalink: /:year/:month/:day/:title:output_ext
+permalink: /:year/:month/:day/:title/
 encoding: utf-8
 lang: en-US
 timezone: America/Los_Angeles
@@ -54,6 +54,7 @@ include:
 exclude:
   - _drafts
   - _bin
+  - _flickr_auth
   - Gemfile
   - Gemfile.lock
   - Makefile

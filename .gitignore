@@ -1,5 +1,7 @@
 _site
 _bin
+_flickr_auth/auth.json
+_flickr_auth/oauth_token.txt
 js/*.min.*
 .tweet-cache
 .sass-cache
@@ -7,3 +9,4 @@ js/*.min.*
 .vscode
 .DS_Store
 .flickr-cache.json
+.ruby-version

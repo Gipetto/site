@@ -3,7 +3,7 @@ require 'flickraw-cached'
 require 'json'
 
 $cache = JSON.parse(File.read('.flickr-cache.json'))
-auth = JSON.parse(File.read('../flickr_auth/auth.json'))
+auth = JSON.parse(File.read('./_flickr_auth/auth.json'))
 
 FlickRaw.api_key = auth['api_key']
 FlickRaw.shared_secret = auth['api_secret']

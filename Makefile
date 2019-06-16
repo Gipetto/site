@@ -12,14 +12,16 @@ JS_INFILE := $(JS)/behavior.js
 JS_OUTFILE := $(JS)/behavior.min.js
 
 install:
-	mkdir _bin
+	mkdir -p _bin
+	mkdir -p _site
 	bundle install
 	wget -P _bin \
 		https://dl.google.com/closure-compiler/compiler-latest.zip
 	unzip _bin/compiler-latest.zip -d _bin/closure-compiler
 
 clean:
-	rm -rf $(SITE)
+	docker stop gippy-pages || true
+	rm -rf $(SITE)/*
 	rm -f $(JS)/*.min.*
 	rm -f .jekyll-metadata
 	rm -rf .sass-cache/*
@@ -45,7 +47,7 @@ minify-js:
 		--env BROWSER \
 		--compilation_level $(JS_COMPILE)
 	echo "//# sourceMappingURL=/$(JS_OUTFILE).map" >> $(JS_OUTFILE)
-	cp -fX $(JS)/*.min.* $(SITE)/$(JS)
+	cp -f $(JS)/*.min.* $(SITE)/$(JS)
 
 stupid-http-check:
 	sleep 3s
@@ -79,7 +81,7 @@ watch:
 		--limit_posts=50 \
 		--watch
 
-serve: clean
+serve: clean docker
 	JEKYLL_ENV=local jekyll serve \
 		$(JKLFLAGS) \
 		--host=$(LOCALHOST) \
@@ -89,3 +91,11 @@ serve: clean
 
 serve-php:
 	php -S $(LOCALHOST):4001
+
+docker:
+	docker run --rm \
+		-dit \
+		--name gippy-pages \
+		-p 8080:80 \
+		-v "$(PWD)/_site":/usr/local/apache2/htdocs/ \
+		httpd:2.4-alpine
