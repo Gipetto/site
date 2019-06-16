@@ -25,9 +25,11 @@ To run local instance of the site, with the latest 50 posts only, with Jekyll wa
 make serve
 ```
 
+This starts a docker container and runs jekyll build with the watch flag. Access the site at `localhost:8080`.
+
 ### Build
 
-To test the build, which includes full `.htaccess` config, Content Security Policies, and built assets
+To test the build, which includes full `.htaccess` config, Content Security Policies, and built assets:
 
 ```
 make package
