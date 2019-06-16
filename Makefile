@@ -20,7 +20,6 @@ install:
 	unzip _bin/compiler-latest.zip -d _bin/closure-compiler
 
 clean:
-	docker stop gippy-pages || true
 	rm -rf $(SITE)/*
 	rm -f $(JS)/*.min.*
 	rm -f .jekyll-metadata
@@ -74,25 +73,18 @@ rsync:
 build:
 	JEKYLL_ENV=production jekyll build $(JKLFLAGS)
 
-watch:
+serve: clean docker
 	JEKYLL_ENV=production jekyll build \
 		$(JKLFLAGS) \
 		--incremental \
 		--limit_posts=50 \
 		--watch
 
-serve: clean docker
-	JEKYLL_ENV=local jekyll serve \
-		$(JKLFLAGS) \
-		--host=$(LOCALHOST) \
-		--limit_posts=50 \
-		--livereload \
-		--incremental
-
 serve-php:
 	php -S $(LOCALHOST):4001
 
 docker:
+	docker stop gippy-pages || true
 	docker run --rm \
 		-dit \
 		--name gippy-pages \

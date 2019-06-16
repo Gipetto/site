@@ -38,7 +38,7 @@ make package
 _requires key based SSH auth on remote destination_
 
 ```
-make deploy
+make package deploy
 ```
 
 ## Writing Posts
