@@ -83,11 +83,13 @@ serve: clean docker
 serve-php:
 	php -S $(LOCALHOST):4001
 
-docker:
-	docker stop gippy-pages || true
-	docker run --rm \
-		-dit \
+docker: stop
+	docker run -dit \
+		--rm \
 		--name gippy-pages \
 		-p 8080:80 \
 		-v "$(PWD)/_site":/usr/local/apache2/htdocs/ \
 		httpd:2.4-alpine
+
+stop:
+	docker stop gippy-pages || true
