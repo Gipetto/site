@@ -10,6 +10,7 @@ JS := js
 JS_COMPILE := SIMPLE
 JS_INFILE := $(JS)/behavior.js
 JS_OUTFILE := $(JS)/behavior.min.js
+DOCKER_IMAGE := gippy-pages
 
 install: docker-build
 	mkdir -p _bin
@@ -53,7 +54,7 @@ stupid-http-check:
 	curl $(CRLFLAGS) https://top-frog.com | head -1
 	curl $(CRLFLAGS) https://top-frog.com/photography/ | head -1
 	curl $(CRLFLAGS) https://top-frog.com/projects/ | head -1
-	curl $(CRLFLAGS) https://top-frog.com/about | head -1
+	curl $(CRLFLAGS) https://top-frog.com/about/ | head -1
 	curl $(CRLFLAGS) https://top-frog.com/js/behavior.min.js | head -1
 	curl $(CRLFLAGS) https://top-frog.com/css/main.css | head -1
 
@@ -86,15 +87,15 @@ serve-php:
 docker-build:
 	docker build \
 		--no-cache \
-		-t gippy-pages:latest .
+		-t $(DOCKER_IMAGE):latest .
 
 docker: stop
 	docker run -dit \
 		--rm \
-		--name gippy-pages \
+		--name $(DOCKER_IMAGE) \
 		-p 8080:80 \
 		-v "$(PWD)/_site":/usr/local/apache2/htdocs/ \
-		gippy-pages:latest
+		$(DOCKER_IMAGE):latest
 
 stop:
-	docker stop gippy-pages || true
+	docker stop $(DOCKER_IMAGE) || true

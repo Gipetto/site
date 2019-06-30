@@ -1,6 +1,7 @@
 # Top-Frog Static
 
-Simpler is better. Too bad I have to use Ruby. And, yes, I know that this whole thing is less than simple ;)
+~~Simpler is better.~~ (That died fast)  
+Too bad I have to use Ruby. And, yes, I know that this whole thing is less than simple ;)
 
 ## Running Generator
 
@@ -19,7 +20,13 @@ Simpler is better. Too bad I have to use Ruby. And, yes, I know that this whole 
 
 ### Local dev server
 
-To run local instance of the site, with the latest 50 posts only, with Jekyll watching for changes:
+First we need to install a few things and intialize our docker container:
+
+```
+make install
+```
+
+To run local instance of the site with Apache in Docker, with the latest 50 posts only, and Jekyll watching for changes:
 
 ```
 make serve
@@ -63,7 +70,7 @@ make package deploy
 
 ### Speeding up LSI
 
-`brew install gsl` to get parent package.
+`brew install gsl` to get parent package. (install `libgsl` on linux).  
 Then add `gsl`, `nmatrix` & `narray` gems to `Gemfile`. Then `bundle install`.
 
 You may have to install `nmatrix` and `narray` gems first, then install `gsl`.
