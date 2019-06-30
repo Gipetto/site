@@ -18,7 +18,7 @@ Until today. Well, last month, really.
 
 #### Enter the Penguin
 
-I did some research, order some parts off of Amazon, and put together a computer. I made a couple of bad decisions on timing[^1] and the Video Card[^2], but overall its good. Really good. I got a plenty fast CPU in the Ryzen 7 2700X. The RX580 is overall a solid performer. Gobs of RAM and fast hard drives help a lot too. I loaded up the case with fans and the largest CPU cooler known to man and it runs cool and quiet. Overall I'm digging it a lot.
+I did some research, ordered some parts off of Amazon, and put together a computer. I made a couple of bad decisions on timing[^1] and the Video Card[^2], but overall its good. Really good. I got a plenty fast CPU in the Ryzen 7 2700X. The RX580 is overall a solid performer. Gobs of RAM and fast hard drives help a lot too. I loaded up the case with fans and the largest CPU cooler known to man and it runs cool and quiet. Overall I'm digging it a lot.
 
 For the OS I decided that mainstream was the best place to start. So Ubuntu it was. I reinstalled a few times to check out XUbuntu and to try different versions to see what felt right. In the end I chose 19.04 solely because I didn't see much use in an LTS system at this point. I'm gonna fuck it up to the point of needing a reinstall anyway, so why not try the latest and see how it goes.
 
