@@ -11,7 +11,7 @@ JS_COMPILE := SIMPLE
 JS_INFILE := $(JS)/behavior.js
 JS_OUTFILE := $(JS)/behavior.min.js
 
-install:
+install: docker-build
 	mkdir -p _bin
 	mkdir -p _site
 	bundle install
@@ -74,7 +74,7 @@ build:
 	JEKYLL_ENV=production jekyll build $(JKLFLAGS)
 
 serve: clean docker
-	JEKYLL_ENV=production jekyll build \
+	JEKYLL_ENV=docker jekyll build \
 		$(JKLFLAGS) \
 		--incremental \
 		--limit_posts=50 \
@@ -83,13 +83,18 @@ serve: clean docker
 serve-php:
 	php -S $(LOCALHOST):4001
 
+docker-build:
+	docker build \
+		--no-cache \
+		-t gippy-pages:latest .
+
 docker: stop
 	docker run -dit \
 		--rm \
 		--name gippy-pages \
 		-p 8080:80 \
 		-v "$(PWD)/_site":/usr/local/apache2/htdocs/ \
-		httpd:2.4-alpine
+		gippy-pages:latest
 
 stop:
 	docker stop gippy-pages || true

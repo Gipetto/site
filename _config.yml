@@ -55,6 +55,7 @@ exclude:
   - _drafts
   - _bin
   - _flickr_auth
+  - Dockerfile
   - Gemfile
   - Gemfile.lock
   - Makefile
