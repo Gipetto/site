@@ -21,7 +21,12 @@ permalink: .htaccess
   Header unset ETag
   Header set X-Content-Type-Options nosniff
   Header unset X-Powered-By
+  Header set X-XSS-Protection: "1; mode=block"
+  Header set Feature-Policy: "geolocation 'none'; camera 'none'; microphone 'none'"
+  Header set Referer-Policy: "origin"
+  Header set X-Content-Type-Options: "nosniff"
   Header set X-Frame-Options: DENY
+  Header set Cache-Control: "no-transform, immutable, public"
   Header set Content-Security-Policy "{{ cspDefault }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }} 'sha256-{{ headCssSha }}'; {{ cspConnect }}; {{ cspFrame }};"
 </IfModule>
 
