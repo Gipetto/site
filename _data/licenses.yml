@@ -43,5 +43,5 @@
 - name: Docker CE
   source: https://github.com/docker/docker-ce
   changes: None
-  licence: Apache 2.0
+  license: Apache 2.0
   link: https://www.docker.com/products/container-runtime
