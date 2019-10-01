@@ -2,6 +2,7 @@ _site
 _bin
 _flickr_auth/auth.json
 _flickr_auth/oauth_token.txt
+vendor
 js/*.min.*
 .tweet-cache
 .sass-cache

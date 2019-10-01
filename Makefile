@@ -18,7 +18,8 @@ install: docker-build
 	bundle install
 	wget -P _bin \
 		https://dl.google.com/closure-compiler/compiler-latest.zip
-	unzip _bin/compiler-latest.zip -d _bin/closure-compiler
+	unzip -f _bin/compiler-latest.zip -d _bin/closure-compiler
+	rm _bin/compiler-lates.zip
 
 clean:
 	rm -rf $(SITE)/*
@@ -71,15 +72,33 @@ rsync:
 		--itemize-changes \
 		$(SITE)/ gipetto1@top-frog.com:top-frog.com/public_html_static
 
-build:
-	JEKYLL_ENV=production jekyll build $(JKLFLAGS)
+build: clean
+	docker run --rm -it \
+		--cpus 4 \
+		--memory=4g \
+		--volume "$(PWD):/srv/jekyll" \
+		--volume "$(PWD)/vendor/bundle:/usr/local/bundle" \
+		--env JEKYLL_ENV=production \
+		--name $(DOCKER_IMAGE) \
+		$(DOCKER_IMAGE):latest \
+		jekyll build \
+		$(JKLFLAGS)
 
-serve: clean docker
-	JEKYLL_ENV=docker jekyll build \
+serve: clean
+	docker run --rm -it \
+		--volume "$(PWD):/srv/jekyll" \
+		--volume "$(PWD)/vendor/bundle:/usr/local/bundle" \
+		--env JEKYLL_ENV=docker \
+		-p 4000:4000 \
+		-p 35729:35729 \
+		--name $(DOCKER_IMAGE) \
+		$(DOCKER_IMAGE):latest \
+		jekyll serve \
 		$(JKLFLAGS) \
 		--incremental \
-		--limit_posts=50 \
-		--watch
+		--limit_posts 50 \
+		--livereload \
+		--watch 
 
 serve-php:
 	php -S $(LOCALHOST):4001
@@ -88,14 +107,3 @@ docker-build:
 	docker build \
 		--no-cache \
 		-t $(DOCKER_IMAGE):latest .
-
-docker: stop
-	docker run -dit \
-		--rm \
-		--name $(DOCKER_IMAGE) \
-		-p 8080:80 \
-		-v "$(PWD)/_site":/usr/local/apache2/htdocs/ \
-		$(DOCKER_IMAGE):latest
-
-stop:
-	docker stop $(DOCKER_IMAGE) || true
