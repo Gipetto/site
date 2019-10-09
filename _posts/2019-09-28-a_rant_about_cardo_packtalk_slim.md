@@ -30,3 +30,11 @@ That’s a lot of failures in the tertiary features, but what about the core fun
 All in all I’m sad one of the old Sena 10s headsets died. While I didn’t get to listen to directions while also talking, at least they got the core functionality right: I could talk to my wife reliably within reasonable distances.
 
 Last, but not least, the PDF manual found online links out to non-existent FAQs for solving problems. That’s a problem.
+
+### Update 2019-10-08
+
+A few more days in and I've turned off all voice commands and so far no more unwanted invocations of my phone or the radio. But still some issues:
+
+- Another case of the two paired headsets not connecting to each other. Had to restart each one a few times to get them to sync up. Pretty frustrating.
+- My headset decided that 1/4 - 1/3 power was enough to warrant immediate shutdown. The first time we stretched the batteries they were fine. We got plenty of battery warnings before anything happened. Today I just got shutdowns. Just "goodbye" and its gone. Charged back up and so far so good. We'll see what happens when it gets back down under half battery.
+- Strange garblings again.
