@@ -38,3 +38,8 @@ A few more days in and I've turned off all voice commands and so far no more unw
 - Another case of the two paired headsets not connecting to each other. Had to restart each one a few times to get them to sync up. Pretty frustrating.
 - My headset decided that 1/4 - 1/3 power was enough to warrant immediate shutdown. The first time we stretched the batteries they were fine. We got plenty of battery warnings before anything happened. Today I just got shutdowns. Just "goodbye" and its gone. Charged back up and so far so good. We'll see what happens when it gets back down under half battery.
 - Strange garblings again.
+
+### Update 2019-10-20
+
+The wife's USB charging port broke. These units are headed back to Amazon for a refund.
+Looks like we're headed back to Sena.
