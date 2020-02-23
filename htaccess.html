@@ -28,6 +28,9 @@ permalink: .htaccess
   Header set X-Frame-Options: DENY
   Header set Cache-Control: "no-transform, immutable, public"
   Header set Content-Security-Policy "{{ cspDefault }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }} 'sha256-{{ headCssSha }}'; {{ cspConnect }}; {{ cspFrame }};"
+  <If "%{HTTP_USER_AGENT} =~ /(MSIE|Edge)s*/i">
+    Header set X-UA-Compatible: "IE=Edge,chrome=1"
+  </If>
 </IfModule>
 
 FileETag None
