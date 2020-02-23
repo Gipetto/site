@@ -3,6 +3,6 @@ layout: default
 ---
 
 <article class="drivel">
-    <h3>{{ page.title | escape }}</h3>
+    <h3>{{ page.title | escape | pp }}</h3>
     {{ content }}
 </article>

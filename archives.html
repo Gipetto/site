@@ -14,13 +14,13 @@ section: archives
             {{ close_ul }}
             {% assign year = post_year %}
             {% assign close_ul = "</ul>" %}
-            <h3>{{ post_year }}</h3>
+            <h3>{{ post_year | pp }}</h3>
             <ul>
         {%- endunless -%}
     
         <li>
             <div>
-                <span class="muted-n-stuff">{{ post.date | date: "%b %d"}}:</span> 
+                <span class="muted-n-stuff">{{ post.date | date: "%b %d" }}:</span> 
             </div>
             <div>
                 <a href="{{ post.url }}">{{ post.title | escape }}</a>

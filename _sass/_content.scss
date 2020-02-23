@@ -27,6 +27,13 @@
 		margin: 10px 0;
 	}
 
+	.pp {
+		content: "§";
+		color: #ccc;
+		float: left;
+		margin-left: -1rem;
+	}
+
 	.alignright {
 		float: right;
 		margin: 0 0 5px 1rem;
@@ -81,13 +88,6 @@
 			&:first-child {
 				margin-top: 5px;
 			}
-
-			&:first-child::before {
-				content: "§";
-				color: #ccc;
-				float: left;
-				margin-left: -1rem;
-			}
 		}
 
 		h4 {
@@ -112,15 +112,6 @@
 		}
 
 		&.archives {
-			h3 {
-				&:before {
-					content: "§";
-					color: #ccc;
-					float: left;
-					margin-left: -15px;
-				}
-			}
-
 			ul {
 				list-style: none outside;
 				margin-left: 0;
