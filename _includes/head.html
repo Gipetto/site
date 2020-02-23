@@ -21,7 +21,7 @@
 {%- include style/_layout.scss -%}
 {%- include style/_nav.scss -%}
 {%- endcapture %}
-	<style type="text/css">{{- include_to_scssify | scssify | strip -}}</style>
+	<style>{{- include_to_scssify | scssify | strip -}}</style>
 	<link type="text/plain" rel="author" href="{{ site.url }}/humans.txt" />
 	{% seo %}
 </head>
