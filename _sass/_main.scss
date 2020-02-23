@@ -20,6 +20,20 @@ body {
 		display: none;
 	}
 
+	.skip-link {
+		position: relative;
+		padding: 5px 10px;
+		left: -1000px;
+		background-color: $innerBackgroundColor;
+		border: 1px solid $borderColor;
+		border-radius: 5px;
+		
+		&:focus {
+			left: 10px;
+			top: 10px;
+		}
+	}
+
 	#bag-o-holding {
 		background-color: $innerBackgroundColor;
 		border: 1px solid $borderColor;
