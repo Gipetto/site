@@ -6,12 +6,13 @@
         <h2 class="widget-title">Looking for something?</h2>
         <form action="/search" role="search" class="grid grid-row">
             <div class="grid-cell">
-                <input type="text" name="q" value="" placeholder="search"/>
+                <label for="search-input">Search Query:</label>
+                <input type="text" id="search-input" name="q" value="" placeholder="search" />
             </div>
             <div class="grid-cell">
-                <button type="submit">
+                <button type="submit" aria-label="Search">
                     <span>Search</span>
-                    <svg viewBox="0 0 25 25" class="icon">
+                    <svg viewBox="0 0 25 25" class="icon" aria-hidden="true">
                         <use xlink:href="#icon-magnifier"></use>
                     </svg>
                 </button>
@@ -45,7 +46,7 @@
             <li>
                 <a href="https://github.com/Gipetto" rel="noopener" target="_blank"
                     title="Gipetto on GitHub">
-                    <svg viewBox="0 0 16 16" class="icon">
+                    <svg viewBox="0 0 16 16" class="icon" aria-hidden="true">
                         <use xlink:href="#icon-github"></use>
                     </svg>
                     <span>GitHub: Gipetto</span>
@@ -54,7 +55,7 @@
             <li>
                 <a href="https://www.flickr.com/photos/tehgipster/" rel="noopener" target="_blank"
                     title="tehgipster on Flickr">
-                    <svg viewBox="0 0 16 16" class="icon">
+                    <svg viewBox="0 0 16 16" class="icon" aria-hidden="true">
                         <use xlink:href="#icon-flickr"></use>
                     </svg>
                     <span>Flickr: tehgipster</span>
@@ -63,7 +64,7 @@
             <li>
                 <a href="https://twitter.com/wookieeboy" rel="noopener" target="_blank" 
                     title="WookieeBoy on Twitter">
-                    <svg viewBox="0 0 16 16" class="icon">
+                    <svg viewBox="0 0 16 16" class="icon" aria-hidden="true">
                         <use xlink:href="#icon-twitter"></use>
                     </svg>
                     <span>Twitter: WookieeBoy</span>
@@ -72,7 +73,7 @@
             <li>
                 <a href="https://www.linkedin.com/in/shawnparker/" rel="noopener" target="_blank"
                     title="shawnparker on LinkedIn">
-                    <svg viewBox="0 0 16 16" class="icon">
+                    <svg viewBox="0 0 16 16" class="icon" aria-hidden="true">
                         <use xlink:href="#icon-linkedin"></use>
                     </svg>
                     <span>LinkedIn: shawnparker</span>
@@ -81,7 +82,7 @@
             <li>
                 <a href="https://about.me/shawnparker" rel="noopener" target="_blank"
                     title="shawnparker on About dot Me">
-                    <svg viewBox="0 0 16 16" class="icon">
+                    <svg viewBox="0 0 16 16" class="icon" aria-hidden="true">
                         <use xlink:href="#icon-about-me"></use>
                     </svg>
                     <span>About.me: shawnparker</span>

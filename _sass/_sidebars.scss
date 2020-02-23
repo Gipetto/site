@@ -19,6 +19,13 @@
 		}
 
 		&.find-it {
+			label {
+				width: 1px;
+				height: 1px;
+				position: absolute;
+				left: -1000px;
+			}
+			
 			.grid-cell {
 				margin: 5px 0;
 			}
