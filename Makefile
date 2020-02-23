@@ -19,7 +19,7 @@ install: docker-build
 	wget -P _bin \
 		https://dl.google.com/closure-compiler/compiler-latest.zip
 	unzip -f _bin/compiler-latest.zip -d _bin/closure-compiler
-	rm _bin/compiler-lates.zip
+	rm _bin/compiler-latest.zip
 
 clean:
 	rm -rf $(SITE)/*
