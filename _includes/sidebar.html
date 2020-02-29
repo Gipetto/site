@@ -2,7 +2,7 @@
 <aside class="widget eyebrow"></aside>
 {% if page.search != true %}
 <aside class="widget find-it">
-    <div class="find-it-input">
+    <div class="find-it-input" role="row">
         <h2 class="widget-title">Looking for something?</h2>
         <form action="/search" role="search" class="grid grid-row">
             <div class="grid-cell">
@@ -44,48 +44,43 @@
         <h2 class="widget-title">Find me at:</h2>
         <ul>
             <li>
-                <a href="https://github.com/Gipetto" rel="noopener" target="_blank"
-                    title="Gipetto on GitHub">
+                <a href="https://github.com/Gipetto" rel="noopener" target="_blank" aria-labelledby="desc-github">
                     <svg viewBox="0 0 16 16" class="icon" aria-hidden="true">
                         <use xlink:href="#icon-github"></use>
                     </svg>
-                    <span>GitHub: Gipetto</span>
+                    <span id="desc-github">GitHub: Gipetto</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.flickr.com/photos/tehgipster/" rel="noopener" target="_blank"
-                    title="tehgipster on Flickr">
+                <a href="https://www.flickr.com/photos/tehgipster/" rel="noopener" target="_blank" aria-labelledby="desc-flickr">
                     <svg viewBox="0 0 16 16" class="icon" aria-hidden="true">
                         <use xlink:href="#icon-flickr"></use>
                     </svg>
-                    <span>Flickr: tehgipster</span>
+                    <span id="desc-flickr">Flickr: tehgipster</span>
                 </a>
             </li>
             <li>
-                <a href="https://twitter.com/wookieeboy" rel="noopener" target="_blank" 
-                    title="WookieeBoy on Twitter">
+                <a href="https://twitter.com/wookieeboy" rel="noopener" target="_blank" aria-labelledby="desc-twitter">
                     <svg viewBox="0 0 16 16" class="icon" aria-hidden="true">
                         <use xlink:href="#icon-twitter"></use>
                     </svg>
-                    <span>Twitter: WookieeBoy</span>
+                    <span id="desc-twitter">Twitter: WookieeBoy</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/shawnparker/" rel="noopener" target="_blank"
-                    title="shawnparker on LinkedIn">
+                <a href="https://www.linkedin.com/in/shawnparker/" rel="noopener" target="_blank" aria-labelledby="desc-linkedin">
                     <svg viewBox="0 0 16 16" class="icon" aria-hidden="true">
                         <use xlink:href="#icon-linkedin"></use>
                     </svg>
-                    <span>LinkedIn: shawnparker</span>
+                    <span id="desc-linkedin">LinkedIn: shawnparker</span>
                 </a>
             </li>
             <li>
-                <a href="https://about.me/shawnparker" rel="noopener" target="_blank"
-                    title="shawnparker on About dot Me">
+                <a href="https://about.me/shawnparker" rel="noopener" target="_blank" aria-labelledby="desc-aboutme">
                     <svg viewBox="0 0 16 16" class="icon" aria-hidden="true">
                         <use xlink:href="#icon-about-me"></use>
                     </svg>
-                    <span>About.me: shawnparker</span>
+                    <span id="desc-aboutme">About.me: shawnparker</span>
                 </a>
             </li>
         </ul>

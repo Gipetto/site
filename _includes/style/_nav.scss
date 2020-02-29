@@ -107,7 +107,7 @@ body {
 					}
 				}
 
-				&:hover {
+				&:hover, &:focus-within {
 					a {
 						z-index: 15;
 					}

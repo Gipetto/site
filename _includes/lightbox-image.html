@@ -1,4 +1,4 @@
-<div>
+<div role="figure">
     {% if include.center %}<center>{% endif %}
     <a href="{{ include.href | default: include.img_lg }}" class="thickbox frame {{ include.additional_classes | default: '' }}">
         <img src="{{ include.img_sm | default: '' }}" alt="Photograph: {{ include.title }}"

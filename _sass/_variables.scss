@@ -32,3 +32,11 @@ $header-font-family: Georgia, 'Times New Roman', Times, serif;
     color: #fff; 
     text-shadow: none; 
 }
+
+@mixin focusOutline {
+    &:focus {
+        outline-style: dotted;
+        outline-width: thin;
+        outline-offset: 2px;    
+    }
+}

@@ -2,8 +2,8 @@
 layout: base
 ---
 <div class="grid grid-row">
-    <div id="stuff" class="grid-cell">
-        <h2 class="tome">{{ page.section | default: layout.section }}</h2>
+    <div id="stuff" class="grid-cell" role="main">
+        <h2 class="tome" role="presentation">{{ page.section | default: layout.section }}</h2>
         {{ content }}
     </div>
     <div id="less-important-stuff" class="grid-cell">

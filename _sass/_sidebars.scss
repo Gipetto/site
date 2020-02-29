@@ -19,6 +19,9 @@
 		}
 
 		&.find-it {
+			input, button {
+				@include focusOutline;
+			}
 			label {
 				width: 1px;
 				height: 1px;
@@ -50,6 +53,8 @@
 					width: 25px;
 					border: 0;
 					background: none;
+					padding: 2px;
+					border-radius: 3px;
 					
 					span {
 						display: none;
@@ -58,6 +63,10 @@
 					svg {
 						position: relative;
 						top: 2px;
+					}
+
+					&:hover, &:focus {
+						background-color: gray;
 					}
 				}
 			}
@@ -140,7 +149,7 @@
 							display: none;
 						}
 
-						&:hover {
+						&:hover, &:focus {
 							span {
 								position: absolute;
 								display: block;
