@@ -11,3 +11,4 @@ js/*.min.*
 .DS_Store
 .flickr-cache.json
 .ruby-version
+.jekyll-cache
