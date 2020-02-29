@@ -10,7 +10,7 @@ categories:
 tags:
   - custom post type
   - help center
-  - passwork
+  - password
   - post
   - post password token
   - post type

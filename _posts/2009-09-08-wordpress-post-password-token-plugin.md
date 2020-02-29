@@ -10,7 +10,7 @@ categories:
 tags:
   - password
   - php
-  - pluign
+  - plugin
   - post
   - token
   - wordpress
