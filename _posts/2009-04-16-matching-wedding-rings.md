@@ -9,7 +9,10 @@ categories:
   - Life
   - Photography
 tags:
-  - ring john hardy johnhardy wedding
+  - ring 
+  - john hardy 
+  - johnhardy 
+  - wedding
 ---
 
 {% flickr_photo '3448749489' %}
