@@ -23,6 +23,13 @@ social:
     - https://www.linkedin.com/in/ShawnParker
     - https://www.flickr.com/photos/tehgipster
     - https://github.com/Gipetto
+defaults:
+  - 
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      threads: []
 markdown: kramdown
 sass:
   style: compressed
