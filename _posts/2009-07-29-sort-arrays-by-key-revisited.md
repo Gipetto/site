@@ -29,13 +29,13 @@ A few years ago I posted on [Sorting Multidimensional Arrays by Key](http://top-
  * Items can be arrays or objects, but must all be the same type
  *
  * @example
- * 		$array = array(
- *					'mary' => array('age' => 21),
- * 					'bob' => array('age' => 5),
- *					'justin' => array('age' => 15)
- *					);
- *		$array = cf_sort_by_key($array,'age');
- *		# array is now: bob,justin,mary
+ *   $array = array(
+ *     'mary' => array('age' => 21),
+ *     'bob' => array('age' => 5),
+ *     'justin' => array('age' => 15)
+ *   );
+ *   $array = cf_sort_by_key($array,'age');
+ *   # array is now: bob,justin,mary
  *
  * @param $data - the array of items to work on
  * @param $sort_key - an array key or object member to use as the sort key
@@ -43,16 +43,16 @@ A few years ago I posted on [Sorting Multidimensional Arrays by Key](http://top-
  * @return array - sorted array
  */
 function array_sort_by_key($data,$sort_key,$ascending=true) {
-	$order = $ascending ? '$a,$b' : '$b,$a';
+  $order = $ascending ? '$a,$b' : '$b,$a';
 
-	if(is_object(current($data))) {
-		$callback = create_function($order,'return strnatcasecmp($a->'.$sort_key.',$b->'.$sort_key.');');
-	} else {
-		$callback = create_function($order,'return strnatcasecmp($a["'.$sort_key.'"],$b["'.$sort_key.'"]);');
-	}
+  if(is_object(current($data))) {
+    $callback = create_function($order,'return strnatcasecmp($a->'.$sort_key.',$b->'.$sort_key.');');
+  } else {
+    $callback = create_function($order,'return strnatcasecmp($a["'.$sort_key.'"],$b["'.$sort_key.'"]);');
+  }
 
-	uasort($data,$callback);
-	return $data;
+  uasort($data,$callback);
+  return $data;
 }
 ```
 
