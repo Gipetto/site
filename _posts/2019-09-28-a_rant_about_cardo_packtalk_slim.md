@@ -3,7 +3,7 @@ title: 'A rant about Cardo Packtalk Slim'
 date: 2019-09-28T13:28:00+00:00
 layout: post
 categories:
-  - life
+  - Life
 tags:
   - motorcycles
   - cardo

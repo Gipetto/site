@@ -4,6 +4,7 @@ date: 2019-06-12T22:03:00+00:00
 layout: post
 categories:
   - computers
+  - '*nix'
 tags:
   - linux
   - desktop

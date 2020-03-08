@@ -1,8 +1,8 @@
 ---
 layout: default
 section: archives
+archives: true
 ---
-
 <section class="drivel archives">
 {%- if site.posts.size > 0 -%}
     {% assign year = Nil %}
@@ -13,12 +13,13 @@ section: archives
         {%- unless year == post_year -%}
             {{ close_ul }}
             {% assign year = post_year %}
-            {% assign close_ul = "</ul>" %}
-            <h3>{{ post_year | pp }}</h3>
-            <ul>
+            {% assign close_ul = "</ul></section>" %}
+            <section>
+                <h3>{{ post_year | pp }}</h3>
+                <ul>
         {%- endunless -%}
-    
-        <li>
+        
+        <li class="item" data-categories="{% for cat in post.categories -%}{{ cat | slugify }} {%- endfor %}">
             <div>
                 <span class="muted-n-stuff">{{ post.date | date: "%b %d" }}:</span> 
             </div>

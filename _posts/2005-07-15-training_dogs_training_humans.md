@@ -9,7 +9,7 @@ categories:
   - Dogs
 tags:
   - bear
-  - Dogs
+  - dogs
   - dozer
   - human
   - leadership

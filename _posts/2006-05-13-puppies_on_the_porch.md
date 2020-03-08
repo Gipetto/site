@@ -9,9 +9,9 @@ categories:
   - Photography
 tags:
   - camera
-  - Dogs
+  - dogs
   - photograph
-  - Photography
+  - photography
   - porch
   - puppy
 ---

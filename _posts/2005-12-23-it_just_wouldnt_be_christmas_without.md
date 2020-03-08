@@ -10,7 +10,7 @@ categories:
 tags:
   - blood
   - cut
-  - Dogs
+  - dogs
   - fight
   - puncture
   - stitches

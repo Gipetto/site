@@ -2,6 +2,7 @@
 	background: $sidebarBackgroundColor;
 	border-left: 1px solid $innerBorderColor;
 	box-sizing: border-box;
+	align-items: flex-start;
 
 	aside {
 		margin: 10px 17px 30px;
@@ -69,6 +70,40 @@
 						background-color: gray;
 					}
 				}
+			}
+		}
+
+		.archive-filter {
+			.disabled {
+				color: gray;
+			}
+
+			.clear {
+				display: block;
+				padding: 3px 5px;
+				margin-top: 8px;
+			}
+
+			[type="checkbox"] {
+				position: absolute;
+				left: -9999px;
+			}
+
+			label {
+				display: block;
+				border: 1px solid $lightGrayBorderColor;
+				padding: 3px 5px;
+				margin: 2px 0;
+				border-radius: 5px;
+				box-shadow: 1px 1px 3px inset rgba(0, 0, 0, 0.1);
+			}
+
+			[type="checkbox"]:checked ~ label {
+				color: white;
+				font-weight: bold;
+				background-color: gray;
+				border: 1px solid $sidebarBackgroundColor;
+				box-shadow: 1px 1px 3px inset rgba(0, 0, 0, 0.2);
 			}
 		}
 	}

@@ -1,95 +1,17 @@
-
 <aside class="widget eyebrow"></aside>
-{% if page.search != true %}
-<aside class="widget find-it">
-    <div class="find-it-input" role="row">
-        <h2 class="widget-title">Looking for something?</h2>
-        <form action="/search" role="search" class="grid grid-row">
-            <div class="grid-cell">
-                <label for="search-input">Search Query:</label>
-                <input type="text" id="search-input" name="q" value="" placeholder="search" />
-            </div>
-            <div class="grid-cell">
-                <button type="submit" aria-label="Search">
-                    <span>Search</span>
-                    <svg viewBox="0 0 25 25" class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-magnifier"></use>
-                    </svg>
-                </button>
-            </div>
-        </form>
-    </div>
-</aside>
+{% if page.archives %}
+    {% include sidebar-archives.html %}
 {% endif %}
-<aside class="widget">
-    <div class="recent-crap">
-        <h2 class="widget-title">Recently:</h2>
-        <ul>
-            {% for recent_post in site.posts limit:5 %}
-                <li>
-                    <a class="chevron" href="{{ recent_post.url }}">{{ recent_post.title }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
-</aside>
-<aside class="widget">
-    <h2 class="widget-title">What is this?</h2>
-    <div class="textwidget">
-        <p>{{ site.description }}</p>
-    </div>
-</aside>
-<aside class="widget">
-    <div class="socialwidget">
-        <h2 class="widget-title">Find me at:</h2>
-        <ul>
-            <li>
-                <a href="https://github.com/Gipetto" rel="noopener" target="_blank" aria-labelledby="desc-github">
-                    <svg viewBox="0 0 16 16" class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-github"></use>
-                    </svg>
-                    <span id="desc-github">GitHub: Gipetto</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.flickr.com/photos/tehgipster/" rel="noopener" target="_blank" aria-labelledby="desc-flickr">
-                    <svg viewBox="0 0 16 16" class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-flickr"></use>
-                    </svg>
-                    <span id="desc-flickr">Flickr: tehgipster</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/wookieeboy" rel="noopener" target="_blank" aria-labelledby="desc-twitter">
-                    <svg viewBox="0 0 16 16" class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-twitter"></use>
-                    </svg>
-                    <span id="desc-twitter">Twitter: WookieeBoy</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/shawnparker/" rel="noopener" target="_blank" aria-labelledby="desc-linkedin">
-                    <svg viewBox="0 0 16 16" class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-linkedin"></use>
-                    </svg>
-                    <span id="desc-linkedin">LinkedIn: shawnparker</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://about.me/shawnparker" rel="noopener" target="_blank" aria-labelledby="desc-aboutme">
-                    <svg viewBox="0 0 16 16" class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-about-me"></use>
-                    </svg>
-                    <span id="desc-aboutme">About.me: shawnparker</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</aside>
-<aside class="widget">
-    <h2 class="widget-title">Subscribe:</h2>
-    <div class="textwidget">
-        <p>If you're the self-loathing type, you can <a href="/feed">get updates to this site via RSS.</a></p>
-        <p><a class="chevron" href="/what-is-rss">What is RSS?</a></p>
-    </div>
-</aside>
+
+{% if page.archives != true %}
+    {% if page.search != true %}
+        {% include sidebar-search.html %}
+    {% endif %}
+    {% unless 'projects about' contains page.section %}
+        {% include sidebar-recent-posts.html %}
+    {% endunless %}
+{% endif %}
+
+{% include sidebar-wtf.html %}
+{% include sidebar-social.html %}
+{% include sidebar-subscribe.html %}

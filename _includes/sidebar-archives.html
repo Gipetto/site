@@ -1,0 +1,21 @@
+{% capture _categories -%}
+    {%- for category in site.categories -%}
+        {{ category[0] | wordcase }},
+    {%- endfor -%}
+{%- endcapture %}
+{% assign categories = _categories | split: ',' | uniq | sort %}
+
+<aside class="widget">
+    <h2 class="widget-title">Archives Filter:</h2>
+    <div class="archive-filter">
+        {%- for category in categories %}
+            {% assign category_slug = category | slugify %}
+            <span>
+                <input type="checkbox" name="{{ category_slug }}" 
+                    id="{{ category_slug }}" value="{{ category_slug }}" />    
+                <label for="{{ category_slug }}">{{ category }}</label>
+            </span>
+        {% endfor -%}
+        <a class="clear disabled" href="#">show all</a>
+    </div>
+</aside>

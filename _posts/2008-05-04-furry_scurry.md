@@ -10,7 +10,7 @@ categories:
 tags:
   - "2008"
   - denver
-  - Dogs
+  - dogs
   - furry
   - park
   - pictures

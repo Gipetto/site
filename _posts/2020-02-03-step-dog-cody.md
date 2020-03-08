@@ -3,7 +3,7 @@ title: 'Our Step Dog Cody'
 date: 2020-02-03T13:28:00+00:00
 layout: post
 categories:
-  - dogs
+  - Dogs
 tags:
   - dogsitting
   - cody

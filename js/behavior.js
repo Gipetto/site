@@ -13,13 +13,18 @@ function fluffyBunnies() {
         return url + '?v=' + cachebuster;
     }
 
+    var stopEvent = (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+    };
+
     // Hamburger
 
     var hamburger = (function() {
         var nav = document.querySelector('header').querySelector('nav');
         var hamburgerToggle = nav.querySelector('.hamburger a');
         return function(e) {
-            e.preventDefault();
+            stopEvent(e);
             nav.classList.toggle('hamburgled');
             hamburgerToggle
                 .setAttribute('aria-expanded', nav.classList.contains('hamburgled') ? 'true' : 'false');
@@ -110,6 +115,60 @@ function fluffyBunnies() {
             });
     }
 
+    // Archive Filter
+
+    var filterArchiveListItem = (checked_categories) => {
+        return (item) => {
+            var item_categories = item.getAttribute('data-categories');
+            var is_active_category = checked_categories.reduce((accumulator, category) => {
+                return accumulator ? accumulator : item_categories.includes(category)
+            }, false)
+
+            item.classList.toggle('hidden', !is_active_category);
+        };
+    };
+
+    var filterArchiveList = (event) => {
+        var checked_categories = [].slice.call(archiveFilters)
+            .filter((item) => item.checked)
+            .map((item) => item.value)
+
+        if (!checked_categories.length) {
+            archiveItems.forEach((item) => item.classList.remove('hidden'));
+            archiveFilterClear.forEach((el) => el.classList.add('disabled'));    
+        } else {
+            archiveItems.forEach(filterArchiveListItem(checked_categories));
+            archiveFilterClear.forEach((el) => el.classList.remove('disabled'));    
+        }
+
+        archiveSections.forEach((section) => {
+            var is_empty = !section.querySelectorAll('.item:not(.hidden)').length
+            section.classList.toggle('hidden', is_empty);
+        });
+    };
+
+    var archiveFilters = document.querySelectorAll('.archives .archive-filter input[type="checkbox"]')
+    var archiveSections = document.querySelectorAll('.archives section')
+    var archiveItems = document.querySelectorAll('.archives .item')
+    var archiveFilterClear = document.querySelectorAll('.archives a.clear')
+    
+    archiveFilters.forEach((element) => {
+        element.addEventListener('change', filterArchiveList);
+    });
+
+    archiveFilterClear.forEach((el) => {
+        el.addEventListener('click', (evt) => {
+            stopEvent(evt);
+            evt.target.classList.add('disabled');
+            archiveFilters.forEach((el) => {
+                if (el.checked) {
+                    el.checked = false;
+                    el.dispatchEvent(new Event('change'));    
+                }
+            });
+        });
+    })
+
     // Errors
 
     var errorDiv = document.querySelector('#bofh-reason');
@@ -141,28 +200,33 @@ function fluffyBunnies() {
         var populateLightbox = function(data) {
             lightbox.id = 'i' + data['id'] ? data['id'] : 'foo';
             lightboxImage.src = data['src'];
+
             lightboxImage.removeAttribute('width');
             if (data['width']) {
                 lightboxImage.width = data['width'];
             }
+            
             lightboxImage.removeAttribute('height');
             if (data['height']) {
                 lightboxImage.height = data['height'];
             }
+            
             lightboxCaption.appendChild(mkCaption(data['caption']));
         };
 
         lightboxImage.addEventListener('click', function(e) {
-            e.preventDefault();
+            stopEvent(e);
             lightboxImage.style.opacity = 0;
+            
             while(lightboxCaption.hasChildNodes()) {
                 lightboxCaption.removeChild(lightboxCaption.lastChild);
             }
+            
             lightbox.classList.toggle('onstage');
         });
 
         return function(e) {
-            e.preventDefault();
+            stopEvent(e);
             var _img = this.querySelector('img')
             try {
                 var data = JSON.parse(_img.dataset.lgImg);
