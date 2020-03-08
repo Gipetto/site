@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=5
 permalink: /2004/09/18/moving_along_slowly/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - design
   - bbcode

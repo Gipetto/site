@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=114
 permalink: /2005/07/28/ie7_this_is_a_little_disappointing/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - beta
   - browser

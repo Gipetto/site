@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=1344
 permalink: /2010/07/01/a-simple-way-to-limit-file-downloads-to-only-logged-in-users-in-wordpress/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
   - WordPress
 tags:
   - download

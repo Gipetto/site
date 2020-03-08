@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=2059
 permalink: /2011/09/27/a-few-php-dev-helper-functions/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - commit
   - debug

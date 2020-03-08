@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=44
 permalink: /2005/02/21/note_to_self/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - javascript
   - css

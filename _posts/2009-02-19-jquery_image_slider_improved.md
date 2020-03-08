@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=253
 permalink: /2009/02/19/jquery_image_slider_improved/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - code
   - image

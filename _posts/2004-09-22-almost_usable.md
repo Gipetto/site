@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=7
 permalink: /2004/09/22/almost_usable/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - design
   - puddlemonkey

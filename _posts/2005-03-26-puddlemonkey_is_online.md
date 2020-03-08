@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=61
 permalink: /2005/03/26/puddlemonkey_is_online/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 ---
 Puddle's blog is finally functional.
 

@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=211
 permalink: /2007/04/30/internet_explorer_user_agent_strings/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - absurd
   - agent

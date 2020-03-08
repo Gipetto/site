@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=222
 permalink: /2008/01/17/embed_flash_video_in_a_page_via_javascript/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - clubhouse
   - code

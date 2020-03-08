@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=235
 permalink: /2008/06/19/mysql_bug_with_group_by/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - bug
   - group

@@ -6,8 +6,13 @@ layout: post
 guid: http://top-frog.com/?p=1988
 permalink: /2011/05/24/man-files-as-pdf-revisited/
 categories:
-  - '*nix'
   - Computers
+tags:
+  - '*nix'
+  - pdf
+  - man
+  - help
+  - script
 ---
 [I've posted before on converting man files to PDF](/2011/01/18/view-man-files-as-pdf/) for easier reading and forgot to post this update. The code is much terser, reminds you when you've invoked it without a parameter, and doesn't leave turds that it has to clean up.
 

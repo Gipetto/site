@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.local/?p=474
 permalink: /2006/02/20/porsche-illustration/
 categories:
-  - 'Digital Composition &amp; Illustration'
+  - 'Digital Composition & Illustration'
 tags:
   - gradient
   - illustration

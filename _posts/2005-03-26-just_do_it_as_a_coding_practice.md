@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=60
 permalink: /2005/03/26/just_do_it_as_a_coding_practice/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - coding
   - refactor

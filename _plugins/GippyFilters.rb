@@ -33,10 +33,22 @@ module Jekyll
             Digest::SHA256.base64digest input
         end
 
+        @@special_words = Hash[
+            'bbedit' => 'BBEdit',
+            'php' => 'PHP',
+            'textmate' => 'TextMate',
+            'wordpress' => 'WordPress',
+        ]
+
         # Word Case A String
         def wordcase(input)
             input.gsub(/\w+/) do |token|
-                token.capitalize
+                _t = token.downcase
+                if @@special_words.key?(_t)
+                    @@special_words[_t]
+                else
+                    token.capitalize
+                end
             end            
         end
     end

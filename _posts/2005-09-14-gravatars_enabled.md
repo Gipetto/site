@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=131
 permalink: /2005/09/14/gravatars_enabled/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - comment
   - gravatar

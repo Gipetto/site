@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=1247
 permalink: /2010/03/31/everything-i-know-about-optimizing-a-wordpress-install/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - apache
   - apc

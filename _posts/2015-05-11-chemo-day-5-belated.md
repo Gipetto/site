@@ -7,11 +7,11 @@ guid: http://top-frog.com/?p=2553
 permalink: /2015/05/11/chemo-day-5-belated/
 categories:
   - Cancer
-  - Chemo Day
 tags:
   - chemo
   - poop
   - puke
+  - chemo day
 threads:
   - The Wailing Wookiee
 ---

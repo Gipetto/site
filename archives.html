@@ -8,7 +8,6 @@ archives: true
     {% assign year = Nil %}
     {% assign close_ul = Nil %}
     {%- for post in site.posts -%}
-
         {% assign post_year = post.date | date: "%Y" %}
         {%- unless year == post_year -%}
             {{ close_ul }}

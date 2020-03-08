@@ -7,7 +7,6 @@ guid: http://top-frog.com/?p=2348
 permalink: /2013/07/07/point-reyes/
 categories:
   - Photography
-  - Travel
 tags:
   - california
   - deer

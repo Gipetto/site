@@ -7,7 +7,7 @@ guid: http://top-frog.com/?p=1954
 permalink: /2011/03/14/beware-mamps-default-caching-settings/
 categories:
   - Computers
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - apache
   - apc

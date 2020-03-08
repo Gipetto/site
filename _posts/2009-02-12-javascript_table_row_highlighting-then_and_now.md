@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=249
 permalink: /2009/02/12/javascript_table_row_highlighting-then_and_now/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - code
   - highlight

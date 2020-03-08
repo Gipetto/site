@@ -8,7 +8,7 @@ permalink: /2010/06/17/wordpress-textmate-bundle-is-ready-for-wordpress-3-0/
 categories:
   - Plugins
   - TextMate
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - "3.0"
   - bundle

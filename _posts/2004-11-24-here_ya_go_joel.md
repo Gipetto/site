@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=22
 permalink: /2004/11/24/here_ya_go_joel/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - rss
   - aggregation

@@ -7,8 +7,8 @@ guid: http://top-frog.com/?p=2578
 permalink: /2015/07/17/achievement-unlocked-chemo-complete/
 categories:
   - Cancer
-  - Chemo Day
 tags:
+  - chemo day
   - cancer
   - chemo
   - complete

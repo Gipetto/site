@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=106
 permalink: /2005/07/11/preparing_for_fully_compliant_xhtml/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - css
   - html

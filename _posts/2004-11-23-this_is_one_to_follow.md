@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=20
 permalink: /2004/11/23/this_is_one_to_follow/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - accessibility
   - firefox

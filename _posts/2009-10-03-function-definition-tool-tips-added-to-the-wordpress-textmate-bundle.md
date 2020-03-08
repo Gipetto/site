@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=1026
 permalink: /2009/10/03/function-definition-tool-tips-added-to-the-wordpress-textmate-bundle/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - bundle
   - definition

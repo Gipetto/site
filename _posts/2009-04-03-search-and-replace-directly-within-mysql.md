@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=552
 permalink: /2009/04/03/search-and-replace-directly-within-mysql/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - database
   - multi-user

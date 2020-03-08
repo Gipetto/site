@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=1034
 permalink: /2009/10/10/reading-material/
 categories:
-  - Comics
+  - Life
 tags:
   - art
   - Comics

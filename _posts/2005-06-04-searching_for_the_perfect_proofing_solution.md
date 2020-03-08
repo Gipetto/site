@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=88
 permalink: /2005/06/04/searching_for_the_perfect_proofing_solution/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - site
   - test

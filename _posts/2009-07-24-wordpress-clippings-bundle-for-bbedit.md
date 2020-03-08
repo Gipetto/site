@@ -7,7 +7,7 @@ guid: http://top-frog.com/?p=861
 permalink: /2009/07/24/wordpress-clippings-bundle-for-bbedit/
 categories:
   - PHP Scripting
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - bbedit
   - bundle

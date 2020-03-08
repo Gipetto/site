@@ -6,7 +6,6 @@ layout: post
 guid: http://top-frog.com/?p=2189
 permalink: /2012/07/26/macports-homebrew-and-mountain-lion/
 categories:
-  - '*nix'
   - Computers
 tags:
   - Apple
@@ -16,6 +15,7 @@ tags:
   - macports
   - os x
   - xcode
+  - '*nix'
 ---
 The inevitable happened today. Mountain Lion was installed in a couple of different places. Unfortunately one of those places was at work and on a development machine before we had a chance to test out Mountain Lion compatability. Predictably, issues arose. Not surprisingly, at least to me, Homebrew has the biggest issue, and an issue based on its core philosophy.
 

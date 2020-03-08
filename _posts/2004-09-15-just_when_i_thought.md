@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=4
 permalink: /2004/09/15/just_when_i_thought/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - sifr
   - design

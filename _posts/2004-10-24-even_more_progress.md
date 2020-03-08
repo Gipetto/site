@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=10
 permalink: /2004/10/24/even_more_progress/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - php
   - bbcode

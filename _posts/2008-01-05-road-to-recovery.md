@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.local/?p=478
 permalink: /2008/01/05/road-to-recovery/
 categories:
-  - 'Digital Composition &amp; Illustration'
+  - 'Digital Composition & Illustration'
 tags:
   - campaign
   - composite

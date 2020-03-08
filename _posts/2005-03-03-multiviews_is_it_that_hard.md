@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=49
 permalink: /2005/03/03/multiviews_is_it_that_hard/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - apache
   - multiviews

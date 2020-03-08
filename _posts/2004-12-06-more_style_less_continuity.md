@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=27
 permalink: /2004/12/06/more_style_less_continuity/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - scaling
   - design

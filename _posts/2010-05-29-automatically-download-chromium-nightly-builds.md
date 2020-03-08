@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=1381
 permalink: /2010/05/29/automatically-download-chromium-nightly-builds/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - bash
   - chrome

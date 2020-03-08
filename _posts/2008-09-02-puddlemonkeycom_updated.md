@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=242
 permalink: /2008/09/02/puddlemonkeycom_updated/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - php
   - puddlemonkey

@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=207
 permalink: /2007/01/15/upping_the_speed_of_top-frog_and_a_little_about_the_future/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - cable
   - comcast

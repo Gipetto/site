@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=157
 permalink: /2006/03/28/tabular_image_layouts_in_print_and_web/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - css
   - image

@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=42
 permalink: /2005/02/15/an_official_gippy_endorsement/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - php
   - search

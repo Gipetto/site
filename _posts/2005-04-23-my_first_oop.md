@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=73
 permalink: /2005/04/23/my_first_oop/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - php
   - oop

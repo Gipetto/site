@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=8
 permalink: /2004/09/26/getting_closer_still/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - design
   - mysql

@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=53
 permalink: /2005/03/10/microsoft_solicits_for_bugs/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - microsoft
   - bugs

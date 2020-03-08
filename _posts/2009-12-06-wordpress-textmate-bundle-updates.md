@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=1144
 permalink: /2009/12/06/wordpress-textmate-bundle-updates/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - bundle
   - file

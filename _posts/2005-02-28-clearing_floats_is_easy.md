@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=47
 permalink: /2005/02/28/clearing_floats_is_easy/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - css
   - float

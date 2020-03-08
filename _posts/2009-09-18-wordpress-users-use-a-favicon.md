@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=993
 permalink: /2009/09/18/wordpress-users-use-a-favicon/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - favicon
   - favicon.ico

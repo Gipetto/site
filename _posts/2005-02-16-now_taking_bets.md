@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=43
 permalink: /2005/02/16/now_taking_bets/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - microsoft
   - internet explorer

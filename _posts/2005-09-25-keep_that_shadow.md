@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=136
 permalink: /2005/09/25/keep_that_shadow/
 categories:
-  - Photoshop
+  - 'Digital Composition & Illustration'
 tags:
   - background
   - mask

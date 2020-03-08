@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=119
 permalink: /2005/08/07/browser_stats/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - browser
   - netnewswire

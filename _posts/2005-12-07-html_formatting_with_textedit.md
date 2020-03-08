@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=144
 permalink: /2005/12/07/html_formatting_with_textedit/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - css
   - encoding

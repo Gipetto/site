@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=245
 permalink: /2008/09/28/30_minute_4_am_jquery_image_slider/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - code
   - image

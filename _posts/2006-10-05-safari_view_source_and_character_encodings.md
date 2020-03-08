@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=181
 permalink: /2006/10/05/safari_view_source_and_character_encodings/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - browser
   - character

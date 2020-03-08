@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=87
 permalink: /2005/06/03/lets_hear_it_for_scripting/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - php
   - script

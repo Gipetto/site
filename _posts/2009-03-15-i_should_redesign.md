@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=257
 permalink: /2009/03/15/i_should_redesign/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - flickr
   - redesign

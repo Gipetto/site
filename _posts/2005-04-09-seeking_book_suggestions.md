@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=66
 permalink: /2005/04/09/seeking_book_suggestions/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - javascript
   - book

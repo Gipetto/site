@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=1509
 permalink: /2010/08/02/wordpress-export-import-and-double-serialization/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
   - WordPress
 tags:
   - export

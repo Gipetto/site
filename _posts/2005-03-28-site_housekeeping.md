@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=62
 permalink: /2005/03/28/site_housekeeping/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - php
   - security

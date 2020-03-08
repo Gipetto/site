@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=31
 permalink: /2004/12/20/transition_time/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - design
 ---

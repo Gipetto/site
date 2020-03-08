@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=54
 permalink: /2005/03/16/collaborating_with_ease/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - collaboration
   - version control

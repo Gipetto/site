@@ -7,13 +7,13 @@ guid: http://top-frog.com/?p=2563
 permalink: /2015/05/26/round-2-begins/
 categories:
   - Cancer
-  - Chemo Day
 tags:
   - chemo
   - days
   - family
   - hair
   - woe
+  - chemo day
 threads:
   - The Wailing Wookiee
 ---

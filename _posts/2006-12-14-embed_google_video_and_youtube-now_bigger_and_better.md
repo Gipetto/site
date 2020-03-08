@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=200
 permalink: /2006/12/14/embed_google_video_and_youtube-now_bigger_and_better/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - browser
   - code

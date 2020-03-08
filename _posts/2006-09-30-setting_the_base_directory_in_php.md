@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=179
 permalink: /2006/09/30/setting_the_base_directory_in_php/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - base
   - constant

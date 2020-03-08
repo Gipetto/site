@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=55
 permalink: /2005/03/17/how_far_should_you_go/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 ---
 Just how far should we go towards not caring about IE in our web design? I think even though we hate the browser we have little choice in dealing with it as a browser. 
 

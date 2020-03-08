@@ -7,7 +7,7 @@ guid: http://top-frog.local/?p=325
 permalink: /2007/03/16/long-live-the-image-map/
 categories:
   - Code
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - html
   - image

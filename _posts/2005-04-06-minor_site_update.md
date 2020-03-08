@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=65
 permalink: /2005/04/06/minor_site_update/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - site
 ---

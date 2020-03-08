@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=189
 permalink: /2006/10/21/this_site_and_ie_7/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - activex
   - beta

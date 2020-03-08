@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=158
 permalink: /2006/04/14/ajaxy_goodness_and_safari_form_behavior/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - ajax
   - behavior

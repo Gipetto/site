@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=28
 permalink: /2004/12/06/the_future_of_puppycam/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - windows
   - osx

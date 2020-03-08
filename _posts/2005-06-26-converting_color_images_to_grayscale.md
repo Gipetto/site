@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=101
 permalink: /2005/06/26/converting_color_images_to_grayscale/
 categories:
-  - Photoshop
+  - 'Digital Composition & Illustration'
 tags:
   - channel
   - color

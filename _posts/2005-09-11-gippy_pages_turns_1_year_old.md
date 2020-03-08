@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=128
 permalink: /2005/09/11/gippy_pages_turns_1_year_old/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - birthday
   - blog

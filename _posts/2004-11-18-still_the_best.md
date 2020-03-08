@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=16
 permalink: /2004/11/18/still_the_best/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - subethaedit
   - editor

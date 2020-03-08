@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=1163
 permalink: /2009/12/18/quickly-view-wordpress-db-credentials/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - credentials
   - ssh

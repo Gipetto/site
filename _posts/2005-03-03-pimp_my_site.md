@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=50
 permalink: /2005/03/03/pimp_my_site/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 ---
 Read an interesting article today on [css signatures](http://www.rdrop.com/~half/Creations/Writings/TechNotes/css.tip.2.html). And is has a great idea in it.
 

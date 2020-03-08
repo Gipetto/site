@@ -6,7 +6,6 @@ layout: post
 guid: http://top-frog.com/?p=2299
 permalink: /2013/05/16/a-few-handy-git-aliases/
 categories:
-  - '*nix'
   - Computers
 tags:
   - alias
@@ -19,6 +18,7 @@ tags:
   - origin
   - pull
   - push
+  - '*nix'
 ---
 I finally got fed up with some repetitive Git tasks and decided to make a few aliases in my `.gitconfig` file. Here are the commands, they all assume that they're run from a valid git repo:
 

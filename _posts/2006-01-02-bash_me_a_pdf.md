@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=148
 permalink: /2006/01/02/bash_me_a_pdf/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - bash
   - boundingbox

@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.local/?p=481
 permalink: /2008/04/02/server-room/
 categories:
-  - 'Digital Composition &amp; Illustration'
+  - 'Digital Composition & Illustration'
 tags:
   - composite
   - composition

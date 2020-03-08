@@ -7,7 +7,7 @@ section: article
     <h3>{{ page.title | escape | pp }}</h3>
     <p class="muted-n-stuff">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }} | {{ page.categories | join: ', ' }} | By {{ page.author | default: site.author }}
+        {{ page.date | date: date_format }} | {{ page.categories | join: ', ' | wordcase }} | By {{ page.author | default: site.author }}
     </p>
     
     {{ content }}

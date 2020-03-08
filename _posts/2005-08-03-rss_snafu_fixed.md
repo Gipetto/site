@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=117
 permalink: /2005/08/03/rss_snafu_fixed/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - rss
   - snafu

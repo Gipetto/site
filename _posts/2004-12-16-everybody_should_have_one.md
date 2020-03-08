@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=30
 permalink: /2004/12/16/everybody_should_have_one/
 categories:
-  - 'Web Design &amp; Development'
+  - 'Web Design & Development'
 tags:
   - domain-name
   - fuzzycoconut
