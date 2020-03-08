@@ -42,7 +42,7 @@ module Jekyll
 
         # Word Case A String
         def wordcase(input)
-            input.gsub(/\w+/) do |token|
+            input.to_s.gsub(/\w+/) do |token|
                 _t = token.downcase
                 if @@special_words.key?(_t)
                     @@special_words[_t]

@@ -1,9 +1,10 @@
 ---
 layout: base
 ---
+{% assign tome = page.section | default: layout.section %}
 <div class="grid grid-row">
     <div id="stuff" class="grid-cell" role="main">
-        <h2 class="tome" role="presentation">{{ page.section | default: layout.section }}</h2>
+        <h2 class="tome" role="presentation">{{ tome | wordcase }}</h2>
         {{ content }}
     </div>
     <div id="less-important-stuff" class="grid-cell">

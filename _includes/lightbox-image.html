@@ -1,5 +1,4 @@
-<div role="figure">
-    {% if include.center %}<center>{% endif %}
+<div role="figure"{% if include.center %} class="center"{% endif %}>
     <a href="{{ include.href | default: include.img_lg }}" class="thickbox frame {{ include.additional_classes | default: '' }}">
         <img src="{{ include.img_sm | default: '' }}" alt="Photograph: {{ include.title }}"
             {% if include.data_src_tiny %}data-src-tiny="{{ include.data_src_tiny }}"{% endif %}
@@ -11,5 +10,4 @@
             {% if include.img_lg %}data-lg-img="{{ include.img_lg }}"{% endif %}
         />
     </a>
-    {% if include.center %}</center>{% endif %}
 </div>
