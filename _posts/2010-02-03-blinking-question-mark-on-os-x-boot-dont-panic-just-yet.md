@@ -25,11 +25,9 @@ My MacBook Pro has been acting up again lately. Crashes, stalls, and overall wac
 
 When I restarted it I was faced with a question mark flashing inside a folder icon. The computer couldn't find a valid system to boot from.
 
-
-
 I was able to see a valid system directory when using the Startup Disk selector on the OS X install DVD. I was able to use the Terminal on the DVD to browse the disk as well. All the data was still there. 
 
-I tried everything that I could to get it back but had no success. That is, until I ran across a forum post that I now cannot find again. The person in the post had seemingly run across the solution by luck and I'm very thankful he did.
+I tried everything that I could to get it back but had no success. That is, until I ran across a forum post that I now cannot find again. The person in the post had seemingly run across the solution by luck and I'm very thankful they did.
 
 The problem, as it turns out, was that my Master Boot Record was hosed. This is bad. The computer essentially couldn't find anything that would tell it about the hard drive, so it didn't even know where to look for a bootable system.
 
