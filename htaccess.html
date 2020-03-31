@@ -147,7 +147,9 @@ php_value error_reporting 32767
 
     # catch old RSS feed url
     RewriteCond %{REQUEST_URI} ^/rss
-    RewriteRule ^(.*)$ /feed [L,R=301]
+    RewriteRule ^(.*)$ /feed.xml [L,R=301]
+    RewriteCond %{REQUEST_URI} ^/feed$
+    RewriteRule ^(.*)$ /feed.xml [L,R=301]
 
     # video & tokens
     RewriteCond %{REQUEST_URI} ^/video
