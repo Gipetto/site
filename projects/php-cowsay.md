@@ -2,7 +2,6 @@
 layout: page
 title: PHP-Cowsay
 section: projects
-paypal: true
 ---
 PHP-CowSay is just that, a PHP port of the Cowsay *nix command line utility. This library is not designed for command line use. You should install the original Cowsay for that.
 

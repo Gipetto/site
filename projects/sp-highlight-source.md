@@ -105,3 +105,5 @@ To install:
 - When writing a post or page, wrap your source code inside `<code class="type">...</code>` tags where `type` is the language type presented within the code block. Make sure your source code's `<` and `>` entities have been encoded to `&lt;` and `&gt;` to prevent them from rendering in the final HTML output. 
 
 Though I forgot to include a statement in the plugin itself this plugin is distributed under the GPL.
+
+{% include paypal.html %}

@@ -16,3 +16,5 @@ Put this little guy in your WordPress plugins folder. Active him in the WordPres
 #### Download
 
 You can download the NextPage plugin <a href="http://wordpress.org/extend/plugins/nextpage-buttons/">here</a>.
+
+{% include paypal.html %}
