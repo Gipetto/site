@@ -8,6 +8,7 @@ permalink: /2011/09/14/new-wp-salts-command-in-the-wordpress-textmate-bundle/
 categories:
   - TextMate
   - WordPress
+  - 'Web Design & Development'
 tags:
   - bundle
   - salt

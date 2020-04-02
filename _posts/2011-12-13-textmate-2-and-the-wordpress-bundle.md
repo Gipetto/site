@@ -6,7 +6,6 @@ layout: post
 guid: http://top-frog.com/?p=2094
 permalink: /2011/12/13/textmate-2-and-the-wordpress-bundle/
 categories:
-  - Plugins
   - TextMate
   - WordPress
 tags:

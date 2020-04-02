@@ -6,9 +6,9 @@ layout: post
 guid: http://top-frog.com/?p=583
 permalink: /2009/04/29/announcing-the-wordpress-textmate-bundle/
 categories:
-  - Code
-  - Computers
-  - Plugins
+  - TextMate
+  - WordPress
+  - 'Web Design & Development'
 tags:
   - autocomplete
   - bundle

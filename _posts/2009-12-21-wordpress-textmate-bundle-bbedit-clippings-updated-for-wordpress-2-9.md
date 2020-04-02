@@ -6,7 +6,8 @@ layout: post
 guid: http://top-frog.com/?p=1171
 permalink: /2009/12/21/wordpress-textmate-bundle-bbedit-clippings-updated-for-wordpress-2-9/
 categories:
-  - Plugins
+  - WordPress
+  - TextMate
   - 'Web Design & Development'
 tags:
   - "2.9"

@@ -6,8 +6,9 @@ layout: post
 guid: http://top-frog.com/?p=1488
 permalink: /2010/07/22/wordpress-textmate-bundle-updated/
 categories:
-  - Plugins
+  - WordPress
   - TextMate
+  - 'Web Design & Development'
 tags:
   - cache
   - cron

@@ -6,7 +6,8 @@ layout: post
 guid: http://top-frog.com/?p=1319
 permalink: /2010/05/21/new-internationalization-feature-in-the-wordpress-textmate-bundle/
 categories:
-  - Plugins
+  - WordPress
+  - TextMate
   - 'Web Design & Development'
 tags:
   - bundle

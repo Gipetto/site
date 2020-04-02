@@ -6,9 +6,9 @@ layout: post
 guid: http://top-frog.com/?p=779
 permalink: /2009/07/07/announcing-the-sp-source-code-highlighter-plugin-for-wordpress/
 categories:
-  - Code
-  - PHP Scripting
-  - Plugins
+  - TextMate
+  - WordPress
+  - 'Web Design & Development'
 tags:
   - code
   - highlight

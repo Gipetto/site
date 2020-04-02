@@ -6,7 +6,8 @@ layout: post
 guid: http://top-frog.com/?p=1149
 permalink: /2009/12/08/post-password-token-plugin-for-wordpress-updated/
 categories:
-  - Plugins
+  - WordPress
+  - 'Web Design & Development'
 tags:
   - password
   - plugin

@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=1298
 permalink: /2010/05/07/as-seen-on-bare-bones-website/
 categories:
-  - Plugins
+  - WordPress
   - 'Web Design & Development'
 tags:
   - barebones

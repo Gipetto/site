@@ -6,7 +6,7 @@ layout: post
 guid: http://top-frog.com/?p=1435
 permalink: /2010/06/17/wordpress-textmate-bundle-is-ready-for-wordpress-3-0/
 categories:
-  - Plugins
+  - WordPress
   - TextMate
   - 'Web Design & Development'
 tags:

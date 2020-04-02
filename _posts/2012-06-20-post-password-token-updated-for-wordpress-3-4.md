@@ -6,8 +6,8 @@ layout: post
 guid: http://top-frog.com/?p=2170
 permalink: /2012/06/20/post-password-token-updated-for-wordpress-3-4/
 categories:
-  - Plugins
   - WordPress
+  - 'Web Design & Development'
 tags:
   - "3.4"
   - 3.5-a

@@ -6,10 +6,9 @@ layout: post
 guid: http://top-frog.com/?p=1827
 permalink: /2010/12/27/wordpress-textmate-bundle-updated-wp-31-rc1/
 categories:
-  - PHP Scripting
-  - Plugins
   - TextMate
   - WordPress
+  - 'Web Design & Development'
 tags:
   - "3.1"
   - bundle

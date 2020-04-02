@@ -6,9 +6,9 @@ layout: post
 guid: http://top-frog.com/?p=2135
 permalink: /2012/01/26/wordpress-textmate-bundle-better-late-than-never-edition-aka-3-3/
 categories:
-  - Plugins
   - TextMate
   - WordPress
+  - 'Web Design & Development'
 tags:
   - "3.3"
   - bundle

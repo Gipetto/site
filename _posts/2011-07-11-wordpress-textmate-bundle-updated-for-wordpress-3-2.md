@@ -6,9 +6,9 @@ layout: post
 guid: http://top-frog.com/?p=2005
 permalink: /2011/07/11/wordpress-textmate-bundle-updated-for-wordpress-3-2/
 categories:
-  - PHP Scripting
   - TextMate
   - WordPress
+  - 'Web Design & Development'
 tags:
   - bundle
   - documentation

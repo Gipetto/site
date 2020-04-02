@@ -6,7 +6,6 @@ layout: post
 guid: http://top-frog.com/?p=254
 permalink: /2009/02/22/lipsum_plugin_for_wordpress_version_2/
 categories:
-  - Plugins
   - 'Web Design & Development'
 tags:
   - code
