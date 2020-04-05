@@ -5,7 +5,7 @@ install:
 	pipenv install flickr_api;
 
 auth:
-	pipenv run python cache.py
+	pipenv run python auth.py
 
 cache:
 	pipenv run python cache.py
