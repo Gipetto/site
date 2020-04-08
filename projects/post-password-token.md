@@ -20,7 +20,7 @@ The encoded tokens are made by taking the post-name and post-password and encodi
 #### Frequently Asked Questions
 
 So, what do I have to do?
-: Not much. After you install the plugin all you have to do is set a password on a post using WordPress' standard <a href="http://codex.wordpress.org/Content_Visibility">Password Protection Functionality</a>. After the password is set and you've saved the post there will be a new meta box on the post edit screen (in the center content area, below the post-content editor) that will present you with a full URL to the post including the token. Distribute this URL to give people automatic access to your post.
+: Not much. After you install the plugin all you have to do is set a password on a post using WordPress' standard <a href="https://wordpress.org/support/article/content-visibility/">Password Protection Functionality</a>. After the password is set and you've saved the post there will be a new meta box on the post edit screen (in the center content area, below the post-content editor) that will present you with a full URL to the post including the token. Distribute this URL to give people automatic access to your post.
 
 Does the normal password functionality still work?
 : Yes, this still functions as normal. Accessing a password-protected post by its standard url will still show the expected password dialog, but when a reader accesses a password-protected post by its secret Password Token url, they will be automatically authenticated and be able to see the full content.

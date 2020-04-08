@@ -71,7 +71,7 @@ For Example, in your VirtualHost config you can enter:
 
 If you don't have access to your Virtual Host config then these can also be used in a .htaccess file.
 
-This is very aggressive caching, but by using WordPress' [version parameter when enqueueing your scripts](http://codex.wordpress.org/Function_Reference/wp_enqueue_script) and [styles](http://codex.wordpress.org/Function_Reference/wp_enqueue_style) you can ensure that your clients are always getting the most current site resources. Increment your style's or script's version each time you push an update to your site and the browser will see it as a unique url and request the new data from the server. This way you can have your cake and eat it too – long cache times and a way to force the content to be re-downloaded when changed.
+This is very aggressive caching, but by using WordPress' [version parameter when enqueueing your scripts](https://developer.wordpress.org/reference/functions/wp_enqueue_script/) and [styles](https://developer.wordpress.org/reference/functions/wp_enqueue_style/) you can ensure that your clients are always getting the most current site resources. Increment your style's or script's version each time you push an update to your site and the browser will see it as a unique url and request the new data from the server. This way you can have your cake and eat it too – long cache times and a way to force the content to be re-downloaded when changed.
 
 #### Use mod_deflate to GZip content
 

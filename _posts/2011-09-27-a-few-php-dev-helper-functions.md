@@ -20,6 +20,10 @@ tags:
   - print_r
   - var_dump
 ---
+<div class="alert warning">
+<p><b>Don't do this</b>: There are much better debugging and introspection tools out there. Use this as a good example of what not to do.</p>
+</div>
+
 I've come to be pretty reliant on a few little dev helper functions that I've written that help introspect data in a couple of different output methods. A lot of development, especially development with unfamiliar systems, involves looking at objects and their contents. 
 
 These helpers are designed to help give consistently formatted output no matter where they're used. They output specific styling inline to override the current site's style sheets and output readable, monospace formatted code in most scenarios.
@@ -89,7 +93,7 @@ function __v_build_message($vars, $func = 'print_r', $sep = ', ') {
 
 #### Install
 
-Copy the code above, or copy from [the Gist File](https://gist.github.com/1244452). Paste the contents in to a file that is accessible to your web-server software. Next, edit your `php.ini` file and edit the line with the `auto_prepend_file` setting with the full path to your helper file. Now restart apache to reload the `php.ini`.
+Copy the code above. Paste the contents in to a file that is accessible to your web-server software. Next, edit your `php.ini` file and edit the line with the `auto_prepend_file` setting with the full path to your helper file. Now restart apache to reload the `php.ini`.
 
 #### Usage</h3> 
 
