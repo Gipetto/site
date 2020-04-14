@@ -88,7 +88,7 @@ serve: clean
 	docker run --rm -it \
 		--volume "$(PWD):/srv/jekyll" \
 		--volume "$(PWD)/vendor/bundle:/usr/local/bundle" \
-		--env JEKYLL_ENV=docker \
+		--env JEKYLL_ENV=development \
 		-p 4000:4000 \
 		-p 35729:35729 \
 		--name $(DOCKER_IMAGE) \

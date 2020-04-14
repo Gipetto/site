@@ -34,7 +34,7 @@ If you're doing Carrington Theme Framework development these extra function help
 
 Copy the WordPress.php folder in to your `~/Library/Application Support/BBEdit/Clippings` folder and restart BBEdit.
 
-#### Bugs and Suggestions {#bugs-suggestions?}
+#### Bugs and Suggestions {#bugs-suggestions}
 
 Should be submitted to: <a href="http://github.com/Gipetto/BBEdit-WordPress-Clippings/issues">http://github.com/Gipetto/BBEdit-WordPress-Clippings/issues</a>
 

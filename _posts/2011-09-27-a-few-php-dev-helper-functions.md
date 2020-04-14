@@ -20,6 +20,7 @@ tags:
   - print_r
   - var_dump
 ---
+
 <div class="alert warning">
 <p><b>Don't do this</b>: There are much better debugging and introspection tools out there. Use this as a good example of what not to do.</p>
 </div>
@@ -27,8 +28,6 @@ tags:
 I've come to be pretty reliant on a few little dev helper functions that I've written that help introspect data in a couple of different output methods. A lot of development, especially development with unfamiliar systems, involves looking at objects and their contents. 
 
 These helpers are designed to help give consistently formatted output no matter where they're used. They output specific styling inline to override the current site's style sheets and output readable, monospace formatted code in most scenarios.
-
-
 
 The `pp()` & `dp()` functions output to screen and the `ep()` function outputs to the error log.
 
@@ -39,55 +38,55 @@ The `pp()` & `dp()` functions output to screen and the `ep()` function outputs t
  * See: http://top-frog.com/2011/09/27/a-few-php-dev-helper-functions/ for info
  */
 $__style = 'white-space: pre; text-align: left; '.
-	'font: normal normal 11px/1.4 menlo, monaco, monospaced; '.
-	'background: white; color: black; padding: 5px; '.
-	'letter-spacing: normal; word-spacing: normal';
-	
+  'font: normal normal 11px/1.4 menlo, monaco, monospaced; '.
+  'background: white; color: black; padding: 5px; '.
+  'letter-spacing: normal; word-spacing: normal';
+  
 function pp() {
-	global $__style;
-	$msg = __v_build_message(func_get_args());
-	echo '<pre style="'.$__style.'">'.htmlspecialchars($msg).'</pre>';
+  global $__style;
+  $msg = __v_build_message(func_get_args());
+  echo '<pre style="'.$__style.'">'.htmlspecialchars($msg).'</pre>';
 }
 
 function dp() {
-	global $__style;
-	$msg = __v_build_message(func_get_args(), 'var_dump');
-	echo '<pre style="'.$__style.'">'.htmlspecialchars($msg).'</pre>';
+  global $__style;
+  $msg = __v_build_message(func_get_args(), 'var_dump');
+  echo '<pre style="'.$__style.'">'.htmlspecialchars($msg).'</pre>';
 }
 
 function ep() {
-	$msg = __v_build_message(func_get_args());
-	$msg_array = explode("\n", $msg);
-	foreach ($msg_array as $line) {
-		error_log('**: '.str_replace("\t", '  ', $line));
-	}
+  $msg = __v_build_message(func_get_args());
+  $msg_array = explode("\n", $msg);
+  foreach ($msg_array as $line) {
+    error_log('**: '.str_replace("\t", '  ', $line));
+  }
 }
 
 function __v_build_message($vars, $func = 'print_r', $sep = ', ') {
-	$msgs = array();
-	if (!empty($vars)) {
-		foreach ($vars as $var) {
-			if (is_bool($var)) {
-				$msgs[] = ($var ? 'true' : 'false');
-			} elseif (is_scalar($var)) {
-				$msgs[] = $var;
-			} else {
-				switch ($func) {
-					case 'print_r':
-					case 'var_export':
-						$msgs[] = $func($var, true);
-						break;
-					case 'var_dump':
-						ob_start();
-						var_dump($var);
-						$msgs[] = ob_get_clean();
-						break;
-				}
-			}
-		}
-	}
-	
-	return implode($sep, $msgs);
+  $msgs = array();
+  if (!empty($vars)) {
+    foreach ($vars as $var) {
+      if (is_bool($var)) {
+        $msgs[] = ($var ? 'true' : 'false');
+      } elseif (is_scalar($var)) {
+        $msgs[] = $var;
+      } else {
+        switch ($func) {
+          case 'print_r':
+          case 'var_export':
+            $msgs[] = $func($var, true);
+            break;
+          case 'var_dump':
+            ob_start();
+            var_dump($var);
+            $msgs[] = ob_get_clean();
+            break;
+        }
+      }
+    }
+  }
+  
+  return implode($sep, $msgs);
 }
 ```
 
@@ -95,7 +94,7 @@ function __v_build_message($vars, $func = 'print_r', $sep = ', ') {
 
 Copy the code above. Paste the contents in to a file that is accessible to your web-server software. Next, edit your `php.ini` file and edit the line with the `auto_prepend_file` setting with the full path to your helper file. Now restart apache to reload the `php.ini`.
 
-#### Usage</h3> 
+#### Usage
 
 All methods will output simple scalar values in their normal format and will translate boolean values to their string values instead of their numerical values. Object and arrays are then run through either `print_r()` or `var_dump()` depending upon which method you use.
 
@@ -113,8 +112,10 @@ So, there it is. Nothing special, but I find these lil' guys super handy. I hope
 
 <div class="quicknav">
   <p>
-    <b>Update 2012-02-10:</b> Updated the `ep()` function to output each line of a multi-line log message to its own line.
+    <b>Update 2012-02-10:</b> Updated the `ep()` function to output each line of a multi-line log message to its own line.</b>
   </p>
   
   <p>
-    <b>Update 2012-05-27:</b> added `htmlspecialchars` to output for `ep()` and `dp()` functions to fix issue where html would render instead of be shown in its helpful, readable source.</div>
+    <b>Update 2012-05-27:</b> added `htmlspecialchars` to output for `ep()` and `dp()` functions to fix issue where html would render instead of be shown in its helpful, readable source.
+  </p>
+</div>

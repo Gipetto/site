@@ -96,7 +96,7 @@ If you don't have command line access to your server or you don't have rights to
 
 #### Download and Installation {#download}
 
-<a href="http://top-frog.com/wp/wp-content/uploads/2009/07/sp-highlight-source-0.5.zip">Download the plugin files</a>.
+<a href="/dl/plugins/sp-highlight-source-0.5.zip">Download the plugin files</a>.
 
 To install:
 

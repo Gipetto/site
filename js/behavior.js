@@ -288,6 +288,19 @@ function fluffyBunnies() {
             loader.style.opacity = 0;
         });
     }
+
+    // Add class to code blocks that have overflow text
+    document.querySelectorAll('div.highlight').forEach((el) => {
+        var child = el.querySelector('.highlight');
+        console.dir({
+            "el": el.scrollWidth,
+            "child": child.scrollWidth
+        });
+
+        if (el.scrollWidth <= child.scrollWidth) {
+            el.classList.add('highlight-overflow');
+        }
+    });
 }
 
 'loading' === document.readyState ? 

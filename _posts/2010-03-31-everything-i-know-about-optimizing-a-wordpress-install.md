@@ -57,15 +57,15 @@ For Example, in your VirtualHost config you can enter:
 
 ``` apache
 <ifModule mod_expires.c>
-	ExpiresActive On
-	ExpiresDefault "access plus 300 seconds"
-	ExpiresByType text/html "access plus 600 seconds"
-	ExpiresByType text/xml "access plus 600 seconds"
-	ExpiresByType text/css "access plus 1 day"
-	ExpiresByType text/javascript "access plus 1 day"
-	ExpiresByType image/gif "access plus 1 month"
-	ExpiresByType image/jpg "access plus 1 month"
-	ExpiresByType image/png "access plus 1 month"
+    ExpiresActive On
+    ExpiresDefault "access plus 300 seconds"
+    ExpiresByType text/html "access plus 600 seconds"
+    ExpiresByType text/xml "access plus 600 seconds"
+    ExpiresByType text/css "access plus 1 day"
+    ExpiresByType text/javascript "access plus 1 day"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
 </ifModule>
 ```
 
@@ -81,17 +81,17 @@ Again, we'll need to add config parameters:
 
 ``` apache
 <IfModule mod_deflate.c>
-	# Set output filter for zipping content
-	SetOutputFilter DEFLATE
-	# Netscape 4.x and 4.06-4.08 have issues
-	BrowserMatch ^Mozilla/4 gzip-only-text/html
-	BrowserMatch ^Mozilla/4\.0[678] no-gzip
-	# MSIE can be an issue, for now catch all MSIE
-	BrowserMatch \bMSIE[56] !no-gzip !gzip-only-text/html
-	# Exclude file types from compression
-	SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|pdf|zip|tar|rar|gz|dmg|mp3|mp4|m4a|m4p|mov|mpe?g|qt)$ no-gzip dont-vary
-	# Make sure proxy servers deliver what they're given
-	Header append Vary User-Agent env=!dont-vary
+    # Set output filter for zipping content
+    SetOutputFilter DEFLATE
+    # Netscape 4.x and 4.06-4.08 have issues
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    # MSIE can be an issue, for now catch all MSIE
+    BrowserMatch \bMSIE[56] !no-gzip !gzip-only-text/html
+    # Exclude file types from compression
+    SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|pdf|zip|tar|rar|gz|dmg|mp3|mp4|m4a|m4p|mov|mpe?g|qt)$ no-gzip dont-vary
+    # Make sure proxy servers deliver what they're given
+    Header append Vary User-Agent env=!dont-vary
 </IfModule>
 ```
 
@@ -264,14 +264,14 @@ Upgrade your [Google Analytics](http://www.google.com/analytics/) invocation cod
 ``` javascript 
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-XXXXX-X']);
-_gaq.push(['_trackPageview']);</p>
-<p>(function() {
+_gaq.push(['_trackPageview']);
+(function() {
 var ga = document.createElement('script');
 ga.src = ('https:' == document.location.protocol ?
     'https://ssl' : 'http://www') +
     '.google-analytics.com/ga.js';
 ga.setAttribute('async', 'true');
-document.documentElement.firstChild.appendChild(ga);&<;br />
+document.documentElement.firstChild.appendChild(ga);
 })();
 ```
 

@@ -134,12 +134,25 @@ body {
 		@import 'sidebars';
 
 		@import 'syntax_highlighting';
-		.highlight {
+		div.highlight {
+			background: transparent;
+			position: relative;
+
+			&.highlight-overflow {
+				transition: width linear .25s;
+				width: 100%;
+				z-index: 500;
+				
+				&:hover {
+					width: 780px;
+				}
+			}
+
 			& pre {
 				background: $lightGrayBackgroundColor;
 				border: 1px solid $lightGrayBorderColor;
 				border-radius: 3px;
-				padding: 5px 10px;
+				padding: 5px 10px 0px 10px;
 				line-height: 1.5;
 				white-space: pre;
 				word-wrap: normal;
