@@ -82,6 +82,8 @@
 	}
 
 	.drivel {
+		@import 'threads';
+
 		font-size: 0.8em;
 		line-height: 1.6;
 		margin: 0 10px;

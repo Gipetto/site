@@ -13,12 +13,15 @@ search: false
 
     {{ content }}
 
-    <ul>
+    <ol class="thread">
     {% for item in site.data[page.thread_slug] %}
-        <li>
+        <li class="diff-{{ item.diff_class }}" data-days-diff="{{ item.days_diff }}">
+            <span class="span-time">
+                <span>{{ item.days_diff }} days go by...</span>
+            </span>
             <span>{{ item.date |  date: date_format }}</span>
-            <a href="{{ item.url }}">{{ item.title }}</a>
+            <span><a href="{{ item.url }}">{{ item.title }}</a></span>
         </li>
     {% endfor %}
-    </ul>
+    </ol>
 </article>

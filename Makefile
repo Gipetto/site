@@ -111,7 +111,7 @@ serve: clean
 		jekyll serve \
 		$(JKLFLAGS) \
 		--incremental \
-		--limit_posts 50 \
+		--limit_posts 100 \
 		--livereload \
 		--watch 
 

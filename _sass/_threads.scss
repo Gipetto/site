@@ -1,0 +1,90 @@
+ol.thread {
+    list-style: none inside;
+    li {
+        .span-time {
+            display: none;
+        }
+
+        &.diff-xs {
+            margin-top: 8px;
+        }
+        &.diff-sm {
+            margin-top: 15px;
+        }
+
+        &.diff-md {
+            margin-top: 32px;
+        }
+
+        &.diff-lg {
+            margin-top: 60px;
+        }
+
+        &.diff-xl {
+            margin-top: 95px;
+        }
+
+        &.diff-xxl {
+            margin-top: 0;
+            &:not(:last-child) .span-time {
+                display: block;
+                width: 96%;
+                margin: 20px 0;
+                color: gray;
+                z-index: 99;
+
+                $whiteSolid: rgba(255,255,255,1);
+                $whiteTrans: rgba(255,255,255,0);
+                $grayMid: rgba(0,0,0,0.25);
+                $grayLight: rgba(0,0,0,0.01);
+                $grayTrans: rgba(0,0,0,0);
+                background: linear-gradient(90deg, $whiteSolid 0%, $whiteTrans 20%, $whiteTrans 80%, $whiteSolid 100%);
+
+                &:before {
+                    z-index: 10;
+                    content: "";
+                    display: block;
+                    background-color: $grayLight;
+                    background-image:
+                        /* Top jagged */
+                        linear-gradient(135deg, $whiteSolid 0%, $whiteSolid 50%, $whiteTrans 50%, $whiteTrans 100%),
+                        linear-gradient(-135deg, $whiteSolid 0%, $whiteSolid 50%, $whiteTrans 50%, $whiteTrans 100%),
+                        /* Bottom jagged */
+                        // linear-gradient(45deg, $whiteSolid 0%, $whiteSolid 50%, $whiteTrans 50%, $whiteTrans 100%),
+                        // linear-gradient(-45deg, $whiteSolid 0%, $whiteSolid 50%, $whiteTrans 50%, $whiteTrans 100%),
+                        /* Top and bottom fade  */
+                        linear-gradient(to bottom, $grayMid 0%, $grayTrans 100%);
+                        // linear-gradient(to top, $grayMid 0%, $grayTrans 100%);
+
+                    background-position:
+                        /* Top jagged */
+                        top center, top center,
+                        /* Bottom jagged */
+                        // bottom center, bottom center,
+                        /* Top fade */
+                        top center;
+                        /* Bottom fade */
+                        // bottom center;
+
+                    $jaggSize: 1.5rem;
+                    $gradHeight: 1.76rem;
+                    background-size:
+                        /* Top + bottom jagged */
+                        $jaggSize $jaggSize, $jaggSize $jaggSize, $jaggSize $jaggSize, $jaggSize $jaggSize,
+                        /* Top + bottom fade */
+                        100% $gradHeight, 100% $gradHeight;
+
+                        background-repeat: repeat-x;
+                    color: #ccc;
+                    padding: 40px 0;
+                    position: relative;
+                    transition: all .25s ease-in-out;
+                }
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

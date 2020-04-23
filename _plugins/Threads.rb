@@ -1,10 +1,20 @@
 module Threads 
     DATA_KEY = 'threads'
+    CSS_MAPPINGS = {
+        0 => "",
+        5 => "xs",
+        12 => "sm",
+        30 => "md",
+        90 => "lg",
+        180 => "xl"
+    }.reverse_each.to_h
 end
 
 Jekyll::Hooks.register :site, :post_read do | site |
     include Jekyll::Filters
     
+    last_dates = {}
+
     for post in site.posts.docs do
         post.data[Threads::DATA_KEY].map { | thread |
             thread_slug = "thread-#{slugify(thread)}"
@@ -13,10 +23,28 @@ Jekyll::Hooks.register :site, :post_read do | site |
                 site.data[thread_slug] = []
             end
 
+            days_diff = 0
+            if last_dates[thread_slug] != nil
+                a = Date.parse(post.date.to_s)
+                b = Date.parse(last_dates[thread_slug].to_s)
+                days_diff = a.mjd - b.mjd
+            end
+
+            last_dates[thread_slug] = post.date
+
+            diff_class = Threads::CSS_MAPPINGS.inject("xxl") do |memo, (k, v)|
+                if days_diff.to_i <= k.to_i
+                    memo = v
+                end
+                memo
+            end
+
             site.data[thread_slug] << Hash[
                 "title", post.data['title'],
                 "url", post.url,
-                "date", post.date
+                "date", post.date,
+                "days_diff", days_diff,
+                "diff_class", diff_class, 
             ]
         }
     end

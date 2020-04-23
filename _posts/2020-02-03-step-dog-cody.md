@@ -7,6 +7,8 @@ categories:
 tags:
   - dogsitting
   - cody
+threads:
+  - Dogs
 ---
 
 We've not been ready to get new dogs after our little turds died. But we certainly do enjoy just having a step dog come and visit once in a while.
