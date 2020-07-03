@@ -12,6 +12,17 @@ JS_INFILE := $(JS)/behavior.js
 JS_OUTFILE := $(JS)/behavior.min.js
 DOCKER_IMAGE := gippy-pages
 
+TODAYS_DAY := $(shell date +%F)
+TODAYS_DATE := $(shell date +%FT%T%z)
+
+post:
+	@read -p "Slug for new post: " SLUG; \
+	NEW_POST=_posts/$(TODAYS_DAY)-$$SLUG.md; \
+	touch $$new_post; \
+	cat .post-template > $$NEW_POST; \
+	sed -i 's/{{date}}/$(TODAYS_DATE)/' $$NEW_POST; \
+	code -r $$NEW_POST -
+
 install: docker-build
 	mkdir -p _bin
 	mkdir -p _site
