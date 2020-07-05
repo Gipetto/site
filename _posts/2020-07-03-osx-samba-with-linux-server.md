@@ -78,4 +78,4 @@ No restart required, just reconnect to the server.
 
 #### And that's it
 
-I have no benchmarks or timings to show before and after results, just less aggravation when loading my Music library. With a large library like mine where my main music directory contains ~1300 directories, an initial hit can still be felt when that directory has be first traversed, but it is much better than it was before, and the system runs much smoother overall.
+I have no benchmarks or timings to show before and after results. I can only convey that I now have less aggravation when loading my Music library, which resided in a directory with ~1300 entries. An initial hit can still be felt when that directory is first traversed, but it is much better than it was before, and the system runs much smoother overall.
