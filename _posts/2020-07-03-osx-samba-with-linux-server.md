@@ -14,25 +14,25 @@ tags:
 threads:
 ---
 
-Since migrating my iTu~ err... Music library to a Linux server to save space on my MacBook Pro I've been lamenting the move due to incurring the slowest speeds known to man when accessing my music library as well as was seemed to be file writing issues as I was continually having issues with artwork going missing or Music not being able to find the library at all.
+Since migrating my iTu~ err... Music library to a Linux server to save space on my MacBook Pro I've been lamenting the move. Accessing my library via SMB was incurring the slowest speeds known to man, as well as was what seemed to be file writing issues. I was also continually having issues with artwork going missing or Music not being able to find the library at all.
 
-Today I finally dug in to see what I'm doing wrong. That turned out to be not having read any docs.
+Today I finally dug in to see what I was doing wrong. That turned out to be not having read any docs.
 
 #### It is Already a Solved Problem
 
-I don't know much about samba, can't say that I want to either. So I was pleased to find out that I had been missing a page in the Samba Wiki that was specifically to show morons like me how to [Configure Samba to Work Better with Mac OS X](https://wiki.samba.org/index.php/Configure_Samba_to_Work_Better_with_Mac_OS_X).
+I don't know much about samba, can't say that I want to either. So I was pleased to find out that I had simply been missing a page in the Samba Wiki that was specifically to show morons like me how to [Configure Samba to Work Better with Mac OS X](https://wiki.samba.org/index.php/Configure_Samba_to_Work_Better_with_Mac_OS_X).
 
 #### Even Apple has Documentation
 
-I also found advice that disabling signing can reduce overhead, so I implemented that as well. And as it turns off there's a support document from apple on how to [Turn off package signing for SMB2 and SMB3 connections](https://support.apple.com/en-us/HT205926).
+I also found advice that disabling signing can reduce overhead, so I implemented that as well. And as it turns out there's a support document from apple on how to [Turn off package signing for SMB2 and SMB3 connections](https://support.apple.com/en-us/HT205926). Apple's reasoning isn't speed or stability, but compatibilty, but it helps me out.
 
 #### Other Additions
 
-There's also common configuration recommendations in various places on how to speed up Samba connections by modifying socket options, raw read/writes, and directory path caching.
+There's also common configuration recommendations on how to speed up Samba connections by modifying socket options, raw read/writes, and directory path caching.
 
 #### The Change Set
 
-After all was said and done I ended up much happier than I'd been before, and now Music is much much happier with the setup. 
+After all was said and done I ended up much happier than I'd been before, and now Music is much, much happier with the setup. 
 
 So, enough blabbing, what you're actually interested in is what you have to do, right?
 
@@ -63,7 +63,7 @@ fruit:wipe_intentionally_left_blank_rfork = yes
 fruit:delete_empty_adfiles = yes
 ```
 
-This relies on the install of Samba to include virtual file system modules modules. I didn't install samba myself on my Linux server, I enabled file sharing via the system preferences. This gave me a pretty full featured Samba install and the vfs modules I needed were already present. The default modules all appear to get added via a single `samba-vfs-modules` package. Your mileage may vary here. 
+This relies on the install of Samba to include virtual file system modules. I didn't install samba myself on my Linux server, I enabled file sharing via the system preferences. This gave me a pretty full featured Samba install and included the vfs modules I needed. The default modules all appear to get added via a single `samba-vfs-modules` package. Your mileage may vary here. 
 
 Verify the config with `testparm`. Then if you're good restart the Samba service with `sudo service smbd restart`.
 

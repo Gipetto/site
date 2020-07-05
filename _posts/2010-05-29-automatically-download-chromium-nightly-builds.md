@@ -15,6 +15,10 @@ tags:
   - nightly
   - script
 ---
+<div class="alert warning">
+**NOTICE:** This is long since obsolete. Chromium can now be directly downloaded.
+</div>
+
 <div class="quicknav">
   <p>
     <b>Updated July 7, 2012</b>: Fixed an issue on Lion where moving old version of Chromium to the trash would fail. Also now opens Chromium after the update is complete.

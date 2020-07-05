@@ -20,11 +20,14 @@ tags:
   - wordpress
   - wp_list_pages
 ---
+
+<div class="alert warning">
+**NOTICE:** This is tutorial is old. While the approach may still be valid, it is likely there are key differences in newer versions of the software invovled that prevent the code below from working.
+</div>
+
 So, you've used WordPress to build your client's site and to provide downloads for the site's users. You're hiding the links to download content based on the user's logged in status. Great. But what happens when the logged in user copies the download URL and sends it to his friend? Well, unless you're filtering the download links and checking them with WordPress first his friend gets to download the file.
 
 I'm not a big fan of checking every file download with WordPress as it can take a lot of overhead if you're running a busy site. So here is a pretty straight forward way to limit downloads from a WordPress site with a minimal amount of code. In this example I'll illustrate how to prevent non-logged in users from downloading audio files in `mp3` and `m4a` format.
-
-
 
 #### Basic Blocking
 

@@ -29,6 +29,11 @@ tags:
   - server
   - wordpress
 ---
+
+<div class="alert warning">
+**NOTICE:** This article is very old and lots has changed since it was published. Be aware that the information below will likely contain obsolete information.
+</div>
+
 I don't mean to badmouth WordPress when I say this, but if you deploy a WordPress based site without optimizing your install you're just asking for a slow site.
 
 Below is everything I know about optimizing a WordPress installation. It is by no means a list of everything you can do to optimize a server for WordPress, but its a damn good base. Because of the nature of tweaking servers, you'll need access to the server config files (and most likely access to the root user on the server) to make most of these changes.
