@@ -18,7 +18,6 @@ TODAYS_DATE := $(shell date +%FT%T%z)
 post:
 	@read -p "Slug for new post: " SLUG; \
 	NEW_POST=_posts/$(TODAYS_DAY)-$$SLUG.md; \
-	touch $$new_post; \
 	cat .post-template > $$NEW_POST; \
 	sed -i 's/{{date}}/$(TODAYS_DATE)/' $$NEW_POST; \
 	code -r $$NEW_POST -
