@@ -13,6 +13,8 @@ permalink: .htaccess
 {%- assign cspImg = "img-src 'self' *.staticflickr.com *.flickr.com www.paypalobjects.com data:" -%}
 {%- assign cspConnect = "connect-src 'self'" -%}
 {%- assign cspFrame = "frame-src *.youtube.com" -%}
+{%- assign cspAncestors = "frame-ancestors 'none'" -%}
+{%- assign cspObjectSrc = "object-src 'none'" -%}
 
 <IfModule mod_headers.c>
 {% if jekyll.environment == 'production' -%}
@@ -27,7 +29,7 @@ permalink: .htaccess
   Header set X-Content-Type-Options: "nosniff"
   Header set X-Frame-Options: DENY
   Header set Cache-Control: "no-transform, immutable, public"
-  Header set Content-Security-Policy "{{ cspDefault }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }} 'sha256-{{ headCssSha }}'; {{ cspConnect }}; {{ cspFrame }};"
+  Header set Content-Security-Policy "{{ cspDefault }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }} 'sha256-{{ headCssSha }}'; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }};"
   <If "%{HTTP_USER_AGENT} =~ /(MSIE|Edge)s*/i">
     Header set X-UA-Compatible: "IE=Edge,chrome=1"
   </If>
