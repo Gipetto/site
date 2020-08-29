@@ -1,5 +1,6 @@
 ---
 layout: dl
+sitemap: false
 ---
 
 # WordCamp Denver, 2009
