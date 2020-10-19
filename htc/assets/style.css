@@ -70,7 +70,7 @@ header {
 	background-color: #ccc;
 	border-bottom: 1px solid #555;
 	text-align: left;
-	height: 22px;
+	height: auto;
 	display: flex;
 	justify-content: space-between;
 }
