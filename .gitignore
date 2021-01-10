@@ -12,3 +12,4 @@ js/*.min.*
 .flickr-cache.json
 .ruby-version
 .jekyll-cache
+.tool-versions

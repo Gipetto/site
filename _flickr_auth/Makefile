@@ -1,11 +1,11 @@
 .PHONY: cache auth install
 
 install:
-	pipenv shell; \
+	python -m pipenv shell; \
 	pipenv install flickr_api;
 
 auth:
-	pipenv run python auth.py
+	python -m pipenv run python auth.py
 
 cache:
-	pipenv run python cache.py
+	python -m pipenv run python cache.py

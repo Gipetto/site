@@ -37,7 +37,7 @@ def load_cache_data():
 
 def write_cache_data(cache_data):
   with(open(cache_file, 'w')) as c:
-    json.dump(cache_data, c)
+    json.dump(cache_data, c, indent=2)
   c.close()
 
 
