@@ -62,12 +62,17 @@ minify-js:
 
 stupid-http-check:
 	sleep 3s
-	curl $(CRLFLAGS) https://top-frog.com | head -1
-	curl $(CRLFLAGS) https://top-frog.com/photography/ | head -1
-	curl $(CRLFLAGS) https://top-frog.com/projects/ | head -1
-	curl $(CRLFLAGS) https://top-frog.com/about/ | head -1
-	curl $(CRLFLAGS) https://top-frog.com/js/behavior.min.js | head -1
-	curl $(CRLFLAGS) https://top-frog.com/css/main.css | head -1
+	curl $(CRLFLAGS) -4 https://top-frog.com | head -1
+	curl $(CRLFLAGS) -4 https://top-frog.com/photography/ | head -1
+	curl $(CRLFLAGS) -4 https://top-frog.com/projects/ | head -1
+	curl $(CRLFLAGS) -4 https://top-frog.com/about/ | head -1
+	curl $(CRLFLAGS) -4 https://top-frog.com/js/behavior.min.js | head -1
+	curl $(CRLFLAGS) -4 https://top-frog.com/css/main.css | head -1
+	curl $(CRLFLAGS) -6 https://top-frog.com | head -1
+	curl $(CRLFLAGS) -6 https://top-frog.com/photography/ | head -1
+	curl $(CRLFLAGS) -6 https://top-frog.com/projects/ | head -1
+	curl $(CRLFLAGS) -6 https://top-frog.com/about/ | head -1
+	curl $(CRLFLAGS) -6 https://top-frog.com/js/behavior.min.js | head -1
 
 package: clean build minify-js
 deploy: rsync stupid-http-check
