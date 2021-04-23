@@ -21,15 +21,19 @@ permalink: .htaccess
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
 {%- endif %}
   Header unset ETag
-  Header set X-Content-Type-Options nosniff
+  # It won't work but dammit, I'm gonna say it anyway
+  Header unset Server
   Header unset X-Powered-By
   Header set X-XSS-Protection: "1; mode=block"
-  Header set Feature-Policy: "geolocation 'none'; camera 'none'; microphone 'none'"
+  Header set X-Content-Type-Options nosniff
+  # interest-cohort blocks google FLoC: https://twitter.com/henshaw/status/1383807527935119363
+  Header set Permissions-Policy: "geolocation=(), camera=(), microphone=(), payment=(), screen-wake-lock=(), interest-cohort=()"
   Header set Referer-Policy: "origin"
   Header set X-Content-Type-Options: "nosniff"
   Header set X-Frame-Options: DENY
   Header set Cache-Control: "no-transform, immutable, public"
-  Header set Content-Security-Policy "{{ cspDefault }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }} 'sha256-{{ headCssSha }}'; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }};"
+  Header set Content-Security-Policy: "{{ cspDefault }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }} 'sha256-{{ headCssSha }}'; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }};"
+  Header set Referrer-Policy: "strict-origin-when-cross-origin"
   <If "%{HTTP_USER_AGENT} =~ /(MSIE|Edge)s*/i">
     Header set X-UA-Compatible: "IE=Edge,chrome=1"
   </If>
