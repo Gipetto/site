@@ -87,7 +87,7 @@ rsync:
 		--itemize-changes \
 		$(SITE)/ gipetto1@top-frog.com:top-frog.com/public_html_static
 
-build: clean
+build: clean validate-avatar-json
 	docker run --rm -it \
 		--cpus 4 \
 		--memory=4g \
@@ -122,3 +122,6 @@ docker-build:
 	docker build \
 		--no-cache \
 		-t $(DOCKER_IMAGE):latest .
+
+validate-avatar-json:
+	python -mjson.tool avatar/avatar.json
