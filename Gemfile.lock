@@ -87,6 +87,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-linux-musl
 
 DEPENDENCIES
   classifier-reborn
@@ -107,4 +108,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   2.1.2
+   2.2.2
