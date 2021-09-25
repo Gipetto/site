@@ -17,6 +17,9 @@ permalink: .htaccess
 {%- assign cspObjectSrc = "object-src 'none'" -%}
 {%- assign cspBaseUri = "base-uri 'self'" -%}
 {%- assign cspFormAction = "form-action 'self'" -%}
+{%- assign cspManifestSrc = "manifest-src 'self'" -%}
+{%- assign cspFontSrc = "font-src 'none'" -%}
+{%- assign cspUpgradeInsecureRequests = "upgrade-insecure-requests" -%}
 <IfModule mod_ssl.c>
   SSLOptions +StrictRequire +StdEnvVars -OptRenegotiate
 </IfModule>
@@ -37,7 +40,7 @@ permalink: .htaccess
   Header set X-Content-Type-Options: "nosniff"
   Header set X-Frame-Options: DENY
   Header set Cache-Control: "no-transform, immutable, public"
-  Header set Content-Security-Policy: "{{ cspDefault }}; {{ cspBaseUri }}; {{ cspFormAction }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }} 'sha256-{{ headCssSha }}'; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }};"
+  Header set Content-Security-Policy: "{{ cspDefault }}; {{ cspBaseUri }}; {{ cspFormAction }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }} 'sha256-{{ headCssSha }}'; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }}; {{ cspManifestSrc }}; {{ cspFontSrc }}; {{ cspUpgradeInsecureRequests }};"
   Header set Referrer-Policy: "strict-origin-when-cross-origin"
   <If "%{HTTP_USER_AGENT} =~ /(MSIE|Edge)s*/i">
     Header set X-UA-Compatible: "IE=Edge,chrome=1"
