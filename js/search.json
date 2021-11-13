@@ -3,7 +3,7 @@
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 [
 {%- for post in site.posts -%}
-{"title":{{ post.title | jsonify}},"date":"{{ post.date | date: date_format }}","tokens":"{{ post.excerpt | tokenize }}","excerpt":{{ post.excerpt | strip_html | normalize_whitespace | truncate: 250 | jsonify}},"url": "{{ post.url }}",
+{"title":{{ post.title | jsonify}},"date":"{{ post.date | date: date_format }}","tokens":"{{ post.content | tokenize }}","excerpt":{{ post.content | strip_html | normalize_whitespace | truncate: 250 | jsonify}},"url": "{{ post.url }}",
   {%- if post.categories -%}"categories" :[
     {%- for category in post.categories -%} "{{ category }}"
     {%- if forloop.last %}{% else %},{% endif -%}

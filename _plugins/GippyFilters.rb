@@ -1,4 +1,5 @@
 require 'digest'
+require 'cgi'
 
 module Jekyll
     module GippyFilters
@@ -11,7 +12,11 @@ module Jekyll
         def tokenize(input)
             tokens = Set.new()
 
-            stripped = strip_html(input)
+            html_input = CGI.unescapeHTML(@context.registers[:site].find_converter_instance(
+                Jekyll::Converters::Markdown
+              ).convert(input.to_s))
+
+            stripped = strip_html(html_input)
                 .downcase.gsub(/[^a-z0-9\s]/, '')
 
             stripped.scan(/\w+/) { |word|
@@ -38,6 +43,7 @@ module Jekyll
             'php' => 'PHP',
             'textmate' => 'TextMate',
             'wordpress' => 'WordPress',
+            'att' => 'AT&T'
         ]
 
         # Word Case A String

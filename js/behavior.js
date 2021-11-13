@@ -35,17 +35,15 @@ function fluffyBunnies() {
     // Search
 
     var typeAhead = function(posts) {
-        var maxResults = 10;
+        var maxResults = 20;
         var typeAheadTimer = null;
         var resultItemTemplate = document.querySelector('.result-item-template .result-item');
         var resultNotFound = document.querySelector('.result-item-template .not-found');
         var resultsList = document.querySelector('.found-stuff');
         var fuseOptions = {
-            shouldSort: true,
-            threshold: 0.5,
-            matchAllTokens: true,
-            location: 0,
-            distance: 50,
+            ignoreLocation: true,
+            // includeScore: true,
+            // includeMatches: true,
             keys: [{
                 name: 'title',
                 weight: 0.3
@@ -87,11 +85,12 @@ function fluffyBunnies() {
                     resultsList.removeChild(resultsList.firstChild);
                 }
                 if (_value.length) {
-                    var results = fuse.search(_this.value);
+                    var results = fuse.search(_this.value, {limit: maxResults});
+                    console.dir(results)
                     if (results.length) {
-                        results.slice(0, maxResults).forEach(function(item) {
-                            resultsList.appendChild(buildResult(item));
-                        });    
+                        results.forEach(function(item) {
+                            resultsList.appendChild(buildResult(item["item"]));
+                        });
                     } else {
                         resultsList.appendChild(resultNotFound);
                     }
