@@ -213,7 +213,7 @@ function fluffyBunnies() {
             lightboxCaption.appendChild(mkCaption(data['caption']));
         };
 
-        lightboxImage.addEventListener('click', function(e) {
+        lightbox.addEventListener('click', function(e) {
             stopEvent(e);
             lightboxImage.style.opacity = 0;
             
@@ -243,6 +243,14 @@ function fluffyBunnies() {
     document.querySelectorAll('.thickbox').forEach(function(element) {
         element.addEventListener('click', doLightbox);
     });
+
+    window.addEventListener("keydown", (e) => {
+        if (e.key == "Escape") {
+            document.querySelectorAll(".onstage").forEach((i) => { 
+                i.classList.toggle("onstage");
+            });
+        }
+    })
 
     // Gallery
 

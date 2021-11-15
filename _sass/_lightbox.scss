@@ -14,6 +14,12 @@ a.thickbox {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        cursor: zoom-out !important;
+        & > *,
+        & > * > * {
+            cursor: zoom-out !important;
+        }
     }
 
     &:before {
@@ -41,7 +47,6 @@ a.thickbox {
 
         a {
             overflow: hidden;
-            cursor: zoom-out;
         }
 
         img {
