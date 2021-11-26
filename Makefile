@@ -125,3 +125,6 @@ docker-build:
 
 validate-avatar-json:
 	python -mjson.tool avatar/avatar.json
+
+flickr-cache:
+	cd _flickr_auth && pipenv run python cache.py
