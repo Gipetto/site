@@ -42,8 +42,6 @@ function fluffyBunnies() {
         var resultsList = document.querySelector('.found-stuff');
         var fuseOptions = {
             ignoreLocation: true,
-            // includeScore: true,
-            // includeMatches: true,
             keys: [{
                 name: 'title',
                 weight: 0.3
@@ -86,7 +84,6 @@ function fluffyBunnies() {
                 }
                 if (_value.length) {
                     var results = fuse.search(_this.value, {limit: maxResults});
-                    console.dir(results)
                     if (results.length) {
                         results.forEach(function(item) {
                             resultsList.appendChild(buildResult(item["item"]));
