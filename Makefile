@@ -11,6 +11,7 @@ JS_COMPILE := SIMPLE
 JS_INFILE := $(JS)/behavior.js
 JS_OUTFILE := $(JS)/behavior.min.js
 DOCKER_IMAGE := gippy-pages
+CC_VERSION := v20211201
 
 TODAYS_DAY := $(shell date +%F)
 TODAYS_DATE := $(shell date +%FT%T%z)
@@ -26,10 +27,9 @@ install: docker-build
 	mkdir -p _bin
 	mkdir -p _site
 	bundle install
-	wget -P _bin \
-		https://dl.google.com/closure-compiler/compiler-latest.zip
-	unzip -f _bin/compiler-latest.zip -d _bin/closure-compiler
-	rm _bin/compiler-latest.zip
+	rm -f _bin/closure-compiler/closure-compiler-*.jar
+	wget -P _bin/closure-compiler \
+		https://repo1.maven.org/maven2/com/google/javascript/closure-compiler/$(CC_VERSION)/closure-compiler-$(CC_VERSION).jar
 
 clean:
 	rm -rf $(SITE)/*
@@ -85,7 +85,7 @@ rsync:
 		--inplace \
 		--whole-file \
 		--itemize-changes \
-		$(SITE)/ gipetto1@top-frog.com:top-frog.com/public_html_static
+		$(SITE)/ top-frog.com:top-frog.com/public_html_static
 
 build: clean validate-avatar-json
 	docker run --rm -it \
@@ -124,7 +124,8 @@ docker-build:
 		-t $(DOCKER_IMAGE):latest .
 
 validate-avatar-json:
-	python -mjson.tool avatar/avatar.json
+	python -mjson.tool avatar/avatar.json > /dev/null \
+		&& echo "Avatar JSON OK"
 
 flickr-cache:
 	cd _flickr_auth && pipenv run python cache.py

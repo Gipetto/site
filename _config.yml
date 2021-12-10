@@ -55,12 +55,10 @@ exclude:
   - _drafts
   - _bin
   - _flickr_auth
+  - vendor
   - Dockerfile
   - Gemfile
   - Gemfile.lock
   - Makefile
   - ReadMe.md
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+
