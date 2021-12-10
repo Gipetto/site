@@ -17,7 +17,6 @@ tags:
 threads:
 ---
 
-IPV6 with Ubiquiti Edgerouter ER-8 on AT&T
 This isn't the first blog post on how to do this, and it probably won't be the last, but since IPv6, even within AT&T, seems to vary, and the quality of the blog posts out there vaires, this is also so that I have record of what I did for my actual needs.
 
 I'm not a network engineer. So this was mostly just piecing together bits of information that I could find posted by others, and then correcting it for my needs, mostly through trial and error.
