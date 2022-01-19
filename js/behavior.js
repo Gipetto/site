@@ -2,7 +2,7 @@
 
 function fluffyBunnies() {
     // Init
-
+    var nav = document.querySelector('header').querySelector('nav');
     var cachebuster = document.querySelector('meta[name="cachebuster"]').getAttribute('content');
     var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
     var is4G = connection && connection.effectiveType == '4g' || true;
@@ -19,9 +19,31 @@ function fluffyBunnies() {
     };
 
     // Hamburger
-
     var hamburger = (function() {
-        var nav = document.querySelector('header').querySelector('nav');
+        var xmlns = "http://www.w3.org/2000/svg";
+        var linkns = "http://www.w3.org/1999/xlink";
+
+        // Create the hamburger dynamically to ensure that text-only browsers never see it
+        var hli = document.createElement("li");
+        hli.classList.add("hamburger");
+        hli.setAttribute("hidden", true);
+
+        var ha = document.createElement("a");
+        ha.setAttribute("href", "#");
+        ha.setAttribute("aria-expanded", false);
+
+        var hsvg = document.createElementNS(xmlns, "svg");
+        hsvg.setAttribute("height", 32);
+        hsvg.setAttribute("width", 32);
+
+        var huse = document.createElementNS(xmlns, "use");
+        huse.setAttributeNS(linkns, "xlink:href", "#menu-hamburger");
+
+        hsvg.appendChild(huse);
+        ha.appendChild(hsvg);
+        hli.appendChild(ha);
+        nav.querySelector("ul").prepend(hli);
+
         var hamburgerToggle = nav.querySelector('.hamburger a');
         return function(e) {
             stopEvent(e);

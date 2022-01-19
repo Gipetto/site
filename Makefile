@@ -38,7 +38,9 @@ clean:
 	rm -rf .sass-cache/*
 
 optimize-svgs:
+	# we want to ensure the sprite retains the width and height attributes
 	svgo $(SVGFLAGS) \
+		--disable removeDimensions \
 		-i $(ASSETS)/icons/icons-sprite.svg \
 		-o $(ASSETS)/icons/icons-sprite.optimized.svg
 	svgo $(SVGFLAGS) \

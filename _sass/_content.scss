@@ -1,3 +1,5 @@
+@import 'mixins';
+
 #stuff {
 	box-shadow: inset -1px 0 10px 0 rgb(216, 216, 216);
 
@@ -308,8 +310,21 @@
 			flex-direction: row;
 			padding: 5px;
 
+			.chevron-left {
+				&:before {
+					content: '\000AB';
+					@include linkHanger();
+				}
+			}
+
 			&.older {
 				text-align: right;
+				.chevron-right {
+					&:after {
+						content: '\000BB';
+						@include linkHanger();
+					}
+				}	
 			}
 
 			div {

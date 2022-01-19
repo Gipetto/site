@@ -1,5 +1,6 @@
 @import 'boilerplate';
 @import 'variables';
+@import 'mixins';
 
 body {
 	::-moz-selection { 
@@ -7,6 +8,10 @@ body {
 	}
 	::selection {
 		@include selection;
+	}
+
+	hr {
+		display: none;
 	}
 
 	background-color: $backgroundColor;
@@ -169,12 +174,6 @@ body {
 					tab-size: 2;
 				}
 			}
-		}
-
-		@mixin linkHanger() {
-			margin-right: 3px;
-			display: inline-block;
-			text-decoration: none !important;
 		}
 	
 		.chevron {
