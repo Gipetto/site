@@ -292,7 +292,7 @@ function fluffyBunnies() {
         
             if (!thisun.dataset.primed && thisun.dataset.src) {
                 thisun.addEventListener('load', function() {
-                    var next = ++i;
+                    var next = i + 2;
                     if (thickboxen[next] != undefined) {
                         lazyLoad(next);
                     }
@@ -301,14 +301,15 @@ function fluffyBunnies() {
                 thisun.src = is4G ? thisun.dataset.src : thisun.dataset.srcTiny;
                 thisun.dataset.primed = true;
                 thisun.style.visibility = 'visible';
-                msnry.layout();
         
                 setTimeout(function() {
                     thisun.style.opacity = 1;
+                    msnry.layout();
                 }, 100);
             }
         };
         lazyLoad(0);
+        lazyLoad(1);
 
         imagesLoaded(gal, function() {
             loader.style.opacity = 0;
