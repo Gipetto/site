@@ -61,11 +61,11 @@ configure
 
 # … make changes as outlined below
 
-# commit the changes for them to take effect, saved changes are
+# commit the changes for them to take effect, changes are
 # not permanent until they're saved
 commit
 
-# save the changes so that they're saved in the config file.
+# save so that changes are persisted in the config file.
 # this makes the changes permanent.
 save
 
