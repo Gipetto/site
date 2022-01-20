@@ -26,7 +26,6 @@
 	}
 
 	p {
-		line-height: 1.4;
 		margin: 10px 0;
 	}
 
@@ -51,7 +50,10 @@
 	.muted-n-stuff {
 		font-size: 0.9em;
 		color: #595959;
-		margin-top: 3px;
+	}
+
+	.postmeta {
+		margin-top: 2px;
 	}
 
 	.frame {
@@ -84,10 +86,15 @@
 	}
 
 	.drivel {
-		font-size: 0.8em;
-		line-height: 1.6;
+		font-size: 0.85em;
+		line-height: 1.5em;
 		margin: 0 10px;
 		padding: 20px 10px 10px 10px;
+
+		pre, code, kbd, samp {
+			font-size: inherit;
+			line-height: inherit;
+		}
 
 		h3 {
 			font-size: 1.6em;
@@ -130,8 +137,9 @@
 					display: flex;
 					padding: 3px 0;
 					font-size: 1em;
+					line-height: 1.5em;
 					
-					div {
+					span {
 						padding: 0 2px;
 						&:first-child {
 							width: 50px;

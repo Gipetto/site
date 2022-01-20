@@ -40,7 +40,7 @@ Hopefully you're comfortable with making changes to your router over SSH. If not
 
 Once logged in to the router, you can check your current configuration:
 
-```
+``` conf
 # To see the entire configuration tree
 show configuration
 
@@ -55,7 +55,7 @@ You can use those commands later on to confirm your changes.
 
 To actually edit the configuration:
 
-```
+``` conf
 # enter configuration mode
 configure
 
@@ -75,7 +75,7 @@ exit
 
 If at any time you're not comfortable with the changes you've made, you can always bail out with:
 
-```
+``` conf
 exit discard
 ```
 
@@ -84,7 +84,7 @@ Now, we need to setup the WAN interface on the router to enable IPv6 to use slaa
 
 Most articles out there will have you set the `host-address` and `prefix-id` configuration options. I found these aren't necessary unless you know your specific needs. Most likely if you're reading _this_, you don't have specific needs, you're just wanting it to work.
 
-```
+``` conf
 edit interfaces ethernet eth0
 set ipv6 address autoconf
 set dhcpv6-pd pd 0 prefix-length /64
@@ -94,7 +94,7 @@ top
 
 Some information out there says that this isn't needed on newer versions of EdgeOS, but I had to set up router advertisement for this to work.
 
-```
+``` conf
 edit interfaces ethernet eth1
 set ipv6 router-advert prefix ::/64
 set ipv6 router-advert radvd-options "RDNSS DNS-SERVER-IPV6-ADDRESS {};"
@@ -105,7 +105,7 @@ top
 
 Save it all
 
-```
+``` conf
 commit
 save
 ```
@@ -113,7 +113,7 @@ save
 #### Firewall Configuration
 For IPv6 to work properly we need to let those ICMPv6 control messages through. I'm not entirely sure about the internal specifics of the firewall rule as it is applied, but these ICMPv6 packets should only be considered valid by the router if they meet the hop limit, which helps ensure the integrity and authenticity of the request.
 
-```
+``` conf
 edit firewall ipv6-name WANv6_IN
 set default-action dropset rule 10 action accept
 set rule 10 description "allow established"
@@ -130,7 +130,7 @@ top
 
 Since DHCP is done via SLAAC, which is managed by AT&T, we have to also allow the internal network to properly relay the DHCP packets to flow over UDP.
 
-```
+``` conf
 edit firewall ipv6-name WANv6_LOCAL
 set default-action dropset rule 10 action accept
 set rule 10 description "allow established"
@@ -151,14 +151,14 @@ top
 
 Apply the rules to the LAN interface(s) as required. Repeat for any and all active interfaces on the router.
 
-```
+``` conf
 set interfaces ethernet eth1 firewall in ipv6-name WANv6_IN
 set interfaces ethernet eth1 firewall local ipv6-name WANv6_LOCAL
 ```
 
 And, again, save it all
 
-```
+``` conf
 commit
 save
 ```
@@ -168,7 +168,7 @@ For my Ubuntu client I needed to enable an IPv6 security feature. Normally an IP
 
 This can be enabled via `sysctl`. Replace `enp7s0` with your primary network interface address. Mostly this is `eth0`, but in my case, and becoming more common, is a different scheme that is derived from the network interface's MAC address to make internal interface naming more consistent and predictable when multiple network interfaces are present.
 
-```
+``` sh
 sudo sysctl net.ipv6.conf.enp7s0.use_tempaddr=2
 sudo /etc/init.d/networking restart
 ```

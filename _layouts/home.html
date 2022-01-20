@@ -6,7 +6,7 @@ section: home
 {% assign page = site.posts.first %}
 <article class="drivel">
     <h3><a href="{{ page.url }}" rel="canonical">{{ page.title | escape | pp}}</a></h3>
-    <p class="muted-n-stuff">
+    <p class="muted-n-stuff postmeta">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
     </p>

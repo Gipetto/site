@@ -20,6 +20,9 @@
 		}
 
 		&.find-it {
+			form {
+				flex-direction: row !important;
+			}
 			input, button {
 				@include focusOutline;
 			}
@@ -118,8 +121,9 @@
 			margin-top: 15px;
 		}
 
-		font-size: 0.7em;
-
+		font-size: 0.75em;
+		line-height: 1.5em; 
+		
 		p {
 			margin: 10px 0;
 			padding: 0;
@@ -145,8 +149,12 @@
 
 			li {
 				list-style-type: none;
-				margin: 10px 0 0 0;
+				margin: 5px 0 0 0;
 				
+				&:first-child {
+					margin-top: 10px;
+				}
+
 				a {
 					padding: 2px 0;
 					text-decoration: none;
@@ -176,6 +184,7 @@
 					align-items: center;
 					text-align: center;
 					flex-grow: 1;
+					margin-top: 15px;
 
 					a {
 						flex: 1;

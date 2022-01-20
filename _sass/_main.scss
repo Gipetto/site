@@ -17,16 +17,12 @@ body {
 	background-color: $backgroundColor;
 	font-family: "Lucida Grande",Arial,Helvetica,sans-serif;
 
-	@media screen and (max-width: $maxResponsiveWidth) {
-		background-color: $innerBackgroundColor;
-	}
-
 	.icons-sprite {
 		display: none;
 	}
 
 	.skip-link {
-		position: relative;
+		position: absolute;
 		padding: 5px 10px;
 		left: -1000px;
 		background-color: $innerBackgroundColor;
@@ -61,6 +57,10 @@ body {
 			margin: 10px;
 			padding: 0;
 			position: inherit;
+
+			@media screen and (max-width: $maxResponsiveWidth) {
+				border-radius: 5px;
+			}
 		}
 		
 		#it {
@@ -159,7 +159,6 @@ body {
 				border: 1px solid $lightGrayBorderColor;
 				border-radius: 3px;
 				padding: 5px 10px 0px 10px;
-				line-height: 1.5;
 				white-space: pre;
 				word-wrap: normal;
 				overflow: hidden;

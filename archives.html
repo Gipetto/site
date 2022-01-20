@@ -19,12 +19,10 @@ archives: true
         {%- endunless -%}
         
         <li class="item" data-categories="{% for cat in post.categories -%}{{ cat | slugify }} {%- endfor %}">
-            <div>
-                <span class="muted-n-stuff">{{ post.date | date: "%b %d" }}:</span> 
-            </div>
-            <div>
+            <span class="muted-n-stuff">{{ post.date | date: "%b %d" }}:</span> &nbsp;
+            <span>
                 <a href="{{ post.url }}">{{ post.title | escape }}</a>
-            </div>
+            </span>
         </li>
     {%- endfor -%}
 	{{ close_ul }}

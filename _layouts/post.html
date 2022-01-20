@@ -5,14 +5,14 @@ section: article
 
 <article class="drivel">
     <h3>{{ page.title | escape | pp }}</h3>
-    <p class="muted-n-stuff">
+    <p class="muted-n-stuff postmeta">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }} | {{ page.categories | join: ', ' | wordcase }} | By {{ page.author | default: site.author }}
     </p>
     
     {{ content }}
 
-    <p class="muted-n-stuff">Tagged as: {{ page.tags | join: ', ' | downcase }}</p>
+    <p class="muted-n-stuff"><b>Tagged as:</b> {{ page.tags | join: ', ' | downcase }}</p>
 </article>
 
 {% include pagination.html %}

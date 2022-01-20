@@ -4,7 +4,7 @@ title: About
 section: about
 ---
 
-<span class="stupid-wookiee frame"><img src="/assets/chicken@3x.jpg" alt="Wookiee with Chicken Hat" /></span> Well, this is my little corner of insanity in an html wrapper. Feel free to browse around, but be warned, there is no warranty or statement of competency, so you really shouldn’t be reading this at all. It'll rot your brain.
+<span class="stupid-wookiee frame"><img src="/assets/chicken@3x.jpg" alt="Wookiee with Chicken Hat" width="150" height="150" /></span> Well, this is my little corner of insanity in an html wrapper. Feel free to browse around, but be warned, there is no warranty or statement of competency, so you really shouldn’t be reading this at all. It'll rot your brain.
 
 #### In a nutshell I am:
 
