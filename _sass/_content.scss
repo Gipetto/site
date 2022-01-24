@@ -10,7 +10,7 @@
 		height: 30px;
 		font-size: 1.7em;
 		font-style: bold;
-		font-family: $header-font-family;
+		font-family: $headerFontFamily;
 		line-height: 41px;
 		margin: 0;
 		overflow: hidden;
@@ -20,7 +20,7 @@
 
 	h3, h4, h5 {
 		font-weight: bold;
-		font-family: $header-font-family;
+		font-family: $headerFontFamily;
 		margin: 0;
 		padding: 0;
 	}
@@ -91,11 +91,6 @@
 		margin: 0 10px;
 		padding: 20px 10px 10px 10px;
 
-		pre, code, kbd, samp {
-			font-size: inherit;
-			line-height: inherit;
-		}
-
 		h3 {
 			font-size: 1.6em;
 			line-height: 1.2;
@@ -162,7 +157,7 @@
 		dl {
 			dt {
 				font-size: 1.2em;
-				font-family: $header-font-family;
+				font-family: $headerFontFamily;
 				font-weight: bold;
 				line-height: 1.5em;
 				margin-top: 15px;
@@ -192,7 +187,7 @@
 					top: 50px;
 					left: 45%;
 					position: absolute;
-					font-family: $header-font-family;
+					font-family: $headerFontFamily;
 					color: $lightGrayBorderColor;
 
 					&:after {

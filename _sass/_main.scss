@@ -15,7 +15,19 @@ body {
 	}
 
 	background-color: $backgroundColor;
-	font-family: "Lucida Grande",Arial,Helvetica,sans-serif;
+	font-display: swap;
+	font-family: $bodyFontFamily;
+	text-rendering: optimizeLegibility;
+	font-variant-ligatures: common-ligatures;
+	font-variant-numeric: oldstyle-nums stacked-fractions;
+
+	pre, code, kbd, samp {
+		font-family: $monospaceFontFamily;
+		font-size: inherit;
+		line-height: inherit;
+		font-variant-ligatures: none;
+		font-variant-numeric: tabular-nums;
+	}
 
 	.icons-sprite {
 		display: none;
