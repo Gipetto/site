@@ -155,9 +155,9 @@ php_value error_reporting 32767
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 {%- endif %}
 
-    # catch avatar requests
-    RewriteCond %{REQUEST_URI} /avatar.png
-    RewriteRule ^(.*)? /avatar/index.php [L,NC,QSA]
+    # catch avatar requests, always serve svg
+    RewriteCond %{REQUEST_URI} ^/avatar\.
+    RewriteRule ^(.*)\.([a-z]{3})? /avatar/index.php?type=svg [L,NC,QSA]
 
     # catch old RSS feed url
     RewriteCond %{REQUEST_URI} ^/rss
