@@ -1,1 +1,5 @@
+<IfModule mod_fcgid.c>
+  AddHandler fcgid-script .php
+  FCGIWrapper "/dh/cgi-system/php80.cgi" .php
+</IfModule>
 Header unset Content-Security-Policy
