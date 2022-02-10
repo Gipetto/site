@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        body {
+            background: white;
+            color: black;
+            padding: 1rem;
+        }
+        @media (prefers-color-scheme:dark) {
+            body {
+                background: black;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h3>Demo SVG</h3>
+        <img src="./src/avatar.svg" alt="svg" />
+        <h3>Generated SVG</h3>
+        <img src="./index.php?type=svg" alt="svg" />
+    </section>
+    <section>
+        <h3>Generated PNG</h3>
+        <img src="./index.php?type=png" alt="png" />
+    </section>
+</body>
+</html>

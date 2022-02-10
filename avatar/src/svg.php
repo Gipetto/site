@@ -4,7 +4,11 @@ define("LINE_MAX", 17);
 $json = json_decode(file_get_contents("avatar.json"), true);
 $rawText = $json[array_rand($json)]["title"];
 
-$imgText = html_entity_decode($rawText);
+/**
+ * Can't include entities like `&#8596;` without extra special line
+ * break handling, so decode those and just encode html special chars... 
+ */
+$imgText = htmlspecialchars(html_entity_decode($rawText, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "UTF-8"));
 
 $words = explode(" ", $imgText);
 $lines = [""];
@@ -30,7 +34,7 @@ foreach ($words as $word) {
 $dy = NULL;
 $tspans = array_map(function($l) use (&$dy) {
     $dy = !$dy ? "0.9" : "1.15";
-    return '<tspan x="0" dy="' . $dy . 'em">' . $l . '</tspan>';
+    return '<tspan x="1" dy="' . $dy . 'em">' . $l . '</tspan>';
 }, $lines);
 
 $template = file_get_contents("src/avatar.svg.template");
