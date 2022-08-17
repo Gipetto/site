@@ -46,10 +46,13 @@ plugins:
   - jekyll-twitter-plugin
 kramdown:
   input: GFM
-  syntax-highlighter: rouge
+  syntax_highlighter: rouge
   syntax_highlighter_opts:
     block:
       line_numbers: false
+algolia:
+  application_id: U9O103FZ03
+  index_name: posts
 #include:
 exclude:
   - _drafts

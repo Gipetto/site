@@ -49,6 +49,9 @@ optimize-svgs:
 	svgo $(SVGFLAGS) \
 		-i $(ASSETS)/name.svg \
 		-o $(ASSETS)/name.optimized.svg
+	svgo $(SVGFLAGS) \
+		-i $(ASSETS)/paw-print.svg \
+		-o $(ASSETS)/paw-print.optimized.svg
 
 minify-js:
 	java -jar _bin/closure-compiler/closure-compiler-*.jar \
@@ -100,6 +103,18 @@ build: clean validate-avatar-json
 		$(DOCKER_IMAGE):latest \
 		jekyll build \
 		$(JKLFLAGS)
+
+algolia:
+	docker run --rm -it \
+		--cpus 4 \
+		--memory=4g \
+		--volume "$(PWD):/srv/jekyll" \
+		--volume "$(PWD)/vendor/bundle:/usr/local/bundle" \
+		--env JEKYLL_ENV=production \
+		--env ALGOLIA_API_KEY=dummy-key \
+		--name $(DOCKER_IMAGE) \
+		$(DOCKER_IMAGE):latest \
+		jekyll algolia
 
 serve: clean
 	docker run --rm -it \
