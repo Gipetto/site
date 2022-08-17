@@ -175,5 +175,7 @@ sudo /etc/init.d/networking restart
 
 I've seen recommendations to set `net.ipv6.conf.all.use_tempaddr = 2` and `net.ipv6.conf.default.use_tempaddr = 2` but I've also read that those are applied AFTER the initial boot sequence, after the interfaces have already initialized, but that when naming the interface it happens prior to the interface coming online. I'm not sure which is true, but with one network interface in the system naming it in the config is hardly a burden.
 
+**2022-07-05 - Distribution Upgrade Note:** The `use_tempaddr` setting, for me at least, we reset when performing a dist-upgrade in ubuntu. So it is probably best to put these in a configuration file in `/etc/sysctl.d`.
+
 #### Voila
 With that I have functioning IPv6 addresses and traffic. Head on over to [https://ipv6-test.com/](https://ipv6-test.com/) to validate your configuration. It was a bit of a ride to get there and I'm sure this article will be confusing to someone else in the future as the configuration options change and are renamed in EdgeOS, but maybe this'll help me reconfigure everything in the future when I eventually upgrade my network to get 10GB internal networking :D 

@@ -59,14 +59,13 @@ a.thickbox {
         }
 
         figcaption {
-            padding: 5px 0 2px 0;
             position: relative;
             display: block;
             text-align: center;
             font-size: 0.9em;
 
             a {
-                font-size: 0.8em;
+                padding: 5px 0 5px 0;
                 color: #888;
                 cursor: pointer !important;
             }

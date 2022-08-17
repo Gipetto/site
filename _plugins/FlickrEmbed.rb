@@ -165,40 +165,43 @@ module FlickrStuff
       super
       params = Shellwords.shellwords photo_data
       @photoset_id = params[0].strip()
+      @loader_template = params.at(1) ? params[1].strip().downcase : false
     end
 
-    def getPhotoSet(photoset_id)
+    def getPhotoSet(photoset_id, context)
       photo_set = $flickr.photosets.getPhotos(:photoset_id => @photoset_id)
       photo_set['photo'].map! { |photo|
-        getPhotoInfo(photo['id'])
+        p = getPhotoInfo(photo['id'])
+        p['large_image_data'] = getImgLargeData(p, context)
+        p
       }
       photo_set
     end
 
     def render(context)
-      photo_set = getPhotoSet(@photoset_id)
+      photo_set = getPhotoSet(@photoset_id, context)
 
-      stupid_html_string = '<div class="gallery">'
-      stupid_html_string << Liquid::Template
-        .parse('{%- include gallery-loader.html -%}')
-        .render(context)
+      stupid_html_string = ""
 
       photo_set['photo'].each { |photo|
-        lg_img_data = getImgLargeData(photo, context)
-
         stupid_html_string << Liquid::Template.parse("{%- include lightbox-image.html
           id=\"#{photo['info']['id']}\"
           href=\"#{photo['info']['urls']['url'][0]['text']}\"
-          img_lg=\"#{xml_escape(JSON.generate(lg_img_data))}\"
+          img_lg=\"#{xml_escape(JSON.generate(photo['large_image_data']))}\"
           data_src=\"#{photo['sizes']['Medium']['source']}\"
           data_src_tiny=\"#{photo['sizes']['Small']['source']}\"
           title=\"#{xml_escape(photo['info']['title'])}\"
         -%}").render(context)
       }
-      
-      stupid_html_string << '</div>'
 
-      stupid_html_string
+      loader = 'gallery'
+      if @loader_template
+        loader += '-' + @loader_template
+      end
+
+      Liquid::Template
+        .parse('{%- include ' + loader + '.html gallery_content="' + %Q[#{stupid_html_string.gsub('"', '\"')}] + '" -%}')
+        .render(context)
     end
   end 
 end

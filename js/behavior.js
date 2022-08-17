@@ -2,8 +2,8 @@
 
 function fluffyBunnies() {
     // Init
-    var nav = document.querySelector('header').querySelector('nav');
-    var cachebuster = document.querySelector('meta[name="cachebuster"]').getAttribute('content');
+    var nav = document.querySelector('header')?.querySelector('nav');
+    var cachebuster = document.querySelector('meta[name="cachebuster"]')?.getAttribute('content');
     var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
     var is4G = connection && connection.effectiveType == '4g' || true;
     var searchInput = document.querySelector('.search-box input');
@@ -42,9 +42,9 @@ function fluffyBunnies() {
         hsvg.appendChild(huse);
         ha.appendChild(hsvg);
         hli.appendChild(ha);
-        nav.querySelector("ul").prepend(hli);
+        nav?.querySelector("ul").prepend(hli);
 
-        var hamburgerToggle = nav.querySelector('.hamburger a');
+        var hamburgerToggle = nav?.querySelector('.hamburger a');
         return function(e) {
             stopEvent(e);
             nav.classList.toggle('hamburgled');
@@ -52,7 +52,7 @@ function fluffyBunnies() {
                 .setAttribute('aria-expanded', nav.classList.contains('hamburgled') ? 'true' : 'false');
         }
     })();
-    document.querySelector('.hamburger').addEventListener('click', hamburger);
+    nav && document.querySelector('.hamburger').addEventListener('click', hamburger)
 
     // Search
 
@@ -212,6 +212,9 @@ function fluffyBunnies() {
         var mkCaption = function(str) {
             var caption = document.createElement('span');
             caption.innerHTML = str;
+            caption.addEventListener('click', function(e) {
+                e.stopPropagation();
+            })
             return caption;
         };
 
@@ -259,7 +262,7 @@ function fluffyBunnies() {
         };         
     })();
 
-    document.querySelectorAll('.thickbox').forEach(function(element) {
+    document.querySelectorAll('.thickbox:not(.meta)').forEach(function(element) {
         element.addEventListener('click', doLightbox);
     });
 
@@ -280,15 +283,19 @@ function fluffyBunnies() {
             itemSelector: '.frame',
             columnWidth: '.frame',
             percentPosition: true,
-            gutter: 2,
+            gutter: 3,
             initLayout: false,
             stagger: 30,
-            transitionDuration: 0
+            transitionDuration: 0,
+            stamp: '.stamp'
         });
     
         var thickboxen = document.querySelectorAll('.thickbox');
         var lazyLoad = function(i) {
             var thisun = thickboxen[i].querySelector('img');
+            if (!thisun) {
+                return
+            }
         
             if (!thisun.dataset.primed && thisun.dataset.src) {
                 thisun.addEventListener('load', function() {
@@ -319,11 +326,6 @@ function fluffyBunnies() {
     // Add class to code blocks that have overflow text
     document.querySelectorAll('div.highlight').forEach((el) => {
         var child = el.querySelector('.highlight');
-        //console.dir({
-        //    "el": el.scrollWidth,
-        //    "child": child.scrollWidth
-        //});
-
         if (el.scrollWidth <= child.scrollWidth) {
             el.classList.add('highlight-overflow');
         }

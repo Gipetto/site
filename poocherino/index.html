@@ -1,0 +1,27 @@
+---
+layout: compress
+title: Poocherino
+---
+{% assign cachebuster = 'now' | date: '%s' %}
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ page.lang | default: site.lang | default: 'en' }}"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="{{ page.lang | default: site.lang | default: 'en' }}"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="{{ page.lang | default: site.lang | default: 'en' }}"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ page.lang | default: site.lang | default: 'en' }}"> <!--<![endif]-->
+<head>
+    <title>{{ page.title }}</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preload" href="./css/main.css?v={{ cachebuster }}" as="style">
+	<link rel="stylesheet" href="./css/main.css?v={{ cachebuster }}">
+</head>
+<body id="poocherino" class="{{ page.section | default: layout.section }}">
+    {% flickr_album '72157603367803058' 'poocherino' %}
+    {%- include lightbox.html -%}
+    <script type="text/javascript" src="https://top-frog.com/js/behavior.js?v={{ cachebuster }}"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+</body>
+</html>

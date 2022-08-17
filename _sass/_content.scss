@@ -170,66 +170,6 @@
 			}	
 		}
 
-		.gallery {
-			margin-top: 2em;
-
-			.loader {
-				position: relative;
-				opacity: 1;
-				text-align: center;
-				transition-property: opacity;
-				
-				svg {
-					opacity: 0.25;
-					filter: grayscale(100%);
-				}
-
-				.loading {
-					font-size: 2em;
-					top: 50px;
-					left: 45%;
-					position: absolute;
-					font-family: $headerFontFamily;
-					color: $lightGrayBorderColor;
-
-					&:after {
-						overflow: hidden;
-						display: inline-block;
-						vertical-align: bottom;
-						animation: ellipsis steps(4,end) 2000ms infinite;
-						content: "\2026";
-						width: 0;
-					}
-
-					@keyframes ellipsis {
-						to {
-							width: 1.25em;    
-						}
-					}
-				}
-			}
-
-			.frame {
-				width: 33%;
-				padding: 0;
-				margin-bottom: 2px;
-
-				@media screen and (max-width: $menuCollapseWidth) {
-					width: 49%;
-				}
-
-				img {
-					transition: all linear .5s;
-					transition-property: opacity;
-					margin: 0;
-					border: none;
-					padding: 0;
-					visibility: 'hidden';
-					opacity: 0;
-				}
-			}
-		}
-
 		.search-header {
 			.search-box {
 				flex-grow: 2;
@@ -247,6 +187,8 @@
 				}	
 			}
 		}
+
+		@import 'gallery';
 	}
 
 	.divider {
