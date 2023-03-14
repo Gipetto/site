@@ -86,6 +86,7 @@ rsync:
 	rsync --archive \
 		--partial \
 		--progress \
+		--filter='P .well-known' \
 		--delete \
 		--inplace \
 		--whole-file \

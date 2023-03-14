@@ -18,6 +18,11 @@
 		text-transform: lowercase;
 	}
 
+	h1, h2, h3, h4, h5, h6, caption, figcaption {
+		/* currently experimental css 4 */
+		text-wrap:balance;
+	}
+
 	h3, h4, h5 {
 		font-weight: bold;
 		font-family: $headerFontFamily;
