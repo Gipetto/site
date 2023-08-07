@@ -12,7 +12,7 @@ section: home
     </p>
     {{ page.excerpt }}
 
-    <p class="muted-n-stuff">Tagged as: {{ page.tags | join: ', ' | downcase }}</p>
+    <p class="muted-n-stuff">Tagged as: {{ page.tags | join: " " | downcase }}</p>
 </article>
 
 {% include pagination.html %}
