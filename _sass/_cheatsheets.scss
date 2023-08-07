@@ -1,0 +1,20 @@
+.cheatsheet {
+    table {
+        border-collapse: collapse;
+        width: 100%;
+
+        th, td {
+            border: 1px solid $lightGrayBorderColor;
+            padding: 4px 2px;
+
+            &:first-of-type {
+                width: 40%;
+            }
+        }
+
+        th {
+            background: #c4c8c1;
+            color: white;
+        }
+    }
+}
