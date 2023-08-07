@@ -47,6 +47,43 @@ body {
 		}
 	}
 
+	#google-web-environment-integrity-warning {
+		width: $staticWidth;
+
+		@media screen and (max-width: $maxResponsiveWidth) {
+			width: auto;
+			margin: 10px;
+		}
+
+		margin: 15px auto 50px auto;
+		padding: 1em 2em;
+		border: 1px solid white;
+		border-radius: 5px;
+		position: relative;
+		
+		background: yellow;
+		box-shadow: 0 0 5px 2px $boxShadowColor;
+
+		h1 {
+			font-size: 1.75em;
+			margin: 0;
+		}
+		
+		p {
+			margin: 0;
+			font-size: 1em;
+			margin-bottom: 1em;
+
+			&:first-of-type {
+				margin-top: 1em;
+			}
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+
 	#bag-o-holding {
 		background-color: $innerBackgroundColor;
 		border: 1px solid $borderColor;

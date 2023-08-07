@@ -1,6 +1,12 @@
 "use strict";
 
 function fluffyBunnies() {
+    // Sigh... Google is the new IE.
+    var googleWEIWarning = document.getElementById('google-web-environment-integrity-warning');
+    if (navigator.getEnvironmentIntegrity !== undefined) {
+        googleWEIWarning.style.display = "block";
+    }
+
     // Init
     var nav = document.querySelector('header')?.querySelector('nav');
     var cachebuster = document.querySelector('meta[name="cachebuster"]')?.getAttribute('content');
