@@ -35,7 +35,8 @@ permalink: .htaccess
   Header set X-XSS-Protection: "1; mode=block"
   Header set X-Content-Type-Options nosniff
   # interest-cohort blocks google FLoC: https://twitter.com/henshaw/status/1383807527935119363
-  Header set Permissions-Policy: "geolocation=(), camera=(), microphone=(), payment=(), screen-wake-lock=(), interest-cohort=()"
+  # browsing-topics blocks google topics 
+  Header set Permissions-Policy: "geolocation=(), camera=(), microphone=(), payment=(), screen-wake-lock=(), interest-cohort=(), browsing-topics=()"
   Header set Referer-Policy: "origin"
   Header set X-Content-Type-Options: "nosniff"
   Header set X-Frame-Options: DENY
