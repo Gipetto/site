@@ -1,23 +1,31 @@
 "use strict";
 
 function fluffyBunnies() {
+    const cachebuster = document.querySelector('meta[name="cachebuster"]')?.getAttribute('content');
+    const cacheBust = function(url) {
+        return url + '?v=' + cachebuster;
+    }
+
     // Sigh... Google is the new IE.
-    var googleWEIWarning = document.getElementById('google-web-environment-integrity-warning');
     if (navigator.getEnvironmentIntegrity !== undefined) {
-        googleWEIWarning.style.display = "block";
+        fetch(cacheBust('/assets/google-web-environment-integrity-warning.html'))
+            .then(r => { 
+                return r.text(); 
+            }).then(warning => {
+                const fragment = document.createDocumentFragment(),
+                    tmp = document.createElement("div")
+                tmp.innerHTML = warning
+                fragment.appendChild(tmp.firstChild)
+                document.body.insertBefore(fragment, document.getElementById("bag-o-holding"))
+            });
     }
 
     // Init
     var nav = document.querySelector('header')?.querySelector('nav');
-    var cachebuster = document.querySelector('meta[name="cachebuster"]')?.getAttribute('content');
     var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
     var is4G = connection && connection.effectiveType == '4g' || true;
     var searchInput = document.querySelector('.search-box input');
     var queryParams = new URLSearchParams(window.location.search);
-
-    var cacheBust = function(url) {
-        return url + '?v=' + cachebuster;
-    }
 
     var stopEvent = (event) => {
         event.preventDefault();
