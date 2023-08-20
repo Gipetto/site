@@ -7,18 +7,9 @@ const imageMapsForEva = () => {
       myimages[i].src = images[i]
     }
   }
-  
-  preloadimages([
-    "/assets/image_map/map-for-web.gif",
-    "/assets/image_map/map-for-web-uw.gif",
-    "/assets/image_map/map-for-web-uc.gif",
-    "/assets/image_map/map-for-web-ue.gif",
-    "/assets/image_map/map-for-web-cw.gif",
-    "/assets/image_map/map-for-web-cc.gif",
-    "/assets/image_map/map-for-web-ce.gif"
-  ])
 
   const mappable = document.querySelectorAll("img[usemap]")
+  const imagesToPreload = []
   mappable.forEach((img) => {
     img.dataset.origSrc = img.src
     const map = document.querySelector(`map[name="${img.useMap.replace("#", "")}"]`)
@@ -31,8 +22,11 @@ const imageMapsForEva = () => {
       area.addEventListener("mouseover", () => {
         img.src = area.dataset.image
       }, false)
+      imagesToPreload.push(area.dataset.image)
     })
   })
+
+  preloadimages([ ...new Set(imagesToPreload)])
 }
 
 

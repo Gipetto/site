@@ -28,4 +28,6 @@ Why should the image map be ignored? Its understood by every major browser aroun
   <area shape="poly" coords="146,136, 122,136, 102,134, 82,129, 77,130, 72,121, 75,117, 73,115, 76,113, 73,107, 72,103, 75,100, 73,95, 70,82, 66,82, 63,77, 63,73, 79,43, 84,49, 88,49, 97,49, 103,43, 106,39, 106,36, 109,30, 118,26, 132,22, 142,18, 148,12, 156,7, 174,4, 172,9, 166,19, 163,31, 163,42, 170,44, 183,49, 196,58, 197,74, 195,78, 185,77, 180,73, 175,75, 169,79, 162,81, 157,79, 153,82, 146,91, 147,100, 151,103, 151,106, 157,106, 156,109, 147,121" href="#" alt="Western Canada" data-image="/assets/image_map/map-for-web-cw.gif">
   <area shape="poly" coords="82,129, 103,134, 125,136, 123,166, 110,166, 108,180, 124,182, 123,200, 113,200, 105,201, 100,201, 87,194, 82,193, 74,183, 70,168, 69,157, 71,150, 77,138, 77,131" href="#" alt="Western United States" data-image="/assets/image_map/map-for-web-uw.gif">
 </map>
-<script src="/js/imagemap.js?v=2" async></script>
+<script src="/js/imagemap.js?v=3" async></script>
+
+[View sample JS code for this post](/js/imagemap.js?v=3)
