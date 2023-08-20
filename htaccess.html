@@ -20,6 +20,7 @@ permalink: .htaccess
 {%- assign cspManifestSrc = "manifest-src 'self'" -%}
 {%- assign cspFontSrc = "font-src 'none'" -%}
 {%- assign cspUpgradeInsecureRequests = "upgrade-insecure-requests" -%}
+{%- assign cspTrustedTypes = "require-trusted-types-for 'script'" -%}
 <IfModule mod_ssl.c>
   SSLOptions +StrictRequire +StdEnvVars -OptRenegotiate
 </IfModule>
@@ -34,14 +35,14 @@ permalink: .htaccess
   Header unset X-Powered-By
   Header set X-XSS-Protection: "1; mode=block"
   Header set X-Content-Type-Options nosniff
-  # interest-cohort blocks google FLoC: https://twitter.com/henshaw/status/1383807527935119363
+  # interest-cohort blocks (the now dead?) google FLoC: https://twitter.com/henshaw/status/1383807527935119363
   # browsing-topics blocks google topics 
   Header set Permissions-Policy: "geolocation=(), camera=(), microphone=(), payment=(), screen-wake-lock=(), interest-cohort=(), browsing-topics=()"
   Header set Referer-Policy: "origin"
   Header set X-Content-Type-Options: "nosniff"
   Header set X-Frame-Options: DENY
   Header set Cache-Control: "no-transform, immutable, public"
-  Header set Content-Security-Policy: "{{ cspDefault }}; {{ cspBaseUri }}; {{ cspFormAction }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }} 'sha256-{{ headCssSha }}'; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }}; {{ cspManifestSrc }}; {{ cspFontSrc }}; {{ cspUpgradeInsecureRequests }};"
+  Header set Content-Security-Policy: "{{ cspDefault }}; {{ cspBaseUri }}; {{ cspFormAction }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }} 'sha256-{{ headCssSha }}'; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }}; {{ cspManifestSrc }}; {{ cspFontSrc }}; {{ cspUpgradeInsecureRequests }}; {{ cspTrustedTypes }};"
   Header set Referrer-Policy: "strict-origin-when-cross-origin"
   <If "%{HTTP_USER_AGENT} =~ /(MSIE|Edge)s*/i">
     Header set X-UA-Compatible: "IE=Edge,chrome=1"
@@ -182,5 +183,5 @@ php_value error_reporting 32767
 
 {% assign cacheKey = site.time | date: '%s' -%}
 <FilesMatch "\.html$">
-  Header set Link "</css/main.css?v={{ cacheKey }}>; rel=preload; as=style, </js/behavior.min.js?v={{ cacheKey }}>; rel=preload; as=script, </assets/big-frog.optimized.svg>; rel=preload; as=image, </assets/name.optimized.svg>; rel=preload; as=image"
+  Header set Link "</css/main.css?v={{ cacheKey }}>; rel=preload; as=style, </js/behavior.min.js?v={{ cacheKey }}>; rel=preload; as=script, </assets/big-frog.optimized.svg>; rel=preload; as=image; type=image/svg+xml, </assets/name.optimized.svg>; rel=preload; as=image; type=image/svg+xml"
 </FilesMatch>
