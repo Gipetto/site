@@ -55,12 +55,14 @@
 	}
 
 	.muted-n-stuff {
-		font-size: 0.9em;
+		font-size: 0.95em;
 		color: #595959;
 	}
 
 	.postmeta {
 		margin-top: 2px;
+		margin-bottom: 2em;
+		font-weight: 300;
 	}
 
 	.frame {
@@ -93,7 +95,7 @@
 	}
 
 	.drivel {
-		font-size: 0.85em;
+		font-size: 0.9em;
 		line-height: 1.5em;
 		margin: 0 10px;
 		padding: 20px 10px 10px 10px;
@@ -101,7 +103,7 @@
 		h3 {
 			font-size: 1.6em;
 			line-height: 1.2;
-			margin-top: 30px;
+			margin-top: 45px;
 
 			&:first-child {
 				margin-top: 5px;
@@ -110,7 +112,7 @@
 
 		h4 {
 			line-height: 1.2;
-			margin-top: 20px;
+			margin-top: 30px;
 			font-size: 1.3em;
 		}
 
