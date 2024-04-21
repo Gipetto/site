@@ -8,7 +8,7 @@ function fluffyBunnies() {
 
     // Sigh... Google is the new IE.
     if (navigator.getEnvironmentIntegrity !== undefined) {
-        fetch(cacheBust('/assets/google-web-environment-integrity-warning.html'))
+        fetch(cacheBust('/assets/wei.html'))
             .then(r => { 
                 return r.text(); 
             }).then(warning => {

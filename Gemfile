@@ -31,9 +31,10 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # Performance boost for LSI
-gem 'narray'
-gem 'nmatrix'
-gem 'gsl'
+gem 'numo-narray'
+gem 'numo-linalg'
+# gem 'nmatrix'
+# gem 'gsl'
 
 # Gems-n-stuff
 gem "hpricot"
@@ -44,3 +45,5 @@ gem 'classifier-reborn'
 gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
 gem "liquid-c"
+# hold back jekyll-sass-converter to avoid bug in obsolete docker image
+gem "jekyll-sass-converter", "2.2.0"

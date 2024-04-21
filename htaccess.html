@@ -9,7 +9,7 @@ permalink: .htaccess
 {%- assign headCssSha = include_to_scssify | scssify | strip | sha256 -%}
 {%- assign cspDefault = "default-src 'none'" -%}
 {%- assign cspScript = "script-src 'self' https://unpkg.com" -%}
-{%- assign cspStyle = "style-src 'self'" -%}
+{%- assign cspStyle = "style-src 'self' 'sha256-+7TbgfG3AwuCE7gGrPQfmMZXB3vcSikbpmiAABFjeuo='" -%}
 {%- assign cspImg = "img-src 'self' *.staticflickr.com *.flickr.com www.paypalobjects.com data:" -%}
 {%- assign cspConnect = "connect-src 'self'" -%}
 {%- assign cspFrame = "frame-src *.youtube.com" -%}
@@ -70,7 +70,7 @@ AddType text/x-web-app-manifest+json  webapp
   Options -Indexes
 </IfModule>
 
-{% if jekyll.environment == 'production' -%}
+{% if jekyll.environment == 'production-never' -%}
 # php_value upload_max_file_size 2M
 # php_value post_max_size 2M
 php_flag log_errors on

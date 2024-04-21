@@ -2,7 +2,7 @@
 
 LOCALHOST := 0.0.0.0
 JKLFLAGS := --lsi --profile --trace
-SVGFLAGS := --disable=removeTitle
+SVGFLAGS := --config ./svgo.config.mjs
 CRLFLAGS := -isN -H 'Cache-Control: no-cache'
 SITE := _site
 ASSETS := assets
@@ -40,7 +40,6 @@ clean:
 optimize-svgs:
 	# we want to ensure the sprite retains the width and height attributes
 	svgo $(SVGFLAGS) \
-		--disable removeDimensions \
 		-i $(ASSETS)/icons/icons-sprite.svg \
 		-o $(ASSETS)/icons/icons-sprite.optimized.svg
 	svgo $(SVGFLAGS) \
@@ -52,6 +51,9 @@ optimize-svgs:
 	svgo $(SVGFLAGS) \
 		-i $(ASSETS)/paw-print.svg \
 		-o $(ASSETS)/paw-print.optimized.svg
+	svgo $(SVGFLAGS) \
+		-i $(ASSETS)/qs-logo.svg \
+		-o $(ASSETS)/qs-logo.optimized.svg
 
 minify-js:
 	java -jar _bin/closure-compiler/closure-compiler-*.jar \
@@ -95,8 +97,8 @@ rsync:
 
 build: clean validate-avatar-json
 	docker run --rm -it \
-		--cpus 4 \
-		--memory=4g \
+		--cpus 8 \
+		--memory=8g \
 		--volume "$(PWD):/srv/jekyll" \
 		--volume "$(PWD)/vendor/bundle:/usr/local/bundle" \
 		--env JEKYLL_ENV=production \
@@ -142,7 +144,7 @@ docker-build:
 		-t $(DOCKER_IMAGE):latest .
 
 validate-avatar-json:
-	python -mjson.tool avatar/avatar.json > /dev/null \
+	python3 -mjson.tool avatar/avatar.json > /dev/null \
 		&& echo "Avatar JSON OK"
 
 flickr-cache:

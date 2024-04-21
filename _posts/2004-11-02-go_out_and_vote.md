@@ -12,4 +12,4 @@ tags:
   - election
   - duty
 ---
-Do it.
+Do it. You know you want to.

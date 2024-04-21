@@ -8,6 +8,19 @@ category: cheatsheet
 Find details on Packages, NixOS options and Flakes: 
 [https://search.nixos.org](https://search.nixos.org)
 
+## Flakes
+
+| Operation | Command |
+| --------- | ------- |
+| Install | `sudo nixos-rebuild switch` |
+| Upgrade | `nix flake update`<br>`sudo nixos-rebuild switch --upgrade` |
+
+## Nix Commands
+
+| Operation | Command |
+| --------- | ------- |
+| Search | `nix search nixpkgs 'package'` |
+
 ## Nix-Env (pre nix-commands)
 
 | Operation | Command |
