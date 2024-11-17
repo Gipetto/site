@@ -1,9 +1,10 @@
 ---
 ---
-{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+{%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+{%- assign datetime_format = site.datetime_format -%}
 [
 {%- for post in site.posts -%}
-{"title":{{ post.title | jsonify}},"date":"{{ post.date | date: date_format }}","tokens":"{{ post.content | tokenize }}","excerpt":{{ post.content | strip_html | normalize_whitespace | truncate: 250 | jsonify}},"url": "{{ post.url }}",
+{"title":{{ post.title | jsonify}},"date":"{{ post.date | date: date_format }}","datetime":"{{ page.date | date: datetime_format }}","tokens":"{{ post.content | tokenize }}","excerpt":{{ post.content | strip_html | normalize_whitespace | truncate: 250 | jsonify}},"url": "{{ post.url }}",
   {%- if post.categories -%}"categories" :[
     {%- for category in post.categories -%} "{{ category }}"
     {%- if forloop.last %}{% else %},{% endif -%}

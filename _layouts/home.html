@@ -7,8 +7,9 @@ section: home
 <article class="drivel">
     <h3><a href="{{ page.url }}" rel="canonical">{{ page.title | escape | pp}}</a></h3>
     <p class="muted-n-stuff postmeta">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }} | {{ page.categories | join: " " | wordcase }}
+        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+        {%- assign datetime_format = site.datetime_format -%}
+        <time datetime="{{ page.date | date: datetime_format }}">{{ page.date | date: date_format }}</time> | {{ page.categories | join: " " | wordcase }}
     </p>
     {{ page.excerpt }}
 

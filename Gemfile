@@ -46,4 +46,4 @@ gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
 gem "liquid-c"
 # hold back jekyll-sass-converter to avoid bug in obsolete docker image
-gem "jekyll-sass-converter", "2.2.0"
+# gem "jekyll-sass-converter", "2.2.0"

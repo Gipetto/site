@@ -97,8 +97,6 @@ rsync:
 
 build: clean validate-avatar-json
 	docker run --rm -it \
-		--cpus 8 \
-		--memory=8g \
 		--volume "$(PWD):/srv/jekyll" \
 		--volume "$(PWD)/vendor/bundle:/usr/local/bundle" \
 		--env JEKYLL_ENV=production \
@@ -132,8 +130,7 @@ serve: clean
 		$(JKLFLAGS) \
 		--incremental \
 		--limit_posts 50 \
-		--livereload \
-		--watch 
+		--watch
 
 serve-php:
 	php -S $(LOCALHOST):4001
@@ -141,6 +138,7 @@ serve-php:
 docker-build:
 	docker build \
 		--no-cache \
+		--progress=plain \
 		-t $(DOCKER_IMAGE):latest .
 
 validate-avatar-json:

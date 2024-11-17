@@ -66,4 +66,6 @@ exclude:
   - Gemfile.lock
   - Makefile
   - ReadMe.md
-
+date_format: "%b %-d, %Y"
+# https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#valid_datetime_values
+datetime_format: "%Y-%m-%d %H:%M%z"
