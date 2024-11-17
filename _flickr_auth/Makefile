@@ -3,7 +3,7 @@
 install:
 	# python -m pipenv shell; \
 	# pipenv install flickr_api;
-	pipenv install
+	PIPENV_VENV_IN_PROJECT=1 pipenv install
 
 auth:
 	python -m pipenv run python auth.py
