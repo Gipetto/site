@@ -1,7 +1,12 @@
 .projects-list {
-  .qs-logo {
+  .qs-logo,
+  .andy-img {
     float: right;
-    height: 150px;
-    margin-left: 1em;
+    height: 125px;
+    margin-left: 1.5em;
+  }
+
+  .andy-img {
+    border-radius: 0.5rem;
   }
 }

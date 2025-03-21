@@ -212,8 +212,15 @@ function fluffyBunnies() {
         })
     }
 
+    // Trusted Types
+    if (typeof trustedTypes == "undefined")
+        trustedTypes = { createPolicy: (n, rules) => rules };
+      
+    const lbPolicy = trustedTypes.createPolicy("lightbox-html", {
+        createHTML: (input) => input
+    })
+    
     // Lightbox
-
     var doLightbox = (function(data) {
         var lightbox = document.querySelector('.lightbox');
         var lightboxImage = lightbox.querySelector('img');
@@ -225,7 +232,7 @@ function fluffyBunnies() {
 
         var mkCaption = function(str) {
             var caption = document.createElement('span');
-            caption.innerHTML = str;
+            caption.innerHTML = lbPolicy.createHTML(str);
             caption.addEventListener('click', function(e) {
                 e.stopPropagation();
             })

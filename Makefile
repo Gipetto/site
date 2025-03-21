@@ -11,10 +11,19 @@ JS_COMPILE := SIMPLE
 JS_INFILE := $(JS)/behavior.js
 JS_OUTFILE := $(JS)/behavior.min.js
 DOCKER_IMAGE := gippy-pages
-CC_VERSION := v20211201
+CC_VERSION := v20240317
 
 TODAYS_DAY := $(shell date +%F)
 TODAYS_DATE := $(shell date +%FT%T%z)
+
+PLATFORM := $(shell uname -s)
+
+PLATFORM := $(shell uname -s)
+ifeq ("$(PLATFORM)","Darwin")
+	ARCH="linux/arm64"
+else
+	ARCH="linux/amd64"
+endif
 
 post:
 	@read -p "Slug for new post: " SLUG; \
@@ -23,10 +32,12 @@ post:
 	sed -i 's/{{date}}/$(TODAYS_DATE)/' $$NEW_POST; \
 	code -r $$NEW_POST -
 
-install: docker-build
-	mkdir -p _bin
+install: docker-build install-cc
 	mkdir -p _site
 	bundle install
+
+install-cc:
+	mkdir -p _bin
 	rm -f _bin/closure-compiler/closure-compiler-*.jar
 	wget -P _bin/closure-compiler \
 		https://repo1.maven.org/maven2/com/google/javascript/closure-compiler/$(CC_VERSION)/closure-compiler-$(CC_VERSION).jar
@@ -139,6 +150,7 @@ docker-build:
 	docker build \
 		--no-cache \
 		--progress=plain \
+		--platform=$(ARCH) \
 		-t $(DOCKER_IMAGE):latest .
 
 validate-avatar-json:
