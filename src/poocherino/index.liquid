@@ -1,0 +1,40 @@
+---
+layout: 
+---
+<!doctype html>
+<head>
+    <title>Poocherino</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="me" href="https://top-frog.com" />
+    <link rel="me" href="https://www.flickr.com/photos/tehgipster/" />
+    <link rel="me" href="https://hachyderm.io/@wookieeboy" />
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preload" href="./css/main.css?c={{ site.buildTime }}" as="style">
+	<link rel="stylesheet" href="./css/main.css?c={{ site.buildTime }}">
+</head>
+<body id="poocherino" class="poocherino">
+    <header>
+        <h1>Poocherino</h1>
+    </header>
+    <main>
+        <div class="paw">
+            {% render "./assets/paw.svg" %}
+        </div>
+        {% render "flickr-album" with flickr.albums["72157603367803058"] as album %}
+    </main>
+    <footer>
+        <p>&copy; <a href="https://top-frog.com">Shawn Parker &mdash; top-frog.com</a></p>
+    </footer>
+    <dialog class="lightbox">
+        <form method="dialog">
+          <button class="sr-only" autofocus formmethod="dialog">
+            <span>Close Dialog</span>
+          </button>
+          <img eleventy:ignore class="" src="">
+        </form>
+      </dialog>
+    <script type="text/javascript" src="./js/main.js?c={{ site.buildTime }}"></script>
+</body>
+</html>

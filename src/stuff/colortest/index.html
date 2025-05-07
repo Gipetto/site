@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>PNG, GIF, JPG Color Comparison</title>
+	<style type="text/css">
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+			font-size: 12px;
+		}
+		.orange, .red {
+			position: relative;
+			width: 99px;
+			height: 50px;
+			border-top: 1px solid black;
+			display: block;
+			float: left;
+			color: white;
+		}
+		.orange {
+			background:#F17B31;
+			border-bottom: 1px solid #F17B31;
+		}
+		.red {
+			background:#E40202;
+			border-bottom: 1px solid #E40202;
+			width: 101px;
+		}
+		.image {
+			position: relative;
+			width: 200px;
+			height: 200px;
+		}
+		.samples {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.samples div {
+			flex: 0 0 230px;
+			margin-bottom: 50px;
+		}
+
+		.samples div img {
+			border-bottom: 1px solid black;
+		}
+
+		.samples div:hover span {
+			border-bottom: 1px solid white;
+		}
+
+		.samples div:hover .orange:before {
+			content: 'html';
+			position: absolute;
+			left: 10px;
+			top: 10px;
+		}
+
+		.samples div:hover .image:before {
+			content: 'image';
+			position: absolute;
+			left: 10px;
+			top: 60px;
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+	<p>Below are samples to illustrate the color matching abilities of different file formats.</p>
+	<p><b>Note:</b> this test page is obsolete. Most modern browsers will properly color match different file formats.</p>
+	<div class="samples">
+		<div>
+			GIF<br/>
+			Indexed Color<br/>
+			<span class="orange"></span><span class="red"></span>
+			<div class="image">
+				<img src="assets/test.gif" alt="GIF Test" />
+			</div>
+		</div>
+		<div>
+			SVG<br/>
+			Indexed Color<br/>
+			<span class="orange"></span><span class="red"></span>
+			<div class="image">
+				<img src="assets/test.svg" alt="SVG Test" />
+			</div>
+		</div>
+	</div>
+	<div class="samples">
+	<div>
+			JPG<br/>
+			Generic RGB<br/>
+			<span class="orange"></span><span class="red"></span>
+			<div class="image">
+				<img src="assets/test-generic.jpg" alt="JPG Test" />
+			</div>
+		</div>
+		<div>
+			JPG<br/>
+			Adobe RGB (1998)<br/>
+			<span class="orange"></span><span class="red"></span>
+			<div class="image">
+				<img src="assets/test.jpg" alt="JPG Test" />
+			</div>
+		</div>
+		<div>
+			JPG<br/>
+			sRGB, no color profile<br/>
+			<span class="orange"></span><span class="red"></span>
+			<div class="image">
+				<img src="assets/test-noprofile.jpg" alt="JPG Test" />
+			</div>
+		</div>
+	</div>
+	<div class="samples">
+		<div>
+			PNG-8<br/>
+			Indexed color<br/>
+			<span class="orange"></span><span class="red"></span>
+			<div class="image">
+				<img src="assets/test-8-new-noprofile.png" alt="PNG-8 Test" />
+			</div>
+		</div>
+	</div>
+	<div class="samples">
+		<div>
+			PNG-24<br/>
+			Generic RGB<br/>
+			<span class="orange"></span><span class="red"></span>
+			<div class="image">
+				<img src="assets/test-24.png" alt="PNG-24 Test" />
+			</div>
+		</div>
+		<div>
+			PNG-24<br/>
+			Adobe RGB (1998)<br/>
+			<span class="orange"></span><span class="red"></span>
+			<div class="image">
+				<img src="assets/test-24.png" alt="PNG-24 Test" />
+			</div>
+		</div>
+		<div>
+			PNG-24<br/>
+			sRGB, no color profile<br/>
+			<span class="orange"></span><span class="red"></span>
+			<div class="image">
+				<img src="assets/test-24-noprofile.png" alt="PNG-24 Test" />
+			</div>
+		</div>
+	</div>		
+</body>
+</html>

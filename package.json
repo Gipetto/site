@@ -1,0 +1,34 @@
+{
+  "name": "site-eleventy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf _site",
+    "dev:eleventy": "npx @11ty/eleventy --serve",
+    "dev:sass": "npx sass src/sass:_site/css --watch",
+    "dev:poocherino-sass": "npx sass src/poocherino/sass:_site/poocherino/css --watch",
+    "dev": "rm -rf _site && npm-run-all build:sass --parallel dev:*",
+    "build:eleventy": "npx @11ty/eleventy",
+    "build:sass": "npx sass src/sass:_site/css",
+    "build": "npm-run-all build:*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "jsdom": "^26.1.0",
+    "markdown-it-footnote": "^4.0.0",
+    "natural": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.86.0",
+    "svgo": "^3.3.2"
+  },
+  "devDependencies": {
+    "html-minifier-terser": "^7.2.0"
+  }
+}

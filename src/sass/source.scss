@@ -1,0 +1,48 @@
+@use "_prism-material-dark";
+
+body {
+  padding: 2em;
+  background-color: #f0f0f0;
+  line-height: 1.3em;
+  tab-size: 2;
+  
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  .highlight {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+  
+    pre {
+      margin: 0.5em 0.5em 0.5em 0;
+      overflow: scroll; 
+  
+      .gutter {
+        width: 2em;
+        color: #ccc;
+      }
+    }
+  }
+
+  pre[class*="language-"] {
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.90rem;
+    font-family: var(--font-family-monospace);
+    line-height: 1.25rem;
+    
+    * {
+      font-variant-ligatures: initial;
+      font-variant-numeric: initial;
+      font-feature-settings: initial;
+    }
+    
+    .token.comment {
+      font-style: italic;
+      color: #dadada;
+    }
+  } 
+}

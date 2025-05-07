@@ -1,0 +1,54 @@
+.photography {
+  .masonry {
+    margin-top: 2rem;
+  }
+
+  nav {
+    .tabs {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  
+      @media (max-width: 450px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+
+        li {
+          width: 100%;
+        }
+      }
+
+      li:first-child {
+        font-size: 1.25rem;
+        text-transform: uppercase;
+      }
+
+      .tab {
+        text-decoration: none !important;
+
+        a {
+          display: inline-block;
+          width: 100%;
+          background: var(--color-background-darker);
+          border-radius: 0.25rem;
+          padding: 0.5rem 0.75rem 0.3rem 0.75rem;
+          color: white;
+        }
+
+        &:hover {
+          a {
+            background: var(--color-background-darker-est);
+            text-decoration: none;
+          }
+        }
+
+        &.current {
+          a {
+            background: var(--color-background-darkest);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+@use "_variables";
+
+.projects {
+  section + section {
+    margin-top: 6rem;
+
+    &.active-projects {
+      margin-top: 3rem;
+    }
+  }
+
+  .card {
+    * {
+      font-family: var(--font-family);
+    }
+
+    h3 {
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    a.chevron {
+      font-weight: 600;
+      display: inline-block;
+      height: 2rem;
+      background-color: var(--color-background-darker);
+      border-radius: 1rem;
+      padding: 1rem;
+      line-height: 0.25;
+      text-decoration: none;
+
+      &:hover {
+        background-color: var(--color-background-darker-est);
+      }
+    }
+
+    &.quizstreak {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+  
+      svg {
+        height: 200px;
+      }
+  
+      @media (max-width: variables.$grid-min-width) {
+        // flex-direction: column;
+        display: block;
+        svg {
+          float: left;
+          height: 125px;
+          margin-right: 2rem;
+        }
+      }
+  
+      &:hover {
+        svg {
+          .d-line {
+            stroke: #fff;
+          }
+          .d-fill {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  
+    &.sp {
+      svg {
+        float: right;
+        width: 125px;
+        height: 125px;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+      }
+      &:hover {
+        svg {
+          .a {
+            fill: var(--color-background-darker-est);
+          }
+          .b {
+            fill: var(--color-background);
+          }
+        }
+      }
+    }
+
+    &.ap {
+      img {
+        float: right;
+        width: 125px;
+        height: 125px;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+      }
+
+      &:hover {
+        img {
+          opacity: 0.9;
+        }
+      }
+    }
+  
+    &.cowsay {
+      svg {
+        float: left;
+        height: 175px;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+      }
+      &:hover {
+        svg {
+          .aa {
+            fill: var(--color-background) !important;
+          }
+        }
+      }
+    }
+
+    &.tfg {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+
+      svg {
+        width: 125px;
+      }
+
+      @media (max-width: variables.$grid-min-width) {
+        display: block;
+        svg {
+          float: left;
+          height: 150px;
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    &.tm {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+
+      img {
+        max-width: 125px;
+      }
+
+      @media (max-width: variables.$grid-min-width) {
+        display: block;
+        img {
+          float: left;
+          height: 125px;
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+
+  .projects-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 0.5rem;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "one one"
+      "two three"
+      "two four"
+      "five five"
+      "six seven";
+  
+    @media (max-width: variables.$grid-min-width) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven";
+    }
+  
+    &.obsolete,
+    &.trash-pile {
+      grid-template-areas:
+      "one one"
+      "two three";
+  
+      @media (max-width: variables.$grid-min-width) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "one"
+          "two"
+          "three";
+      }    
+    }
+  
+    &>:nth-child(1) {
+      grid-area: one;
+  
+    }
+  
+    &>:nth-child(2) {
+      grid-area: two;
+    }
+  
+    &>:nth-child(3) {
+      grid-area: three;
+    }
+  
+    &>:nth-child(4) {
+      grid-area: four;
+    }
+  
+    &>:nth-child(5) {
+      grid-area: five;
+    }
+  
+    &>:nth-child(6) {
+      grid-area: six;
+    }
+  
+    &>:nth-child(7) {
+      grid-area: seven;
+    }
+  }
+}
