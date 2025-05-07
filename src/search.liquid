@@ -1,0 +1,34 @@
+---
+layout:
+permalink: search.json
+---
+{%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+{%- assign datetime_format = site.datetime_format -%}
+[
+{%- for post in collections.posts -%}
+{
+  "slug":{{ post.page.fileSlug | json }},
+  "title":{{ post.data.title | json }},
+  "date":"{{ post.data.date | date: date_format }}",
+  "datetime":"{{ post.data.date | date: datetime_format }}",
+  "tokens":"{{ post.content | tokenize }}",
+  "excerpt":{{ post.content | strip_html | normalize_whitespace | truncate: 250 | json }},
+  "url": "{{ post.url }}",
+  {%- if post.data.categories -%}"categories":[
+    {%- for category in post.data.categories -%} "{{ category }}"
+    {%- if forloop.last %}{% else %},{% endif -%}
+    {%- endfor -%}
+    ],
+  {%- endif -%}
+  {%- if post.data.categories == nil -%}"categories":[],{%- endif -%}
+  {%- if post.data.tags -%} "tags":[
+    {%- for tag in post.data.tags -%}"{{ tag }}"
+    {%- if forloop.last %}{% else %},{% endif -%}
+    {%- endfor -%}
+    ]
+  {%- endif -%}
+  {%- if post.data.tags == nil -%}"tags":[]{%- endif -%}
+}
+{%- unless forloop.last %},{% endunless -%}
+{%- endfor -%}
+]

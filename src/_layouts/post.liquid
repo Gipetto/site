@@ -1,0 +1,52 @@
+---
+layout: article.liquid
+section: blog
+---
+{% assign previousPost = collections.posts | getPreviousCollectionItem %}
+{% assign nextPost = collections.posts | getNextCollectionItem %}
+
+<div>
+  <h2>{{ title }}</h2>
+
+  <div class="postmeta">
+    <p>{{ date | date: "%b %d, %Y" }} | {{ categories | join:", " }}</p>
+  </div>
+
+  <div class="entry-content">
+
+    {{ content }}
+
+  </div>
+</div>
+<div class="post-nav full">
+  <nav class="wide">
+    <ul>
+      {%- if previousPost -%}
+        <li>
+          <a rel="prev" href="{{ previousPost.url }}">
+            <div class="arr">
+              <span>&larr;</span>
+            </div>
+            <div>
+              <span class="nav-txt">Previous Post</span>
+              <span class="nav-link-txt">{{ previousPost.data.title }}</span>
+            </div>
+          </a>
+        </li>
+      {%- endif -%}
+      {%- if nextPost -%}
+        <li>
+          <a rel="next" href="{{ nextPost.url }}">
+            <div>
+              <span class="nav-txt">Next Post</span>
+              <span class="nav-link-txt">{{ nextPost.data.title }}</span>
+            </div>
+            <div class="arr">
+              <span>&rarr;</span>
+            </div>
+          </a>
+        </li>
+      {%- endif -%}
+    </ul>
+  </nav>
+</div>

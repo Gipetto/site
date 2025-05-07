@@ -9,7 +9,7 @@ export default {
           // removeDimensions: false,
           inlineStyles: {
             onlyMatchedOnce: false,
-          },
+          }
         },
       },
     },

@@ -1,0 +1,8 @@
+<a href="{{ href | default: img_lg }}" class="lightbox {{ additional_classes }}" data-lb-image="{{ imgLg.src | default: img_lg }}" data-lb-image-height="{{ imgLg.height }}" data-lb-image-width="{{ imgLg.width }}">
+  <picture id="{{ id }}">
+{% for source in sources %}
+  <source srcset="{{ source.src }}" media="{{ source.media }}" />
+{% endfor %}
+  <img src="{{ img.src | default: img_sm }}"  alt="Photograph: {{ title }}">
+</picture>
+</a>

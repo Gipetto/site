@@ -1,0 +1,181 @@
+---
+permalink: .htaccess
+layout: 
+---
+{%- assign cspDefault = "default-src 'none'" -%}
+{%- assign cspScript = "script-src 'self' https://cdn.jsdelivr.net" -%}
+{%- assign cspStyle = "style-src 'self'" -%}
+{%- assign cspImg = "img-src 'self' *.staticflickr.com *.flickr.com" -%}
+{%- assign cspConnect = "connect-src 'self'" -%}
+{%- assign cspFrame = "frame-src *.youtube.com" -%}
+{%- assign cspAncestors = "frame-ancestors 'none'" -%}
+{%- assign cspObjectSrc = "object-src 'none'" -%}
+{%- assign cspBaseUri = "base-uri 'self'" -%}
+{%- assign cspFormAction = "form-action 'self'" -%}
+{%- assign cspManifestSrc = "manifest-src 'self'" -%}
+{%- assign cspFontSrc = "font-src 'none'" -%}
+{%- assign cspUpgradeInsecureRequests = "upgrade-insecure-requests" -%}
+{%- assign cspTrustedTypes = "require-trusted-types-for 'script'" -%}
+<IfModule mod_ssl.c>
+  SSLOptions +StrictRequire +StdEnvVars -OptRenegotiate
+</IfModule>
+
+<IfModule mod_headers.c>
+{% if jekyll.environment == 'production' -%}
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+{%- endif %}
+  Header unset ETag
+  Header unset Server
+  Header unset X-Powered-By
+  Header set X-XSS-Protection: "1; mode=block"
+  Header set X-Content-Type-Options nosniff
+  # interest-cohort blocks (the now dead?) google FLoC: https://twitter.com/henshaw/status/1383807527935119363
+  # browsing-topics blocks google topics 
+  Header set Permissions-Policy: "geolocation=(), camera=(), microphone=(), payment=(), screen-wake-lock=(), interest-cohort=(), browsing-topics=()"
+  Header set Referer-Policy: "origin"
+  Header set X-Content-Type-Options: "nosniff"
+  Header set X-Frame-Options: DENY
+  Header set Cache-Control: "no-transform, immutable, public"
+  Header set Content-Security-Policy: "{{ cspDefault }}; {{ cspBaseUri }}; {{ cspFormAction }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }} 'sha256-{{ headCssSha }}'; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }}; {{ cspManifestSrc }}; {{ cspFontSrc }}; {{ cspUpgradeInsecureRequests }}; {{ cspTrustedTypes }};"
+  Header set Referrer-Policy: "strict-origin-when-cross-origin"
+  <If "%{HTTP_USER_AGENT} =~ /(MSIE|Edge)s*/i">
+    Header set X-UA-Compatible: "IE=Edge,chrome=1"
+  </If>
+</IfModule>
+
+FileETag None
+
+IndexIgnore *
+DirectoryIndex    index.html index.php
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+AddDefaultCharset utf-8
+AddCharset utf-8 .css .js .xml .json .atom
+
+AddType application/javascript        js
+AddType image/svg+xml                 svg svgz
+AddEncoding                           gzip svgz
+AddType image/x-icon                  ico
+AddType text/cache-manifest           appcache manifest
+AddType text/x-web-app-manifest+json  webapp
+
+<IfModule mod_autoindex.c>
+  Options -Indexes
+</IfModule>
+
+{% if jekyll.environment == 'production-never' -%}
+# php_value upload_max_file_size 2M
+# php_value post_max_size 2M
+php_flag log_errors on
+php_flag display_errors off
+php_value error_reporting 32767
+{%- endif %}
+
+<IfModule mod_setenvif.c>
+  <IfModule mod_headers.c>
+    # mod_headers, y u no match by Content-Type?!
+    <FilesMatch "\.(gif|png|jpe?g|svg|svgz|ico|webp)$">
+      SetEnvIf Origin ":" IS_CORS
+      Header set Access-Control-Allow-Origin "*" env=IS_CORS
+    </FilesMatch>
+  </IfModule>
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/cache-manifest       "access plus 0 seconds"
+    ExpiresByType text/html                 "access plus 0 seconds"
+    ExpiresByType text/xml                  "access plus 1 hour"
+    ExpiresByType application/json          "access plus 0 seconds"
+    ExpiresByType application/xml           "access plus 1 hour"
+    ExpiresByType application/rss+xml       "access plus 1 hour"
+    ExpiresByType application/atom+xml      "access plus 1 hour"
+    ExpiresByType image/x-icon              "access plus 1 month"
+    ExpiresByType image/gif                 "access plus 1 month"
+    ExpiresByType image/png                 "access plus 1 month"
+    ExpiresByType image/jpg                 "access plus 1 month"
+    ExpiresByType image/jpeg                "access plus 1 month"
+    ExpiresByType image/svg+xml             "access plus 1 month"
+    ExpiresByType text/css                  "access plus 1 year"
+    ExpiresByType application/javascript    "access plus 1 year"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  SetOutputFilter DEFLATE
+  
+  # Force deflate for mangled headers developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/
+  <IfModule mod_setenvif.c>
+    <IfModule mod_headers.c>
+      SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+      RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+    </IfModule>
+  </IfModule>
+
+  # HTML, TXT, CSS, JavaScript, JSON, XML, HTC:
+  <IfModule filter_module>
+    FilterDeclare   COMPRESS
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$text/html'"
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$text/css'"
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$text/plain'"
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$text/xml'"
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$text/x-component'"
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$application/javascript'"
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$application/json'"
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$application/xml'"
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$application/xhtml+xml'"
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$application/rss+xml'"
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$application/atom+xml'"
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$application/vnd.ms-fontobject'"
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$image/svg+xml'"
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$image/x-icon'"
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$application/x-font-ttf'"
+    FilterProvider  COMPRESS  DEFLATE "%{Content_Type} = '$font/opentype'"
+    FilterChain     COMPRESS
+    FilterProtocol  COMPRESS  DEFLATE change=yes;byteranges=no
+  </IfModule>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # deny access to dot files/directories
+    RewriteCond %{SCRIPT_FILENAME} -d
+    RewriteCond %{SCRIPT_FILENAME} -f
+    RewriteRule "(^|/)\." - [F]
+
+{% if jekyll.environment == 'production' -%}
+    # I'm told this is the future...
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+{%- endif %}
+
+    # catch avatar requests, always serve svg
+    RewriteCond %{REQUEST_URI} ^/avatar\.
+    RewriteRule ^(.*)\.([a-z]{3})? /avatar/index.php?type=svg [L,NC,QSA]
+
+    # catch old RSS feed url
+    RewriteCond %{REQUEST_URI} ^/rss
+    RewriteRule ^(.*)$ /feed.xml [L,R=301]
+    RewriteCond %{REQUEST_URI} ^/feed/?$
+    RewriteRule ^(.*)$ /feed.xml [L,R=301]
+
+    # video & tokens
+    RewriteCond %{REQUEST_URI} ^/video
+    RewriteRule . - [L,NC,QSA]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^token.* /token/index.php [L]
+
+    # ensure file extensions
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.html -f
+    RewriteRule ^(.+)$ $1\.html [L]
+</IfModule>
+
+{% assign cacheKey = site.time | date: '%s' -%}
+<FilesMatch "\.html$">
+  Header set Link "</css/main.css?v={{ cacheKey }}>; rel=preload; as=style, </js/behavior.min.js?v={{ cacheKey }}>; rel=preload; as=script, </assets/big-frog.optimized.svg>; rel=preload; as=image; type=image/svg+xml, </assets/name.optimized.svg>; rel=preload; as=image; type=image/svg+xml"
+</FilesMatch>

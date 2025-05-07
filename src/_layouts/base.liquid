@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>{% if title %}{{ title }} | {% endif %}{{site.title}}</title>
+    <meta name="cachebuster" content="{{ site.buildTime }}">
+    <meta name="description" content="{{ description or site.description }}">
+    <meta name="keywords" content="{{ site.keywords | join: ", " }}">
+    <meta name="author" content="Shawn Parker">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preload" href="/css/app.css?c={{ site.buildTime }}" as="style">
+    <link rel="stylesheet" href="/css/app.css?c={{ site.buildTime }}">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,height=device-height">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="orange">
+    <link rel="author" href="/humans.txt">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{{ title or site.ogTitle }}">
+    <meta property="og:site_name" content="{{ site.ogTitle }}">
+    <meta property="og:description" content="{{ description or site.ogDescription }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.ogImage }}">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta name="robots" content="follow index">
+    <link rel="prefetch" href="/search.json?c={{ site.buildTime }}">
+    <link rel="alternate" type="application/rss+xml" title="Subscribe to the Gippy Pages via RSS" href="{{ site.url }}/feed.xml">
+  </head>
+  <body class="{{ section }}">
+    <span class="icons-sprite" aria-hidden="true">
+      {%- render "../assets/icons/icons-sprite.optimized.svg" -%}
+    </span>
+    <header>
+      {% include "header.liquid" %}
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      {% include "footer.liquid" %}
+    </footer>
+    {% for script in scripts %}
+      <script src="{{ script }}?c={{ site.buildTime }} crossorigin="anonymous"></script>
+    {% endfor %}
+    <script src="/js/main.js?c={{ site.buildTime }}" async></script>
+  </body>
+</html>

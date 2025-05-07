@@ -1,0 +1,5 @@
+<div class="album masonry">
+{% for album_photo in album %}
+  {% render "flickr-photo", photo: album_photo %}
+{% endfor %}
+</div>

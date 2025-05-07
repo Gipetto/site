@@ -1,0 +1,25 @@
+.home {
+  main {
+    * {
+      line-height: 1.4;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      font-weight: 600;
+    }
+  
+    .hl {
+      color: var(--color-orange);
+      font-weight: 900;
+    }
+    
+    .emoji {
+      margin-right: 0.1rem;
+    }
+  }
+}

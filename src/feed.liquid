@@ -1,0 +1,27 @@
+---
+layout: 
+permalink: /feed.xml
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Shawn Parker: Blog</title>
+    <link>{{ site.url }}/blog</link>
+    <description>{{ site.description | escape }}</description>
+    <language>en-US</language>
+    <copyright>Shawn Parker</copyright>
+{% for post in collections.posts %}
+    <item>
+      <title>{{ post.data.title | escape }}</title>
+      <link>{{site.url}}{{ post.url }}</link>
+      <guid>{{site.url}}{{ post.url }}</guid>
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <description>{% if post.page.excerpt -%}
+        {{ post.page.excerpt | strip_html | normalize_whitespace | escape }}
+      {%- else -%}
+        {{ post.content | strip_html | normalize_whitespace | truncate: 1024 | escape }}
+      {%- endif %}</description>
+    </item>
+{% endfor %}
+  </channel>
+</rss>

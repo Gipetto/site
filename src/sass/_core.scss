@@ -1,0 +1,169 @@
+:root {
+  --font-family: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+  --font-family-serif: Superclarendon, "Bookman Old Style", "URW Bookman", "URW Bookman L", "Georgia Pro", Georgia, serif;
+  --font-family-monospace: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  
+  --font-weight: normal;
+  --font-size: 16px;
+  --color-text: #414141;
+  --color-text-light: #808080;
+  --color-text-dark: #000;
+  --color-background: #e0e5dc;
+  --color-background-dark: #cfd4cb;
+  --color-background-darker: #9ea49a;
+  --color-background-darkest: #6d7269;
+  --color-background-darker-est: #444940;
+  --color-orange: hsl(23deg 87% 63%);
+  --border-radius: 1rem;
+  --site-max-width: 900px;
+  --site-padding-inline: min(4rem, 5%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: common-ligatures;
+  font-variant-numeric: oldstyle-nums stacked-fractions; /* tabular-nums; */
+  font-feature-settings: "salt", "liga", "rlig";
+  text-underline-offset: 0.125em;
+  text-decoration-skip-ink: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--color-text);
+  line-height: 1.5rem;
+  background-color: var(--color-background-dark);
+}
+
+body>header,
+body>main,
+body>footer {
+  margin: 0;
+  background-color: var(--color-background);
+
+  &>div,
+  &>article {    
+    &>section,
+    &>div {
+      padding-block: 1rem;
+      padding-inline: var(--site-padding-inline);
+      margin-inline: auto;
+      max-width: var(--site-max-width);
+      
+      &.wide {
+        padding-inline: 0;
+      }
+
+      &.full {
+        padding-inline: 0;
+        margin-inline: 0;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+body>main {
+  &>div,
+  &>article {
+    padding-block: 2rem 4rem;
+  }
+
+  @media (max-width: 450px) {
+    &>div,
+    &>article {
+      padding-top: 0;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+body>header,
+body>footer {
+  a {
+    color: inherit;
+  }
+}
+
+body>header {
+  color: var(--color-text-dark);
+  padding-block: 0;
+  border-bottom: 2px solid black;
+  
+  &>div>div {
+    padding-block: 0 !important;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 2rem;
+      margin-bottom: 0;
+    }
+
+    nav {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+body>footer {
+  border-top: 2px solid black;
+
+  .colophon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+
+    &>div {
+      flex-basis: 50%;
+    }
+
+    .wheres-wookiee {
+      text-align: right;
+
+      ul {
+        list-style-type: none;
+      }
+    }
+  }
+
+  .minutia {
+    background-color: var(--color-background-dark);
+    padding-inline: var(--site-padding-inline) !important;
+    border-top: 1px solid black;
+    text-align: center;
+    padding-top: 1rem;
+    line-height: 1.125rem;
+    
+    p {
+      font-size: 0.8rem;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
