@@ -123,10 +123,7 @@ const fluffyBunnies = () => {
         if (this.searchTerm) {          
           // await Promise.resolve(this.searchDebounceTimer = setTimeout(() => {
             activePosts = this.fuse.search(this.searchTerm, { limit: this.searchMaxResults })
-              .map((result) => {
-                console.log(result.item.slug, result.score)
-                return result.item.slug
-              })
+              .map((result) => result.item.slug)
           // }, this.searchDebounceTimeout))
         } else {
           activePosts = this.posts.map((post) => post.dataset.slug)
