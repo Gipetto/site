@@ -6,6 +6,7 @@ layout:
 {%- assign cspScript = "script-src 'self' https://cdn.jsdelivr.net" -%}
 {%- assign cspStyle = "style-src 'self'" -%}
 {%- assign cspStyleAttr = "style-src-attr 'self' 'unsafe-inline'" -%}
+{%- assign cspStyleElem = "style-src-elem 'self' 'unsafe-inline'" -%}
 {%- assign cspImg = "img-src 'self' *.staticflickr.com *.flickr.com" -%}
 {%- assign cspConnect = "connect-src 'self'" -%}
 {%- assign cspFrame = "frame-src *.youtube.com" -%}
@@ -37,7 +38,7 @@ layout:
   Header set X-Content-Type-Options: "nosniff"
   Header set X-Frame-Options: DENY
   Header set Cache-Control: "no-transform, immutable, public"
-  Header set Content-Security-Policy: "{{ cspDefault }}; {{ cspBaseUri }}; {{ cspFormAction }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }}; {{ cspStyleAttr }}; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }}; {{ cspManifestSrc }}; {{ cspFontSrc }}; {{ cspUpgradeInsecureRequests }}; {{ cspTrustedTypes }};"
+  Header set Content-Security-Policy: "{{ cspDefault }}; {{ cspBaseUri }}; {{ cspFormAction }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }}; {{ cspStyleAttr }}; {{ cspStyleElem }}; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }}; {{ cspManifestSrc }}; {{ cspFontSrc }}; {{ cspUpgradeInsecureRequests }}; {{ cspTrustedTypes }};"
   Header set Referrer-Policy: "strict-origin-when-cross-origin"
   <If "%{HTTP_USER_AGENT} =~ /(MSIE|Edge)s*/i">
     Header set X-UA-Compatible: "IE=Edge,chrome=1"
