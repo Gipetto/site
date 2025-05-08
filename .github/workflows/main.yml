@@ -1,0 +1,46 @@
+name: Build and Publish
+on:
+  push:
+    branches: master
+  workflow_dispatch:
+env:
+  CI: true
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      NODE_VERSION: "22.x"
+      NODE_OPTIONS: ""
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
+      - name: Install
+        run: npm i
+      - name: Build
+        env:
+          NODE_OPTIONS: ${{ env.NODE_OPTIONS }}
+        run: npm run build
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.TF_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p 22 ${{ secrets.TF_HOST }} >> ~/.ssh/known_hosts
+      # - name: Install rsync (needed locally for testing with act)
+      #   run: apt update && apt install -y rsync
+      - name: Deploy
+        run: |
+          rsync -e ssh \
+            --archive \
+            --progress \
+            --partial \
+            --delete \
+            --inplace \
+            --whole-file \
+            --itemize-changes \
+            _site/ ${{ secrets.TF_USER }}@${{ secrets.TF_HOST }}:top-frog.com/public_html_eleventy/

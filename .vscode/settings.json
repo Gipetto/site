@@ -1,0 +1,50 @@
+{
+  "[css]": {
+    "editor.suggest.insertMode": "replace"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[md]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "vscode.markdown-language-features"
+  },
+  "css.format.enable": true,
+  "debug.javascript.autoAttachFilter": "disabled",
+  "debug.javascript.automaticallyTunnelRemoteServer": false,
+  "debug.javascript.codelens.npmScripts": "never",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  // "editor.wordWrap": "bounded",
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.useFlatConfig": true,
+  "eslint.validate": [
+    "javascript",
+  ],
+  "files.insertFinalNewline": true,
+  "javascript.format.semicolons": "remove",
+  "prettier.enable": false,
+  "svelte.enable-ts-plugin": true,
+  "typescript.format.semicolons": "remove",
+  "emmet.includeLanguages": {
+    "*.liquid": "html"
+  },
+  "files.associations": {
+    "*.liquid": "html"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

@@ -2,3 +2,4 @@ node_modules
 _site
 scripts/_flickr_auth/auth.json
 scripts/_flicr_auth/oauth_token.txt
+.act.secrets
