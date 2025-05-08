@@ -5,6 +5,7 @@ layout:
 {%- assign cspDefault = "default-src 'none'" -%}
 {%- assign cspScript = "script-src 'self' https://cdn.jsdelivr.net" -%}
 {%- assign cspStyle = "style-src 'self'" -%}
+{%- assign cspStyleAttr = "style-src-attr 'self' 'unsafe-inline'" -%}
 {%- assign cspImg = "img-src 'self' *.staticflickr.com *.flickr.com" -%}
 {%- assign cspConnect = "connect-src 'self'" -%}
 {%- assign cspFrame = "frame-src *.youtube.com" -%}
@@ -13,7 +14,7 @@ layout:
 {%- assign cspBaseUri = "base-uri 'self'" -%}
 {%- assign cspFormAction = "form-action 'self'" -%}
 {%- assign cspManifestSrc = "manifest-src 'self'" -%}
-{%- assign cspFontSrc = "font-src 'none'" -%}
+{%- assign cspFontSrc = "font-src 'self'" -%}
 {%- assign cspUpgradeInsecureRequests = "upgrade-insecure-requests" -%}
 {%- assign cspTrustedTypes = "require-trusted-types-for 'script'" -%}
 <IfModule mod_ssl.c>
@@ -36,7 +37,7 @@ layout:
   Header set X-Content-Type-Options: "nosniff"
   Header set X-Frame-Options: DENY
   Header set Cache-Control: "no-transform, immutable, public"
-  Header set Content-Security-Policy: "{{ cspDefault }}; {{ cspBaseUri }}; {{ cspFormAction }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }} 'sha256-{{ headCssSha }}'; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }}; {{ cspManifestSrc }}; {{ cspFontSrc }}; {{ cspUpgradeInsecureRequests }}; {{ cspTrustedTypes }};"
+  Header set Content-Security-Policy: "{{ cspDefault }}; {{ cspBaseUri }}; {{ cspFormAction }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }}; {{ cspStyleAttr }}; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }}; {{ cspManifestSrc }}; {{ cspFontSrc }}; {{ cspUpgradeInsecureRequests }}; {{ cspTrustedTypes }};"
   Header set Referrer-Policy: "strict-origin-when-cross-origin"
   <If "%{HTTP_USER_AGENT} =~ /(MSIE|Edge)s*/i">
     Header set X-UA-Compatible: "IE=Edge,chrome=1"
@@ -177,5 +178,5 @@ php_value error_reporting 32767
 
 {% assign cacheKey = site.time | date: '%s' -%}
 <FilesMatch "\.html$">
-  Header set Link "</css/main.css?v={{ cacheKey }}>; rel=preload; as=style, </js/behavior.min.js?v={{ cacheKey }}>; rel=preload; as=script, </assets/big-frog.optimized.svg>; rel=preload; as=image; type=image/svg+xml, </assets/name.optimized.svg>; rel=preload; as=image; type=image/svg+xml"
+  Header set Link "</css/app.css?c={{ site.buildTime }}>; rel=preload; as=style, </js/main.js?c={{ site.buildTime }}>; rel=preload; as=script"
 </FilesMatch>
