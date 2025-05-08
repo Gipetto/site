@@ -18,6 +18,7 @@ layout:
 {%- assign cspFontSrc = "font-src 'self'" -%}
 {%- assign cspUpgradeInsecureRequests = "upgrade-insecure-requests" -%}
 {%- assign cspTrustedTypes = "require-trusted-types-for 'script'" -%}
+{%- assign cspPrefetchSrc = "prefetch-src 'self'" -%}
 <IfModule mod_ssl.c>
   SSLOptions +StrictRequire +StdEnvVars -OptRenegotiate
 </IfModule>
@@ -38,7 +39,7 @@ layout:
   Header set X-Content-Type-Options: "nosniff"
   Header set X-Frame-Options: DENY
   Header set Cache-Control: "no-transform, immutable, public"
-  Header set Content-Security-Policy: "{{ cspDefault }}; {{ cspBaseUri }}; {{ cspFormAction }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }}; {{ cspStyleAttr }}; {{ cspStyleElem }}; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }}; {{ cspManifestSrc }}; {{ cspFontSrc }}; {{ cspUpgradeInsecureRequests }}; {{ cspTrustedTypes }};"
+  Header set Content-Security-Policy: "{{ cspDefault }}; {{ cspBaseUri }}; {{ cspPrefetchSrc }}; {{ cspFormAction }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }}; {{ cspStyleAttr }}; {{ cspStyleElem }}; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }}; {{ cspManifestSrc }}; {{ cspFontSrc }}; {{ cspUpgradeInsecureRequests }}; {{ cspTrustedTypes }};"
   Header set Referrer-Policy: "strict-origin-when-cross-origin"
   <If "%{HTTP_USER_AGENT} =~ /(MSIE|Edge)s*/i">
     Header set X-UA-Compatible: "IE=Edge,chrome=1"
