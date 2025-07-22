@@ -105,6 +105,14 @@
           opacity: 0.9;
         }
       }
+
+      @media (max-width: variables.$grid-min-width) {
+        img {
+          float: left;
+          margin-left: 0;
+          margin-right: 2rem;
+        }
+      }
     }
   
     &.cowsay {
@@ -160,6 +168,30 @@
         }
       }
     }
+
+    &.pe {
+      img {
+        float: right;
+        width: 200px;
+        height: 200px;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+      }
+
+      &:hover {
+        img {
+          opacity: 0.9;
+        }
+      }
+
+      @media (max-width: variables.$grid-min-width) {
+        img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
   }
 
   .projects-list {
@@ -175,7 +207,8 @@
       "two three"
       "two four"
       "five five"
-      "six seven";
+      "six seven"
+      "eight eight";
   
     @media (max-width: variables.$grid-min-width) {
       grid-template-columns: 1fr;
@@ -186,7 +219,8 @@
         "four"
         "five"
         "six"
-        "seven";
+        "seven"
+        "eight";
     }
   
     &.obsolete,
@@ -231,6 +265,10 @@
   
     &>:nth-child(7) {
       grid-area: seven;
+    }
+
+    &>:nth-child(8) {
+      grid-area: eight;
     }
   }
 }
