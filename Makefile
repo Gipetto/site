@@ -6,7 +6,7 @@ ASSETS := src/assets
 
 install:
 	npm ci
-	cd scripts/flickr_cache && make install
+	cd scripts/_flickr_auth && make install
 
 serve:
 	npm run dev

@@ -12,11 +12,11 @@ def load_api_keys():
     j.close()
     
     flickr_api.set_keys(
-        api_key = creds.api_key,
-        api_secret = creds.api_secret
+        api_key = creds['api_key'],
+        api_secret = creds['api_secret']
     )
 
-    handler = flickr_api.auth.AuthHandler()
+    handler = flickr_api.auth.AuthHandler(callback='oob')
     return handler
 
 

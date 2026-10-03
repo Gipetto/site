@@ -8,7 +8,7 @@ install:
 	echo '{}' > ../.flickr-cache.json
 
 auth:
-	python -m pipenv run python auth.py
+	pipenv run python auth.py
 
 cache:
-	python -m pipenv run python cache.py
+	pipenv run python cache.py

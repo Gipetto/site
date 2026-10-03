@@ -25,8 +25,15 @@ def flickr_auth():
   with(open('auth.json', 'r')) as j:
     creds = json.load(j)
 
+  with(open('oauth_token.txt', 'r')) as o:
+    tokens = o.readlines()
+
   flickr_api.set_keys(api_key = creds['api_key'], api_secret = creds['api_secret'])
-  flickr_api.set_auth_handler('oauth_token.txt')
+  flickr_api.set_auth_handler(flickr_api.auth.AuthHandler(
+    callback='oob',
+    access_token_key=tokens[0].strip(),
+    access_token_secret=tokens[1].strip()
+  ))
 
 
 def load_cache_data():

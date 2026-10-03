@@ -15,10 +15,12 @@
           packages = [
             pkgs.git
             pkgs.nodejs_24
+            pkgs.pipenv
             pkgs.php83
-            pkgs.python3
+            pkgs.python311
           ];
           shellHook = ''
+            export PATH="${pkgs.python311}/bin:$PATH"
             echo ""
             echo "$(tput bold)Node$(tput sgr0) $(node --version)"
             echo "$(tput bold)PHP$(tput sgr0) $(php --version | head -1)"
