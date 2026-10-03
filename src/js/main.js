@@ -10,6 +10,7 @@ const fluffyBunnies = () => {
       searchTerm = undefined
 
       fuse = undefined
+      fusePromise = undefined
       searchDebounceTimer = null
       searchDebounceTimeout = 500
       searchMaxResults = 20
@@ -39,19 +40,18 @@ const fluffyBunnies = () => {
         this.queryParams = new URLSearchParams(window.location.search);
         if (this.queryParams.has("q")) {
           this.searchTerm = this.queryParams.get("q")
-          this.run()
         }
       }
 
       async initFuse() {
-        if (this.fuse) {
-          return
+        if (this.fusePromise) {
+          return this.fusePromise
         }
-        
-        this.fuse = await fetch(`/search.json?c=${cachebuster}`)
+
+        this.fusePromise = fetch(`/search.json?c=${cachebuster}`)
           .then((r) => r.json())
           .then((json) => {
-            return new Fuse(json, {
+            this.fuse = new Fuse(json, {
               threshold: 0.2,
               ignoreFieldNorm: true,
               ignoreLocation: true,
@@ -77,7 +77,10 @@ const fluffyBunnies = () => {
                 },
               ]
             })
+            return this.fuse
           })
+
+        return this.fusePromise
       }
 
       attachListeners() {

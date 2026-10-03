@@ -11,9 +11,8 @@ permalink: search.json
   "title":{{ post.data.title | json }},
   "date":"{{ post.data.date | date: date_format }}",
   "datetime":"{{ post.data.date | date: datetime_format }}",
-  "tokens":"{{ post.content | tokenize }}",
-  "excerpt":{{ post.content | strip_html | normalize_whitespace | truncate: 250 | json }},
-  "url": "{{ post.url }}",
+   "tokens":{{ post.content | tokenize | json }},
+   "url": "{{ post.url }}",
   {%- if post.data.categories -%}"categories":[
     {%- for category in post.data.categories -%} "{{ category }}"
     {%- if forloop.last %}{% else %},{% endif -%}
