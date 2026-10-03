@@ -3,3 +3,8 @@ _site
 scripts/_flickr_auth/auth.json
 scripts/_flicr_auth/oauth_token.txt
 .act.secrets
+.direnv/
+.claude/
+AGENTS.md
+CLAUDE.md
+
