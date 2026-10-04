@@ -90,31 +90,6 @@
       }
     }
 
-    &.ap {
-      img {
-        float: right;
-        width: 125px;
-        height: 125px;
-        margin-left: 2rem;
-        margin-bottom: 1rem;
-        border-radius: 0.5rem;
-      }
-
-      &:hover {
-        img {
-          opacity: 0.9;
-        }
-      }
-
-      @media (max-width: variables.$grid-min-width) {
-        img {
-          float: left;
-          margin-left: 0;
-          margin-right: 2rem;
-        }
-      }
-    }
-  
     &.cowsay {
       svg {
         float: left;
@@ -145,25 +120,6 @@
         svg {
           float: left;
           height: 150px;
-          margin-right: 2rem;
-        }
-      }
-    }
-
-    &.tm {
-      display: flex;
-      flex-direction: row;
-      gap: 2rem;
-
-      img {
-        max-width: 125px;
-      }
-
-      @media (max-width: variables.$grid-min-width) {
-        display: block;
-        img {
-          float: left;
-          height: 125px;
           margin-right: 2rem;
         }
       }
@@ -221,21 +177,6 @@
         "six"
         "seven"
         "eight";
-    }
-  
-    &.obsolete,
-    &.trash-pile {
-      grid-template-areas:
-      "one one"
-      "two three";
-  
-      @media (max-width: variables.$grid-min-width) {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-          "one"
-          "two"
-          "three";
-      }    
     }
   
     &>:nth-child(1) {
