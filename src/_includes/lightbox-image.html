@@ -1,5 +1,5 @@
-<a href="{{ href | default: img_lg | escape }}" class="lightbox {{ additional_classes | escape }}" data-lb-image="{{ imgLg.src | default: img_lg | escape }}" data-lb-image-height="{{ imgLg.height }}" data-lb-image-width="{{ imgLg.width }}">
-  <picture id="{{ id | escape }}">
+<a href="{{ href | default: img_lg | escape }}" class="lightbox {{ additional_classes | escape }}" data-lb-image="{{ imgLg.src | default: img_lg | escape }}" data-lb-image-height="{{ imgLg.height | escape }}" data-lb-image-width="{{ imgLg.width | escape }}">
+  <picture id="{{ id_prefix | default: "photo" }}-{{ id | escape }}">
 {% for source in sources %}
   <source srcset="{{ source.src | escape }}" media="{{ source.media | escape }}" />
 {% endfor %}

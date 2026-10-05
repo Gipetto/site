@@ -1,5 +1,5 @@
 <div class="album masonry">
 {% for album_photo in album %}
-  {% render "flickr-photo", photo: album_photo %}
+  {% render "flickr-photo", photo: album_photo, id_prefix: id_prefix %}
 {% endfor %}
 </div>

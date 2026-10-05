@@ -7,4 +7,4 @@ gallery: dogs
 
 <p>Dogs are life.</p>
 
-{% render "flickr-album" with flickr.albums["72157603367803058"] as album %}
+{% render "flickr-album", album: flickr.albums["72157603367803058"], id_prefix: gallery %}

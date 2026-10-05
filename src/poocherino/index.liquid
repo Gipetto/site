@@ -2,7 +2,10 @@
 layout: 
 ---
 <!doctype html>
+<html lang="en-US">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Poocherino</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,7 +25,7 @@ layout:
         <div class="paw">
             {% render "./assets/paw.svg" %}
         </div>
-        {% render "flickr-album" with flickr.albums["72157603367803058"] as album %}
+        {% render "flickr-album", album: flickr.albums["72157603367803058"], id_prefix: "poocherino" %}
     </main>
     <footer>
         <p>&copy; <a href="https://top-frog.com">Shawn Parker &mdash; top-frog.com</a></p>
@@ -35,6 +38,6 @@ layout:
           <img eleventy:ignore class="" src="">
         </form>
       </dialog>
-    <script type="text/javascript" src="./js/main.js?c={{ site.buildTime }}"></script>
+    <script type="text/javascript" src="./js/main.js?c={{ site.buildTime }}" defer></script>
 </body>
 </html>

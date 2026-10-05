@@ -7,4 +7,4 @@ gallery: photography
 
 <p>My photography was once my career, but now it keeps me out of trouble in the off hours. But don’t make any mistake, just because something isn’t a career doesn’t mean that it can’t be an obsession nor bankrupt you... prime lenses don’t grow on trees, you know 😉</p>
 
-{% render "flickr-album" with flickr.albums["72157607000335316"] as album %}
+{% render "flickr-album", album: flickr.albums["72157607000335316"], id_prefix: gallery %}
