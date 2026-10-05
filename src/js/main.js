@@ -99,7 +99,10 @@ const fluffyBunnies = () => {
         const filterForm = this.filters[0]?.closest("form")
         if (filterForm) {
           filterForm.addEventListener("reset", () => {
-            requestAnimationFrame(() => this.run())
+            requestAnimationFrame(() => {
+              this.searchTerm = this.searchInput.value
+              this.run()
+            })
           })
         }
 
