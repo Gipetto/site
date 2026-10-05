@@ -17,16 +17,13 @@ layout:
 {%- assign cspManifestSrc = "manifest-src 'self'" -%}
 {%- assign cspFontSrc = "font-src 'self'" -%}
 {%- assign cspUpgradeInsecureRequests = "upgrade-insecure-requests" -%}
-{%- assign cspTrustedTypes = "require-trusted-types-for 'script'" -%}
 {%- assign cspPrefetchSrc = "prefetch-src 'self'" -%}
 <IfModule mod_ssl.c>
   SSLOptions +StrictRequire +StdEnvVars -OptRenegotiate
 </IfModule>
 
 <IfModule mod_headers.c>
-{% if jekyll.environment == 'production' -%}
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
-{%- endif %}
   Header unset ETag
   Header unset Server
   Header unset X-Powered-By
@@ -35,11 +32,9 @@ layout:
   # interest-cohort blocks (the now dead?) google FLoC: https://twitter.com/henshaw/status/1383807527935119363
   # browsing-topics blocks google topics 
   Header set Permissions-Policy: "geolocation=(), camera=(), microphone=(), payment=(), screen-wake-lock=(), interest-cohort=(), browsing-topics=()"
-  Header set Referer-Policy: "origin"
-  Header set X-Content-Type-Options: "nosniff"
   Header set X-Frame-Options: DENY
   Header set Cache-Control: "no-transform, immutable, public"
-  Header set Content-Security-Policy: "{{ cspDefault }}; {{ cspBaseUri }}; {{ cspPrefetchSrc }}; {{ cspFormAction }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }}; {{ cspStyleAttr }}; {{ cspStyleElem }}; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }}; {{ cspManifestSrc }}; {{ cspFontSrc }}; {{ cspUpgradeInsecureRequests }}; {{ cspTrustedTypes }};"
+  Header set Content-Security-Policy: "{{ cspDefault }}; {{ cspBaseUri }}; {{ cspPrefetchSrc }}; {{ cspFormAction }}; {{ cspScript }}; {{ cspImg }}; {{ cspStyle }}; {{ cspStyleAttr }}; {{ cspStyleElem }}; {{ cspConnect }}; {{ cspFrame }}; {{ cspAncestors }}; {{ cspObjectSrc }}; {{ cspManifestSrc }}; {{ cspFontSrc }}; {{ cspUpgradeInsecureRequests }};"
   Header set Referrer-Policy: "strict-origin-when-cross-origin"
   <If "%{HTTP_USER_AGENT} =~ /(MSIE|Edge)s*/i">
     Header set X-UA-Compatible: "IE=Edge,chrome=1"
@@ -148,11 +143,9 @@ php_value error_reporting 32767
     RewriteCond %{SCRIPT_FILENAME} -f
     RewriteRule "(^|/)\." - [F]
 
-{% if jekyll.environment == 'production' -%}
     # I'm told this is the future...
     RewriteCond %{HTTPS} !=on
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-{%- endif %}
 
     # catch avatar requests, always serve svg
     RewriteCond %{REQUEST_URI} ^/avatar\.
