@@ -12,6 +12,7 @@ const fluffyBunnies = () => {
       fuse = undefined
       fusePromise = undefined
       searchDebounceTimer = null
+      historyDebounceTimer = null
       searchDebounceTimeout = 500
       searchMaxResults = 20
 
@@ -40,6 +41,7 @@ const fluffyBunnies = () => {
         this.queryParams = new URLSearchParams(window.location.search);
         if (this.queryParams.has("q")) {
           this.searchTerm = this.queryParams.get("q")
+          this.searchInput.value = this.searchTerm
         }
       }
 
@@ -86,10 +88,20 @@ const fluffyBunnies = () => {
       attachListeners() {
         this.searchInput.addEventListener("keyup", (e) => {
           this.searchTerm = e.target.value
-          this.queryParams.set("q", this.searchTerm)
-          window.history.pushState("", "", `/blog/?${this.queryParams.toString()}`)
           this.run()
+          clearTimeout(this.historyDebounceTimer)
+          this.historyDebounceTimer = setTimeout(() => {
+            this.queryParams.set("q", this.searchTerm)
+            window.history.pushState("", "", `/blog/?${this.queryParams.toString()}`)
+          }, this.searchDebounceTimeout)
         })
+
+        const filterForm = this.filters[0]?.closest("form")
+        if (filterForm) {
+          filterForm.addEventListener("reset", () => {
+            requestAnimationFrame(() => this.run())
+          })
+        }
 
         this.filters.forEach((filter) => {
           filter.addEventListener("change", () => this.run())
