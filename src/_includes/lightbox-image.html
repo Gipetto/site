@@ -1,8 +1,8 @@
-<a href="{{ href | default: img_lg }}" class="lightbox {{ additional_classes }}" data-lb-image="{{ imgLg.src | default: img_lg }}" data-lb-image-height="{{ imgLg.height }}" data-lb-image-width="{{ imgLg.width }}">
-  <picture id="{{ id }}">
+<a href="{{ href | default: img_lg | escape }}" class="lightbox {{ additional_classes | escape }}" data-lb-image="{{ imgLg.src | default: img_lg | escape }}" data-lb-image-height="{{ imgLg.height }}" data-lb-image-width="{{ imgLg.width }}">
+  <picture id="{{ id | escape }}">
 {% for source in sources %}
-  <source srcset="{{ source.src }}" media="{{ source.media }}" />
+  <source srcset="{{ source.src | escape }}" media="{{ source.media | escape }}" />
 {% endfor %}
-  <img src="{{ img.src | default: img_sm }}"  alt="Photograph: {{ title }}">
+  <img src="{{ img.src | default: img_sm | escape }}"  alt="Photograph: {{ title | escape }}">
 </picture>
 </a>
