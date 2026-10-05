@@ -18,7 +18,9 @@ const parsePhoto = (photo) => {
   return {
     id: photo.info.id,
     title: photo.info.title,
-    href: photo.info.urls.url.find((_url) => _url.type === "photopage").text,
+    href: photo.info.urls.url.find((_url) => _url.type === "photopage")?.text
+      ?? photo.info.urls.url[0]?.text
+      ?? "",
     img: {
       src: photo.sizes["Small"].source,
       width: photo.sizes["Small"].width,
