@@ -8,11 +8,9 @@
   Header set X-Content-Type-Options nosniff
   # interest-cohort blocks google FLoC: https://twitter.com/henshaw/status/1383807527935119363
   Header set Permissions-Policy: "geolocation=(), camera=(), microphone=(), payment=(), screen-wake-lock=(), interest-cohort=()"
-  Header set Referer-Policy: "origin"
-  Header set X-Content-Type-Options: "nosniff"
   Header set X-Frame-Options: DENY
   Header set Cache-Control: "no-transform, immutable, public"
-  Header set Content-Security-Policy: "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' *.static.flickr.com *.flickr.com data:; frame-anscestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'; font-src 'none'; upgrade-insecure-requests;"
+  Header set Content-Security-Policy: "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' *.static.flickr.com *.flickr.com data:; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'; font-src 'none'; upgrade-insecure-requests;"
   Header set Referrer-Policy: "strict-origin-when-cross-origin"
   <If "%{HTTP_USER_AGENT} =~ /(MSIE|Edge)s*/i">
     Header set X-UA-Compatible: "IE=Edge,chrome=1"
