@@ -2,7 +2,7 @@
 
 body {
   padding: 2em;
-  background-color: #f0f0f0;
+  background-color: #e8e0d5;
   line-height: 1.3em;
   tab-size: 2;
   
@@ -12,9 +12,9 @@ body {
   }
 
   .highlight {
-    border: 1px solid #ccc;
+    border: 1px solid rgba(166, 159, 149, .4);
     border-radius: 5px;
-    background-color: white;
+    background-color: #f2ece3;
   
     pre {
       margin: 0.5em 0.5em 0.5em 0;
@@ -22,7 +22,7 @@ body {
   
       .gutter {
         width: 2em;
-        color: #ccc;
+        color: #a69f95;
       }
     }
   }
@@ -42,7 +42,7 @@ body {
     
     .token.comment {
       font-style: italic;
-      color: #dadada;
+      color: #5b7a8e;
     }
   } 
 }

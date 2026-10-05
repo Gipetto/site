@@ -36,6 +36,7 @@
 
       &:hover {
         background-color: var(--color-background-darker-est);
+        color: var(--color-text-on-dark);
       }
     }
 
@@ -61,10 +62,10 @@
       &:hover {
         svg {
           .d-line {
-            stroke: #fff;
+            stroke: var(--color-text-on-dark);
           }
           .d-fill {
-            fill: #fff;
+            fill: var(--color-text-on-dark);
           }
         }
       }

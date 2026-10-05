@@ -159,7 +159,7 @@ article {
     
     .token.comment {
       font-style: italic;
-      color: #dadada;
+      color: #5b7a8e;
     }
   }
 
@@ -244,7 +244,8 @@ nav {
   padding: 1rem 1.25rem;
   background-color: var(--color-background-dark);
 
-  * {
+  *,
+  a:visited:not(:hover) {
     color: var(--color-text-dark);
   }
 
@@ -260,8 +261,9 @@ nav {
 
   &:hover {
     background-color: var(--color-background-darkest);
-    * {
-      color: #fff;
+    *,
+    a:visited {
+      color: var(--color-text-on-dark);
     }
   }
 }

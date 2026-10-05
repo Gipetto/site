@@ -33,12 +33,14 @@ code:not([class*="language-"]) {
   border-color: var(--color-background-darker);
 
   &.warning {
-    background-color: #fcf8e3;
-    border-color: #d9d1a9;
+    background-color: rgba(242, 182, 50, .14);
+    border-color: #c9b89a;
+    color: #2a2a28;
   }
 
   &.info {
-    background-color: #d9edf7;
-    border-color: #8fadbb;
+    background-color: rgba(91, 122, 142, .12);
+    border-color: #5b7a8e;
+    color: #5b7a8e;
   }
 }

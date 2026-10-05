@@ -74,7 +74,7 @@
               }
               .arr {
                 background: var(--color-background-darkest);
-                color: white;
+                color: var(--color-text-on-dark);
               }
             }
           }
@@ -131,7 +131,7 @@
             padding: 0.5rem;
             border-radius: 0.25rem;
             border: 1px solid var(--color-background-darkest);
-            background-color: #fff;
+            background-color: #f2ece3;
           }
         }
       }
@@ -178,17 +178,17 @@
             border: 1px solid var(--color-background-darker);
             background-color: var(--color-background-dark);
             border-radius: 0.25rem;
-            box-shadow: 1px 1px 7px inset rgb(0 0 0 / 0.01);
+            box-shadow: 1px 1px 7px inset rgb(42 42 40 / 0.01);
   
             &:hover {
-              color: #fff;
+              color: var(--color-text-on-dark);
               border-color: var(--color-background-darkest);
               background-color: var(--color-background-darker);
             }
           }
   
           input:is(:checked) + label {
-            color: #fff;
+            color: var(--color-text-on-dark);
             border-color: var(--color-background-darker-est);
             background-color: var(--color-background-darkest);
           }
@@ -223,7 +223,7 @@
             width: 10ch !important;
             font-weight: bold;
             padding: 0.5rem 0.75rem;
-            color: #fff;
+            color: var(--color-text-on-dark);
             background-color: var(--color-background-darker);
             text-align: center;
             flex-shrink: 0;

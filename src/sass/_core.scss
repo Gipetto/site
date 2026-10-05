@@ -5,15 +5,19 @@
   
   --font-weight: normal;
   --font-size: 16px;
-  --color-text: #414141;
-  --color-text-light: #808080;
-  --color-text-dark: #000;
-  --color-background: #e0e5dc;
-  --color-background-dark: #cfd4cb;
-  --color-background-darker: #9ea49a;
-  --color-background-darkest: #6d7269;
-  --color-background-darker-est: #444940;
+  --color-text: #2a2a28;
+  --color-text-light: #6b6b68;
+  --color-text-dark: #2a2a28;
+  --color-background: #e8e0d5;
+  --color-background-dark: #d8d0c5;
+  --color-background-darker: #a69f95;
+  --color-background-darkest: #6b6b68;
+  --color-background-darker-est: #2a2a28;
   --color-orange: hsl(23deg 87% 63%);
+  --color-link: #214569;
+  --color-link-visited: #39526a;
+  --color-link-hover: #15304c;
+  --color-text-on-dark: #ffffff;
   --border-radius: 1rem;
   --site-max-width: 900px;
   --site-padding-inline: min(4rem, 5%);
@@ -35,6 +39,18 @@
   html {
     scroll-behavior: smooth;
   }
+}
+
+a {
+  color: var(--color-link);
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
+a:hover {
+  color: var(--color-link-hover);
 }
 
 body {
@@ -98,6 +114,14 @@ body>header,
 body>footer {
   a {
     color: inherit;
+
+    &:visited {
+      color: inherit;
+    }
+
+    &:hover {
+      color: inherit;
+    }
   }
 }
 
