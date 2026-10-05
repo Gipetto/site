@@ -166,15 +166,6 @@ const fluffyBunnies = () => {
     search.run()
   }
 
-  // Trusted Types
-  // Needed to generate safe strings for "innerHtml" setting
-  if (typeof trustedTypes == "undefined")
-    trustedTypes = { createPolicy: (n, rules) => rules };
-      
-  const lbPolicy = trustedTypes.createPolicy("lightbox-html", {
-    createHTML: (input) => input
-  })
-
   // Lightbox
   const lightboxImages = document.querySelectorAll("a.lightbox")
 
