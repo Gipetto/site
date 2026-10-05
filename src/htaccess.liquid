@@ -171,11 +171,14 @@ php_value error_reporting 32767
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^token.* /token/index.php [L]
 
+    # /projects merged into the home page
+    RewriteRule ^projects/?$ / [L,R=301]
+
     # ensure file extensions
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME}\.html -f
-    RewriteRule ^(.+)$ $1\.html [L]
+    RewriteRule ^(.+[^/])$ $1\.html [L]
 </IfModule>
 
 {% assign cacheKey = site.time | date: '%s' -%}
