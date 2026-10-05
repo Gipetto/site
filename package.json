@@ -11,6 +11,7 @@
     "dev": "rm -rf _site && npm-run-all build:sass --parallel dev:*",
     "build:eleventy": "npx @11ty/eleventy",
     "build:sass": "npx sass src/sass:_site/css",
+    "build:poocherino-sass": "npx sass src/poocherino/sass:_site/poocherino/css",
     "build": "npm-run-all build:*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

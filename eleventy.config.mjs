@@ -17,11 +17,12 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/htc/json")
   eleventyConfig.addPassthroughCopy("src/poocherino/js")
   eleventyConfig.addPassthroughCopy("src/poocherino/assets")
+  eleventyConfig.addPassthroughCopy({ "src/poocherino/.htaccess": "poocherino/.htaccess" })
   eleventyConfig.addPassthroughCopy("src/avatar")
   eleventyConfig.addPassthroughCopy("src/.well-known")
   
-  eleventyConfig.watchIgnores.add("src/scss/**/*.scss")
-  eleventyConfig.watchIgnores.add("src/poocherino/**/*.scss")
+  eleventyConfig.watchIgnores.add("src/sass/**/*.scss")
+  eleventyConfig.watchIgnores.add("src/poocherino/sass/**/*.scss")
 
 	eleventyConfig.addPlugin(syntaxHighlight, {
     alwaysWrapLineHighlights: true,
