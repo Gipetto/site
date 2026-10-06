@@ -106,6 +106,19 @@ del {
   text-decoration-color: var(--color-background-darkest);
 }
 
+h2 del {
+  color: #6b6b68 !important;
+}
+
+.card p del {
+  color: #414141 !important;
+}
+
+.home .card h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
 h2 + .postmeta {
   margin-top: -2rem;
 }
