@@ -5,7 +5,7 @@ install:
 	# pipenv install flickr_api;
 	PIPENV_VENV_IN_PROJECT=1 pipenv install
 	cp auth.json.dist auth.json
-	echo '{}' > ../.flickr-cache.json
+	echo '{}' > ./flickr-cache.json
 
 auth:
 	pipenv run python auth.py

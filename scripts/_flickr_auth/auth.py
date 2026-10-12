@@ -1,15 +1,14 @@
 # Requires Python 3
 import flickr_api
+import requests
 import webbrowser
 import argparse
 import json
-import sys
 
 
 def load_api_keys():
     with(open('auth.json', 'r')) as j:
         creds = json.load(j)
-    j.close()
     
     flickr_api.set_keys(
         api_key = creds['api_key'],
@@ -23,7 +22,6 @@ def load_api_keys():
 def save_oauth_token():
     with(open('oauth_token.txt', 'r')) as o:
         oauth = o.readlines()
-    o.close()
 
     with(open('auth.json', 'r+')) as j:
         creds = json.load(j)
@@ -34,8 +32,6 @@ def save_oauth_token():
         j.seek(0)
         json.dump(creds, j, indent=2)
         j.truncate()
-
-    j.close()
 
 
 
@@ -54,9 +50,21 @@ def verify(token, auth_handler):
 def main():
     auth_handler = load_api_keys()
     auth(auth_handler)
-    token = input('Enter the `oauth_verifier` token from the XML output: ')
-    verify(token.strip(), auth_handler)
+
+    for attempt in range(1, 4):
+        try:
+            token = input('Enter the `oauth_verifier` token from the XML output (e.g. 772-751-415): ')
+            verify(token.strip(), auth_handler)
+            break
+        except KeyboardInterrupt:
+            raise SystemExit('Aborted.')
+        except (requests.exceptions.HTTPError, flickr_api.FlickrError):
+            print('Rejected: the code was mistyped, already used, or belongs to a different run. Re-copy it from the authorization page this run opened (attempt ' + str(attempt) + ' of 3).')
+    else:
+        raise SystemExit('Too many failed attempts. Re-run `make auth` to start a fresh authorization.')
+
     save_oauth_token()
+    print('Authorization saved to oauth_token.txt and auth.json.')
 
 
 if __name__ == '__main__':
