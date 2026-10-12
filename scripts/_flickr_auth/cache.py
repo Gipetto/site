@@ -17,8 +17,8 @@ dirs = (
   photography_dir
 )
 
-photo_regex = re.compile(r'\{% render "flickr-photo" with flickr.photos\["([0-9]+)"\]')
-album_regex = re.compile(r'\{% render "flickr-album" with flickr.albums\["([0-9]+)"\]')
+photo_regex = re.compile(r'flickr\.photos\["([0-9]+)"\]')
+album_regex = re.compile(r'flickr\.albums\["([0-9]+)"\]')
 
 
 def flickr_auth():
@@ -85,12 +85,8 @@ def cache(ids, albums, cache_data, user):
         if photo.id in ids and photo.id not in cache_data["photos"]:
           print(f"getting info for '{photo.id}'")
           info = photo.getInfo()
-          # exorcize data we don't want or that doesn't serialize well
-          info.pop('owner', None)
-          info.pop('tags', None)
-          info.pop('notes', None)
           cache_data["photos"][photo.id] = {
-            'info': info,
+            'info': {key: info[key] for key in ('id', 'title', 'urls') if key in info},
             'sizes': photo.getSizes()
           }
 
