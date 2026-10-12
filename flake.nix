@@ -17,10 +17,10 @@
             pkgs.nodejs_24
             pkgs.pipenv
             pkgs.php83
-            pkgs.python311
+            pkgs.python314
           ];
           shellHook = ''
-            export PATH="${pkgs.python311}/bin:$PATH"
+            export PATH="${pkgs.python314}/bin:$PATH"
             echo ""
             echo "$(tput bold)Node$(tput sgr0) $(node --version)"
             echo "$(tput bold)PHP$(tput sgr0) $(php --version | head -1)"
